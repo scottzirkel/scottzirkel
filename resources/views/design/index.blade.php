@@ -1,6 +1,7 @@
 @extends('layouts.public', [
   'contentClass' => 'self-start py-8 w-1/2',
-  'title' => 'Design'
+  'title' => 'Design',
+  'description' => 'Most of my design work can be found in the portfolio of Alara Creative on Dribbble, or on Behance.'
 ])
 
 @section('content')

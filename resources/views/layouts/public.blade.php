@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>
-    @isset ($title)
-    {{ $title }} –
-    @endisset
-    Scott Zirkel
-    </title>
-    <meta name="author" content="Scptt Zirkel">
+    <title>{{ isset($title) ? "$title – Scott Zirkel" : "Scott Zirkel" }}</title>
+    <meta name="author" content="Scott Zirkel">
     <meta name="description" content="{{ $description ?? 'The various works of Scott Zirkel, including, but not limited to, drawings, code, design, and writing.' }}">
 
     <meta name="twitter:card" content="summary">
@@ -18,15 +13,17 @@
     <meta name="twitter:title" content="The Art of Scott Zirkel">
     <meta name="twitter:description" content="The various works of Scott Zirkel, including, but not limited to, drawings, code, design, and writing.">
     <meta name="twitter:creator" content="@scottzirkel">
+
     <link rel="stylesheet" href="https://use.typekit.net/rfw3ori.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png">
     <link rel="manifest" href="/images/icon/manifest.json">
-    <link rel="mask-icon" href="/images/icon/safari-pinned-tab.svg" color="#75413f">
+    <link rel="mask-icon" href="/images/icon/safari-pinned-tab.svg" color="#b64243">
     <meta name="apple-mobile-web-app-title" content="Scott Zirkel">
     <meta name="application-name" content="Scott Zirkel">
     <meta name="theme-color" content="#ffffff">
+
     @yield('before-styles')
     <link rel="stylesheet" href="/css/main.css">
     @yield('after-styles')

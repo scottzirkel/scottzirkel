@@ -1,6 +1,7 @@
 @extends('layouts.public', [
   'contentClass' => 'self-start py-8 w-2/5',
-  'title' => 'Writing'
+  'title' => 'Writing',
+  'description' => 'My own bibliography of books, comics, and articles I\'ve written.'
 ])
 
 @section('content')

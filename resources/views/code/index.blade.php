@@ -1,5 +1,6 @@
 @extends('layouts.public', [
   'title' => 'Code',
+  'description' => 'I primarily use PHP/Laravel for my backend code, with VueJS for the front end. For CSS I typically use Tailwind CSS and PostCSS.',
   'contentClass' => 'self-start py-8 w-3/5'
 ])
 
