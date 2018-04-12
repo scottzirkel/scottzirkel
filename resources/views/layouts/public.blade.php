@@ -11,7 +11,7 @@
     Scott Zirkel
     </title>
     <meta name="author" content="Scptt Zirkel">
-    <meta name="description" content="@isset($description){{ $description }}@endisset">
+    <meta name="description" content="{{ $description ?? 'The various works of Scott Zirkel, including, but not limited to, drawings, code, design, and writing.' }}">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@scottzirkel">
