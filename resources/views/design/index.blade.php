@@ -22,6 +22,6 @@
     <h2 class="font-tagline font-thin uppercase tracking-wide mt-8 mb-2 leading-loose"><a class="text-grey-darkest no-underline hover:underline" href="https://designproacademy.org/">Code of Professional Conduct</a></h2>
     <p class="mb-2">Whereas design professionals have certain fundamental obligations to society, to clients, to the profession, and to peers and colleagues, and…</p>
     <p class="mb-2">Whereas in order to meet these obligations, design professionals should conform their practice according to specific moral ideals and ethical practices,</p>
-    <p class="mb-2">I hereby pledge my dedication to the highest standards of professionalism, integrity, and competence in design practice and promise to uphold the spirit and letter of the <a class="text-red hover:text-red-dark no-underline hover:underline" href="">Code of Professional Conduct</a> through consistent practice and habitual reflection on my actions.</p>
+    <p class="mb-2">I hereby pledge my dedication to the highest standards of professionalism, integrity, and competence in design practice and promise to uphold the spirit and letter of the <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://designproacademy.org/code-of-professional-conduct.html">Code of Professional Conduct</a> through consistent practice and habitual reflection on my actions.</p>
   </article>
 @endsection
