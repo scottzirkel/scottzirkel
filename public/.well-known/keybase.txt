@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/scottzirkel
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://scottzirkel.com
+  * I am scottzirkel (https://keybase.io/scottzirkel) on keybase.
+  * I have a public key ASCE3nxuKwJltQWL2zyvaiNBhPkUQcLvWVXcuf16pd0iXwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01012ee43fb9896e1c33d37f7d8391d4ca69f470f4f1fec2097a31dea5bfc9d1593d0a",
+            "host": "keybase.io",
+            "kid": "012084de7c6e2b0265b5058bdb3caf6a234184f91441c2ef5955dcb9fd7aa5dd225f0a",
+            "uid": "0c0c9c28f2cb11b6a810d4f4ea925a19",
+            "username": "scottzirkel"
+        },
+        "service": {
+            "hostname": "scottzirkel.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1469146549,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1469146529,
+        "hash": "06e42491bad3ea8b0b62e702bb5fc55a39d200e73644207baccaf9606801a26388672e5630bcced99fb6bcfd2ab8874a38599dc8796dc311472f7b815e5dc525",
+        "seqno": 536979
+    },
+    "prev": "00bf860f2f3912468f14828853b9ac480253e88e5eaba9ffbb10e54722f17a4e",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEghN58bisCZbUFi9s8r2ojQYT5FEHC71lV3Ln9eqXdIl8Kp3BheWxvYWTFAvp7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMmVlNDNmYjk4OTZlMWMzM2QzN2Y3ZDgzOTFkNGNhNjlmNDcwZjRmMWZlYzIwOTdhMzFkZWE1YmZjOWQxNTkzZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODRkZTdjNmUyYjAyNjViNTA1OGJkYjNjYWY2YTIzNDE4NGY5MTQ0MWMyZWY1OTU1ZGNiOWZkN2FhNWRkMjI1ZjBhIiwidWlkIjoiMGMwYzljMjhmMmNiMTFiNmE4MTBkNGY0ZWE5MjVhMTkiLCJ1c2VybmFtZSI6InNjb3R0emlya2VsIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJzY290dHppcmtlbC5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNiJ9LCJjdGltZSI6MTQ2OTE0NjU0OSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDY5MTQ2NTI5LCJoYXNoIjoiMDZlNDI0OTFiYWQzZWE4YjBiNjJlNzAyYmI1ZmM1NWEzOWQyMDBlNzM2NDQyMDdiYWNjYWY5NjA2ODAxYTI2Mzg4NjcyZTU2MzBiY2NlZDk5ZmI2YmNmZDJhYjg4NzRhMzg1OTlkYzg3OTZkYzMxMTQ3MmY3YjgxNWU1ZGM1MjUiLCJzZXFubyI6NTM2OTc5fSwicHJldiI6IjAwYmY4NjBmMmYzOTEyNDY4ZjE0ODI4ODUzYjlhYzQ4MDI1M2U4OGU1ZWFiYTlmZmJiMTBlNTQ3MjJmMTdhNGUiLCJzZXFubyI6OSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEB8YPr3M0wzhVQ5MJarGI81FwU6MbjJg9ivQs623fenK2vmbizf2M2vkNqDZBFhgIqeZzoI/ubHJ5sfuaVVFXkJqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgcALrAv4hUtsOMVbH56FqKaA5lzTbjVTLA3QPB7HuWzyjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/scottzirkel
+
+==================================================================
