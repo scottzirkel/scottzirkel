@@ -1,4 +1,4 @@
-@extends('layouts.public', [
+h@extends('layouts.public', [
   'contentClass' => 'self-start py-8 w-1/2',
   'title' => 'Design',
   'description' => 'Most of my design work can be found in the portfolio of Alara Creative on Dribbble, or on Behance.'
@@ -9,13 +9,13 @@
     <h1 class="uppercase tracking-wide font-title font-black text-center mb-4">Design</h1>
     <p>Most of my design work can be found in the portfolio of <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://alaracreative.com">Alara Creative</a>, on <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://dribbble.com/scottzirkel">Dribbble</a>, or on <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://behance.com/scottzirkel">Behance</a>.</p>
     <div class="flex mt-8">
-      <a class="block w-1/3" href="https://dribbble.com/shots/4509187-Downtown-Kerrville-Rebrand">
+      <a class="block w-1/3 hover:shadow" href="https://dribbble.com/shots/4509187-Downtown-Kerrville-Rebrand">
         <img src="https://cdn.dribbble.com/users/244519/screenshots/4509187/dribbble_1x.png" alt="Historic Downtown Kerrville logo">
       </a>
-      <a class="block w-1/3" href="https://dribbble.com/shots/4508653-Dice-Not-Mice-Updated">
+      <a class="block w-1/3 hover:shadow" href="https://dribbble.com/shots/4508653-Dice-Not-Mice-Updated">
         <img src="https://cdn.dribbble.com/users/244519/screenshots/4508653/dice-not-mice-dribbble.png" alt="Dice not Mice design">
       </a>
-      <a class="block w-1/3" href="https://dribbble.com/shots/3670563-Part-Time-Overland-Logos">
+      <a class="block w-1/3 hover:shadow" href="https://dribbble.com/shots/3670563-Part-Time-Overland-Logos">
         <img src="https://cdn.dribbble.com/users/244519/screenshots/3670563/dribbble.png" alt="Part-Time Overland">
       </a>
     </div>
