@@ -12,13 +12,13 @@
   <h2 class="font-tagline font-thin uppercase tracking-wide mt-8 mb-2">Books</h2>
   <ul class="list-reset">
     <li>
-      <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://gumroad.com/scottzirkel">He-Guy and the Guys of the Universe</a>
+      <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://gumroad.com/scottzirkel">He-Guy and the Guys of the Universe</a> - Self Published
     </li>
     <li>
-      <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://www.amazon.com/Wonderdog-Inc-Scott-Zirkel/dp/1897548877/">Wonderdog, Inc</a>
+      <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://www.amazon.com/Wonderdog-Inc-Scott-Zirkel/dp/1897548877/">Wonderdog, Inc</a> published by <a class="text-red hover:text-red-darker no-underline hover:underline" href="http://arcanacomics.com">Arcana Comics</a>
     </li>
     <li>
-      <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://www.amazon.com/Bit-Haywire-Scott-Zirkel/dp/0977788350/">A Bit Haywire</a>
+      <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://www.amazon.com/Bit-Haywire-Scott-Zirkel/dp/0977788350/">A Bit Haywire</a> published by <a class="text-red hover:text-red-darker no-underline hover:underline" href="http://vipercomics.com">Viper Comics</a>
     </li>
   </ul>
   <h2 class="font-tagline font-thin uppercase tracking-wide mt-8 mb-2">Other books I’ve written or contributed to</h2>
