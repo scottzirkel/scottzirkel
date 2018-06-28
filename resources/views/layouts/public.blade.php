@@ -84,6 +84,19 @@
       <p>Copyright © 2003 – {{ date('Y') }} Scott Zirkel. All Rights Reserved.</p>
     </footer>
     @yield('scripts')
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Scott Zirkel",
+        "url": "https://scottzirkel.com",
+        "sameAs": [
+          "https://www.facebook.com/writerandartistscottzirkel",
+          "https://twitter.com/scottzirkel",
+          "https://www.instagram.com/scottzirkel/"
+        ]
+      }
+    </script>
   </body>
 </html>
 
