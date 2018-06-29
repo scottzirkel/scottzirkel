@@ -36,7 +36,7 @@
     @yield('before-styles')
     <link rel="stylesheet" href="/css/main.css">
     @yield('after-styles')
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   </head>
   <body class="font-sans border-t-8 border-b-8 border-red flex items-stretch flex-col min-h-screen bg-grey-light">
     <header class="bg-grey md:flex space-between px-6 leading-loose text-center md:text-left">
@@ -84,6 +84,7 @@
       <p>Copyright © 2003 – {{ date('Y') }} Scott Zirkel. All Rights Reserved.</p>
     </footer>
     @yield('scripts')
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
