@@ -10,7 +10,7 @@ mix.postCss('resources/assets/css/main.css', 'public/css', [
   tailwindcss('./tailwind.js')
 ])
 
-mix.copy('resources/assets/images', 'public/images', false)
+// mix.copy('resources/assets/images', 'public/images', false)
 
 if (mix.inProduction()) {
   mix.purgeCss()
