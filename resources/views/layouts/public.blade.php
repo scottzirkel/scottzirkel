@@ -79,7 +79,7 @@
       </div>
     </main>
     <footer class="text-center text-sm pb-4 font-sans leading-loose container">
-      <p>To contact me, please send me a <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://twitter.com/home?status=@scottzirkel%20Hey!">Tweet</a> or contact me through any of the social networks listed at the top of the page.</p>
+      <p>To contact me, please send me a <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://twitter.com/home?status=@scottzirkel%20Hey!">Tweet</a>, through <a href="https://t.me/scottzirkel" taget="_blank">Telegram</a>, or contact me through any of the social networks listed at the top of the page.</p>
       <p>Copyright © 2003 – {{ date('Y') }} Scott Zirkel. All Rights Reserved.</p>
     </footer>
     @yield('scripts')
