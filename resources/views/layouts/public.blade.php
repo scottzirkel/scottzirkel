@@ -37,9 +37,9 @@
     @yield('after-styles')
 
   </head>
-  <body class="font-sans border-t-8 border-b-8 border-red flex items-stretch flex-col min-h-screen bg-grey-light">
-    <header class="bg-grey md:flex space-between px-6 leading-loose text-center md:text-left">
-      <div class="flex-1 py-6 md:py-2 mx-auto md:mx-0">
+  <body class="font-sans border-t-8 border-b-8 border-red flex items-stretch flex-col min-h-screen bg-grey-lightst antialiased">
+    <header class="bg-grey-lighter md:flex space-between px-6 leading-loose text-center md:text-left shadow">
+      <div class="flex-1 py-8 md:py-2 mx-auto md:mx-0">
         <a class="block sm:inline text-2xl text-grey-darkest hover:text-red no-underline font-title uppercase tracking-wide pr-4" href="/">Scott Zirkel</a>
         <a class="text-grey-darkest hover:text-red no-underline font-tagline uppercase tracking-wide px-2 sm:px-4" href="/drawings">Drawings</a>
         <a class="text-grey-darkest hover:text-red no-underline font-tagline uppercase tracking-wide px-2 sm:px-4" href="/writing">Writing</a>
@@ -47,28 +47,28 @@
         <a class="text-grey-darkest hover:text-red no-underline font-tagline uppercase tracking-wide px-2 sm:px-4" href="/code">Code</a>
       </div>
       <div class="flex-1 pb-6 md:py-2 md:flex justify-end items-center">
-        <a class="text-grey-darkest hover:text-red no-underline px-4 sm:pr-4" href="https://www.facebook.com/writerandartistscottzirkel">
+        <a class="text-grey-darker hover:text-red no-underline px-4 sm:pr-4" href="https://www.facebook.com/writerandartistscottzirkel">
           @include('svg.facebook-f', ['class' => 'fill-current w-6 h-6 align-middle'])
         </a>
-        <a class="text-grey-darkest hover:text-red no-underline px-4" href="https://twitter.com/scottzirkel/">
+        <a class="text-grey-darker hover:text-red no-underline px-4" href="https://twitter.com/scottzirkel/">
           @include('svg.twitter', ['class' => 'fill-current w-6 h-6 align-middle'])
         </a>
-        <a class="text-grey-darkest hover:text-red no-underline px-4" href="https://www.instagram.com/scottzirkel/">
+        <a class="text-grey-darker hover:text-red no-underline px-4" href="https://www.instagram.com/scottzirkel/">
           @include('svg.instagram', ['class' => 'fill-current w-6 h-6 align-middle'])
         </a>
-        <a class="text-grey-darkest hover:text-red no-underline px-4" href="https://behance.net/scottzirkel">
+        <a class="text-grey-darker hover:text-red no-underline px-4" href="https://behance.net/scottzirkel">
           @include('svg.behance', ['class' => 'fill-current w-6 h-6 align-middle'])
         </a>
-        <a class="text-grey-darkest hover:text-red no-underline px-4" href="https://dribbble.com/scottzirkel">
+        <a class="text-grey-darker hover:text-red no-underline px-4" href="https://dribbble.com/scottzirkel">
           @include('svg.dribbble', ['class' => 'fill-current w-6 h-6 align-middle'])
         </a>
-        <a class="text-grey-darkest hover:text-red no-underline px-4" href="https://scottzirkel.deviantart.com/">
+        <a class="text-grey-darker hover:text-red no-underline px-4" href="https://scottzirkel.deviantart.com/">
           @include('svg.deviantart', ['class' => 'fill-current w-6 h-6 align-middle'])
         </a>
-        <a class="text-grey-darkest hover:text-red no-underline px-4" href="https://github.com/scottzirkel/">
+        <a class="text-grey-darker hover:text-red no-underline px-4" href="https://github.com/scottzirkel/">
           @include('svg.github-alt', ['class' => 'fill-current w-6 h-6 align-middle'])
         </a>
-        <a class="text-grey-darkest hover:text-red no-underline px-4 sm:pl-4" href="https://medium.com/@scottzirkel/">
+        <a class="text-grey-darker hover:text-red no-underline px-4 sm:pl-4" href="https://medium.com/@scottzirkel/">
           @include('svg.medium-m', ['class' => 'fill-current w-6 h-6 align-middle'])
         </a>
       </div>
