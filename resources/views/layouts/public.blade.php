@@ -42,7 +42,7 @@
   <body class="font-sans border-t-8 border-b-8 border-red flex items-stretch flex-col min-h-screen bg-grey-lightst antialiased">
     <header class="bg-grey-lighter md:flex space-between px-6 leading-loose text-center md:text-left shadow">
       <div class="flex-1 py-8 md:py-2 mx-auto md:mx-0">
-        <a class="block sm:inline text-2xl text-grey-darkest hover:text-red no-underline font-title uppercase tracking-wide pr-4" href="/">Scott Zirkel</a>
+        <a class="block sm:inline text-2xl text-grey-darkest hover:text-red no-underline font-title font-bold uppercase tracking-wide pr-4" href="/">Scott Zirkel</a>
         <a class="text-grey-darkest hover:text-red no-underline font-tagline uppercase tracking-wide px-2 sm:px-4" href="/drawings">Drawings</a>
         <a class="text-grey-darkest hover:text-red no-underline font-tagline uppercase tracking-wide px-2 sm:px-4" href="/writing">Writing</a>
         <a class="text-grey-darkest hover:text-red no-underline font-tagline uppercase tracking-wide px-2 sm:px-4" href="/design">Design</a>
