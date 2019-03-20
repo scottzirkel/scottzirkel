@@ -32,6 +32,8 @@
     <meta name="application-name" content="Scott Zirkel">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://use.typekit.net/rfw3ori.css">
+
     @yield('before-styles')
     <link rel="stylesheet" href="/css/main.css">
     @yield('after-styles')
@@ -83,7 +85,7 @@
       <p>Copyright © 2003 – {{ date('Y') }} Scott Zirkel. All Rights Reserved.</p>
     </footer>
     @yield('scripts')
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    {{-- <script>try{Typekit.load({ async: true });}catch(e){}</script> --}}
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
