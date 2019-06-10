@@ -5,7 +5,7 @@ require('laravel-mix-purgecss')
 
 mix.postCss('resources/assets/css/base.css', 'public/css/main.css', [
   precss(),
-  tailwindcss('./tailwind.js')
+  tailwindcss('tailwind.js')
 ])
 
 // mix.copy('resources/assets/images', 'public/images', false)
