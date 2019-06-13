@@ -149,6 +149,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'ff-dax-pro',
       'futura-pt',
       '"Futura PT"',
       'system-ui',
@@ -185,8 +186,7 @@ module.exports = {
       'monospace',
     ],
     'title': [
-      'ff-dax-pro',
-      'Dax Pro',
+      'ff-dax-pro-wide',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -201,6 +201,8 @@ module.exports = {
       'sans-serif',
     ],
     'tagline': [
+      'ff-dax-compact-pro',
+      'liebeerika',
       'futura-pt-condensed',
       'system-ui',
       'BlinkMacSystemFont',

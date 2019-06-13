@@ -19,7 +19,7 @@
   </div>
   </div>
   <div class="w-1/3 mx-auto">
-  <h2 class="font-tagline font-thin uppercase tracking-wide mt-8 mb-2">Sketchbook Collections</h2>
+  <h2 class="font-tagline font-bold uppercase mt-8 mb-2">Sketchbook Collections</h2>
   <ul class="list-reset">
     <li>
       <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://gumroad.com/l/oPdV">Fairer</a>
@@ -28,7 +28,7 @@
       <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://gumroad.com/l/eqlX">2009 Sketchbook</a>
     </li>
   </ul>
-  <h2 class="font-tagline font-thin uppercase tracking-wide mt-8 mb-2">Projects I’ve worked on or contributed to</h2>
+  <h2 class="font-tagline font-bold uppercase mt-8 mb-2">Projects I’ve worked on or contributed to</h2>
   <ul class="list-reset">
     <li>Firefly: The Verse - Sketch Cards - Upper Deck</li>
     <li>Marvel Ant-Man - Sketch Cards - Upper Deck</li>

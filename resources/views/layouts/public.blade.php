@@ -39,14 +39,14 @@
     @yield('after-styles')
 
   </head>
-  <body class="font-sans border-t-8 border-b-8 border-red flex items-stretch flex-col min-h-screen bg-grey-lightst antialiased">
+  <body class="font-sans border-t-8 border-b-8 border-red flex items-stretch flex-col min-h-screen bg-grey-lightest text-grey-darkest antialiased">
     <header class="bg-grey-lighter md:flex items-center space-between px-6 leading-loose text-center md:text-left shadow">
       <div class="flex-1 py-8 md:py-2 mx-auto md:mx-0 flex items-center">
         <a class="block md:inline-block pr-4 pb-0 leading-none font-title font-bold text-red hover:text-red-dark no-underline uppercase text-2xl" href="/">Scott Zirkel</a>
-        <a class="text-grey-darkest hover:text-red no-underline font-title font-medium uppercase tracking-wide px-2 sm:px-4" href="/drawings">Drawings</a>
-        <a class="text-grey-darkest hover:text-red no-underline font-title font-medium uppercase tracking-wide px-2 sm:px-4" href="/writing">Writing</a>
-        <a class="text-grey-darkest hover:text-red no-underline font-title font-medium uppercase tracking-wide px-2 sm:px-4" href="/design">Design</a>
-        <a class="text-grey-darkest hover:text-red no-underline font-title font-medium uppercase tracking-wide px-2 sm:px-4" href="/code">Code</a>
+        <a class="text-red-darkest hover:text-red no-underline font-tagline font-bold uppercase px-2 sm:px-4" href="/drawings">Drawings</a>
+        <a class="text-red-darkest hover:text-red no-underline font-tagline font-bold uppercase px-2 sm:px-4" href="/writing">Writing</a>
+        <a class="text-red-darkest hover:text-red no-underline font-tagline font-bold uppercase px-2 sm:px-4" href="/design">Design</a>
+        <a class="text-red-darkest hover:text-red no-underline font-tagline font-bold uppercase px-2 sm:px-4" href="/code">Code</a>
       </div>
       <div class="flex-1 pb-6 md:py-2 md:flex justify-end items-center">
         <a class="text-grey-darker hover:text-red no-underline px-4 sm:pr-4" href="https://www.facebook.com/writerandartistscottzirkel">
