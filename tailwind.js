@@ -185,7 +185,8 @@ module.exports = {
       'monospace',
     ],
     'title': [
-      'nimbus-sans-condensed',
+      'ff-dax-pro',
+      'Dax Pro',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',

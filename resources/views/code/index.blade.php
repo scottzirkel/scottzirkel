@@ -6,7 +6,7 @@
 
 @section('content')
   <article class="">
-    <h1 class="uppercase tracking-wide font-title font-black text-center mb-4">Code</h1>
+    <h1 class="uppercase font-title font-black text-center">Code</h1>
     <p class="my-4">I primarily use PHP/Laravel for my backend code, with VueJS for the front end. For CSS I typically use Tailwind CSS and PostCSS.</p>
     <p class="my-4">99% of my code is private client work, but I try to save some of my non-client work on <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://github.com/scottzirkel">GitHub</a>. You can also see me trying new things at <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://codepen.io/scottzirkel">CodePen</a>.</p>
     <div class="my-4">

@@ -6,7 +6,7 @@
 
 @section('content')
 <article class="leading-normal">
-  <h1 class="uppercase tracking-wide font-title font-black text-center">Writing</h1>
+  <h1 class="uppercase font-title font-black text-center">Writing</h1>
   <h2 class="font-tagline font-thin uppercase tracking-wide mt-8 mb-2">Articles</h2>
   <p>I often throw a few words up on <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://medium.com/@scottzirkel/">Medium</a> when the occasion presents itself.</p>
   <h2 class="font-tagline font-thin uppercase tracking-wide mt-8 mb-2">Books</h2>

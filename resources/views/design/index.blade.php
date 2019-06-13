@@ -6,7 +6,7 @@
 
 @section('content')
   <article class="leading-normal">
-    <h1 class="uppercase tracking-wide font-title font-black text-center mb-4">Design</h1>
+    <h1 class="uppercase font-title font-black text-center">Design</h1>
     <p>Most of my design work can be found in the portfolio of <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://alaracreative.com">Alara Creative</a>, on <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://dribbble.com/scottzirkel">Dribbble</a>, or on <a class="text-red hover:text-red-dark no-underline hover:underline" href="https://behance.com/scottzirkel">Behance</a>.</p>
     <div class="flex mt-8">
       <a class="block w-1/3 hover:shadow" href="https://dribbble.com/shots/4509187-Downtown-Kerrville-Rebrand">
