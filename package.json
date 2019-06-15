@@ -12,6 +12,7 @@
   "devDependencies": {
     "cross-env": "^5.2",
     "laravel-mix": "^4.0.16",
+    "laravel-mix-criticalcss": "^1.0.0",
     "laravel-mix-purgecss": "^3.0",
     "laravel-mix-tailwind": "~0.1.0",
     "postcss-import": "^12.0",
