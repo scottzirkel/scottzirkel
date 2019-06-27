@@ -15,7 +15,7 @@ mix.postCss('resources/assets/css/base.css', 'public/css/main.css', [
   urls: [
       {
           url: '/',
-          template: 'home'
+          template: 'welcome'
       }
   ]
 })
