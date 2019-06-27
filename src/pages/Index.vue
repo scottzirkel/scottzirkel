@@ -14,7 +14,8 @@ export default {
     Logo
   },
   metaInfo: {
-    title: 'Scott Zirkel'
+    title: 'Scott Zirkel',
+    description: 'The various works of Scott Zirkel, including, but not limited to, drawings, code, design, and writing.'
   },
   data () {
     return {

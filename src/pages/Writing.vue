@@ -46,7 +46,24 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Writing'
+    title: 'Writing',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'Words I\'ve written, arranged in alphabetical order.'
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Writing - Scott Zirkel'
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Words I\'ve written, arranged in alphabetical order.'
+      }
+    ]
   }
 }
 </script>

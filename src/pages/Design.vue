@@ -25,7 +25,24 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Design'
+    title: 'Design',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'Brands, typography, illustrations, package design, AND MORE!'
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Design - Scott Zirkel'
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Brands, typography, illustrations, package design, AND MORE!'
+      }
+    ]
   }
 }
 </script>

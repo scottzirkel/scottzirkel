@@ -50,7 +50,24 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Drawings'
+    title: 'Drawings',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'Drawings, scribbles, and doodles. Now with 22% less sugar!'
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Drawings - Scott Zirkel'
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Drawings, scribbles, and doodles. Now with 22% less sugar!'
+      }
+    ]
   }
 }
 </script>

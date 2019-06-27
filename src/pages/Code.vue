@@ -25,6 +25,23 @@ export default {
         src: 'https://static.codepen.io/assets/embed/ei.js',
         async: true
       }
+    ],
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'LINE 10 PRINT "Site description" LINE 20 GOTO 10'
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Code - Scott Zirkel'
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'LINE 10 PRINT "Site description" LINE 20 GOTO 10'
+      }
     ]
   }
 }
