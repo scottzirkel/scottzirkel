@@ -1,13 +1,16 @@
 <template>
   <Layout>
-    <logo class="mx-auto w-2/3 sm:w-1/3"></logo>
+    <avatar class="my-12 mx-auto w-1/2 sm:hidden"></avatar>
+    <logo class="mx-auto w-1/3 hidden sm:block"></logo>
   </Layout>
 </template>
 
 <script>
+import Avatar from '../assets/svgs/Avatar.svg'
 import Logo from '../assets/svgs/Logo.svg'
 export default {
   components: {
+    Avatar,
     Logo
   },
   metaInfo: {
