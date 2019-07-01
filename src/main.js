@@ -16,6 +16,11 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   head.meta.push({
+    name: 'description',
+    content: 'The various works of Scott Zirkel, including, but not limited to, drawings, code, design, and writing.'
+  })
+
+  head.meta.push({
     name: 'twitter:card',
     content: 'summary'
   })
