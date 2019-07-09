@@ -88,7 +88,7 @@ export default function (Vue, { router, head, isClient }) {
   head.link.push({
     rel: 'mask-icon',
     href: '/icons/safari-pinned-tab.svg',
-    color: '#fbfbfa'
+    color: '#62615a'
   })
 
   head.link.push({
