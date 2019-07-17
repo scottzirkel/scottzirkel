@@ -1,0 +1,27 @@
+<template>
+  <Layout>
+    <article class="container self-start py-8">
+      <h1 class="uppercase font-title font-black text-center text-4xl leading-tight">Stuff I Use</h1>
+      <p class="text-center text-xl leading-tight">Some of the things I use on a daily basis.</p>
+      <h2 class="font-tagline font-bold text-2xl uppercase">Site</h2>
+      <p class="mb-4">This site was created with <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://gridsome.org/">Gridsome</a>, hosted on <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://netlify.com">Netlify</a> and uses <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://tailwindcss.com">Tailwind CSS</a>.</p>
+      <h2 class="font-tagline font-bold text-2xl uppercase">Workspace</h2>
+      <p class="mb-4">I currently have a custom-built desk that uses an IKEA butcher block top and conduit for legs. It's a bit taller than standard, which fits me better. Atop I have a <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B07Q1NBCVB&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">27-inch 5K Apple iMac</a>, I think it's a mid-2015? I have two Asus monitors (not <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B07GWCSHFM&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">these</a>, but similar). One is to the left, and mostly runs iTunes, Slack, and email. The other is on the right side, and is rotated 90° to make the code a bit more readable.</p>
+      <p>I also have a 15" mid-2012 Macbook Pro that I use at home or on the go. The battery is pretty much shot and the video card is barely hanging in there, but it's still doing me good! I code side projects and write comics with it.</p>
+      <p class="mb-4">I have a set of <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B01BVD3IT4&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">Marshall Bluetooth headphones</a> that I really like, but still not used to the wireless bit. I sometimes drop things and lean towards them as if I'm wired the computer. Other times they are turned on, but I forget to hit play. They are just sitting there, draining batteries.</p>
+      <p class="mb-4">For sitting I use a <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B01N1W6ZZ7&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">comfy chair from Serta</a>.</p>
+      <p class="mb-4">My keyboard and mouse aren't fancy: a full-sized Apple keyboard and a pretty basic <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B003B4BBFK&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">Logitec Mouse</a>. Both are wired because running out of batteries is the worst. I use a leather mouse pad from <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="http://oldchurchworks.com/product/mouse-pad">Old Church Works</a> that just gets better looking with age.</p>
+      <p class="mb-4">I also keep an actively running <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B0034KDEMO&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">Field Notes</a> on my desk for jotting down, well everything. I have an older <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B00EN27ULS&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">Intous 4</a>, but would love to get a proper tablet or drawable monitor at some point.</p>
+      <p class="mb-4">And of course my desk is littered with toys from <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B071XD32SV&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">He-Man</a>, Ninja Turtles, Star Wars, Doctor Who and whatever random things I find.</p>
+      <h2 class="font-tagline font-bold text-2xl uppercase">Software</h2>
+      <h3 class="text-gray-800 font-tagline font-semibold text-lg uppercase">Code</h3>
+      <p class="mb-4">My editor is <a href="https://code.visualstudio.com/">VS Code</a> with a different theme each week. I use <a href="https://github.com/tonsky/FiraCode">Fira Code</a> font with fancy ligatures enabled. My terminal is <a href="https://hyper.is">Hyper.js</a> and I change the theme on that pretty often too.</p>
+      <h3 class="text-gray-800 font-tagline font-semibold text-lg uppercase">Design</h3>
+      <p class="mb-4">Depending on what I'm designing, I use Photoshop, Illustrator, Sketch, &amp; XD. I have a full Adobe suite subscription, though I'd like to move away from that at some point.</p>
+      <h3 class="text-gray-800 font-tagline font-semibold text-lg uppercase">Writing</h3>
+      <p class="mb-4">For writing comics &amp; books, I prefer <a href="https://quoteunquoteapps.com/">Highland</a>. It's a very lightweight but full-featured writing app that rivals behemoth Final Draft.</p>
+      <h2 class="font-tagline font-bold text-2xl uppercase">Other</h2>
+      <p class="mb-4">If you're looking for my overlanding or Jeep setups, head over to my <a href="https://kit.com/scottzirkel">Kit profile</a> and check those out.</p>
+    </article>
+  </Layout>
+</template>

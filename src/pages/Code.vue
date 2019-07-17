@@ -1,9 +1,9 @@
 <template>
     <Layout>
         <article class="container self-start py-8">
-          <h1 class="uppercase font-title font-black text-center text-4xl">Code</h1>
-          <p class="my-4">I primarily use PHP/Laravel for my backend code, with VueJS for the front end. For CSS I typically use Tailwind CSS and PostCSS.</p>
-          <p class="my-4">99% of my code is private client work, but I try to save some of my non-client work on <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://github.com/scottzirkel">GitHub</a>. You can also see me trying new things at <a class="text-red hover:text-red-darker no-underline hover:underline" href="https://codepen.io/scottzirkel">CodePen</a>.</p>
+          <h1 class="uppercase font-title font-black text-center text-4xl leading-tight">Code</h1>
+          <p class="my-4">I primarily use PHP/Laravel for my backend code, with VueJS for the front end. For CSS I typically use <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://tailwindcss.com">Tailwind CSS</a>.</p>
+          <p class="my-4">99% of my code is private client work, but I try to save some of my non-client work on <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://github.com/scottzirkel">GitHub</a>. You can also see me trying new things at <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://codepen.io/scottzirkel">CodePen</a>.</p>
           <div class="my-4">
             <div class="cp_embed_wrapper">
               <iframe name="cp_embed_1" src="https://codepen.io/scottzirkel/embed/yNxNME?height=265&amp;theme-id=dark&amp;default-tab=result&amp;user=scottzirkel&amp;slug-hash=yNxNME&amp;pen-title=HR%20with%20centered%20text&amp;name=cp_embed_1" scrolling="no" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="HR with centered text" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_yNxNME" height="265" frameborder="0"></iframe>

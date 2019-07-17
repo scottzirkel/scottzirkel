@@ -35,11 +35,11 @@
         </a>
       </div>
     </header>
-    <main aria-label="Main" class="flex-1 flex justify-center items-center">
+    <main aria-label="Main" class="flex-1 flex flex-col justify-center items-center">
       <slot/>
     </main>
     <footer aria-label="Footer" class="w-2/3 text-center text-xs pb-4 font-sans mx-auto">
-      <p>To contact me, please send me a <a aria-label="Tweet me" class="text-red-500 hover:text-red-800 no-underline hover:underline" href="https://twitter.com/home?status=@scottzirkel%20Hey!">Tweet</a>, a message through <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://t.me/scottzirkel" taget="_blank">Telegram</a>, or contact me through any of the social networks listed at the top of the page.</p>
+      <p>To contact me, please send me a <a aria-label="Tweet me" class="text-red-500 hover:text-red-800 no-underline hover:underline" href="https://twitter.com/home?status=@scottzirkel%20Hey!">Tweet</a>, a message through <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://t.me/scottzirkel" taget="_blank">Telegram</a>, or contact me through any of the social networks listed at the top of the page. <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="/uses">Stuff I use.</a></p>
       <p class="pt-2">Copyright © 2003 – {{ (new Date()).getFullYear() }} Scott Zirkel. All Rights Reserved.</p>
     </footer>
   </div>

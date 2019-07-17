@@ -1,12 +1,12 @@
 <template>
   <Layout>
     <article class="container self-start py-8">
-      <h1 class="uppercase font-title font-black text-center text-4xl">Writing</h1>
-      <h2 class="font-tagline font-bold uppercase mt-8 mb-2 text-2xl">Articles</h2>
+      <h1 class="uppercase font-title font-black text-center text-4xl leading-tight">Writing</h1>
+      <h2 class="font-tagline font-bold uppercase mt-4 mb-2 text-2xl">Articles</h2>
       <p>I often throw a few words up on <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://medium.com/@scottzirkel/">Medium</a> when the occasion presents itself. Here's a few I like.</p>
       <ul class="list-reset py-2">
         <li class="pb-2">
-          <a class="block text-red-500 hover:text-red-700 font-semibold no-underline hover:underline" href="https://medium.com/alara-creative/a-year-with-tailwind-92f420b2f8b9">A Year with Tailwind</a> My continuing adventures with <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://tailwindcss.com" target="_blank">TailwindCSS</a>, a utility-first CSS framework. Spoiler: I love it.
+          <a class="block text-red-500 hover:text-red-700 font-semibold no-underline hover:underline" href="https://medium.com/alara-creative/a-year-with-tailwind-92f420b2f8b9">A Year with Tailwind</a> My continuing adventures with <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, a utility-first CSS framework. Spoiler: I love it.
         </li>
         <li class="pb-2">
           <a class="block text-red-500 hover:text-red-700 font-semibold no-underline hover:underline" href="https://medium.com/@scottzirkel/authors-note-the-following-is-a-sample-chapter-from-the-book-i-am-currently-working-on-88e7ababb55c">Random Chapter</a> or, <em>The One Where She Goes to the Bar</em>
