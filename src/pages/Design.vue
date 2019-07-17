@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="container self-start py-8">
+    <article>
       <h1 class="uppercase font-title font-black text-center text-4xl leading-tight">Design</h1>
       <p class="text-lg leading-tight text-center">Most of my design work can be found in the portfolio of <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://alaracreative.com">Alara Creative</a>, on <a  class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://dribbble.com/scottzirkel">Dribbble</a>, or on <a  class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://behance.com/scottzirkel">Behance</a>.</p>
       <div class="flex mt-8">

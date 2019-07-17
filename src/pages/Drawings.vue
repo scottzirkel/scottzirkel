@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <article class="container self-start py-8">
-      <h1 class="uppercase font-title font-black text-center text-4xl">Drawings</h1>
+    <article>
+      <h1 class="uppercase font-title font-black text-center text-4xl leading-tight">Drawings</h1>
       <h2 class="text-center font-tagline font-bold uppercase mt-8 mb-2">Latest Drawings</h2>
       <div class="w-2/3 mx-auto lg:flex items-center justify-between">
       <div class="lg:w-1/3 h-56">
@@ -15,7 +15,7 @@
       </div>
       </div>
       <p class="mt-4 text-center">For more drawings, please checkout my <a href="https://instagram.com/scottzirkel">Instagram</a>.</p>
-      <div class="md:w-1/3 mx-auto">
+      <div class="mx-auto">
         <h2 class="font-tagline font-bold uppercase mt-4 mb-2 text-2xl">Sketchbook Collections</h2>
         <ul class="list-reset">
           <li>

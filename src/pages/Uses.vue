@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="container self-start py-8">
+    <article>
       <h1 class="uppercase font-title font-black text-center text-4xl leading-tight">Stuff I Use</h1>
       <p class="text-center text-xl leading-tight">Some of the things I use on a daily basis.</p>
       <h2 class="font-tagline font-bold text-2xl uppercase">Site</h2>
@@ -15,13 +15,13 @@
       <p class="mb-4">And of course my desk is littered with toys from <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://www.amazon.com/dp/B071XD32SV&amazon-ids-by-cc=US=sz1977-20,CA=srz77ca-20">He-Man</a>, Ninja Turtles, Star Wars, Doctor Who and whatever random things I find.</p>
       <h2 class="font-tagline font-bold text-2xl uppercase">Software</h2>
       <h3 class="text-gray-800 font-tagline font-semibold text-lg uppercase">Code</h3>
-      <p class="mb-4">My editor is <a href="https://code.visualstudio.com/">VS Code</a> with a different theme each week. I use <a href="https://github.com/tonsky/FiraCode">Fira Code</a> font with fancy ligatures enabled. My terminal is <a href="https://hyper.is">Hyper.js</a> and I change the theme on that pretty often too.</p>
+      <p class="mb-4">My editor is <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://code.visualstudio.com/">VS Code</a> with a different theme each week. I use <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://github.com/tonsky/FiraCode">Fira Code</a> font with fancy ligatures enabled. My terminal is <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://hyper.is">Hyper.js</a> and I change the theme on that pretty often too.</p>
       <h3 class="text-gray-800 font-tagline font-semibold text-lg uppercase">Design</h3>
       <p class="mb-4">Depending on what I'm designing, I use Photoshop, Illustrator, Sketch, &amp; XD. I have a full Adobe suite subscription, though I'd like to move away from that at some point.</p>
       <h3 class="text-gray-800 font-tagline font-semibold text-lg uppercase">Writing</h3>
-      <p class="mb-4">For writing comics &amp; books, I prefer <a href="https://quoteunquoteapps.com/">Highland</a>. It's a very lightweight but full-featured writing app that rivals behemoth Final Draft.</p>
+      <p class="mb-4">For writing comics &amp; books, I prefer <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://quoteunquoteapps.com/">Highland</a>. It's a very lightweight but full-featured writing app that rivals behemoth Final Draft.</p>
       <h2 class="font-tagline font-bold text-2xl uppercase">Other</h2>
-      <p class="mb-4">If you're looking for my overlanding or Jeep setups, head over to my <a href="https://kit.com/scottzirkel">Kit profile</a> and check those out.</p>
+      <p class="mb-4">If you're looking for my overlanding or Jeep setups, head over to my <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://kit.com/scottzirkel">Kit profile</a> and check those out.</p>
     </article>
   </Layout>
 </template>

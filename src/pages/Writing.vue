@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="container self-start py-8">
+    <article>
       <h1 class="uppercase font-title font-black text-center text-4xl leading-tight">Writing</h1>
       <h2 class="font-tagline font-bold uppercase mt-4 mb-2 text-2xl">Articles</h2>
       <p>I often throw a few words up on <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://medium.com/@scottzirkel/">Medium</a> when the occasion presents itself. Here's a few I like.</p>

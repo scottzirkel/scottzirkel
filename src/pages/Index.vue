@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="w-3/4">
+    <article>
     <header class="mb-12">
       <avatar class="my-12 mx-auto w-1/2 sm:hidden"></avatar>
       <logo class="mx-auto w-1/2 hidden sm:block"></logo>

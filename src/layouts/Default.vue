@@ -35,7 +35,7 @@
         </a>
       </div>
     </header>
-    <main aria-label="Main" class="flex-1 flex flex-col justify-center items-center">
+    <main aria-label="Main" class="flex-1 py-8 lg:py-16 px-6 md:px-16 lg:px-24">
       <slot/>
     </main>
     <footer aria-label="Footer" class="w-2/3 text-center text-xs pb-4 font-sans mx-auto">
