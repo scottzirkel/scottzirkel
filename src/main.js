@@ -46,6 +46,31 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   head.meta.push({
+    name: 'twitter:image',
+    content: '/social/twitter-card.png'
+  })
+
+  head.meta.push({
+    name: 'og:title',
+    content: 'The Art of Scott Zirkel'
+  })
+
+  head.meta.push({
+    name: 'og:description',
+    content: 'The various works of Scott Zirkel, including, but not limited to, drawings, code, design, and writing.'
+  })
+
+  head.meta.push({
+    name: 'og:type',
+    content: 'website'
+  })
+
+  head.meta.push({
+    name: 'og:image',
+    content: '/social/twitter-card.png'
+  })
+
+  head.meta.push({
     name: 'msapplication-TileColor',
     content: '#b64243'
   })
