@@ -67,7 +67,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'og:image',
-    content: '/social/twitter-card.png'
+    content: 'https://scottzirkel.com/social/twitter-card.png'
   })
 
   head.meta.push({
@@ -77,7 +77,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'msapplication-config',
-    content: '/icons/browserconfig.xml'
+    content: 'https://scottzirkel.com/icons/browserconfig.xml'
   })
 
   head.meta.push({
@@ -88,36 +88,36 @@ export default function (Vue, { router, head, isClient }) {
   head.link.push({
     rel: 'apple-touch-icon',
     sizes: '180x180',
-    href: '/icons/apple-touch-icon.png'
+    href: 'https://scottzirkel.com/icons/apple-touch-icon.png'
   })
 
   head.link.push({
     rel: 'icon',
     type: 'image/png',
     sizes: '32x32',
-    href: '/icons/favicon-32x32.png'
+    href: 'https://scottzirkel.com/icons/favicon-32x32.png'
   })
 
   head.link.push({
     rel: 'icon',
     type: 'image/png',
     sizes: '16x16',
-    href: '/icons/favicon-16x16.png'
+    href: 'https://scottzirkel.com/icons/favicon-16x16.png'
   })
 
   head.link.push({
     rel: 'manifest',
-    href: '/icons/site.webmanifest'
+    href: 'https://scottzirkel.com/icons/site.webmanifest'
   })
 
   head.link.push({
     rel: 'mask-icon',
-    href: '/icons/safari-pinned-tab.svg',
+    href: 'https://scottzirkel.com/icons/safari-pinned-tab.svg',
     color: '#62615a'
   })
 
   head.link.push({
     rel: 'shortcut-icon',
-    href: '/icons/favicon.ico'
+    href: 'https://scottzirkel.com/icons/favicon.ico'
   })
 }
