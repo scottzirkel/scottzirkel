@@ -47,7 +47,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'twitter:image',
-    content: '/social/twitter-card.png'
+    content: 'https://scottzirkel.com/social/twitter-card.png'
   })
 
   head.meta.push({
@@ -67,7 +67,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'og:image',
-    content: 'https://scottzirkel.com/social/twitter-card.png'
+    content: 'https://scottzirkel.com/social/avatar.png'
   })
 
   head.meta.push({
