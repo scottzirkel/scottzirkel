@@ -2,7 +2,7 @@
   <Layout>
     <article>
       <h1 class="uppercase font-title font-black text-center text-4xl leading-tight">Design</h1>
-      <p class="text-lg leading-tight text-center">Most of my design work can be found in the portfolio of <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://alaracreative.com">Alara Creative</a>, on <a  class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://dribbble.com/scottzirkel">Dribbble</a>, or on <a  class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://behance.com/scottzirkel">Behance</a>.</p>
+      <p class="text-lg leading-tight text-center">Most of my design work can be found in the portfolio of <a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://alaracreative.com">Alara Creative</a> (where I was former Creative Director), on <a  class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://dribbble.com/scottzirkel">Dribbble</a>, or on <a  class="text-red-500 hover:text-red-700 no-underline hover:underline" href="https://behance.com/scottzirkel">Behance</a>.</p>
       <div class="md:flex mt-8">
         <a class="block md:w-1/3 hover:shadow" href="https://dribbble.com/shots/6626854-The-mostly-True-Adventures-of-the-Walsh-Twins">
           <img src="https://cdn.dribbble.com/users/244519/screenshots/6626854/walsh-twins.png" alt="The (mostly) True Adventures of the Walsh Twins">
