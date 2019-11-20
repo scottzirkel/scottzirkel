@@ -9,9 +9,29 @@
     <p class="mb-4">I've got a few drawings, some writing, and other things scattered throughout the site and across various social media platforms. I do hope you find something you enjoy.</p>
     <p class="mb-4"><a class="text-red-500 hover:text-red-700 no-underline hover:underline" href="/uses">Here's a few</a> of the tools and equipment I use, if you're interested.</p>
     <p>Thanks, Scott</p>
+    <template v-for="strip in $page.strips.edges">
+      <g-link :to="strip.node.slug">{{ strip.node.title }}</g-link>
+      {{ strip.node.date }}
+    </template>
     </article>
   </Layout>
 </template>
+
+<page-query>
+query  {
+  strips: allStrips(limit:1, sortBy: "date", order: DESC) {
+    edges {
+      node {
+        title
+        article
+        slug
+        path
+        date
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import Avatar from '../assets/svgs/Avatar.svg'
