@@ -123,4 +123,5 @@ export default function(Vue, { router, head, isClient }) {
     rel: "shortcut-icon",
     href: "https://scottzirkel.com/icons/favicon.ico"
   });
+
 }

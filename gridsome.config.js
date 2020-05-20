@@ -18,12 +18,12 @@ module.exports = {
         shouldTimeTravel: true
       }
     },
-    // {
-    //   use: '@gridsome/plugin-google-analytics',
-    //   options: {
-    //     id: 'UA-144747-1'
-    //   }
-    // },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-144747-1'
+      }
+    },
     {
       use: "@gridsome/source-filesystem",
       options: {
