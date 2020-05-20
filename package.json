@@ -11,8 +11,8 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "axios": "^0.19.0",
-    "gridsome": "^0.7.13",
-    "gridsome-plugin-tailwindcss": "^2.2.43",
+    "gridsome": "^0.7.14",
+    "gridsome-plugin-tailwindcss": "^2.2.48",
     "vue-svg-loader": "^0.15.0",
     "vue-template-compiler": "^2.6.10"
   }

@@ -1,4 +1,8 @@
 module.exports = {
+  purge: [
+    '.src/**/*.html',
+    '.src/**/*.vue'
+  ],
   theme: {
     fontFamily: {
       'sans': 'ff-dax-pro,Dax Pro,futura-pt,Futura PT,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif',
