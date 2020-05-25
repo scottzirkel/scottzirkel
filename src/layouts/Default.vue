@@ -8,7 +8,7 @@
       <nav role="navigation" class="items-center flex-1 mx-auto text-center md:mx-0 lg:flex">
         <g-link
           aria-label="Home"
-          class="block pb-0 pr-4 text-3xl font-bold leading-none text-red-500 no-underline uppercase lg:inline-block font-title hover:text-red-700 lg:text-2xl"
+          class="block pb-0 text-3xl font-bold leading-none text-red-500 no-underline uppercase md:pr-4 lg:inline-block font-title hover:text-red-700 lg:text-2xl"
           to="/"
         >Scott Zirkel</g-link>
         <g-link
