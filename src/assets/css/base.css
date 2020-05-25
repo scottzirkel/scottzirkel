@@ -1,3 +1,4 @@
+@include font-face( VaultAlarm, '~/assets/fonts/Vault-Alarm/VaultAlarm-Regular', 400, normal, otf);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
