@@ -38,7 +38,7 @@
         </li>
       </ul>
       <h2 class="mt-8 mb-2 text-2xl font-bold uppercase font-tagline">Comic Books</h2>
-      <ul class="flex items-center justify-center text-center list-reset">
+      <ul class="items-center justify-center text-center md:flex list-reset">
         <li class="pb-2 mx-6">
           <a
             class="block font-semibold text-red-500 no-underline hover:text-red-700 hover:underline"

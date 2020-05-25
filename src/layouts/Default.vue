@@ -222,7 +222,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 @font-face font-family: VaultAlarm
   src: url('../assets/fonts/Vault-Alarm/VaultAlarm-Regular.otf')
   font-weight: normal;
