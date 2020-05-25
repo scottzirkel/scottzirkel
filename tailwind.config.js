@@ -2,7 +2,7 @@ module.exports = {
   purge: false,
   theme: {
     fontFamily: {
-      'weird': '"Vault Alarm"',
+      'weird': '"Vault Alarm", ff-dax-pro-wide, "Dax Pro Wide"',
       'sans': 'ff-dax-pro,Dax Pro,futura-pt,Futura PT,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif',
       'tagline': 'ff-dax-compact-pro,Dax Compact Pro,liebeerika,futura-pt-condensed,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif',
       'title': 'ff-dax-pro-wide,Dax Pro Wide,Dax Pro,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif'
