@@ -222,3 +222,9 @@
   </div>
 </template>
 
+<style>
+@font-face font-family: VaultAlarm
+  src: url('../assets/fonts/Vault-Alarm/VaultAlarm-Regular.otf')
+  font-weight: normal;
+</style>
+
