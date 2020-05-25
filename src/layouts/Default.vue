@@ -223,7 +223,7 @@
 </template>
 
 <style lang="scss">
-@font-face font-family: VaultAlarm
+@font-face font-family: 'VaultAlarm'
   src: url('../assets/fonts/Vault-Alarm/VaultAlarm-Regular.otf')
   font-weight: normal;
 </style>
