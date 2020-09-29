@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: scottzirkel.com
-Token: b56426d31a31fb19aa391df658e3a88edd22c6f88824af61696a8cd8efb7e3f9
