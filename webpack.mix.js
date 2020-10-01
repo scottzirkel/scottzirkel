@@ -17,7 +17,9 @@ mix.postCss('resources/css/tailwind.css', 'public/css', [
     require('tailwindcss'),
     require('postcss-nested'),
     require('postcss-preset-env')({stage: 0})
-])
+]).options({
+  processCssUrls: false
+})
 
 if (mix.inProduction()) {
    mix.version();
