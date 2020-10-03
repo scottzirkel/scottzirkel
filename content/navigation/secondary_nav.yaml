@@ -1,0 +1,8 @@
+title: 'Secondary Nav'
+collections:
+  - pages
+tree:
+  -
+    entry: uses
+  -
+    entry: been-there-done-that

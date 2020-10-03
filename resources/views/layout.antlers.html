@@ -1,21 +1,27 @@
 <!doctype html>
-<html lang="{{ site:short_locale }}">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
+        <title>{{ title }} - Scott Zirkel</title>
+        <meta name="description" content="{{ excerpt ?? title }}">
+        <meta name="theme-color" content="00908F">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=PT+Sans+Narrow:wght@700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
-    <body class="bg-gray-100 border-t-8 border-red-500 font-sans leading-normal text-grey-600">
-        {{ partial:header }}
-        <main class="py-8 lg:py-16 px-6 md:px-16 lg:px-24 prose lg:prose-lg xl:prose-xl mx-auto relative">
-            {{ template_content }}
-        </main>
+    <body class="bg-gray-900 border-t-8 border-red-500 font-sans leading-normal text-grey-600">
+        <div class="bg-gray-100">
+            {{ partial:header }}
+            <main class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto relative">
+                <article class="px-4 py-10 max-w-3xl mx-auto sp:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
+                {{ template_content }}
+                </article>
+            </main>
+        </div>
         {{ partial:footer }}
-        <div class="absolute inset-0 w-48 h-48 opacity-25">
-            <svg class="fill-current" viewBox="0 0 211.57 211.57">
+        <div class="absolute inset-0 w-48 h-48 hidden md:block opacity-25">
+            <svg class="fill-current w-48 h-48" viewBox="0 0 211.57 211.57">
                 <defs><style>.cls-1{fill:transparent;}</style></defs>
                 <title>My signature in a circle</title>
                 <circle class="cls-1" cx="105.79" cy="105.79" r="105.79"/>
