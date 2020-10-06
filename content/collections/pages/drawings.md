@@ -2,7 +2,7 @@
 title: Drawings
 author: scott
 updated_by: scott
-updated_at: 1601691096
+updated_at: 1602023865
 blueprint: pages
 id: drawing
 ---
@@ -13,12 +13,13 @@ id: drawing
 ### Projects I've Worked On
 
 - Totally Radical 80's - Sketch Cards - Artists Unite
-- Firefly: The Verse - Sketch Cards - Upper Deck
-- Marvel Ant-Man - Sketch Cards - Upper Deck
-- Marvel Avengers: Age of Ultron - Sketch Cards - Upper Deck
-- Marvel Legendary/3D - Sketch Cards - Upper Deck
-- Hack/Slash – Sketch Cards – 5finity
+- [Firefly: The Verse - Sketch Cards - Upper Deck](/drawings/firefly-the-verse)
+- [Marvel Ant-Man - Sketch Cards - Upper Deck](/drawings/marvel-ant-man)
+- [Marvel Avengers: Age of Ultron - Sketch Cards - Upper Deck](/drawings/marvel-avengers-age-of-ultron)
+- [Marvel Legendary/3D - Sketch Cards - Upper Deck](/drawings/marvel-legendary-3d)
+- [Hack/Slash – Sketch Cards – 5finity](/drawings/hack-slash)
 - P’Ups – Sketch Cards – 5finity
+- [Warlord of Mars - Sketch Cards - Breygent/Dynamite](/drawings/warlord-of-mars)
 - [Empire Strikes Back 3D – Sketch Cards – Topps](/drawings/empire-strikes-back-3d)
 - Dead@17 – Pin Up – Image
 - [Dead@17 – Sketch Cards – 5finity](/drawings/dead-at-17)
