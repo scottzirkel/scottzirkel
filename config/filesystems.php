@@ -72,6 +72,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'drawings' => [
+            'driver' => 'local',
+            'root' => storage_path('drawings'),
+            'url' => '/drawings',
+            'visibility' => 'public',
+        ],
+
         'design' => [
             'driver' => 'local',
             'root' => storage_path('design'),

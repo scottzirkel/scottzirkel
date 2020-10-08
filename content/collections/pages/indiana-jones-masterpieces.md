@@ -3,6 +3,7 @@ title: 'Indiana Jones Masterpieces'
 author: scott
 parent: drawing
 template: gallery
+blueprint: gallery
 updated_by: scott
 updated_at: 1601691127
 drawings:

@@ -3,6 +3,7 @@ title: 'Marvel Avengers: Age of Ultron'
 author: scott
 parent: drawing
 template: gallery
+blueprint: gallery
 updated_by: scott
 updated_at: 1602024849
 drawings:

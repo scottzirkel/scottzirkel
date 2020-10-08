@@ -2,6 +2,7 @@
 title: 'Star Wars Galaxy IV'
 author: scott
 parent: drawing
+blueprint: gallery
 updated_by: scott
 updated_at: 1601691213
 drawings:
@@ -16,4 +17,4 @@ drawings:
 template: gallery
 id: 919a657e-cb85-4de3-a486-e88cdd1533e1
 ---
-### Topps - 2008
+Topps - 2008

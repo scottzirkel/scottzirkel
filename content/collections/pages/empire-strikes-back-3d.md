@@ -2,6 +2,7 @@
 title: 'Empire Strikes Back 3D'
 author: scott
 parent: drawing
+blueprint: gallery
 template: gallery
 updated_by: scott
 updated_at: 1601684437

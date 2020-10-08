@@ -3,6 +3,7 @@ title: 'The Essence of Fairyland'
 author: scott
 parent: drawing
 template: gallery
+blueprint: gallery
 updated_by: scott
 updated_at: 1602021650
 drawings:

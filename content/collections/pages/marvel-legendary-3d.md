@@ -3,6 +3,7 @@ title: 'Marvel Legendary/3D'
 author: scott
 parent: drawing
 template: gallery
+blueprint: gallery
 updated_by: scott
 updated_at: 1602024434
 drawings:

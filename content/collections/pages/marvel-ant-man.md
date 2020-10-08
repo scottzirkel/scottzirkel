@@ -3,6 +3,7 @@ title: 'Marvel Ant-Man'
 author: scott
 parent: drawing
 template: gallery
+blueprint: gallery
 updated_by: scott
 updated_at: 1602024970
 drawings:

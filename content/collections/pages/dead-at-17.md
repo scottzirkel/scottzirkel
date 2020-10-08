@@ -2,9 +2,10 @@
 title: Dead@17
 author: scott
 parent: drawing
+blueprint: gallery
 template: gallery
 updated_by: scott
-updated_at: 1602021668
+updated_at: 1602200277
 drawings:
   - cards/dead-at-17/dead-at-17-01-scott-zirkel.jpg
   - cards/dead-at-17/dead-at-17-02-scott-zirkel.jpg

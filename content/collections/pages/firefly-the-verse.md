@@ -2,6 +2,7 @@
 title: 'Firefly: The Verse'
 author: scott
 parent: drawing
+blueprint: gallery
 template: gallery
 updated_by: scott
 updated_at: 1602025649
