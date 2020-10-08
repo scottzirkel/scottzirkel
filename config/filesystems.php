@@ -67,14 +67,14 @@ return [
 
         'assets' => [
             'driver' => 'local',
-            'root' => public_path('assets'),
+            'root' => storage_path('assets'),
             'url' => '/assets',
             'visibility' => 'public',
         ],
 
         'design' => [
             'driver' => 'local',
-            'root' => public_path('design'),
+            'root' => storage_path('design'),
             'url' => '/design',
             'visibility' => 'public',
         ],

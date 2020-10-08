@@ -2,7 +2,7 @@
 title: Design
 author: scott
 updated_by: scott
-updated_at: 1602198156
+updated_at: 1602198657
 blueprint: bard
 template: bard
 id: design

@@ -2,7 +2,7 @@
 title: Writing
 author: scott
 updated_by: scott
-updated_at: 1602197189
+updated_at: 1602199151
 blueprint: bard
 template: bard
 id: writing
