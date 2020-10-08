@@ -1,0 +1,20 @@
+<h2 class="mt-0">{{ title }}</h2>
+
+{{ content }}
+    {{ text }}
+
+{{ if type == 'images' }}
+<div class="lg:flex items-center justify-center lg:space-x-6 space-y-2 lg:space-y-0">
+    {{ images }}
+    {{ if url }} <a href="{{ url }}" class="block flex-1">{{ /if }}
+    <figure class="my-0">
+        <img src="{{ glide:logo }}" alt="{{ logo:alt }}" class="block max-w-full">
+        {{ if image_title }}<figcaption class="font-small text-sm text-center no-underline">{{ image_title }}</figcaption> {{ /if }}
+    </figure>
+    {{ if url }}</a>{{ /if }}
+    {{ /images }}
+</div>
+{{ /if }}
+
+
+{{ /content }}

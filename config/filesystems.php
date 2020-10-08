@@ -72,6 +72,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'design' => [
+            'driver' => 'local',
+            'root' => public_path('design'),
+            'url' => '/design',
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*
