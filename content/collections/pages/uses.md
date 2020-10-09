@@ -2,10 +2,12 @@
 title: Uses
 author: scott
 updated_by: scott
-updated_at: 1601601178
-id: uses
+updated_at: 1602255101
 blueprint: pages
+id: uses
 ---
+Here's a few of the tools I use. In case you care about such things.
+
 ### Site
 
 This site was created with <s>Gridsome, hosted on Netlify</s> Statamic, hosted on Digital Ocean and uses Tailwind CSS. All of my domains are registered with Hover and they are great.

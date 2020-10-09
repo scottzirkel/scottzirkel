@@ -2,4 +2,5 @@ Hey gang, I'm Scott and this is my site (obviously). I'm an artist, a programmer
 
 I've got a few drawings, some writing, and other things scattered throughout the site and across various social media platforms. I do hope you find something you enjoy.
 
-Thanks, Scott
+Thanks, Scott  
+2 Kings 2:23-24
