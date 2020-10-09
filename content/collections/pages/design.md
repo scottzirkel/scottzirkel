@@ -2,7 +2,7 @@
 title: Design
 author: scott
 updated_by: scott
-updated_at: 1602198657
+updated_at: 1602255061
 blueprint: bard
 template: bard
 id: design
@@ -84,5 +84,5 @@ content:
     content:
       -
         type: text
-        text: '(Drop in logos, package design, web design, etc, BEFORE launch. Otherwise people will see this and think you're a poser.)'
+        text: '(Drop in logos, package design, web design, etc, BEFORE launch. Otherwise people will see this and think you''re a poser.)'
 ---
