@@ -1,0 +1,11 @@
+<h2 class="mt-0">{{ title }}</h2>
+
+{{ content }}
+
+<div class="flex flex-wrap items-center justify-center">
+{{ drawings }}
+    <div class="w-full md:w-1/2 text-center">
+        <img src="{{ glide:url width='400' height='560' fit='max' }}" alt="{{ alt }}" class="mx-auto my-0 block" />
+    </div>
+{{ /drawings }}
+</div>

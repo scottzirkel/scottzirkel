@@ -1,0 +1,49 @@
+title: Pages
+revisions: false
+route: '{parent_uri}/{slug}'
+structure:
+  root: true
+  tree:
+    -
+      entry: home
+    -
+      entry: been-there-done-that
+    -
+      entry: code
+    -
+      entry: design
+    -
+      entry: drawing
+      children:
+        -
+          entry: 4e8da8de-496d-49df-8a8d-7cf34abc5869
+        -
+          entry: 919a657e-cb85-4de3-a486-e88cdd1533e1
+        -
+          entry: a444c27a-8880-4990-8552-7b9d85a7b4a1
+        -
+          entry: 2ad7bd31-4c91-439c-836e-03c74a8e7a44
+        -
+          entry: 789933a4-8e2f-44c7-8e2c-e3e7cc86984a
+        -
+          entry: 32fc5591-666b-47ef-a8c2-1470d66f96b8
+        -
+          entry: e4f974cc-c2c5-4d3d-ae8d-e8a10d693bc5
+        -
+          entry: 01e62bb1-a2d2-4365-8882-5b0ce67670df
+        -
+          entry: 38c877bb-55f2-47dd-a223-2586c9944ddb
+        -
+          entry: 75367646-f0c8-4128-b963-662c16e844b8
+        -
+          entry: 0d9a7b35-1275-4505-bb23-9ff23fcf320c
+        -
+          entry: 159bf389-2cd6-4daf-a850-690b07a9ef19
+        -
+          entry: 7828bba1-56c5-4c6a-95e2-6b04973b68d1
+        -
+          entry: b2379a30-c677-4910-a9f7-a4b012171474
+    -
+      entry: uses
+    -
+      entry: writing
