@@ -44,13 +44,13 @@ content:
           -
             image_title: ''
             url: 'https://dribbble.com/shots/6626854-The-mostly-True-Adventures-of-the-Walsh-Twins'
-            logo: logos/walsh-twins-logo-scott-zirkel.webp
+            logo: logos/walsh-twins-logo-scott-zirkel.png
             type: asset
             enabled: true
           -
             image_title: null
             url: 'https://dribbble.com/shots/4508653-Dice-Not-Mice-Updated'
-            logo: logos/dice-not-mice-logo-scott-zirkel.webp
+            logo: logos/dice-not-mice-logo-scott-zirkel.png
             type: asset
             enabled: true
           -
@@ -84,5 +84,5 @@ content:
     content:
       -
         type: text
-        text: '(Drop in logos, package design, web design, etc)'
+        text: '(Drop in logos, package design, web design, etc, BEFORE launch. Otherwise people will see this and think you're a poser.)'
 ---

@@ -1,2 +1,3 @@
-/* This is all you. */
-
+/*These are getting overwritten by the default prose styles...*/
+.prose a { @apply no-underline px-px text-orange-500 inline-block }
+.prose a:hover { @apply text-white bg-orange-500 }

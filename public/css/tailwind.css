@@ -642,7 +642,13 @@ video {
   height: auto;
 }
 
-/* This is all you. */
+/*These are getting overwritten by the default prose styles...*/
+
+.prose a { text-decoration: none; padding-left: 1px; padding-right: 1px; --text-opacity: 1; color: #ed8936; color: rgba(237, 137, 54, var(--text-opacity)); display: inline-block
+}
+
+.prose a:hover { --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity)); --bg-opacity: 1; background-color: #ed8936; background-color: rgba(237, 137, 54, var(--bg-opacity))
+}
 
 .container {
   width: 100%;
