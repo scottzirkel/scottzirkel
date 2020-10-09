@@ -8,7 +8,7 @@ blueprint: pages
 ---
 ### Site
 
-This site was created with ~Gridsome, hosted on Netlify~ Statamic, hosted on Digital Ocean and uses Tailwind CSS. All of my domains are registered with Hover and they are great.
+This site was created with <s>Gridsome, hosted on Netlify</s> Statamic, hosted on Digital Ocean and uses Tailwind CSS. All of my domains are registered with Hover and they are great.
 
 ### Workspace
 
@@ -32,11 +32,11 @@ And of course my desk is littered with toys from He-Man, Ninja Turtles, Star War
 Software
 Code
 
-My editor is ~VS Code~ PHPStorm with a different theme each week. I use Fira Code font with fancy ligatures enabled. My terminal is Hyper.js and I change the theme on that pretty often too.
+My editor is <s>VS Code</s> PHPStorm with a different theme each week. I use Fira Code font with fancy ligatures enabled. My terminal is Hyper.js and I change the theme on that pretty often too.
 
 ### Design
 
-Depending on what I'm designing, I use ~Photoshop, Illustrator, Sketch, & XD~ Affinity Photo & Designer.
+Depending on what I'm designing, I use <s>Photoshop, Illustrator, Sketch, & XD</s> Affinity Photo & Designer.
 
 ### Writing
 
