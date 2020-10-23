@@ -85,6 +85,7 @@ content:
                       href: 'https://medium.com/alara-creative/hey-gang-fd532824472a'
                       target: null
                       rel: null
+                      id: medium-hey-gang-article
                 text: 'Hey Gang'
               -
                 type: hard_break
