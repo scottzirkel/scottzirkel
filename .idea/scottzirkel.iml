@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/aerni/imagekit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/barryvdh/laravel-debugbar" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brick/math" />
@@ -129,7 +130,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/tubalmartin/cssmin" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/twistor/flysystem-guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ueberdosis/html-to-prosemirror" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ueberdosis/prosemirror-to-html" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />

@@ -12,7 +12,7 @@ content:
     content:
       -
         type: text
-        text: ' I often throw a few words up on Medium when the occasion presents itself. Here''s a few I like.'
+        text: 'I often throw a few words up on Medium when the occasion presents itself. Here''s a few I like.'
   -
     type: bullet_list
     content:
@@ -84,8 +84,7 @@ content:
                     attrs:
                       href: 'https://medium.com/alara-creative/hey-gang-fd532824472a'
                       target: null
-                      rel: null
-                      id: medium-hey-gang-article
+                      rel: medium-hey-gang-article
                 text: 'Hey Gang'
               -
                 type: hard_break
@@ -112,13 +111,13 @@ content:
           -
             image_title: ''
             url: 'https://guysoftheuniverse.com'
-            logo: logos/he-guy-logo-scott-zirkel.png
+            logo: sz/he-guy-logo-scott-zirkel.png
             type: asset
             enabled: true
           -
             image_title: ''
             url: 'https://wonderdoginc.com'
-            logo: logos/wonderdog-inc-logo-scott-zirkel.png
+            logo: design/logos/wonderdog-inc-logo-scott-zirkel.png
             type: asset
             enabled: true
           -

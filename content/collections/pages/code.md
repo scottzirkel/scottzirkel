@@ -13,6 +13,9 @@ I primarily use Laravel, a PHP framework. I'm currently enhancing that with the 
 
 ### Articles
 
+- [Life with Tailwind](https://scottzirkel.medium.com/life-with-tailwind-d4d094b606b5)  
+Tailwind CSS, it's just a way of life now. Spoiler: _I continue to still love it._
+
 - [A Year with Tailwind](https://medium.com/alara-creative/a-year-with-tailwind-92f420b2f8b9)  
 My continuing adventures with Tailwind CSS. Spoiler: _I still love it._
 

@@ -5,6 +5,7 @@
     "type": "project",
     "require": {
         "php": "^7.2.5",
+        "aerni/imagekit": "^2.2",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "gioppy/statamic-metatags": "^1.0",
