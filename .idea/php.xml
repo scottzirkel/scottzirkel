@@ -123,6 +123,9 @@
       <path value="$PROJECT_DIR$/vendor/gioppy/statamic-metatags" />
       <path value="$PROJECT_DIR$/vendor/aerni/imagekit" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/lock" />
+      <path value="$PROJECT_DIR$/vendor/michelf/php-smartypants" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
