@@ -22,7 +22,9 @@ mix.postCss('resources/css/tailwind.css', 'public/css', [
 })
 
 if (mix.inProduction()) {
-   mix.version();
+   mix
+     .version()
+     .minify('public/css/tailwind.css')
 }
 
 /*
