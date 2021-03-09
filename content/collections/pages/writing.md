@@ -111,13 +111,13 @@ content:
           -
             image_title: ''
             url: 'https://guysoftheuniverse.com'
-            logo: sz/he-guy-logo-scott-zirkel.png
+            logo: logos/he-guy-logo-scott-zirkel.png
             type: asset
             enabled: true
           -
             image_title: ''
             url: 'https://wonderdoginc.com'
-            logo: design/logos/wonderdog-inc-logo-scott-zirkel.png
+            logo: logos/wonderdog-inc-logo-scott-zirkel.png
             type: asset
             enabled: true
           -

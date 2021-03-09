@@ -16,7 +16,8 @@
         <title>{{ title }} - Scott Zirkel</title>
         <meta name="description" content="{{ excerpt ?? title }}">
         <meta name="theme-color" content="00908F">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=PT+Sans+Narrow:wght@700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=PT+Sans+Narrow:wght@700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="style" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=PT+Sans+Narrow:wght@700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" crossorigin>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
     </head>
     <body class="bg-gray-900 border-t-8 border-red-500 font-sans leading-normal text-grey-600">

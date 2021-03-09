@@ -8,7 +8,6 @@
     {{ images }}
     {{ if url }} <a class="block flex-1">{{ /if }}
     <figure class="my-0">
-        LOGO: {{ logo }} {{ type }} {{ enabled }}
         <img src="{{ glide:logo }}" alt="{{ logo:alt }}" class="block max-w-full">
         {{ if image_title }}<figcaption class="font-small text-sm text-center no-underline">{{ image_title }}</figcaption> {{ /if }}
     </figure>
