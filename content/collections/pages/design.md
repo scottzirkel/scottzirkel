@@ -2,7 +2,7 @@
 title: Design
 author: scott
 updated_by: scott
-updated_at: 1602255061
+updated_at: 1615327650
 blueprint: bard
 template: bard
 id: design
@@ -20,7 +20,20 @@ content:
     content:
       -
         type: text
-        text: 'While I''m not designing as much these days, I do try to keep my dribbble account active, so [follow me](https://dribbble.com/scottzirkel) there, if you want the latest and greatest.'
+        text: 'While I''m not designing as much these days, I do try to keep my dribbble account active, so '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://dribbble.com/scottzirkel'
+              target: _blank
+              rel: null
+        text: 'follow me'
+      -
+        type: text
+        text: ' there, if you want the latest and greatest.'
   -
     type: heading
     attrs:
@@ -72,7 +85,20 @@ content:
     content:
       -
         type: text
-        text: 'For 10 years I worked as Creative Director of Alara Creative, a bespoke marketing firm. I was able to work with a variety of clients on a myriad of projects.'
+        text: 'For 10 years I worked as Creative Director of '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://alaracreative.com'
+              target: _blank
+              rel: null
+        text: 'Alara Creative'
+      -
+        type: text
+        text: ', a bespoke marketing firm. I was able to work with a variety of clients on a myriad of projects.'
   -
     type: paragraph
     content:
