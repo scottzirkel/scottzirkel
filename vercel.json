@@ -1,5 +1,8 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "github": {
+    "enabled": true,
     "silent": true
   },
   "headers": [
@@ -40,7 +43,7 @@
       ]
     },
     {
-      "source": "css/fonts/**/(.*)",
+      "source": "fonts/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
