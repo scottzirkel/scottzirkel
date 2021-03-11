@@ -1,26 +1,60 @@
 {
-  "version": 2,
-  "functions": {
-    "api/index.php": { "runtime": "vercel-php@0.3.1" }
+  "github": {
+    "silent": true
   },
-  "routes": [{
-    "src": "/(.*)",
-    "dest": "/api/index.php"
-  }],
-  "env": {
-    "APP_ENV": "production",
-    "APP_DEBUG": "true",
-    "APP_URL": "https://scottzirkel.com",
-
-    "APP_CONFIG_CACHE": "/tmp/config.php",
-    "APP_EVENTS_CACHE": "/tmp/events.php",
-    "APP_PACKAGES_CACHE": "/tmp/packages.php",
-    "APP_ROUTES_CACHE": "/tmp/routes.php",
-    "APP_SERVICES_CACHE": "/tmp/services.php",
-    "VIEW_COMPILED_PATH": "/tmp",
-
-    "CACHE_DRIVER": "file",
-    "LOG_CHANNEL": "stack",
-    "SESSION_DRIVER": "file"
-  }
+  "headers": [
+    {
+      "source": "/feed",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/atom+xml"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    },
+    {
+      "source": "css/tailwind.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "js/site.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers" : [
+        {
+          "key" : "X-Content-Type-Options",
+          "value" : "nosniff"
+        },
+        {
+          "key" : "X-Frame-Options",
+          "value" : "DENY"
+        },
+        {
+          "key" : "X-XSS-Protection",
+          "value" : "1; mode=block"
+        }
+      ]
+    }
+  ]
 }
