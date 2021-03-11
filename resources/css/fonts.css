@@ -4,7 +4,9 @@
     src: url('/fonts/Parkly/Parkly-Regular.woff2') format('woff2');
     src: url('/fonts/Parkly/Parkly-Regular.ttf') format('truetype');
     src: url('/fonts/Parkly/Parkly-Regular.otf') format('opentype');
-    font-display: optional;
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
@@ -13,7 +15,9 @@
     src: url('/fonts/Vault-Alarm/VaultAlarm-Regular.woff2') format('woff2');
     src: url('/fonts/Vault-Alarm/VaultAlarm-Regular.ttf') format('truetype');
     src: url('/fonts/Vault-Alarm/VaultAlarm-Regular.otf') format('opentype');
-    font-display: optional;
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*@font-face {*/
