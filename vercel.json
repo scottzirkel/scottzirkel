@@ -43,7 +43,7 @@
       ]
     },
     {
-      "source": "fonts/(.*)",
+      "source": "fonts/Parkly/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
