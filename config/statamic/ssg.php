@@ -41,6 +41,8 @@ return [
     'copy' => [
         public_path('css') => 'css',
         public_path('js') => 'js',
+        public_path('fonts') => 'fonts',
+        public_path('img') => 'img',
     ],
 
     'symlinks' => [
@@ -60,7 +62,6 @@ return [
 
     'urls' => [
         '/drawings',
-        '/drawings/*',
         '/writing',
         '/design',
         '/code',
