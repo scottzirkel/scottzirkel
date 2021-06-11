@@ -4,7 +4,7 @@
     "keywords": ["statamic", "cms", "flat file", "laravel"],
     "type": "project",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4|^8.0",
         "aerni/imagekit": "^2.2",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
@@ -23,7 +23,7 @@
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3.3"
+        "phpunit/phpunit": "^9.5.5"
     },
     "config": {
         "optimize-autoloader": true,
