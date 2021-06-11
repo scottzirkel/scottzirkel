@@ -9,7 +9,7 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
-  - package-ecosystem: "yarn"
-    directory: "/app"
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
       interval: "monthly"
