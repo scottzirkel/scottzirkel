@@ -29,7 +29,7 @@ sections:
                             handle: image_title
                             field:
                               input_type: text
-                              display: 'Title'
+                              display: Title
                               type: text
                               icon: text
                               listable: hidden
@@ -92,6 +92,7 @@ sections:
           localizable: true
           validate:
             - required
+            - 'unique_entry_value:{collection},{id},{site}'
       -
         handle: parent
         field:
