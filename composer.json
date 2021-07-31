@@ -11,7 +11,7 @@
         "gioppy/statamic-metatags": "^1.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
-        "laravel/tinker": "^2.5",
+        "laravel/tinker": "^v2.6.1",
         "pecotamic/sitemap": "^1.2",
         "statamic/cms": "3.1.*",
         "statamic/ssg": "^0.7.0"
