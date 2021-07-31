@@ -1,13 +1,18 @@
 module.exports = {
-    purge: {
-      content: [
-        './resources/**/*.antlers.html',
-        './resources/**/*.blade.php',
-        './content/**/*.md'
-      ]
-    },
+    mode: 'jit',
+    purge: [
+      './resources/**/*.antlers.html',
+      './resources/**/*.blade.php',
+      './content/**/*.md'
+    ],
     important: true,
     theme: {
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      },
       extend: {
         colors: {
           gray: {
@@ -76,8 +81,4 @@ module.exports = {
     plugins: [
       require('@tailwindcss/typography')
     ],
-    future: {
-      removeDeprecatedGapUtilities: true,
-      purgeLayersByDefault: true,
-    }
   }

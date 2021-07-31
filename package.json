@@ -1,23 +1,26 @@
 {
     "private": true,
     "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run development -- --watch",
-        "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+      "prod:css": "NODE_ENV=production npx tailwindcss -i resources/css/tailwind.css -o public/css/tailwind.css --minify",
+      "prod:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\"",
+      "prod": "npm run prod:css",
+      "production": "npm run prod",
+      "watch:css": "tailwindcss -o public/css/app.css --watch",
+      "watch:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --sourcemap --watch",
+      "watch": "npm run watch:js & npm run watch:css",
+      "dev:css": "tailwindcss -i resources/css/tailwind.css -o public/css/tailwind.css",
+      "dev:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --sourcemap",
+      "dev": "npm run dev:css",
+      "development": "npm run dev"
     },
     "devDependencies": {
-        "autoprefixer": "^10.2.6",
+        "autoprefixer": "^10.3.1",
         "cross-env": "^7.0.3",
-        "laravel-mix": "^4.0",
         "postcss": "^8.3.6",
         "postcss-import": "^14.0.2",
         "postcss-nested": "^5.0.5",
         "postcss-preset-env": "^6.7.0",
-        "tailwindcss": "^1.9.0",
+        "tailwindcss": "^2.2.7",
         "vue-template-compiler": "^2.6.14"
     },
     "dependencies": {
