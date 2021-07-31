@@ -57,7 +57,7 @@ content:
           -
             image_title: ''
             url: 'https://dribbble.com/shots/6626854-The-mostly-True-Adventures-of-the-Walsh-Twins'
-            logo: /logos/walsh-twins-logo-scott-zirkel.png
+            logo: /design/logos/walsh-twins-logo-scott-zirkel.png
             type: asset
             enabled: true
           -
