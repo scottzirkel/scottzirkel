@@ -13,7 +13,6 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^v2.6.1",
         "pecotamic/sitemap": "^1.2",
-        "spatie/fork": "^1.1",
         "statamic/cms": "3.1.*",
         "statamic/ssg": "^0.7.0"
     },
