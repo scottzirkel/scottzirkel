@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "caac3f5348e5c607f5f941420fa76290",
+    "content-hash": "0f350391ecd0868fc64ba87da9bd7325",
     "packages": [
         {
             "name": "aerni/imagekit",
@@ -9730,5 +9730,9 @@
         "php": "^7.4|^8.0"
     },
     "platform-dev": [],
+    "platform-overrides": {
+        "php": "8.0.8",
+        "ext-gd": "1"
+    },
     "plugin-api-version": "2.0.0"
 }
