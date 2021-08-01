@@ -42,12 +42,13 @@ return [
         public_path('css') => 'css',
 //        public_path('js') => 'js',
         public_path('fonts') => 'fonts',
-        public_path('img') => 'img',
+//        public_path('img') => 'img',
     ],
 
     'symlinks' => [
         // public_path('css') => 'css',
         // public_path('js') => 'js',
+        storage_path('img') => 'img'
     ],
 
     /*
@@ -94,7 +95,7 @@ return [
     */
 
     'glide' => [
-        'directory' => 'img',
+        'directory' => 'glide',
     ],
 
 ];

@@ -82,7 +82,7 @@ return [
         'design' => [
             'driver' => 'local',
             'root' => storage_path('design'),
-            'url' => '/design',
+            'url' => '/img/containers/design',
             'visibility' => 'public',
         ],
 
