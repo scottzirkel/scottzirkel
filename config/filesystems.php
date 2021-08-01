@@ -75,7 +75,7 @@ return [
         'drawings' => [
             'driver' => 'local',
             'root' => storage_path('drawings'),
-            'url' => '/drawings',
+            'url' => '/img/containers/drawings',
             'visibility' => 'public',
         ],
 
