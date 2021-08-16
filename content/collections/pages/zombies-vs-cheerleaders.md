@@ -7,7 +7,7 @@ blueprint: gallery
 updated_by: scott
 updated_at: 1602021629
 drawings:
-  - cards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-05-scott-zirkel.jpg
+  - zombies-vs-cheerleaders/zombies-vs-cheerleaders-05-scott-zirkel.jpg
   - cards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-04-scott-zirkel.jpg
   - cards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-01-scott-zirkel.jpg
   - cards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-03-scott-zirkel.jpg
