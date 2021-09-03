@@ -36,3 +36,4 @@ drawings:
   - cards/star-wars/empire-strikes-back/empire-strikes-back-26-scott-zirkel.jpg
   - cards/star-wars/empire-strikes-back/empire-strikes-back-27-scott-zirkel.jpg
 ---
+Topps 2010
