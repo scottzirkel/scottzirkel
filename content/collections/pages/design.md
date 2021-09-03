@@ -55,13 +55,13 @@ content:
         type: images
         images:
           -
-            image_title: 'Comic book logo'
+            image_title: null
             url: 'https://dribbble.com/shots/6626854-The-mostly-True-Adventures-of-the-Walsh-Twins'
             logo: logos/walsh-twins-logo-scott-zirkel.png
             type: asset
             enabled: true
           -
-            image_title: 'Table top games are way better'
+            image_title: null
             url: 'https://dribbble.com/shots/4508653-Dice-Not-Mice-Updated'
             logo: logos/dice-not-mice-logo-scott-zirkel.png
             type: asset
