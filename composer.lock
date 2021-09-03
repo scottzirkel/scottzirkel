@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f350391ecd0868fc64ba87da9bd7325",
+    "content-hash": "5c50d5cdb00c1646ba91bb20b1162745",
     "packages": [
         {
             "name": "aerni/imagekit",
@@ -3919,20 +3919,20 @@
         },
         {
             "name": "statamic/ssg",
-            "version": "0.7.0",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/ssg.git",
-                "reference": "e2818155c399b2760f167f8c6be4b53e84017b6c"
+                "reference": "1055c953ab8e1fbf72a68c828d19f3db5a1dbd06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/ssg/zipball/e2818155c399b2760f167f8c6be4b53e84017b6c",
-                "reference": "e2818155c399b2760f167f8c6be4b53e84017b6c",
+                "url": "https://api.github.com/repos/statamic/ssg/zipball/1055c953ab8e1fbf72a68c828d19f3db5a1dbd06",
+                "reference": "1055c953ab8e1fbf72a68c828d19f3db5a1dbd06",
                 "shasum": ""
             },
             "require": {
-                "statamic/cms": "~3.1.7"
+                "statamic/cms": "~3.1.7 || 3.2.*"
             },
             "require-dev": {
                 "orchestra/testbench": "^4.0"
@@ -3961,9 +3961,9 @@
             "description": "Static site generator for Statamic 3.",
             "support": {
                 "issues": "https://github.com/statamic/ssg/issues",
-                "source": "https://github.com/statamic/ssg/tree/0.7.0"
+                "source": "https://github.com/statamic/ssg/tree/0.8.0"
             },
-            "time": "2021-06-14T18:34:11+00:00"
+            "time": "2021-08-16T17:33:02+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -9819,5 +9819,5 @@
         "php": "8.0.8",
         "ext-gd": "1"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
