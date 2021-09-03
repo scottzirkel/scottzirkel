@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b129cde6a6d0dc6f9bacff7380b0ee5",
+    "content-hash": "0f350391ecd0868fc64ba87da9bd7325",
     "packages": [
         {
             "name": "aerni/imagekit",
@@ -3827,70 +3827,6 @@
                 }
             ],
             "time": "2020-11-29T19:47:08+00:00"
-        },
-        {
-            "name": "spatie/fork",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/fork.git",
-                "reference": "eec2c6bd959b77bf891bd51b7c9cacd12d03cc1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/fork/zipball/eec2c6bd959b77bf891bd51b7c9cacd12d03cc1a",
-                "reference": "eec2c6bd959b77bf891bd51b7c9cacd12d03cc1a",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcntl": "*",
-                "ext-sockets": "*",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "nesbot/carbon": "^2.47",
-                "phpunit/phpunit": "^9.5",
-                "spatie/ray": "^1.10"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Fork\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brent Roose",
-                    "email": "brent@spatie.be",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A lightweight solution for running code concurrently in PHP",
-            "homepage": "https://github.com/spatie/fork",
-            "keywords": [
-                "fork",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/fork/issues",
-                "source": "https://github.com/spatie/fork/tree/1.1.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-05-04T07:47:44+00:00"
         },
         {
             "name": "statamic/cms",
