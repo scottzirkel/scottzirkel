@@ -43,6 +43,7 @@ return [
 //        public_path('js') => 'js',
         public_path('fonts') => 'fonts',
         storage_path('img') => 'img',
+        public_path('.well-known') => '.well-known'
     ],
 
     'symlinks' => [
