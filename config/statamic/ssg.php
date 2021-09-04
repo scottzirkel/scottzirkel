@@ -43,7 +43,9 @@ return [
 //        public_path('js') => 'js',
         public_path('fonts') => 'fonts',
         storage_path('img') => 'img',
-        public_path('.well-known') => '.well-known'
+        public_path('.well-known') => '.well-known',
+        public_path('robots.txt') => 'robots.txt',
+        public_path('favicon.ico') => 'favicon.ico',
     ],
 
     'symlinks' => [
