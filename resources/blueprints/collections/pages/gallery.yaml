@@ -28,6 +28,29 @@ sections:
           icon: assets
           listable: hidden
       -
+        handle: drawing_links
+        field:
+          collapse: false
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: image_url
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Image URL'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+          display: 'Drawing Links'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+      -
         handle: template
         field:
           type: template

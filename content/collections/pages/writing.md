@@ -130,10 +130,6 @@ content:
             type: new_set
             enabled: true
   -
-    type: paragraph
-  -
-    type: paragraph
-  -
     type: set
     attrs:
       enabled: false

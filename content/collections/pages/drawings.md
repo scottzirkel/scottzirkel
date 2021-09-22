@@ -1,13 +1,13 @@
 ---
+id: drawing
+blueprint: pages
 title: Drawings
 author: scott
 updated_by: scott
-updated_at: 1602023865
-blueprint: pages
-id: drawing
+updated_at: 1632347860
 ---
 ### Sketchbook Collections
-- [Fairer](https://gumroad.com/l/oPdV)
+- [Fairer](https://gumroad.com/l/fairer)
 - [2009 Sketchbook](https://gumroad.com/l/eqlX)
 
 ### Projects I've Worked On

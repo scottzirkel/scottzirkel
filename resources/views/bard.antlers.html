@@ -20,11 +20,12 @@
 {{ if type == 'cdn_images' }}
 <div class="lg:flex items-center justify-center lg:space-x-6 space-y-2 lg:space-y-0">
     {{ images }}
-    {{ if link_url }} <a class="block flex-1" href="{{ link_url }}" target="_blank">{{ /if }}
-    <figure class="my-0">
+
+    <figure class="my-0 flex-1">
+        {{ if link_url }} <a class="block" href="{{ link_url }}" target="_blank"> {{ /if }}
         <img src="{{ cdn_url }}" alt="{{ alt_text }}" class="block max-w-full">
+        {{ if link_url }}</a>{{ /if }}
     </figure>
-    {{ if link_url }}</a>{{ /if }}
     {{ /images }}
 </div>
 {{ /if }}

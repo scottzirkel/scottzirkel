@@ -1,11 +1,11 @@
 ---
+id: design
+blueprint: bard
 title: Design
 author: scott
 updated_by: scott
-updated_at: 1615327650
-blueprint: bard
+updated_at: 1632345822
 template: bard
-id: design
 content:
   -
     type: heading
@@ -28,8 +28,9 @@ content:
             type: link
             attrs:
               href: 'https://dribbble.com/scottzirkel'
-              target: _blank
               rel: null
+              target: _blank
+              title: null
         text: 'follow me'
       -
         type: text
@@ -52,22 +53,45 @@ content:
     type: set
     attrs:
       values:
+        type: cdn_images
+        images:
+          -
+            cdn_url: 'https://storageapi.fleek.co/eb396ca7-09f5-4c81-9406-c1cbd592a5ac-bucket/scottzirkel.com/containers/designs/logos/walsh-twins-logo-scott-zirkel.png'
+            alt_text: 'The (mostly) True Adventures of the Walsh Twins'
+            link_url: 'https://dribbble.com/shots/6626854-The-mostly-True-Adventures-of-the-Walsh-Twins'
+            type: new_set
+            enabled: true
+          -
+            cdn_url: 'https://storageapi.fleek.co/eb396ca7-09f5-4c81-9406-c1cbd592a5ac-bucket/scottzirkel.com/containers/designs/logos/dice-not-mice-logo-scott-zirkel.png'
+            alt_text: 'Dice not Mice'
+            link_url: 'https://opensea.io/dice-not-mice'
+            type: new_set
+            enabled: true
+          -
+            cdn_url: 'https://storageapi.fleek.co/eb396ca7-09f5-4c81-9406-c1cbd592a5ac-bucket/scottzirkel.com/containers/designs/logos/jeep-sticker-scott-zirkel.jpg'
+            alt_text: 'Jeep Sticker'
+            type: new_set
+            enabled: true
+  -
+    type: paragraph
+  -
+    type: set
+    attrs:
+      enabled: false
+      values:
         type: images
         images:
           -
-            image_title: null
             url: 'https://dribbble.com/shots/6626854-The-mostly-True-Adventures-of-the-Walsh-Twins'
             logo: logos/walsh-twins-logo-scott-zirkel.png
             type: asset
             enabled: true
           -
-            image_title: null
             url: 'https://dribbble.com/shots/4508653-Dice-Not-Mice-Updated'
             logo: logos/dice-not-mice-logo-scott-zirkel.png
             type: asset
             enabled: true
           -
-            image_title: null
             url: 'https://dribbble.com/shots/2653765-Jeep-Sticker'
             logo: logos/jeep-sticker-scott-zirkel.jpg
             type: asset
@@ -93,8 +117,9 @@ content:
             type: link
             attrs:
               href: 'https://alaracreative.com'
-              target: _blank
               rel: null
+              target: _blank
+              title: null
         text: 'Alara Creative'
       -
         type: text
