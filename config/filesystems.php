@@ -63,11 +63,11 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
+            'visibility' => 'public'
         ],
 
         'assets' => [
             'driver' => 'local',
-            'root' => storage_path('assets'),
             'url' => '/assets',
             'visibility' => 'public',
         ],

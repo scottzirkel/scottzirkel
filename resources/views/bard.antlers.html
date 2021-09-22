@@ -8,10 +8,23 @@
     {{ images }}
     {{ if url }} <a class="block flex-1">{{ /if }}
     <figure class="my-0">
-        <img src="{{ glide:logo }}" alt="{{ logo:alt }}" class="block max-w-full">
+        {{ logo }}
+        <img src="{{ logo }}" alt="{{ logo:alt }}" class="block max-w-full">
         {{ if image_title }}<figcaption class="font-small text-sm text-center no-underline">{{ image_title }}</figcaption> {{ /if }}
     </figure>
     {{ if url }}</a>{{ /if }}
+    {{ /images }}
+</div>
+{{ /if }}
+
+{{ if type == 'cdn_images' }}
+<div class="lg:flex items-center justify-center lg:space-x-6 space-y-2 lg:space-y-0">
+    {{ images }}
+    {{ if link_url }} <a class="block flex-1" href="{{ link_url }}" target="_blank">{{ /if }}
+    <figure class="my-0">
+        <img src="{{ cdn_url }}" alt="{{ alt_text }}" class="block max-w-full">
+    </figure>
+    {{ if link_url }}</a>{{ /if }}
     {{ /images }}
 </div>
 {{ /if }}

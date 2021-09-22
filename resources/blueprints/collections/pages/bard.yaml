@@ -57,6 +57,52 @@ sections:
                     type: replicator
                     icon: replicator
                     listable: false
+            cdn_images:
+              display: 'CDN Images'
+              fields:
+                -
+                  handle: images
+                  field:
+                    collapse: false
+                    sets:
+                      new_set:
+                        display: 'New Set'
+                        fields:
+                          -
+                            handle: cdn_url
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: 'CDN URL'
+                              type: text
+                              icon: text
+                              listable: hidden
+                              instructions_position: above
+                          -
+                            handle: alt_text
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: 'Alt Text'
+                              type: text
+                              icon: text
+                              listable: hidden
+                              instructions_position: above
+                          -
+                            handle: link_url
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: 'Link URL'
+                              type: text
+                              icon: text
+                              listable: hidden
+                              instructions_position: above
+                    display: Images
+                    type: replicator
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
           buttons:
             - h2
             - h3
@@ -81,6 +127,9 @@ sections:
           type: bard
           icon: bard
           listable: hidden
+          instructions_position: above
+          enable_input_rules: true
+          enable_paste_rules: true
   sidebar:
     display: Sidebar
     fields:

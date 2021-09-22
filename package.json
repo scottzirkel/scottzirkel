@@ -1,17 +1,17 @@
 {
     "private": true,
     "scripts": {
-      "prod:css": "NODE_ENV=production npx tailwindcss -i resources/css/tailwind.css -o public/css/tailwind.css --minify",
-      "prod:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\"",
-      "prod": "npm run prod:css",
-      "production": "npm run prod",
-      "watch:css": "tailwindcss -o public/css/app.css --watch",
-      "watch:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --sourcemap --watch",
-      "watch": "npm run watch:js & npm run watch:css",
-      "dev:css": "tailwindcss -i resources/css/tailwind.css -o public/css/tailwind.css",
-      "dev:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --sourcemap",
-      "dev": "npm run dev:css",
-      "development": "npm run dev"
+        "prod:css": "NODE_ENV=production npx tailwindcss -i resources/css/tailwind.css -o public/css/tailwind.css --minify",
+        "prod:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\"",
+        "prod": "npm run prod:css",
+        "production": "npm run prod",
+        "watch:css": "tailwindcss -o public/css/app.css --watch",
+        "watch:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --sourcemap --watch",
+        "watch": "npm run watch:js & npm run watch:css",
+        "dev:css": "tailwindcss -i resources/css/tailwind.css -o public/css/tailwind.css",
+        "dev:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --sourcemap",
+        "dev": "npm run dev:css",
+        "development": "npm run dev"
     },
     "devDependencies": {
         "autoprefixer": "^10.3.1",
@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.14"
     },
     "dependencies": {
-        "@tailwindcss/typography": "^0.4.1"
+        "@tailwindcss/typography": "^0.4.1",
+        "aws-sdk": "^2.993.0"
     }
 }
