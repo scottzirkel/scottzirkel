@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f4b5fda8de711e87ca87eb859949448",
+    "content-hash": "83561038e4a2e8a261c784b4c2f49668",
     "packages": [
         {
             "name": "aerni/imagekit",
@@ -4714,16 +4714,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.2.6",
+            "version": "v3.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "26a5bd83857435870d65b207ed3785b85afd6a01"
+                "reference": "7be1a3dee3fb8b6f11be277c77f24be17c60d4a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/26a5bd83857435870d65b207ed3785b85afd6a01",
-                "reference": "26a5bd83857435870d65b207ed3785b85afd6a01",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/7be1a3dee3fb8b6f11be277c77f24be17c60d4a0",
+                "reference": "7be1a3dee3fb8b6f11be277c77f24be17c60d4a0",
                 "shasum": ""
             },
             "require": {
@@ -4792,7 +4792,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.2.6"
+                "source": "https://github.com/statamic/cms/tree/v3.2.17"
             },
             "funding": [
                 {
@@ -4800,7 +4800,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-21T15:25:15+00:00"
+            "time": "2021-10-20T20:16:30+00:00"
         },
         {
             "name": "statamic/ssg",
@@ -10703,5 +10703,5 @@
         "php": "8.0.8",
         "ext-gd": "1"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
