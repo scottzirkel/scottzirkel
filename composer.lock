@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad4ef2a293704df1dde1446c2614c7d7",
+    "content-hash": "dafd681db1a53a00e29adee555b00fce",
     "packages": [
         {
             "name": "aerni/imagekit",
@@ -4935,16 +4935,16 @@
         },
         {
             "name": "statamic/ssg",
-            "version": "0.8.0",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/ssg.git",
-                "reference": "1055c953ab8e1fbf72a68c828d19f3db5a1dbd06"
+                "reference": "3ddc8f885ffe984a95e7d132df0930b1c7c64cb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/ssg/zipball/1055c953ab8e1fbf72a68c828d19f3db5a1dbd06",
-                "reference": "1055c953ab8e1fbf72a68c828d19f3db5a1dbd06",
+                "url": "https://api.github.com/repos/statamic/ssg/zipball/3ddc8f885ffe984a95e7d132df0930b1c7c64cb1",
+                "reference": "3ddc8f885ffe984a95e7d132df0930b1c7c64cb1",
                 "shasum": ""
             },
             "require": {
@@ -4977,9 +4977,9 @@
             "description": "Static site generator for Statamic 3.",
             "support": {
                 "issues": "https://github.com/statamic/ssg/issues",
-                "source": "https://github.com/statamic/ssg/tree/0.8.0"
+                "source": "https://github.com/statamic/ssg/tree/0.9.0"
             },
-            "time": "2021-08-16T17:33:02+00:00"
+            "time": "2021-10-07T20:03:05+00:00"
         },
         {
             "name": "statamic/stringy",
