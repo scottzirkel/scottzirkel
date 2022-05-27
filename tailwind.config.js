@@ -1,6 +1,5 @@
 module.exports = {
-    mode: 'jit',
-    purge: [
+    content: [
       './resources/**/*.antlers.html',
       './resources/**/*.blade.php',
       './content/**/*.md'
@@ -74,9 +73,6 @@ module.exports = {
         'subtitle': '"PT Sans Narrow",system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif',
         'small': '"PT Sans Caption",system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif'
       },
-    },
-    variants: {
-      backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
     },
     plugins: [
       require('@tailwindcss/typography')
