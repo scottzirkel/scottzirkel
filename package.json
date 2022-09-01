@@ -17,7 +17,7 @@
         "autoprefixer": "^10.4.5",
         "cross-env": "^7.0.3",
         "postcss": "^8.4.13",
-        "postcss-import": "^14.0.2",
+        "postcss-import": "^15.0.0",
         "postcss-nested": "^5.0.5",
         "postcss-preset-env": "^7.4.4",
         "tailwindcss": "^2.2.19",
