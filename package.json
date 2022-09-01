@@ -25,6 +25,6 @@
     },
     "dependencies": {
         "@tailwindcss/typography": "^0.4.1",
-        "aws-sdk": "^2.1125.0"
+        "aws-sdk": "^2.1207.0"
     }
 }
