@@ -38,7 +38,7 @@ const secondaryNav = [
 
 export default function Header() {
   return (
-    <header className="pt-8 md:pt-16 space-y-4">
+    <header className="bg-gray-50 pt-8 md:pt-16 space-y-4">
       <div className="leading-none mx-auto text-center">
         <h1 className="text-5xl lg:text-6xl uppercase font-bold text-red-500">
           <Link href="/">Scott Zirkel</Link>

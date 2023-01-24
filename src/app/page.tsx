@@ -1,6 +1,8 @@
+import Layout from './pages/layout'
+
 export default function Home() {
   return (
-    <article className="px-4 py-10 sp:px-6 sm:py-12 lg:px-8 lg:py-16 text-gray-800">
+    <Layout>
       <p>
         Hey gang, I'm Scott and this is my site (obviously). I'm an artist, a
         programmer, a writer, a designer, a father, a husband, a Jeeper, an
@@ -12,6 +14,6 @@ export default function Home() {
         you find something you enjoy.
       </p>
       <p>Thanks, Scott</p>
-    </article>
+    </Layout>
   )
 }
