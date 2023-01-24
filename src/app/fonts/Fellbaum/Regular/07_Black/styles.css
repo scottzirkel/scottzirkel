@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'VTCFellbaumGrotesk-Black';
+  src: url('VTCFellbaumGrotesk-Black.eot?#iefix') format('embedded-opentype'),  url('VTCFellbaumGrotesk-Black.otf')  format('opentype'),
+	     url('VTCFellbaumGrotesk-Black.woff') format('woff'), url('VTCFellbaumGrotesk-Black.ttf')  format('truetype'), url('VTCFellbaumGrotesk-Black.svg#VTCFellbaumGrotesk-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
