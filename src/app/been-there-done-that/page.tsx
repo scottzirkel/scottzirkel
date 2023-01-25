@@ -64,13 +64,15 @@ export default function Page() {
         <div className="col-span-1 space-y-4">
           <PageSubtitle>Other Cool Things</PageSubtitle>
           <PageSubtitle>Worlds Largest Lakes I've Been In</PageSubtitle>
-          <ol>
+          <ol className="list-decimal list-inside">
             <li>Lake Superior</li>
             <li>Lake Victoria</li>
             <li>Lake Michigan</li>
           </ol>
           <PageSubtitle>Comic Cons</PageSubtitle>
-          <ol></ol>
+          <ol className="list-decimal list-inside">
+            <li></li>
+          </ol>
         </div>
       </div>
     </>
