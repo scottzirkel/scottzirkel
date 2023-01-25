@@ -1,3 +1,5 @@
+import PageTitle from '../components/PageTitle'
+
 export default function Page() {
-  return <h2>Uses</h2>
+  return <PageTitle>Uses</PageTitle>
 }
