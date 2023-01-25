@@ -4,6 +4,13 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-ellipse':
+          'radial-gradient(ellipse, var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 54deg, var(--tw-gradient-stops))',
+      },
       colors: {
         gray: {
           100: '#FBFBFA',
@@ -31,6 +38,7 @@ module.exports = {
     },
     fontFamily: {
       weird: [
+        'var(--font-press-start-2p)',
         'var(--font-vault-alarm)',
         'Vault-Alarm',
         'Vault Alarm',
@@ -47,6 +55,7 @@ module.exports = {
         'PT Sans Caption',
         ...defaultTheme.fontFamily.sans,
       ],
+      mono: ['var(--font-pt-mono)', ...defaultTheme.fontFamily.mono],
     },
   },
   plugins: [require('@tailwindcss/typography')],

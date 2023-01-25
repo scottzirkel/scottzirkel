@@ -34,7 +34,7 @@ export default function Book({
           <a
             href={link}
             target="_blank"
-            className="cursor-pointer hover:underline font-bold text-red-500"
+            className="cursor-pointer hover:underline font-bold text-red-500 text-base"
           >
             More Info
           </a>

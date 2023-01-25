@@ -1,9 +1,10 @@
-import Layout from '../pages/layout'
 import loreInvestigations from '../../../public/lore-investigations.webp'
 import heGuy from '../../../public/he-guy.png'
 import haywire from '../../../public/a-bit-haywire.png'
 import wonderdog from '../../../public/wonderdog-inc.png'
 import Book from '../components/Book'
+import PageTitle from '../components/PageTitle'
+import PageSubtitle from '../components/PageSubtitle'
 
 const selfPublishedBooks = [
   {
@@ -66,9 +67,9 @@ const anthologies = [
 
 export default function Page() {
   return (
-    <Layout>
-      <h2 className="text-3xl font-bold">Writing</h2>
-      <h3 className="mb-4 text-2xl font-bold">Self-Published Comics</h3>
+    <>
+      <PageTitle>Writing</PageTitle>
+      <PageSubtitle>Self-Published Comics</PageSubtitle>
       <div className="space-y-4">
         {selfPublishedBooks.map((book) => (
           <Book
@@ -81,7 +82,7 @@ export default function Page() {
           />
         ))}
       </div>
-      <h3 className="mt-8 mb-4 text-2xl font-bold">Published Comics</h3>
+      <PageSubtitle>Published Comics</PageSubtitle>
       <div className="space-y-4">
         {publishedBooks.map((book) => (
           <Book
@@ -94,7 +95,7 @@ export default function Page() {
           />
         ))}
       </div>
-      <h3 className="mt-8 mb-4 text-2xl font-bold">Anthology Comics</h3>
+      <PageSubtitle>Anthology Comics</PageSubtitle>
       <div className="space-y-4">
         {anthologies.map((book) => (
           <Book
@@ -107,6 +108,6 @@ export default function Page() {
           />
         ))}
       </div>
-    </Layout>
+    </>
   )
 }
