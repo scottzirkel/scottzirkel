@@ -1,4 +1,12 @@
-export default [
+export type State = {
+  name: string
+  camped: boolean
+  peaked: boolean
+}
+
+export type States = Array<State>
+
+export const states: States = [
   {
     name: 'Texas',
     camped: true,

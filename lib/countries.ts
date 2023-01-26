@@ -1,4 +1,11 @@
-export const visited = [
+export type Country = {
+  name: string
+  flag: string
+}
+
+export type Countries = Array<Country>
+
+export const visited: Countries = [
   {
     name: 'USA',
     flag: '🇺🇸',
@@ -17,7 +24,7 @@ export const visited = [
   },
 ]
 
-export const layovers = [
+export const layovers: Countries = [
   {
     name: 'Canada',
     flag: '🇨🇦',

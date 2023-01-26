@@ -1,18 +1,12 @@
-import {
-  PT_Mono,
-  PT_Sans,
-  PT_Sans_Narrow,
-  PT_Sans_Caption,
-  Press_Start_2P,
-} from '@next/font/google'
-import localFont from '@next/font/local'
+import { PT_Mono, PT_Sans, PT_Sans_Narrow, PT_Sans_Caption, Press_Start_2P } from '@next/font/google'
+// import localFont from '@next/font/local'
 
-export const vaultAlarm = localFont({
-  src: './fonts/Vault-Alarm/VaultAlarm-Regular.woff2',
-  variable: '--font-vault-alarm',
-  display: 'swap',
-  weight: '400',
-})
+// export const vaultAlarm = localFont({
+//   src: './fonts/Vault-Alarm/VaultAlarm-Regular.woff2',
+//   variable: '--font-vault-alarm',
+//   display: 'swap',
+//   weight: '400',
+// })
 
 export const ptSans = PT_Sans({
   variable: '--font-pt-sans',

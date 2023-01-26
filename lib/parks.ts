@@ -1,4 +1,4 @@
-export default [
+export const parks: Array<string> = [
   'White Sands',
   'Big Bend',
   'Grand Canyon',

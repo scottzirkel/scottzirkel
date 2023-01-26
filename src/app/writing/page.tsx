@@ -12,8 +12,7 @@ const selfPublishedBooks = [
     publisher: 'Self-published',
     year: 2010,
     logo: heGuy,
-    description:
-      'Join He-Guy and his friends Guy-At-Arms, She-La & the rest of the Guys of the Universe as they defend Castle Guyskull from the evil forces of Skull-Guy!',
+    description: 'Join He-Guy and his friends Guy-At-Arms, She-La & the rest of the Guys of the Universe as they defend Castle Guyskull from the evil forces of Skull-Guy!',
     link: 'https://guysoftheuniverse.com',
   },
   {
@@ -21,8 +20,7 @@ const selfPublishedBooks = [
     publisher: 'Self-published',
     year: 2009,
     logo: loreInvestigations,
-    description:
-      "Lore Investigations follows the paranormal investigative team of Nathan and TJ. Their first case is The Creepy Barn, in which they go up against what is possibly a possessed teenaged girl. Of course, it's hard to tell a regular teenaged girl from one possessed by a ghost.",
+    description: "Lore Investigations follows the paranormal investigative team of Nathan and TJ. Their first case is The Creepy Barn, in which they go up against what is possibly a possessed teenaged girl. Of course, it's hard to tell a regular teenaged girl from one possessed by a ghost.",
     link: 'https://loreinvestigations.com',
   },
 ]
@@ -33,8 +31,7 @@ const publishedBooks = [
     publisher: 'Arcana Comics',
     year: 2010,
     logo: wonderdog,
-    description:
-      "Ryan Robertson's summer plans are put on hold when he discovers he'll be staying at his grandfather's farm while his parents travel to Europe. Just as he grows accustomed to life without Internet, he and his grandfather are traveling to Brazil in search of the Fountain of Youth. On the way he learns the truth about his family, friends and the secrets of Wonderdog, Inc.",
+    description: "Ryan Robertson's summer plans are put on hold when he discovers he'll be staying at his grandfather's farm while his parents travel to Europe. Just as he grows accustomed to life without Internet, he and his grandfather are traveling to Brazil in search of the Fountain of Youth. On the way he learns the truth about his family, friends and the secrets of Wonderdog, Inc.",
     link: 'https://wonderdoginc.com',
   },
   {
@@ -42,8 +39,7 @@ const publishedBooks = [
     publisher: 'Viper Comics',
     year: 2006,
     logo: haywire,
-    description:
-      "Owen Bryce is a normal good-natured 10 year-old boy who likes robots and thinks all girls have cooties. One day, however, Owen will soon find out just how abnormal he really is. He'll find out when everything goes a bit haywire.",
+    description: "Owen Bryce is a normal good-natured 10 year-old boy who likes robots and thinks all girls have cooties. One day, however, Owen will soon find out just how abnormal he really is. He'll find out when everything goes a bit haywire.",
     link: 'https://abithaywire.com',
   },
 ]
@@ -72,40 +68,19 @@ export default function Page() {
       <PageSubtitle>Self-Published Comics</PageSubtitle>
       <div className="space-y-4">
         {selfPublishedBooks.map((book) => (
-          <Book
-            logo={book.logo}
-            title={book.title}
-            publisher={book.publisher}
-            year={book.year}
-            description={book.description}
-            link={book.link}
-          />
+          <Book key={book.title} logo={book.logo} title={book.title} publisher={book.publisher} year={book.year} description={book.description} link={book.link} />
         ))}
       </div>
       <PageSubtitle>Published Comics</PageSubtitle>
       <div className="space-y-4">
         {publishedBooks.map((book) => (
-          <Book
-            logo={book.logo}
-            title={book.title}
-            publisher={book.publisher}
-            year={book.year}
-            description={book.description}
-            link={book.link}
-          />
+          <Book key={book.title} logo={book.logo} title={book.title} publisher={book.publisher} year={book.year} description={book.description} link={book.link} />
         ))}
       </div>
       <PageSubtitle>Anthology Comics</PageSubtitle>
       <div className="space-y-4">
         {anthologies.map((book) => (
-          <Book
-            title={book.title}
-            publisher={book.publisher}
-            year={book.year}
-            description={book.description}
-            link={book.link}
-            logo={null}
-          />
+          <Book key={book.title} title={book.title} publisher={book.publisher} year={book.year} description={book.description} link={book.link} logo={null} />
         ))}
       </div>
     </>

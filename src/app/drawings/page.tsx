@@ -145,36 +145,16 @@ export default function Page() {
       <PageSubtitle>Sketchbook Collections</PageSubtitle>
       <div className="flex items-center justify-between gap-4">
         {sketchbooks.map((book) => (
-          <div className="w-1/2">
-            <Book
-              logo={book.logo}
-              title={book.title}
-              publisher={book.publisher}
-              year={book.year}
-              description={book.description}
-              link={book.link}
-            />
+          <div key={book.title} className="w-1/2">
+            <Book logo={book.logo} title={book.title} publisher={book.publisher} year={book.year} description={book.description} link={book.link} />
           </div>
         ))}
       </div>
       <PageSubtitle>Sketchcard Projects</PageSubtitle>
       <div className="grid grid-cols-3 gap-4">
         {sketchcards.map((card) => (
-          <figure
-            key={card.project}
-            className="col-span-1 bg-white rounded-lg shadow hover:shadow-md overflow-hidden flex flex-col items-center justify-center"
-          >
-            {card.preview ? (
-              <Image
-                src={card.preview}
-                alt="Firefly sketchcards"
-                className="aspect-[8/11] object-cover"
-              />
-            ) : (
-              <div className="aspect-[8/11] w-full bg-gray-600 flex flex-col items-center justify-center text-6xl font-bold">
-                ?
-              </div>
-            )}
+          <figure key={card.project} className="col-span-1 bg-white rounded-lg shadow hover:shadow-md overflow-hidden flex flex-col items-center justify-center">
+            {card.preview ? <Image src={card.preview} alt="Firefly sketchcards" className="aspect-[8/11] object-cover" /> : <div className="aspect-[8/11] w-full bg-gray-600 flex flex-col items-center justify-center text-6xl font-bold">?</div>}
             <figcaption className="p-2 text-center flex flex-col items-center justify-center flex-1">
               <p className="font-bold text-lg">{card.project}</p>
               <p className="text-base">

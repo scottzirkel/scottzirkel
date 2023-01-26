@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from 'next/image'
-import BookLine from './BookLine'
 
 type Book = {
   logo: string | StaticImageData | null
@@ -10,19 +9,10 @@ type Book = {
   description: string
 }
 
-export default function Book({
-  logo = null,
-  title,
-  publisher,
-  year,
-  link = null,
-  description,
-}: Book) {
+export default function Book({ logo = null, title, publisher, year, link = null, description }: Book) {
   return (
     <div className="bg-white shadow p-4">
-      <div className="p-4 sm:w-1/3 mx-auto">
-        {logo && <Image src={logo} alt={title} />}
-      </div>
+      <div className="p-4 sm:w-1/3 mx-auto">{logo && <Image src={logo} alt={title} />}</div>
       <p className="text-sm text-gray-700 space-x-1">
         <time dateTime={year.toString()}>{year}</time>
         <span>{publisher}</span>
@@ -31,11 +21,7 @@ export default function Book({
       <p className="text-left">{description}</p>
       {link && (
         <p>
-          <a
-            href={link}
-            target="_blank"
-            className="cursor-pointer hover:underline font-bold text-red-500 text-base"
-          >
+          <a href={link} target="_blank" rel="noreferrer" className="cursor-pointer hover:underline font-bold text-red-500 text-base">
             More Info
           </a>
         </p>

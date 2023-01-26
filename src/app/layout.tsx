@@ -1,27 +1,12 @@
 import Header from './components/Header'
 import './globals.css'
-// import localFont from '@next/font/local'
-import {
-  ptMono,
-  ptSans,
-  ptSansNarrow,
-  ptSansCaption,
-  vaultAlarm,
-  pressStart,
-} from './fonts'
+import { ptMono, ptSans, ptSansNarrow, ptSansCaption, pressStart } from './fonts'
 import Footer from './components/Footer'
 import Logo from './components/Logo'
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${ptSans.variable} ${ptSansNarrow.variable} ${ptSansCaption.variable} ${vaultAlarm.variable} ${pressStart.variable} ${ptMono.variable}`}
-    >
+    <html lang="en" className={`${ptSans.variable} ${ptSansNarrow.variable} ${ptSansCaption.variable} ${pressStart.variable} ${ptMono.variable}`}>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
@@ -31,9 +16,7 @@ export default function RootLayout({
         <Header />
         <main className="bg-gray-50 flex-1 h-full">
           <div className="lg:max-w-3xl mx-auto">
-            <article className="px-4 py-10 sp:px-6 sm:py-12 lg:px-8 lg:py-16 text-gray-800 text-xl leading-8 space-y-6">
-              {children}
-            </article>
+            <article className="px-4 py-10 sp:px-6 sm:py-12 lg:px-8 lg:py-16 text-gray-800 text-xl leading-8 space-y-6">{children}</article>
             <div className="absolute inset-0 w-48 h-48 hidden md:block opacity-100">
               <Logo />
             </div>
