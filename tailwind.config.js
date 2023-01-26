@@ -6,10 +6,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-ellipse':
-          'radial-gradient(ellipse, var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 54deg, var(--tw-gradient-stops))',
+        'gradient-ellipse': 'radial-gradient(ellipse, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 54deg, var(--tw-gradient-stops))',
       },
       colors: {
         gray: {
@@ -37,24 +35,10 @@ module.exports = {
       },
     },
     fontFamily: {
-      weird: [
-        'var(--font-press-start-2p)',
-        'var(--font-vault-alarm)',
-        'Vault-Alarm',
-        'Vault Alarm',
-        'Parkly',
-      ],
+      weird: ['var(--font-press-start-2p)', ...defaultTheme.fontFamily.mono],
       sans: ['var(--font-pt-sans)', 'PT Sans', ...defaultTheme.fontFamily.sans],
-      subtitle: [
-        'var(--font-pt-sans-narrow)',
-        'PT Sans Narrow',
-        ...defaultTheme.fontFamily.sans,
-      ],
-      small: [
-        'var(--font-pt-sans-caption)',
-        'PT Sans Caption',
-        ...defaultTheme.fontFamily.sans,
-      ],
+      subtitle: ['var(--font-pt-sans-narrow)', 'PT Sans Narrow', ...defaultTheme.fontFamily.sans],
+      small: ['var(--font-pt-sans-caption)', 'PT Sans Caption', ...defaultTheme.fontFamily.sans],
       mono: ['var(--font-pt-mono)', ...defaultTheme.fontFamily.mono],
     },
   },
