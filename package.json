@@ -1,30 +1,36 @@
 {
-    "private": true,
-    "scripts": {
-        "prod:css": "NODE_ENV=production npx tailwindcss -i resources/css/tailwind.css -o public/css/tailwind.css --minify",
-        "prod:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\"",
-        "prod": "npm run prod:css",
-        "production": "npm run prod",
-        "watch:css": "tailwindcss -o public/css/app.css --watch",
-        "watch:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --sourcemap --watch",
-        "watch": "npm run watch:js & npm run watch:css",
-        "dev:css": "tailwindcss -i resources/css/tailwind.css -o public/css/tailwind.css",
-        "dev:js": "esbuild resources/js/app.js --outfile=public/js/app.js --target=es6 --bundle --sourcemap",
-        "dev": "npm run dev:css",
-        "development": "npm run dev"
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.4.5",
-        "cross-env": "^7.0.3",
-        "postcss": "^8.4.13",
-        "postcss-import": "^14.0.2",
-        "postcss-nested": "^5.0.5",
-        "postcss-preset-env": "^7.4.4",
-        "tailwindcss": "^2.2.19",
-        "vue-template-compiler": "^2.6.14"
-    },
-    "dependencies": {
-        "@tailwindcss/typography": "^0.4.1",
-        "aws-sdk": "^2.1125.0"
-    }
+  "name": "my-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@icons-pack/react-simple-icons": "^6.2.0",
+    "@mdx-js/loader": "^2.2.1",
+    "@mdx-js/react": "^2.2.1",
+    "@next/font": "^13.1.5",
+    "@next/mdx": "^13.1.5",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.5",
+    "next": "13.1.5",
+    "prettier": "^2.8.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.3",
+    "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.13",
+    "eslint-config-prettier": "^8.6.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
 }
