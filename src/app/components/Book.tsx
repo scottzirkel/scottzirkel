@@ -7,9 +7,10 @@ type Book = {
   year: number
   link: string | null
   description: string
+  free: boolean
 }
 
-export default function Book({ logo = null, title, publisher, year, link = null, description }: Book) {
+export default function Book({ logo = null, title, publisher, year, link = null, description, free = false }: Book) {
   return (
     <div className="bg-white shadow p-4">
       <div className="p-4 sm:w-1/3 mx-auto">{logo && <Image src={logo} alt={title} />}</div>
@@ -21,8 +22,13 @@ export default function Book({ logo = null, title, publisher, year, link = null,
       <p className="text-left">{description}</p>
       {link && (
         <p>
-          <a href={link} target="_blank" rel="noreferrer" className="cursor-pointer hover:underline font-bold text-red-500 text-base">
-            More Info
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="cursor-pointer hover:underline font-bold text-red-500 text-base"
+          >
+            {free ? 'Get Free PDF' : 'Buy Online'}
           </a>
         </p>
       )}
