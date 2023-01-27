@@ -4,7 +4,7 @@ const options = {
   endOfLine: 'lf',
   semi: false,
   tabWidth: 2,
-  printWidth: 5221977,
+  printWidth: 128,
 }
 
 module.exports = options
