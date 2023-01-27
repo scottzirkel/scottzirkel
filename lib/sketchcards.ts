@@ -19,7 +19,7 @@ export type Sketchcard = {
   year?: number | string
   company?: string
   slug?: string
-  style?: string
+  style?: string | null
   images?: Array<{
     link: string
     width: number
@@ -34,6 +34,7 @@ export const sketchcards: Sketchcards = [
     project: "Totally Radical 80's",
     company: 'Artists Unite',
     slug: 'totally-radical-80s',
+    style: null,
   },
   {
     project: 'Firefly: The Verse',
@@ -41,6 +42,7 @@ export const sketchcards: Sketchcards = [
     preview: fireflyPreview,
     year: 2015,
     slug: 'firefly-the-verse',
+    style: null,
     images: [
       { link: 'firefly-the-verse-01-scott-zirkel.jpg', width: 400, height: 556 },
       { link: 'firefly-the-verse-08-scott-zirkel.jpg', width: 400, height: 556 },
@@ -59,6 +61,7 @@ export const sketchcards: Sketchcards = [
     preview: antmanPreview,
     year: 2015,
     slug: 'marvel-ant-man',
+    style: null,
     images: [
       { link: 'marvel-ant-man-01-scott-zirkel.jpg', width: 724, height: 1000 },
       { link: 'marvel-ant-man-02-scott-zirkel.jpg', width: 724, height: 1000 },
@@ -74,6 +77,7 @@ export const sketchcards: Sketchcards = [
     preview: ultronPreview,
     year: 2015,
     slug: 'marvel-avengers-age-of-ultron',
+    style: null,
     images: [
       { link: 'marvel-age-of-ultron-01-scott-zirkel.jpg', width: 719, height: 1000 },
       { link: 'marvel-age-of-ultron-02-scott-zirkel.jpg', width: 719, height: 1000 },
@@ -92,6 +96,7 @@ export const sketchcards: Sketchcards = [
     preview: legendaryPreview,
     year: '2014/2015',
     slug: 'marvel-legendary-3d',
+    style: null,
     images: [
       { link: 'marvel-legendary-01-scott-zirkel.jpg', width: 721, height: 1000 },
       { link: 'marvel-legendary-02-scott-zirkel.jpg', width: 721, height: 1000 },
@@ -124,6 +129,7 @@ export const sketchcards: Sketchcards = [
     project: "P'Ups",
     company: '5finity',
     slug: 'pups',
+    style: null,
   },
   {
     project: 'Warlord of Mars',
@@ -145,6 +151,7 @@ export const sketchcards: Sketchcards = [
     year: 2010,
     preview: esbPreview,
     slug: 'empire-strikes-back-3d',
+    style: null,
     images: [
       { link: 'empire-strikes-back-01-scott-zirkel.jpg', width: 465, height: 1000 },
       { link: 'empire-strikes-back-02-scott-zirkel.jpg', width: 465, height: 1000 },
@@ -191,6 +198,7 @@ export const sketchcards: Sketchcards = [
     company: 'sadlittles.com',
     preview: fairylandPreview,
     slug: 'the-essence-of-fairyland',
+    style: null,
     images: [
       { link: 'essence-of-fairyland-01-scott-zirkel.jpg', width: 460, height: 429 },
       { link: 'essence-of-fairyland-02-scott-zirkel.jpg', width: 460, height: 429 },
@@ -205,6 +213,7 @@ export const sketchcards: Sketchcards = [
     company: '5finity',
     preview: zombiePreview,
     slug: 'zombies-vs-cheerleaders',
+    style: null,
     images: [
       { link: 'zombies-vs-cheerleaders-01-scott-zirkel.jpg', width: 500, height: 1051 },
       { link: 'zombies-vs-cheerleaders-02-scott-zirkel.jpg', width: 500, height: 1039 },
@@ -228,6 +237,7 @@ export const sketchcards: Sketchcards = [
     year: 2008,
     preview: galaxyPreview,
     slug: 'star-wars-galaxy-iv',
+    style: null,
     images: [
       { link: 'star-wars-galaxy-vi-scott-zirkel-02.jpg', width: 534, height: 755 },
       { link: 'star-wars-galaxy-vi-scott-zirkel-03.jpg', width: 534, height: 755 },
@@ -245,6 +255,7 @@ export const sketchcards: Sketchcards = [
     year: 2008,
     preview: indyPreview,
     slug: 'indiana-jones-masterpieces',
+    style: null,
     images: [
       { link: 'indiana-jones-masterpieces-scott-zirkel-01.jpg', width: 400, height: 561 },
       { link: 'indiana-jones-masterpieces-scott-zirkel-02.jpg', width: 400, height: 561 },

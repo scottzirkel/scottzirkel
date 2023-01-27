@@ -1,12 +1,18 @@
 import PageSubtitle from '@/app/components/PageSubtitle'
 import PageTitle from '@/app/components/PageTitle'
-import { Sketchcard, sketchcards } from 'lib/sketchcards'
+import { sketchcards } from 'lib/sketchcards'
+import type { Sketchcards, Sketchcard } from 'lib/sketchcards'
 import Image from 'next/image'
+import { notFound } from 'next/navigation'
 
 export default function Page({ params }: any) {
   const card: Sketchcard = sketchcards.filter((card) => card.slug === params.slug)[0]
+  if (typeof card === 'undefined') {
+    notFound()
+  }
+  const style = card.style ?? null
 
-  const containerClass = card.style === 'single-column' ? 'grid grid-cols-1 gap-4' : 'grid grid-cols-1 sm:grid-cols-2 gap-4'
+  const containerClass = style === 'single-column' ? 'grid grid-cols-1 gap-4' : 'grid grid-cols-1 sm:grid-cols-2 gap-4'
 
   return (
     <>
@@ -31,4 +37,13 @@ export default function Page({ params }: any) {
       </div>
     </>
   )
+}
+
+export async function generateStaticPrams() {
+  const drawings: Sketchcards = sketchcards
+  return drawings
+    .filter((drawings) => typeof drawings !== 'undefined')
+    .map((drawing) => ({
+      slug: drawing.slug,
+    }))
 }
