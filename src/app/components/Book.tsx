@@ -28,7 +28,7 @@ export default function Book({ logo = null, title, publisher, year, link = null,
             rel="noreferrer"
             className="cursor-pointer hover:underline font-bold text-red-500 text-base"
           >
-            {free ? 'Get Free PDF' : 'Buy Online'}
+            {free ? 'Read for Free' : 'Buy Online'}
           </a>
         </p>
       )}
