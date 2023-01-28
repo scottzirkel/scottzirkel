@@ -23,7 +23,7 @@ export default function Page({ params }: any) {
         </PageSubtitle>
       </div>
       <div className={containerClass}>
-        {card.images &&
+        {card.images ? (
           card.images.map((image) => (
             <Image
               key={image.link}
@@ -33,7 +33,10 @@ export default function Page({ params }: any) {
               alt={`${card.project} sketchcard`}
               className="col-span-1 max-w-full"
             />
-          ))}
+          ))
+        ) : (
+          <p>Sorry, these cards are either currently in progress or I lost the scans.</p>
+        )}
       </div>
     </>
   )
