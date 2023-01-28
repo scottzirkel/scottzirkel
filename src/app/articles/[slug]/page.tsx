@@ -6,8 +6,7 @@ import styles from './styles.module.css'
 import 'highlight.js/styles/default.css'
 import { notFound } from 'next/navigation'
 
-async function getData() {
-  console.log(__dirname)
+async function getArticles() {
   const files = fs.readdirSync('./lib/articles')
   const articles = files.map((fileName) => {
     const slug = fileName.replace('.md', '')
@@ -25,6 +24,14 @@ async function getData() {
       articles,
     },
   }
+}
+
+export async function generateStaticParams() {
+  const { props } = await getArticles()
+
+  return props.articles.map((article: any) => ({
+    slug: article.slug
+  }))
 }
 
 async function getArticle({ slug }: any) {
