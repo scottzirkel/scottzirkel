@@ -14,7 +14,7 @@ export default function Book({ logo = null, title, publisher, year, link = null,
   return (
     <div className="bg-white shadow p-4">
       <div className="p-4 sm:w-1/3 mx-auto">{logo && <Image src={logo} alt={title} />}</div>
-      <p className="text-sm text-gray-700 space-x-1">
+      <p className="text-sm text-gray-800 space-x-1">
         <time dateTime={year.toString()}>{year}</time>
         <span>{publisher}</span>
       </p>
