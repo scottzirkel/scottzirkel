@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <PageTitle>Been There Done That</PageTitle>
       <p>Many people have bucket lists. Things they want to do before they die. Most die before doing any of them. Instead, I take every opportunity to explore I can. Here's a list of places I've been and things I've done. </p>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         <div className="col-span-1">
           <PageSubtitle>States</PageSubtitle>
           <ol className="list-decimal list-inside">

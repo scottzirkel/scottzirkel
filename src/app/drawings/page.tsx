@@ -17,6 +17,7 @@ const sketchbooks = [
     description: '22 pages of sketches of the fairer sex.',
     link: 'https://gumroad.com/l/fairer',
     publisher: 'Self-Published',
+    free: true
   },
   {
     logo: sketchbookCover,
@@ -25,6 +26,7 @@ const sketchbooks = [
     description: 'A collection of sketches from 2008-2009.',
     link: 'https://scottzirkel.gumroad.com/l/eqlX',
     publisher: 'Self-Published',
+    free: true
   },
 ]
 
@@ -53,6 +55,7 @@ export default function Page() {
         {sketchbooks.map((book) => (
           <div key={book.title} className="w-1/2">
             <Book
+              free={book.free}
               logo={book.logo}
               title={book.title}
               publisher={book.publisher}

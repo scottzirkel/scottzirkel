@@ -1,25 +1,31 @@
+'use client'
 import Link from 'next/link'
+import { useSelectedLayoutSegment, useSelectedLayoutSegments } from 'next/navigation'
 
 const mainNav = [
   {
     href: '/drawings',
     label: 'Drawings',
     rotate: 'hover:rotate-[-3deg]',
+    activeClass: 'text-red-500'
   },
   {
     href: '/writing',
     label: 'Writing',
     rotate: 'hover:rotate-[2deg]',
+    activeClass: 'text-red-500'
   },
   {
     href: '/design',
     label: 'Design',
     rotate: 'hover:rotate-[-4deg]',
+    activeClass: 'text-red-500'
   },
   {
     href: '/code',
     label: 'Code',
     rotate: 'hover:rotate-[180deg]',
+    activeClass: 'text-red-500'
   },
 ]
 
@@ -32,11 +38,13 @@ const secondaryNav = [
   {
     href: '/been-there-done-that',
     label: 'Been There Done That',
-    hoverClass: 'mx-1',
+    hoverClass: 'mx-1'
   },
 ]
 
 export default function Header() {
+  const segment = useSelectedLayoutSegment() ?? 'home'
+
   return (
     <header className="bg-gray-50 pt-8 md:pt-16 space-y-4">
       <div className="leading-none mx-auto text-center">
@@ -53,7 +61,7 @@ export default function Header() {
             <Link
               href={navItem.href}
               key={navItem.href}
-              className={`${navItem.rotate} text-gray-900 font-bold transform hover:text-red-800 font-subtitle uppercase text-2xl md:text-3xl lg:text-4xl`}
+              className={`${navItem.rotate} ${navItem.href.includes(segment) ? navItem.activeClass : 'text-gray-900'} font-bold transform hover:text-red-500 font-subtitle uppercase text-2xl md:text-3xl lg:text-4xl`}
             >
               {navItem.label}
             </Link>
@@ -68,7 +76,7 @@ export default function Header() {
             >
               <span className="relative z-10">{navItem.label}</span>
               <span
-                className={`${navItem.hoverClass} absolute group-hover:bg-gray-600/25 w-full h-4 my-4 inset-0 z-0 rounded`}
+                className={`${navItem.hoverClass} ${navItem.href.includes(segment) ? 'bg-gray-600/25' : 'group-hover:bg-gray-600/25'} absolute  w-full h-4 my-4 inset-0 z-0 rounded`}
               ></span>
             </Link>
           ))}

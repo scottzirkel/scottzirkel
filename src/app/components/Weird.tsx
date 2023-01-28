@@ -1,7 +1,7 @@
 export default function Weird() {
   return (
     <section
-      className="text-gray-100 antialiased py-12 text-center font-weird space-y-2"
+      className="text-gray-100 antialiased px-4 py-12 text-center font-weird space-y-2"
       title="WebRings! Admit it, you miss them too..."
     >
       <h3 className="text-xl">WEIRD WIDE WEB!</h3>

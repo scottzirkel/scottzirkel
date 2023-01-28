@@ -38,6 +38,7 @@ const publishedBooks = [
     description:
       "Ryan Robertson's summer plans are put on hold when he discovers he'll be staying at his grandfather's farm while his parents travel to Europe. Just as he grows accustomed to life without Internet, he and his grandfather are traveling to Brazil in search of the Fountain of Youth. On the way he learns the truth about his family, friends and the secrets of Wonderdog, Inc.",
     link: 'https://wonderdoginc.com',
+    free: false
   },
   {
     title: 'A Bit Haywire',
@@ -47,6 +48,7 @@ const publishedBooks = [
     description:
       "Owen Bryce is a normal good-natured 10 year-old boy who likes robots and thinks all girls have cooties. One day, however, Owen will soon find out just how abnormal he really is. He'll find out when everything goes a bit haywire.",
     link: 'https://abithaywire.com',
+    free: false
   },
 ]
 
@@ -57,6 +59,7 @@ const anthologies = [
     year: 2007,
     description: 'Contributed a short story "The Sitter"',
     link: 'https://www.amazon.com/Josh-Howard-Presents-Sasquatch/dp/0977788385',
+    free: false
   },
   {
     title: 'Decoy: Menagerie Vol 1',
@@ -64,6 +67,7 @@ const anthologies = [
     year: 2005,
     description: 'Contributed a short story "Big Top Decoy"',
     link: 'https://www.amazon.com/Decoy-Menagerie-Part-Courtney-Huddleston/dp/0971901236/ref=sr_1_1?crid=B4TL3M66YSQE&keywords=decoy+menagerie&qid=1674536863&s=books&sprefix=decoy+menageri%2Cstripbooks%2C237&sr=1-1',
+    free: false
   },
 ]
 
@@ -82,6 +86,7 @@ export default function Page() {
             year={book.year}
             description={book.description}
             link={book.link}
+            free={book.free}
           />
         ))}
       </div>
@@ -96,6 +101,7 @@ export default function Page() {
             year={book.year}
             description={book.description}
             link={book.link}
+            free={book.free}
           />
         ))}
       </div>
@@ -110,6 +116,7 @@ export default function Page() {
             description={book.description}
             link={book.link}
             logo={null}
+            free={book.free}
           />
         ))}
       </div>
