@@ -6,26 +6,26 @@ import styles from './styles.module.css'
 import 'highlight.js/styles/default.css'
 import { notFound } from 'next/navigation'
 
-// async function getData() {
-//   console.log(__dirname)
-//   const files = fs.readdirSync('./lib/articles')
-//   const articles = files.map((fileName) => {
-//     const slug = fileName.replace('.md', '')
-//     const readFile = fs.readFileSync(`./lib/articles/${fileName}`, 'utf-8')
-//     const { data: frontmatter } = matter(readFile)
+async function getData() {
+  console.log(__dirname)
+  const files = fs.readdirSync('./lib/articles')
+  const articles = files.map((fileName) => {
+    const slug = fileName.replace('.md', '')
+    const readFile = fs.readFileSync(`./lib/articles/${fileName}`, 'utf-8')
+    const { data: frontmatter } = matter(readFile)
 
-//     return {
-//       slug,
-//       ...frontmatter,
-//     }
-//   })
+    return {
+      slug,
+      ...frontmatter,
+    }
+  })
 
-//   return {
-//     props: {
-//       articles,
-//     },
-//   }
-// }
+  return {
+    props: {
+      articles,
+    },
+  }
+}
 
 async function getArticle({ slug }: any) {
   if (typeof slug === 'undefined') {
