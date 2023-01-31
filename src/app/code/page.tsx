@@ -6,7 +6,8 @@ export default function Page() {
   return (
     <>
       <div
-        className={`${styles.monitor} relative border-8 border-black bg-gradient-conic shadow-2xl blur-[0.5px] from-gray-900 to-black p-4 rounded-xl aspect-[4/3] overflow-hidden`}
+        className={`${styles.monitor} relative w-[640px] h-[480px] mx-auto border-8 border-black bg-gradient-conic from-stone-600 to-stone-900 p-4 shadow-2xl blur-[0.5px] rounded-xl`}
+        // className={`${styles.monitor} relative mx-auto border-8 border-black bg-gradient-conic shadow-2xl blur-[0.5px] from-gray-900 to-black p-4 rounded-xl w-[640px] h-[480px] xaspect-[4/3] overflow-hidden`}
       >
         <div className="absolute z-50 bottom-0 right-0 w-2 h-2 border-2 border-[#b52300] rounded-full">
           <div className="absolute blur-[0.5px] w-2 h-2 bg-[#ff0000] rounded-full"></div>
@@ -18,7 +19,7 @@ export default function Page() {
           className={`${styles.scanlines} mix-blend-overlay blur-[0.05px] absolute w-full h-full inset-0 z-[100] pointer-events-none`}
         ></div>
         <div
-          className={`relative py-8 shadow-inner z-[10] font-mono border-2 border-black space-y-6 blur-[0.5px] text-base mix-blend-multiply bg-gradient-ellipse from-green-900 to-black text-green-300 p-4 rounded-3xl h-full overflow-y-scroll overflow-x-hidden ${styles.screenScrollbars}`}
+          className={`relative pt-4 pb-8 shadow-inner font-mono border-2 border-black space-y-6 blur-[0.5px] text-base mix-blend-multiply bg-gradient-ellipse from-green-900 to-black text-green-300 p-4 rounded-3xl w-full h-full overflow-y-scroll overflow-x-hidden ${styles.screenScrollbars}`}
         >
           <PageTitle>Code</PageTitle>
           <p>I primarily use Laravel, a PHP framework. I'm currently enhancing that with the following hotness:</p>
