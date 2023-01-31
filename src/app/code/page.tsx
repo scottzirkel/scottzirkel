@@ -18,7 +18,7 @@ export default function Page() {
           className={`${styles.scanlines} mix-blend-overlay blur-[0.75px] absolute w-full h-full inset-0 z-[100] pointer-events-none`}
         ></div>
         <div
-          className={`relative py-8 shadow-inner font-mono border-2 border-black space-y-6 blur-[0.5px] text-base mix-blend-multiply bg-gradient-ellipse from-green-900 to-black text-green-300 p-4 rounded-3xl h-full overflow-y-scroll overflow-x-hidden ${styles.screenScrollbars}`}
+          className={`relative py-8 shadow-inner z-[10] font-mono border-2 border-black space-y-6 blur-[0.5px] text-base mix-blend-multiply bg-gradient-ellipse from-green-900 to-black text-green-300 p-4 rounded-3xl h-full overflow-y-scroll overflow-x-hidden ${styles.screenScrollbars}`}
         >
           <PageTitle>Code</PageTitle>
           <p>I primarily use Laravel, a PHP framework. I'm currently enhancing that with the following hotness:</p>
