@@ -15,7 +15,7 @@ export default function Page() {
         <div className="absolute w-full bottom-0 left-0 right-0 h-1/6 bg-gradient-to-t from-black pointer-events-none"></div>
         <div className="absolute inset-top w-full top-0 left-0 right-0 h-1/6 bg-gradient-to-b from-black pointer-events-none"></div>
         <div
-          className={`${styles.scanlines} mix-blend-overlay blur-[0.75px] absolute w-full h-full inset-0 z-[100] pointer-events-none`}
+          className={`${styles.scanlines} mix-blend-overlay blur-[0.05px] absolute w-full h-full inset-0 z-[100] pointer-events-none`}
         ></div>
         <div
           className={`relative py-8 shadow-inner z-[10] font-mono border-2 border-black space-y-6 blur-[0.5px] text-base mix-blend-multiply bg-gradient-ellipse from-green-900 to-black text-green-300 p-4 rounded-3xl h-full overflow-y-scroll overflow-x-hidden ${styles.screenScrollbars}`}

@@ -4,6 +4,7 @@
 
 .screenScrollbars {
   scrollbar-color: green transparent;
+  overflow: -moz-scrollbars-vertical;
 }
 
 .scanlines {
