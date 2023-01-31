@@ -24,15 +24,30 @@ export default function Page() {
           <p>I primarily use Laravel, a PHP framework. I'm currently enhancing that with the following hotness:</p>
           <ul>
             <li>
-              <a href="https://inertiajs.com" target="_blank" rel="noreferrer" className="text-green-100 hover:text-white">
+              <a
+                href="https://inertiajs.com"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold text-green-100 hover:text-white"
+              >
                 InertiaJS
               </a>
               /[
-              <a href="https://vuejs.org" target="_blank" rel="noreferrer" className="text-green-100 hover:text-white">
+              <a
+                href="https://vuejs.org"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold text-green-100 hover:text-white"
+              >
                 Vue
               </a>
               ,{' '}
-              <a href="https://reactjs.org" target="_blank" rel="noreferrer" className="text-green-100 hover:text-white">
+              <a
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold text-green-100 hover:text-white"
+              >
                 React
               </a>
               ]
@@ -42,24 +57,34 @@ export default function Page() {
                 href="https://laravel-livewire.com"
                 target="_blank"
                 rel="noreferrer"
-                className="text-green-100 hover:text-white"
+                className="font-bold text-green-100 hover:text-white"
               >
                 Livewire
               </a>
               /
-              <a href="https://alpinejs.dev" target="_blank" rel="noreferrer" className="text-green-100 hover:text-white">
+              <a
+                href="https://alpinejs.dev"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold text-green-100 hover:text-white"
+              >
                 Alpine
               </a>
             </li>
             <li>
-              <a href="https://tailwindcss.com" target="_blank" rel="noreferrer" className="text-green-100 hover:text-white">
+              <a
+                href="https://tailwindcss.com"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold text-green-100 hover:text-white"
+              >
                 Tailwind CSS
               </a>
             </li>
           </ul>
           <p>
             This site is built in{' '}
-            <a href="https://nextjs.org" target="_blank" rel="noreferrer" className="text-green-100 hover:text-white">
+            <a href="https://nextjs.org" target="_blank" rel="noreferrer" className="font-bold text-green-100 hover:text-white">
               Next.js
             </a>
           </p>
@@ -70,19 +95,19 @@ export default function Page() {
           <PageSubtitle>Articles</PageSubtitle>
           <h4>Kinda like a blog, but I never update it.</h4>
           <p>
-            <a href="/articles/life-with-tailwind" className="text-bold block text-green-100 hover:text-white">
+            <a href="/articles/life-with-tailwind" className="font-bold block text-green-100 hover:text-white">
               Life with Tailwind [2020-11-17]
             </a>
             Tailwind CSS, it's just a way of life now. Spoiler: <em>I continue to still love it.</em>
           </p>
           <p>
-            <a href="/articles/a-year-with-tailwind" className="text-bold block text-green-100 hover:text-white">
+            <a href="/articles/a-year-with-tailwind" className="font-bold block text-green-100 hover:text-white">
               A Year with Tailwind [2018-11-06]
             </a>
             My continuing adventures with Tailwind CSS. Spoiler: <em>I still love it.</em>
           </p>
           <p>
-            <a href="/articles/a-week-with-tailwind" className="text-bold block text-green-100 hover:text-white">
+            <a href="/articles/a-week-with-tailwind" className="font-bold block text-green-100 hover:text-white">
               A Week with Tailwind [2017-11-07]
             </a>
             My first experience with Tailwind CSS, a utility-first CSS framework. Spoiler:
