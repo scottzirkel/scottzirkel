@@ -1,4 +1,6 @@
 @tailwind base;
 @tailwind components;
-a { @apply transition-all }
+a {
+	@apply transition-all;
+}
 @tailwind utilities;

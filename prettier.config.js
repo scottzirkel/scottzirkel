@@ -5,6 +5,10 @@ const options = {
   semi: false,
   tabWidth: 2,
   printWidth: 128,
+	plugins: [
+		"prettier-plugin-tailwindcss"
+	],
+	pluginSearchDirs: false
 }
 
 module.exports = options

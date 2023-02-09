@@ -42,5 +42,5 @@ module.exports = {
       mono: ['var(--font-pt-mono)', ...defaultTheme.fontFamily.mono],
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('prettier-plugin-tailwindcss')],
 }

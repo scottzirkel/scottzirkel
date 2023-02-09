@@ -1,8 +1,9 @@
-
 @font-face {
-  font-family: 'VTCFellbaumGrotesk-Heavy';
-  src: url('VTCFellbaumGrotesk-Heavy.eot?#iefix') format('embedded-opentype'),  url('VTCFellbaumGrotesk-Heavy.otf')  format('opentype'),
-	     url('VTCFellbaumGrotesk-Heavy.woff') format('woff'), url('VTCFellbaumGrotesk-Heavy.ttf')  format('truetype'), url('VTCFellbaumGrotesk-Heavy.svg#VTCFellbaumGrotesk-Heavy') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'VTCFellbaumGrotesk-Heavy';
+	src: url('VTCFellbaumGrotesk-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('VTCFellbaumGrotesk-Heavy.otf') format('opentype'), url('VTCFellbaumGrotesk-Heavy.woff') format('woff'),
+		url('VTCFellbaumGrotesk-Heavy.ttf') format('truetype'),
+		url('VTCFellbaumGrotesk-Heavy.svg#VTCFellbaumGrotesk-Heavy') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
