@@ -18,6 +18,7 @@ specifiers:
   next: 13.1.6
   postcss: ^8.4.21
   prettier: ^2.8.4
+  prettier-plugin-organize-attributes: ^0.0.5
   prettier-plugin-organize-imports: ^3.2.2
   prettier-plugin-tailwindcss: ^0.2.2
   react: 18.2.0
@@ -40,6 +41,7 @@ dependencies:
   markdown-it: 13.0.1
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   prettier: 2.8.4
+  prettier-plugin-organize-attributes: 0.0.5_prettier@2.8.4
   prettier-plugin-organize-imports: 3.2.2_silln3pw57har7jydmecgzoypa
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -53,7 +55,7 @@ devDependencies:
   eslint-config-prettier: 8.6.0_eslint@8.33.0
   eslint-plugin-tailwindcss: 3.8.3_tailwindcss@3.2.6
   postcss: 8.4.21
-  prettier-plugin-tailwindcss: 0.2.2_tnxajtglrwt6ss4l7qpdnez62i
+  prettier-plugin-tailwindcss: 0.2.2_5zkecret6u5p2xtscglu3ar2ci
   tailwindcss: 3.2.6_postcss@8.4.21
 
 packages:
@@ -2512,6 +2514,14 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  /prettier-plugin-organize-attributes/0.0.5_prettier@2.8.4:
+    resolution: {integrity: sha512-dSts16q8wd+oq8Zwk5mwmYXo1aN3B+ZkEJqx/ar5fedNHdOvx7S4XDMH/pNK7rmBW0bPXkp/kJX5gAANsWzh3A==}
+    engines: {node: '>=11.0.0'}
+    peerDependencies:
+      prettier: ^2.0.0
+    dependencies:
+      prettier: 2.8.4
+
   /prettier-plugin-organize-imports/3.2.2_silln3pw57har7jydmecgzoypa:
     resolution: {integrity: sha512-e97lE6odGSiHonHJMTYC0q0iLXQyw0u5z/PJpvP/3vRy6/Zi9kLBwFAbEGjDzIowpjQv8b+J04PDamoUSQbzGA==}
     peerDependencies:
@@ -2528,7 +2538,7 @@ packages:
       prettier: 2.8.4
       typescript: 4.9.5
 
-  /prettier-plugin-tailwindcss/0.2.2_tnxajtglrwt6ss4l7qpdnez62i:
+  /prettier-plugin-tailwindcss/0.2.2_5zkecret6u5p2xtscglu3ar2ci:
     resolution: {integrity: sha512-5RjUbWRe305pUpc48MosoIp6uxZvZxrM6GyOgsbGLTce+ehePKNm7ziW2dLG2air9aXbGuXlHVSQQw4Lbosq3w==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
@@ -2578,6 +2588,7 @@ packages:
         optional: true
     dependencies:
       prettier: 2.8.4
+      prettier-plugin-organize-attributes: 0.0.5_prettier@2.8.4
       prettier-plugin-organize-imports: 3.2.2_silln3pw57har7jydmecgzoypa
     dev: true
 
