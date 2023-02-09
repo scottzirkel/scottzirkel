@@ -1,9 +1,9 @@
+import { ComicCon, comicCons } from 'lib/comic-cons'
+import { Country, layovers, visited } from '../../../lib/countries'
+import { parks } from '../../../lib/parks'
+import { State, states } from '../../../lib/states'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
-import { states, State } from '../../../lib/states'
-import { parks } from '../../../lib/parks'
-import { visited, layovers, Country } from '../../../lib/countries'
-import { ComicCon, comicCons } from 'lib/comic-cons'
 
 export default function Page() {
 	return (

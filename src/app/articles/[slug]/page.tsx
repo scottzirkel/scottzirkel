@@ -1,10 +1,10 @@
 import PageTitle from '@/app/components/PageTitle'
-import matter from 'gray-matter'
 import fs from 'fs'
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
-import styles from './styles.module.css'
+import matter from 'gray-matter'
 import 'highlight.js/styles/default.css'
 import { notFound } from 'next/navigation'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import styles from './styles.module.css'
 
 async function getArticles() {
 	const files = fs.readdirSync('./lib/articles')

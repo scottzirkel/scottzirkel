@@ -1,8 +1,8 @@
-import Header from './components/Header'
-import './globals.css'
-import { ptMono, ptSans, ptSansNarrow, ptSansCaption, pressStart } from './fonts'
 import Footer from './components/Footer'
+import Header from './components/Header'
 import Logo from './components/Logo'
+import { pressStart, ptMono, ptSans, ptSansCaption, ptSansNarrow } from './fonts'
+import './globals.css'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (

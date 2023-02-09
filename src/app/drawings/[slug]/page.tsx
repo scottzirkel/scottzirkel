@@ -1,7 +1,7 @@
 import PageSubtitle from '@/app/components/PageSubtitle'
 import PageTitle from '@/app/components/PageTitle'
+import type { Sketchcard, Sketchcards } from 'lib/sketchcards'
 import { sketchcards } from 'lib/sketchcards'
-import type { Sketchcards, Sketchcard } from 'lib/sketchcards'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 

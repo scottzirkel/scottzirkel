@@ -1,4 +1,3 @@
-import Weird from './Weird'
 import {
 	Behance,
 	Deviantart,
@@ -10,6 +9,7 @@ import {
 	Telegram,
 	Twitter,
 } from '@icons-pack/react-simple-icons'
+import Weird from './Weird'
 
 const year = new Date().getFullYear()
 

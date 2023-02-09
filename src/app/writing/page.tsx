@@ -1,10 +1,10 @@
-import loreInvestigations from '../../../public/lore-investigations.webp'
-import heGuy from '../../../public/he-guy.webp'
 import haywire from '../../../public/a-bit-haywire.png'
+import heGuy from '../../../public/he-guy.webp'
+import loreInvestigations from '../../../public/lore-investigations.webp'
 import wonderdog from '../../../public/wonderdog-inc.png'
 import Book from '../components/Book'
-import PageTitle from '../components/PageTitle'
 import PageSubtitle from '../components/PageSubtitle'
+import PageTitle from '../components/PageTitle'
 
 const selfPublishedBooks = [
 	{

@@ -6,6 +6,7 @@ const options = {
   tabWidth: 2,
   printWidth: 128,
 	plugins: [
+		"prettier-plugin-organize-imports",
 		"prettier-plugin-tailwindcss"
 	],
 	pluginSearchDirs: false

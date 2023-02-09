@@ -1,13 +1,12 @@
 'use client'
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
+import { sketchcards } from '../../../lib/sketchcards'
+import sketchbookCover from '../../../public/2009-sketchbook-cover.jpg'
+import fairerCover from '../../../public/fairer-cover.webp'
 import Book from '../components/Book'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
-import fairerCover from '../../../public/fairer-cover.webp'
-import sketchbookCover from '../../../public/2009-sketchbook-cover.jpg'
-import Image, { StaticImageData } from 'next/image'
-import { sketchcards } from '../../../lib/sketchcards'
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 
 const sketchbooks = [
 	{

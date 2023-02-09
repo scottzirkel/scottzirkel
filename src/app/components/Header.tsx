@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { useSelectedLayoutSegment, useSelectedLayoutSegments } from 'next/navigation'
+import { useSelectedLayoutSegment } from 'next/navigation'
 
 const mainNav = [
 	{

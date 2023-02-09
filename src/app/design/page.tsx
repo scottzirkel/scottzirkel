@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Dribbble from '../components/Dribbble'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
