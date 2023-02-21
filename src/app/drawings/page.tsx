@@ -7,6 +7,7 @@ import fairerCover from '../../../public/fairer-cover.webp'
 import Book from '../components/Book'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
+import Head from 'next/head'
 
 const sketchbooks = [
 	{
@@ -48,6 +49,10 @@ export default function Page() {
 	const router = useRouter()
 	return (
 		<>
+			<Head>
+			<title>Drawings</title>
+			<meta property="og:title" content="Drawings and sketchcards" key="title"/>
+			</Head>
 			<PageTitle>Drawings</PageTitle>
 			<PageSubtitle>Sketchbook Collections</PageSubtitle>
 			<div className="flex items-center justify-between gap-4">
