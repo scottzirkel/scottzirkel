@@ -1,3 +1,4 @@
+import { AnalyticsWrapper } from './components/analytics'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Logo from './components/Logo'
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					</div>
 				</main>
 				<Footer />
+			  <AnalyticsWrapper />
 			</body>
 		</html>
 	)
