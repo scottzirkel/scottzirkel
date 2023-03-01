@@ -1,13 +1,13 @@
 import {
-	Behance,
-	Deviantart,
-	Dribbble,
-	Facebook,
-	Github,
-	Instagram,
-	Medium,
-	Telegram,
-	Twitter,
+	Sibehance as Behance,
+	Sideviantart as Deviantart,
+	Sidribbble as Dribbble,
+	Sifacebook as Facebook,
+	Sigithub as Github,
+	Siinstagram as Instagram,
+	Simedium as Medium,
+	Sitelegram as Telegram,
+	Sitwitter as Twitter,
 } from '@icons-pack/react-simple-icons'
 import Weird from './Weird'
 

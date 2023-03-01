@@ -42,7 +42,7 @@ export default function Page({ params }: any) {
 	)
 }
 
-export async function generateStaticPrams() {
+export async function generateStaticParams() {
 	const drawings: Sketchcards = sketchcards
 	return drawings
 		.filter((drawings) => typeof drawings !== 'undefined')
