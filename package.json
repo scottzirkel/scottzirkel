@@ -10,7 +10,7 @@
     "format": "prettier --write src"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^6.3.0",
+    "@icons-pack/react-simple-icons": "^7.2.0",
     "@next/font": "13.2.3",
     "@types/node": "^18.14.2",
     "@types/react": "^18.0.28",
