@@ -69,6 +69,16 @@ export default function Page() {
 					<p>The only way to draw. Except on paper, that's still pretty cool.</p>
 				</li>
 			</ul>
+			<PageSubtitle>Productivity</PageSubtitle>
+			<ul className="space-y-4">
+				<li>
+					<p>
+						<a href="https://audiopen.ai/?aff=Z5K9v" target="_blank"><strong>AudioPen</strong></a>
+					</p>
+					<p>Audio Pen is one of the few AI tools I use, but it's been a real help.</p>
+					<p>You just dictate into the app whatever thoughts you are having and it transcribes and summarizes what you wrote. I've found it is really helpful to hear your ideas in different words. It keeps your original transcripts as well.</p>
+				</li>
+			</ul>
 			<PageSubtitle>Coding Software</PageSubtitle>
 			<ul className="space-y-4">
 				<li>
