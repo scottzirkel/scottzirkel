@@ -26,7 +26,7 @@ export default function Book({ logo = null, title, publisher, year, link = null,
 						href={link}
 						target="_blank"
 						rel="noreferrer"
-						className="cursor-pointer text-base font-bold text-red-500 hover:underline"
+						className="text-base font-bold text-red-500 hover:underline"
 					>
 						{free ? 'Read for Free' : 'Buy Online'}
 					</a>
