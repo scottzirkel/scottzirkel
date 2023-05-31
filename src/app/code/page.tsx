@@ -5,6 +5,7 @@ import styles from '../monitor.module.css'
 export default function Page() {
 	return (
 		<>
+			{/* For mobile, this should look like an old nokia or gameboy or something */}
 			<div
 				className={`${styles.monitor} relative mx-auto h-[480px] w-[640px] rounded-xl border-8 border-black bg-gradient-conic from-stone-600 to-stone-900 p-4 shadow-2xl blur-[0.5px]`}
 				// className={`${styles.monitor} relative mx-auto border-8 border-black bg-gradient-conic shadow-2xl blur-[0.5px] from-gray-900 to-black p-4 rounded-xl w-[640px] h-[480px] xaspect-[4/3] overflow-hidden`}
