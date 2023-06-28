@@ -8,9 +8,6 @@ dependencies:
   '@icons-pack/react-simple-icons':
     specifier: ^8.0.1
     version: 8.0.1(react@18.2.0)
-  '@next/font':
-    specifier: 13.2.3
-    version: 13.2.3
   '@types/node':
     specifier: ^20.3.2
     version: 20.3.2
@@ -207,10 +204,6 @@ packages:
     resolution: {integrity: sha512-ANEPltxzXbyyG7CvqxdY4PmeM5+RyWdAJGufTHnU+LA/i3J6IDV2r8Z4onKwskwKEhwqzz5lMaSYGGXLyHX+mg==}
     dependencies:
       glob: 7.1.7
-    dev: false
-
-  /@next/font@13.2.3:
-    resolution: {integrity: sha512-7EHzk0f7FVYICLUZTpyPk93IfcTUao++Xt1Sgb+Zk5dVOCYHabqLtlF5ywSoXIqyFlo0qlshEBxsrzHAGTWkDw==}
     dev: false
 
   /@next/swc-darwin-arm64@13.4.7:
