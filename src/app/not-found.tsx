@@ -3,7 +3,9 @@
 import PageTitle from './components/PageTitle'
 
 export default function NotFound() {
-	document.body.classList.toggle('rotate-180')
+	if (process.browser) {
+		document.body.classList.toggle('rotate-180')
+	}
 
 	return (
 		<>
