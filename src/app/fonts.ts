@@ -1,4 +1,4 @@
-import { Press_Start_2P, PT_Mono, PT_Sans, PT_Sans_Caption, PT_Sans_Narrow } from '@next/font/google'
+import { Press_Start_2P, PT_Mono, PT_Sans, PT_Sans_Caption, PT_Sans_Narrow } from "next/font/google"
 // import localFont from '@next/font/local'
 
 // export const vaultAlarm = localFont({

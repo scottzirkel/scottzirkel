@@ -1,7 +1,16 @@
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
+import PostHogClient from '../posthog'
 
 export default function Page() {
+	const posthog = PostHogClient()
+
+	posthog.capture({
+				distinctId: 'scott@testing.com',
+				event: 'server-side uses event',
+				url: 'https://scottzirkel.com/uses'
+			})
+
 	return (
 		<>
 			<PageTitle>Uses</PageTitle>

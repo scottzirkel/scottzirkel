@@ -1,4 +1,8 @@
-export default function Home() {
+import PostHogClient from './posthog'
+
+export default async function Home() {
+	const flags = await getData()
+
 	return (
 		<>
 			<p>
@@ -9,7 +13,13 @@ export default function Home() {
 				I've got a few drawings, some writing, and other things scattered throughout the site and across various social media
 				platforms. I do hope you find something you enjoy.
 			</p>
-			<p>Thanks, Scott</p>
+			<p>Your pal, Scott</p>
 		</>
 	)
+}
+
+async function getData() {
+	const posthog = PostHogClient()
+	const flags = await posthog.getAllFlags('scott@testing.com')
+	return flags
 }

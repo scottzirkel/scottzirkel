@@ -12,12 +12,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			lang="en"
 			className={`${ptSans.variable} ${ptSansNarrow.variable} ${ptSansCaption.variable} ${pressStart.variable} ${ptMono.variable}`}
 		>
-			<Providers>
 				{/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 				<head />
+				<Providers>
 				<body className="flex min-h-screen flex-col items-stretch justify-center border-t-8 border-red-500 bg-gray-900 font-sans leading-normal text-gray-600">
 					<Header />
 					<main className="h-full flex-1 bg-gray-50">
