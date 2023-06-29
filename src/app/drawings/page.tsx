@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { sketchcards } from '../../../lib/sketchcards'
@@ -6,11 +7,10 @@ import fairerCover from '../../../public/fairer-cover.webp'
 import Book from '../components/Book'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Drawings by Scott Zirkel',
-	description: 'Sketchbook collections, sketchcards, and more.'
+	description: 'Sketchbook collections, sketchcards, and more.',
 }
 
 const sketchbooks = [

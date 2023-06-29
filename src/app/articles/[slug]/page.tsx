@@ -12,7 +12,7 @@ type Props = {
 }
 
 type Article = {
-	slug: string,
+	slug: string
 	title?: string | null
 	blurb?: string | null
 }
@@ -56,7 +56,7 @@ export async function generateStaticParams() {
 	return props.articles.map((article: Article) => ({
 		slug: article.slug,
 		title: article.title,
-		blurb: article.blurb
+		blurb: article.blurb,
 	}))
 }
 

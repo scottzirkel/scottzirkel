@@ -1,11 +1,11 @@
+import { Metadata } from 'next'
 import Dribbble from '../components/Dribbble'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Designs by Scott Zirkel',
-	description: 'Logos, sites, and more.'
+	description: 'Logos, sites, and more.',
 }
 
 export default async function Page() {

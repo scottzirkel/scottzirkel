@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Scott Zirkel',
-	description: 'Artist, author, developer, designer. Making stuff up since 1977'
+	description: 'Artist, author, developer, designer. Making stuff up since 1977',
 }
 
 export default function Home() {

@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import haywire from '../../../public/a-bit-haywire.png'
 import heGuy from '../../../public/he-guy.webp'
 import loreInvestigations from '../../../public/lore-investigations.webp'
@@ -5,11 +6,10 @@ import wonderdog from '../../../public/wonderdog-inc.png'
 import Book from '../components/Book'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Writing by Scott Zirkel',
-	description: 'Type, monkeys, type!'
+	description: 'Type, monkeys, type!',
 }
 
 const selfPublishedBooks = [

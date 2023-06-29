@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					</div>
 				</main>
 				<Footer />
-			  <AnalyticsWrapper />
+				<AnalyticsWrapper />
 			</body>
 		</html>
 	)

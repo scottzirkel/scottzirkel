@@ -22,12 +22,7 @@ export default function Book({ logo = null, title, publisher, year, link = null,
 			<p className="text-left">{description}</p>
 			{link && (
 				<p>
-					<a
-						href={link}
-						target="_blank"
-						rel="noreferrer"
-						className="text-base font-bold text-red-500 hover:underline"
-					>
+					<a href={link} target="_blank" rel="noreferrer" className="text-base font-bold text-red-500 hover:underline">
 						{free ? 'Read for Free' : 'Buy Online'}
 					</a>
 				</p>
