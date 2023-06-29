@@ -4,6 +4,12 @@ import { parks } from '../../../lib/parks'
 import { State, states } from '../../../lib/states'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Been There, Done That',
+	description: 'Places and things I have seen and done'
+}
 
 export default function Page() {
 	return (

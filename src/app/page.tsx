@@ -1,3 +1,10 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Scott Zirkel',
+	description: 'Artist, author, developer, designer. Making stuff up since 1977'
+}
+
 export default function Home() {
 	return (
 		<>
@@ -9,7 +16,7 @@ export default function Home() {
 				I've got a few drawings, some writing, and other things scattered throughout the site and across various social media
 				platforms. I do hope you find something you enjoy.
 			</p>
-			<p>Thanks, Scott</p>
+			<p>Your pal, Scott</p>
 		</>
 	)
 }

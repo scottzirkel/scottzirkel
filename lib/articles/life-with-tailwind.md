@@ -1,4 +1,5 @@
 ---
+slug: "life-with-tailwind"
 title: "Life with Tailwind"
 author: "Scott Zirkel"
 date: "2020-11-17"
@@ -9,6 +10,7 @@ originalPost:
 tags:
   - "tailwind"
   - "Tailwind CSS"
+blurb: "I've been using Tailwind CSS for several years now, so I thought I'd give an update to my earlier posts."
 ---
 ![Photo by Safar Safarov on Unsplash](/articles/computer.webp)
 *Photo by [Safar Safarov](https://unsplash.com/@codestorm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*

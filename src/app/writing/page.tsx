@@ -5,6 +5,12 @@ import wonderdog from '../../../public/wonderdog-inc.png'
 import Book from '../components/Book'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Writing by Scott Zirkel',
+	description: 'Type, monkeys, type!'
+}
 
 const selfPublishedBooks = [
 	{

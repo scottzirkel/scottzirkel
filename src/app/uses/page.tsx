@@ -1,5 +1,11 @@
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Things I Use',
+	description: 'Software, office furniture, etc...'
+}
 
 export default function Page() {
 	return (

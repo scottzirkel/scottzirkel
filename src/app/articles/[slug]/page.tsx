@@ -6,6 +6,30 @@ import { notFound } from 'next/navigation'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import styles from './styles.module.css'
 
+type Props = {
+	params: { slug: string }
+	searchParams: { [key: string]: string | string[] | undefined }
+}
+
+type Article = {
+	slug: string,
+	title?: string | null
+	blurb?: string | null
+}
+
+export async function generateMetadata({ params }: Props) {
+	let { props } = await getArticles()
+
+	const article: Article = props.articles.filter((article) => article.slug === params.slug)[0]
+	if (typeof article === 'undefined') {
+		notFound()
+	}
+
+	return {
+		title: article.title,
+		description: article.blurb,
+	}
+}
 async function getArticles() {
 	const files = fs.readdirSync('./lib/articles')
 	const articles = files.map((fileName) => {
@@ -26,13 +50,15 @@ async function getArticles() {
 	}
 }
 
-export async function generateStaticParams() {
-	const { props } = await getArticles()
+// export async function generateStaticParams() {
+// 	const { props } = await getArticles()
 
-	return props.articles.map((article: any) => ({
-		slug: article.slug,
-	}))
-}
+// 	return props.articles.map((article) => ({
+// 		slug: article.slug,
+// 		title: article.title,
+// 		blurb: article.blurb
+// 	}))
+// }
 
 async function getArticle({ slug }: any) {
 	if (typeof slug === 'undefined') {

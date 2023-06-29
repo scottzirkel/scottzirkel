@@ -1,4 +1,5 @@
 ---
+slug: "a-year-with-tailwind"
 title: "A Year with Tailwind"
 author: "Scott Zirkel"
 date: "2018-11-06"
@@ -10,6 +11,7 @@ originalPost:
 tags:
   - "tailwind"
   - "Tailwind CSS"
+blurb: "I've been using the new Tailwind CSS for a year now, here are my impressions."
 ---
 
 ### A Year With Tailwind

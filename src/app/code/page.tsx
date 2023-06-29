@@ -1,6 +1,12 @@
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
 import styles from '../monitor.module.css'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Code by Scott Zirkel',
+	description: '01001110011001010111001001100100'
+}
 
 export default function Page() {
 	return (

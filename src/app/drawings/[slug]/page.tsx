@@ -5,7 +5,24 @@ import { sketchcards } from 'lib/sketchcards'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
-export default function Page({ params }: any) {
+type Props = {
+	params: { slug: string }
+	searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({ params }: Props) {
+	const card: Sketchcard = sketchcards.filter((card) => card.slug === params.slug)[0]
+	if (typeof card === 'undefined') {
+		notFound()
+	}
+
+	return {
+		title: card.project,
+		description: `Sketchcard project from ${card.year}`,
+	}
+}
+
+export default function Page({ params }: Props) {
 	const card: Sketchcard = sketchcards.filter((card) => card.slug === params.slug)[0]
 	if (typeof card === 'undefined') {
 		notFound()

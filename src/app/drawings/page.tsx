@@ -1,12 +1,17 @@
-'use client'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { sketchcards } from '../../../lib/sketchcards'
 import sketchbookCover from '../../../public/2009-sketchbook-cover.jpg'
 import fairerCover from '../../../public/fairer-cover.webp'
 import Book from '../components/Book'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Drawings by Scott Zirkel',
+	description: 'Sketchbook collections, sketchcards, and more.'
+}
 
 const sketchbooks = [
 	{
@@ -45,7 +50,6 @@ const pinups = [
 ]
 
 export default function Page() {
-	const router = useRouter()
 	return (
 		<>
 			<PageTitle>Drawings</PageTitle>
@@ -68,25 +72,26 @@ export default function Page() {
 			<PageSubtitle>Sketchcard Projects</PageSubtitle>
 			<div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
 				{sketchcards.map((card) => (
-					<figure
-						key={card.slug}
-						onClick={() => router.push(`/drawings/${card.slug}`)}
-						className="col-span-1 flex cursor-pointer flex-col items-center justify-between overflow-hidden rounded-lg bg-white shadow hover:shadow-md"
-					>
-						{card.preview ? (
-							<Image src={card.preview} alt="Firefly sketchcards" className="aspect-[8/11] object-cover" />
-						) : (
-							<div className="flex aspect-[8/11] w-full flex-col items-center justify-center bg-gray-600 text-6xl font-bold">
-								?
-							</div>
-						)}
-						<figcaption className="flex flex-1 flex-col items-center justify-center p-2 text-center">
-							<p className="text-lg font-bold">{card.project}</p>
-							<p className="text-base">
-								{card.year} {card.company}
-							</p>
-						</figcaption>
-					</figure>
+					<Link href={`/drawings/${card.slug}`} key={card.slug}>
+						<figure
+							// onClick={() => router.push(`/drawings/${card.slug}`)}
+							className="col-span-1 flex cursor-pointer flex-col items-center justify-between overflow-hidden rounded-lg bg-white shadow hover:shadow-md"
+						>
+							{card.preview ? (
+								<Image src={card.preview} alt="Firefly sketchcards" className="aspect-[8/11] object-cover" />
+							) : (
+								<div className="flex aspect-[8/11] w-full flex-col items-center justify-center bg-gray-600 text-6xl font-bold">
+									?
+								</div>
+							)}
+							<figcaption className="flex flex-1 flex-col items-center justify-center p-2 text-center">
+								<p className="text-lg font-bold">{card.project}</p>
+								<p className="text-base">
+									{card.year} {card.company}
+								</p>
+							</figcaption>
+						</figure>
+					</Link>
 				))}
 			</div>
 			<PageSubtitle>Pinups</PageSubtitle>
