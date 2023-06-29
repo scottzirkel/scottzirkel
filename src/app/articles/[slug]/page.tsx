@@ -50,15 +50,15 @@ async function getArticles() {
 	}
 }
 
-// export async function generateStaticParams() {
-// 	const { props } = await getArticles()
+export async function generateStaticParams() {
+	const { props } = await getArticles()
 
-// 	return props.articles.map((article) => ({
-// 		slug: article.slug,
-// 		title: article.title,
-// 		blurb: article.blurb
-// 	}))
-// }
+	return props.articles.map((article: Article) => ({
+		slug: article.slug,
+		title: article.title,
+		blurb: article.blurb
+	}))
+}
 
 async function getArticle({ slug }: any) {
 	if (typeof slug === 'undefined') {
