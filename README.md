@@ -1,5 +1,14 @@
 Hi 👋 My name is Scott Zirkel
-=============================Full Stack PHP Developer------------------------I've been writing code and designing sites for over 25 years now. I have a degree in Graphic Design and am a self-taught web dev specializing in PHP. Thanks, Scott 2 Kings 2:23-24* 🌍  I'm based in The Texas Hill Country* 🖥️  See my portfolio at [My Earthlink Site](http://scottzirkel.com)* ✉️  You can contact me at [scott@scottzirkel.com](mailto:scott@scottzirkel.com)* 🚀  I'm currently working on [Webstrips](http://webstrips.app)* 🤝  I'm open to collaborating on Webstrips SaSS app
+=============================
+Full Stack PHP Developer
+------------------------
+I've been writing code and designing sites for over 25 years now. I have a degree in Graphic Design and am a self-taught web dev specializing in PHP.
+Thanks, Scott 2 Kings 2:23-24
+* 🌍  I'm based in The Texas Hill Country
+* 🖥️  See my portfolio at [My Earthlink Site](http://scottzirkel.com)
+* ✉️  You can contact me at [scott@scottzirkel.com](mailto:scott@scottzirkel.com)
+* 🚀  I'm currently working on [Webstrips](http://webstrips.app)
+* 🤝  I'm open to collaborating on Webstrips SaSS app
 
 <a href="https://www.github.com/scottzirkel" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/scottzirkel?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a><a href="https://www.twitter.com/scottzirkel" target="_blank" rel="noreferrer"><img
