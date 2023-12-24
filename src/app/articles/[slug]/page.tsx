@@ -3,7 +3,7 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import 'highlight.js/styles/default.css'
 import { notFound } from 'next/navigation'
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import Markdown from 'react-markdown'
 import styles from './styles.module.css'
 
 type Props = {
@@ -102,7 +102,7 @@ export default async function Page({ params }: any) {
 					)}
 				</p>
 			</div>
-			<ReactMarkdown className={styles.article}>{content}</ReactMarkdown>
+			<Markdown className={styles.article}>{content}</Markdown>
 		</>
 	)
 }
