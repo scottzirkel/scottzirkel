@@ -29,4 +29,4 @@ src="https://img.shields.io/twitter/follow/scottzirkel?logo=twitter&style=for-th
 
 ### Support Me
 
-<a href="https://www.buymeacoffee.com/scottzirkel"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200" /></a>
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R6YPS9)
