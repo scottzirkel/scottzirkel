@@ -89,12 +89,22 @@ export default function Page() {
 								Tailwind CSS
 							</a>
 						</li>
+						<li>
+							<a
+								href="https://filamentphp.com"
+								target="_blank"
+								rel="noreferrer"
+								className="font-bold text-green-100 hover:text-white"
+							>
+								FilamentPHP
+							</a>
+						</li>
 					</ul>
 					<p>
 						This site is built in{' '}
 						<a href="https://nextjs.org" target="_blank" rel="noreferrer" className="font-bold text-green-100 hover:text-white">
 							Next.js
-						</a>
+						</a>, just becuase I wanted to learn something new.
 					</p>
 					<p>
 						99% of my code is private client work, but I try to save some of my non-client work on GitHub. You can also see me
