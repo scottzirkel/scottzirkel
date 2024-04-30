@@ -1,23 +1,23 @@
-import { AnalyticsWrapper } from './components/analytics'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Logo from './components/Logo'
-import { pressStart, ptMono, ptSans, ptSansCaption, ptSansNarrow } from './fonts'
+import { AnalyticsWrapper } from './components/analytics'
+import { freeLunch, pressStart, ptMono, ptSans, ptSansCaption, ptSansNarrow, wilcoLoftSans } from './fonts'
 import './globals.css'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html
 			lang="en"
-			className={`${ptSans.variable} ${ptSansNarrow.variable} ${ptSansCaption.variable} ${pressStart.variable} ${ptMono.variable}`}
+			className={`${wilcoLoftSans.variable} ${freeLunch.variable} ${ptSans.variable} ${ptSansNarrow.variable} ${ptSansCaption.variable} ${pressStart.variable} ${ptMono.variable}`}
 		>
 			{/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 			<head />
-			<body className="flex min-h-screen flex-col items-stretch justify-center border-t-8 border-red-500 bg-gray-900 font-sans leading-normal text-gray-600">
+			<body className="flex min-h-screen flex-col items-stretch justify-center border-t-8 border-red-500 bg-gray-900 font-sans leading-normal text-gray-900">
 				<Header />
 				<main className="h-full flex-1 bg-gray-50">
 					<div className="mx-auto lg:max-w-3xl">

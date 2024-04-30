@@ -80,8 +80,10 @@ const anthologies = [
 export default function Page() {
 	return (
 		<>
-			<PageTitle>Writing</PageTitle>
-			<PageSubtitle>Self-Published Comics</PageSubtitle>
+			<div>
+				<PageTitle>Writing</PageTitle>
+				<PageSubtitle>Self-Published Comics</PageSubtitle>
+			</div>
 			<div className="space-y-4">
 				{selfPublishedBooks.map((book) => (
 					<Book

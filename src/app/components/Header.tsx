@@ -48,10 +48,13 @@ export default function Header() {
 	return (
 		<header className="space-y-4 bg-gray-50 pt-8 md:pt-16">
 			<div className="mx-auto text-center leading-none">
-				<h1 className="text-5xl font-bold uppercase text-red-500 lg:text-6xl">
+				<h1
+					className="font-title text-5xl uppercase text-red-500 lg:text-6xl"
+					style={{ fontVariantLigatures: 'discretionary-ligatures' }}
+				>
 					<Link href="/">Scott Zirkel</Link>
 				</h1>
-				<h2 className="font-subtitle text-2xl font-bold uppercase text-gray-800 lg:text-3xl">Making stuff up since 1977</h2>
+				<h2 className="font-subtitle text-2xl uppercase text-gray-900 lg:text-3xl">Making stuff up since 1977</h2>
 			</div>
 			<nav className="m-4 space-y-2 text-center leading-tight lg:mt-0">
 				<div className="flex items-center justify-center space-x-4">
@@ -61,7 +64,7 @@ export default function Header() {
 							key={navItem.href}
 							className={`${navItem.rotate} ${
 								navItem.href.includes(segment) ? navItem.activeClass : 'text-gray-900'
-							} font-subtitle text-2xl font-bold uppercase hover:text-red-500 md:text-3xl lg:text-4xl`}
+							} font-subtitle text-2xl uppercase hover:text-red-500 md:text-3xl lg:text-4xl`}
 						>
 							{navItem.label}
 						</Link>
@@ -69,11 +72,7 @@ export default function Header() {
 				</div>
 				<div className="flex items-center justify-center space-x-4">
 					{secondaryNav.map((navItem) => (
-						<Link
-							href={navItem.href}
-							key={navItem.href}
-							className={`group relative block font-subtitle text-2xl font-bold text-red-500`}
-						>
+						<Link href={navItem.href} key={navItem.href} className={`group relative block font-subtitle text-2xl text-red-500`}>
 							<span className="relative z-10">{navItem.label}</span>
 							<span
 								className={`${navItem.hoverClass} ${

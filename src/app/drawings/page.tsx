@@ -52,8 +52,10 @@ const pinups = [
 export default function Page() {
 	return (
 		<>
-			<PageTitle>Drawings</PageTitle>
-			<PageSubtitle>Sketchbook Collections</PageSubtitle>
+			<div>
+				<PageTitle>Drawings</PageTitle>
+				<PageSubtitle>Sketchbook Collections</PageSubtitle>
+			</div>
 			<div className="flex items-center justify-between gap-4">
 				{sketchbooks.map((book) => (
 					<div key={book.title} className="w-1/2">

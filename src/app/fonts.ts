@@ -1,5 +1,21 @@
 import { Press_Start_2P, PT_Mono, PT_Sans, PT_Sans_Caption, PT_Sans_Narrow } from 'next/font/google'
-// import localFont from '@next/font/local'
+import localFont from 'next/font/local'
+
+export const freeLunch = localFont({
+	src: './fonts/Free-Lunch/FreeLunch-Regular.woff2',
+	variable: '--font-free-lunch',
+	display: 'swap',
+	weight: '400',
+	style: 'normal',
+})
+
+export const wilcoLoftSans = localFont({
+	src: './fonts/Wilco-Loft-Sans/WilcoLoftSans-Treble.woff2',
+	variable: '--font-wilco-loft-sans',
+	display: 'swap',
+	weight: '400',
+	style: 'normal',
+})
 
 // export const vaultAlarm = localFont({
 //   src: './fonts/Vault-Alarm/VaultAlarm-Regular.woff2',

@@ -37,7 +37,8 @@ module.exports = {
 		fontFamily: {
 			weird: ['var(--font-press-start-2p)', ...defaultTheme.fontFamily.mono],
 			sans: ['var(--font-pt-sans)', 'PT Sans', ...defaultTheme.fontFamily.sans],
-			subtitle: ['var(--font-pt-sans-narrow)', 'PT Sans Narrow', ...defaultTheme.fontFamily.sans],
+			title: ['var(--font-free-lunch)', ...defaultTheme.fontFamily.sans],
+			subtitle: ['var(--font-wilco-loft-sans)', ...defaultTheme.fontFamily.sans],
 			small: ['var(--font-pt-sans-caption)', 'PT Sans Caption', ...defaultTheme.fontFamily.sans],
 			mono: ['var(--font-pt-mono)', ...defaultTheme.fontFamily.mono],
 		},
