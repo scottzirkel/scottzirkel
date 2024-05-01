@@ -1,11 +1,16 @@
 import { Metadata } from 'next'
-import haywire from '../../../public/a-bit-haywire.png'
 import heGuy from '../../../public/he-guy.webp'
 import loreInvestigations from '../../../public/lore-investigations.webp'
 import wonderdog from '../../../public/wonderdog-inc.png'
 import Book from '../components/Book'
 import PageSubtitle from '../components/PageSubtitle'
 import PageTitle from '../components/PageTitle'
+
+const haywire = {
+	src: 'https://fpuceluz2zaazktm.public.blob.vercel-storage.com/a-bit-haywire.png',
+	width: 1024,
+	height: 631,
+}
 
 export const metadata: Metadata = {
 	title: 'Writing by Scott Zirkel',

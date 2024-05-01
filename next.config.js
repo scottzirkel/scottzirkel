@@ -7,6 +7,10 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'cdn.dribbble.com',
 			},
+			{
+				protocol: 'https',
+				hostname: '*.public.blob.vercel-storage.com',
+			},
 		],
 	},
 }
