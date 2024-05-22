@@ -1,6 +1,4 @@
 import { Metadata } from 'next'
-import PageSubtitle from '../components/PageSubtitle'
-import PageTitle from '../components/PageTitle'
 import styles from '../monitor.module.css'
 
 export const metadata: Metadata = {
@@ -13,22 +11,22 @@ export default function Page() {
 		<>
 			{/* For mobile, this should look like an old nokia or gameboy or something */}
 			<div
-				className={`${styles.monitor} relative mx-auto h-[480px] w-[640px] rounded-xl border-8 border-black bg-gradient-conic from-stone-600 to-stone-900 p-4 shadow-2xl blur-[0.5px]`}
+				className={`${styles.monitor} relative mx-auto aspect-[4/3] w-full rounded-xl border-8 border-black bg-gradient-conic from-stone-600 to-stone-900 p-4 shadow-2xl blur-[0.25px]`}
 				// className={`${styles.monitor} relative mx-auto border-8 border-black bg-gradient-conic shadow-2xl blur-[0.5px] from-gray-900 to-black p-4 rounded-xl w-[640px] h-[480px] xaspect-[4/3] overflow-hidden`}
 			>
-				<div className="absolute bottom-0 right-0 z-50 h-2 w-2 rounded-full border-2 border-[#b52300]">
-					<div className="absolute h-2 w-2 rounded-full bg-[#ff0000] blur-[0.5px]"></div>
+				<div className="absolute bottom-0 right-0 z-50 size-2 rounded-full border-2 border-[#b52300]">
+					<div className="absolute size-2 rounded-full bg-[#ff0000] blur-[0.5px]"></div>
 				</div>
 				<div className="pointer-events-none absolute inset-4 rounded-3xl bg-white"></div>
 				<div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/6 w-full bg-gradient-to-t from-black"></div>
 				<div className="pointer-events-none absolute inset-x-0 top-0 h-1/6 w-full bg-gradient-to-b from-black"></div>
 				<div
-					className={`${styles.scanlines} pointer-events-none absolute inset-0 z-[100] h-full w-full mix-blend-overlay blur-[0.05px]`}
+					className={`${styles.scanlines} pointer-events-none absolute inset-0 z-[100] size-full mix-blend-overlay blur-[0.25px]`}
 				></div>
 				<div
-					className={`relative h-full w-full space-y-6 overflow-x-hidden overflow-y-scroll rounded-3xl border-2 border-black bg-gradient-ellipse from-green-900 to-black p-4 pb-8 font-mono text-base text-green-300 mix-blend-multiply shadow-inner blur-[0.5px] ${styles.screenScrollbars}`}
+					className={`relative size-full space-y-6 overflow-x-hidden overflow-y-scroll overscroll-contain rounded-3xl border-2 border-black bg-gradient-ellipse from-green-800 to-black p-4 pb-[50%] font-mono text-base text-green-300 mix-blend-multiply shadow-inner blur-[0.5px] selection:bg-green-300 selection:text-green-900 ${styles.screenScrollbars}`}
 				>
-					<PageTitle>Code</PageTitle>
+					<h2 className="mt-2 font-mono text-4xl font-bold text-green-300">Code</h2>
 					<p>I primarily use Laravel, a PHP framework. I'm currently enhancing that with the following hotness:</p>
 					<ul>
 						<li>
@@ -104,13 +102,14 @@ export default function Page() {
 						This site is built in{' '}
 						<a href="https://nextjs.org" target="_blank" rel="noreferrer" className="font-bold text-green-100 hover:text-white">
 							Next.js
-						</a>, just becuase I wanted to learn something new.
+						</a>
+						, just because I wanted to learn something new.
 					</p>
 					<p>
 						99% of my code is private client work, but I try to save some of my non-client work on GitHub. You can also see me
 						trying new things at CodePen.
 					</p>
-					<PageSubtitle>Articles</PageSubtitle>
+					<h3 className="mb-4 font-mono text-2xl font-bold text-green-300">Articles</h3>
 					<h4>Kinda like a blog, but I never update it.</h4>
 					<p>
 						<a href="/articles/life-with-tailwind" className="block font-bold text-green-100 hover:text-white">

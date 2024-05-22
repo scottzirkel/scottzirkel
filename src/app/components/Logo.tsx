@@ -1,11 +1,6 @@
 export default function Logo() {
 	return (
-		<svg
-			className="h-48 w-48 fill-current text-gray-600 mix-blend-multiply"
-			viewBox="0 0 211.57 211.57"
-			width="192"
-			height="192"
-		>
+		<svg className="size-48 fill-current text-gray-600 mix-blend-multiply" viewBox="0 0 211.57 211.57" width="192" height="192">
 			<title>My signature in a circle</title>
 			<circle className="fill-transparent" cx="105.79" cy="105.79" r="105.79"></circle>
 			<path d="M105.79,1.72A104.07,104.07,0,1,1,1.72,105.79,104.06,104.06,0,0,1,105.79,1.72m0-1.72A105.81,105.81,0,0,0,64.61,203.26,105.81,105.81,0,0,0,147,8.31,105.2,105.2,0,0,0,105.79,0Z"></path>

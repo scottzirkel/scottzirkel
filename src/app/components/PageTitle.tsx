@@ -1,3 +1,3 @@
-export default function PageTitle({ children }: { children: React.ReactNode }) {
-	return <h2 className="font-title text-4xl">{children}</h2>
+export default function PageTitle({ children, className }: { children: React.ReactNode; className: string | null }) {
+	return <h2 className={`${className ?? null} font-title text-4xl`}>{children}</h2>
 }

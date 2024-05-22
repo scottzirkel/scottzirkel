@@ -12,8 +12,8 @@ type Book = {
 
 export default function Book({ logo = null, title, publisher, year, link = null, description, free = false }: Book) {
 	return (
-		<div className="bg-white p-4 shadow">
-			<div className="mx-auto p-4 sm:w-1/3">{logo && <Image src={logo} alt={title} />}</div>
+		<div className="rounded-lg bg-white p-4 shadow">
+			<div className="mx-auto py-6 text-center sm:w-1/2">{logo && <Image src={logo} alt={title} />}</div>
 			<p className="space-x-1 text-sm text-gray-800">
 				<time dateTime={year.toString()}>{year}</time>
 				<span>{publisher}</span>

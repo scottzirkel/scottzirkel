@@ -89,7 +89,7 @@ export default function Page() {
 				<PageTitle>Writing</PageTitle>
 				<PageSubtitle>Self-Published Comics</PageSubtitle>
 			</div>
-			<div className="space-y-4">
+			<div className="grid grid-cols-2 gap-4">
 				{selfPublishedBooks.map((book) => (
 					<Book
 						key={book.title}
@@ -104,7 +104,7 @@ export default function Page() {
 				))}
 			</div>
 			<PageSubtitle>Published Comics</PageSubtitle>
-			<div className="space-y-4">
+			<div className="grid grid-cols-2 gap-4">
 				{publishedBooks.map((book) => (
 					<Book
 						key={book.title}
@@ -119,7 +119,7 @@ export default function Page() {
 				))}
 			</div>
 			<PageSubtitle>Anthology Comics</PageSubtitle>
-			<div className="space-y-4">
+			<div className="grid grid-cols-2 gap-4">
 				{anthologies.map((book) => (
 					<Book
 						key={book.title}

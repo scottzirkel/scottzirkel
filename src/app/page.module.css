@@ -39,12 +39,12 @@
 	font-family: var(--font-mono);
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(3, minmax(33%, auto));
-	width: var(--max-width);
-	max-width: 100%;
-}
+/*.grid {*/
+/*	display: grid;*/
+/*	grid-template-columns: repeat(3, minmax(33%, auto));*/
+/*	width: var(--max-width);*/
+/*	max-width: 100%;*/
+/*}*/
 
 .card {
 	padding: 1rem 1.2rem;
