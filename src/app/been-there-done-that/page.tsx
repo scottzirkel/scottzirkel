@@ -14,12 +14,14 @@ export const metadata: Metadata = {
 export default function Page() {
 	return (
 		<>
-			<PageTitle>Been There Done That</PageTitle>
-			<p>
-				Many people have bucket lists. Things they want to do before they die. Most die before doing any of them. Instead, I
-				take every opportunity to explore I can. Here's a list of places I've been and things I've done.{' '}
-			</p>
-			<div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+			<header className="space-y-4">
+				<PageTitle>Been There Done That</PageTitle>
+				<p>
+					Many people have bucket lists. Things they want to do before they die. Most die before doing any of them. Instead, I
+					take every opportunity to explore I can. Here's a list of places I've been and things I've done.{' '}
+				</p>
+			</header>
+			<section className="grid grid-cols-1 gap-8 sm:grid-cols-3">
 				<div className="col-span-1">
 					<PageSubtitle>States</PageSubtitle>
 					<ol className="list-inside list-decimal">
@@ -79,7 +81,7 @@ export default function Page() {
 						))}
 					</ol>
 				</div>
-			</div>
+			</section>
 		</>
 	)
 }

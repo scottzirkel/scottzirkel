@@ -85,54 +85,76 @@ const anthologies = [
 export default function Page() {
 	return (
 		<>
-			<div>
+			<header className="space-y-4">
 				<PageTitle>Writing</PageTitle>
+				<p>Over the last few decades I've been privileged enough to have written several comic books.</p>
+				<p>
+					Recently I've been branching out into writing novels/novellas. I'm just getting started, but if you'd like to follow
+					me on that journey, I have setup a newsletter on{' '}
+					<a
+						href="https://scottzirkel.substack.com"
+						className="font-semibold text-red-600 underline decoration-red-500 decoration-4"
+						target="_blank"
+						rel="nofollow"
+					>
+						substack
+					</a>{' '}
+					and hope you'll follow along.
+				</p>
+				<p>I am currently working on an untitled sci-fi/adventure series and hope to have more info late summer 2024.</p>
+				<iframe src="https://scottzirkel.substack.com/embed" width="480" height="150" className="mx-auto bg-gray-50"></iframe>
+			</header>
+			<section>
 				<PageSubtitle>Self-Published Comics</PageSubtitle>
-			</div>
-			<div className="grid grid-cols-2 gap-4">
-				{selfPublishedBooks.map((book) => (
-					<Book
-						key={book.title}
-						logo={book.logo}
-						title={book.title}
-						publisher={book.publisher}
-						year={book.year}
-						description={book.description}
-						link={book.link}
-						free={book.free}
-					/>
-				))}
-			</div>
-			<PageSubtitle>Published Comics</PageSubtitle>
-			<div className="grid grid-cols-2 gap-4">
-				{publishedBooks.map((book) => (
-					<Book
-						key={book.title}
-						logo={book.logo}
-						title={book.title}
-						publisher={book.publisher}
-						year={book.year}
-						description={book.description}
-						link={book.link}
-						free={book.free}
-					/>
-				))}
-			</div>
-			<PageSubtitle>Anthology Comics</PageSubtitle>
-			<div className="grid grid-cols-2 gap-4">
-				{anthologies.map((book) => (
-					<Book
-						key={book.title}
-						title={book.title}
-						publisher={book.publisher}
-						year={book.year}
-						description={book.description}
-						link={book.link}
-						logo={null}
-						free={book.free}
-					/>
-				))}
-			</div>
+				<div className="grid grid-cols-2 gap-4">
+					{selfPublishedBooks.map((book) => (
+						<Book
+							key={book.title}
+							logo={book.logo}
+							title={book.title}
+							publisher={book.publisher}
+							year={book.year}
+							description={book.description}
+							link={book.link}
+							free={book.free}
+						/>
+					))}
+				</div>
+			</section>
+			<section>
+				<PageSubtitle>Published Comics</PageSubtitle>
+				<div className="grid grid-cols-2 gap-4">
+					{publishedBooks.map((book) => (
+						<Book
+							key={book.title}
+							logo={book.logo}
+							title={book.title}
+							publisher={book.publisher}
+							year={book.year}
+							description={book.description}
+							link={book.link}
+							free={book.free}
+						/>
+					))}
+				</div>
+			</section>
+			<section>
+				<PageSubtitle>Anthology Comics</PageSubtitle>
+				<div className="grid grid-cols-2 gap-4">
+					{anthologies.map((book) => (
+						<Book
+							key={book.title}
+							title={book.title}
+							publisher={book.publisher}
+							year={book.year}
+							description={book.description}
+							link={book.link}
+							logo={null}
+							free={book.free}
+						/>
+					))}
+				</div>
+			</section>
 		</>
 	)
 }
