@@ -36,7 +36,7 @@
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
     "prettier-plugin-organize-attributes": "^1.0.0",
-    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-organize-imports": "^4.0.0",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "tailwindcss": "^3.4.0"
   }
