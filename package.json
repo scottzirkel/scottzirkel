@@ -1,43 +1,16 @@
 {
-  "name": "scottzirkel",
-  "version": "8.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write src"
-  },
-  "dependencies": {
-    "@icons-pack/react-simple-icons": "^9.3.0",
-    "@types/node": "^20.10.5",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.18",
-    "@vercel/analytics": "^1.1.1",
-    "@vercel/speed-insights": "^1.0.2",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.0.4",
-    "gray-matter": "^4.0.3",
-    "highlight.js": "^11.9.0",
-    "markdown-it": "^13.0.2",
-    "next": "^14.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-markdown": "^9.0.1",
-    "sharp": "^0.33.1",
-    "typescript": "^5.3.3"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.16",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-tailwindcss": "^3.13.0",
-    "postcss": "^8.4.32",
-    "prettier": "^3.1.1",
-    "prettier-plugin-organize-attributes": "^1.0.0",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "prettier-plugin-tailwindcss": "^0.5.9",
-    "tailwindcss": "^3.4.0"
-  }
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.14",
+		"autoprefixer": "^10.4.20",
+		"laravel-vite-plugin": "^1.0",
+		"postcss": "^8.4.41",
+		"tailwindcss": "^3.4.9",
+		"vite": "^5.0"
+	}
 }

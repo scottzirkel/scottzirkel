@@ -8,11 +8,11 @@ Thanks for your interest,
 Scott  
 2 Kings 2:23-24
 
-* 🌍  I'm based in The Texas Hill Country
-* 🖥️  See my portfolio at [My Earthlink Site](http://scottzirkel.com)
-* ✉️  You can contact me at [scott@scottzirkel.com](mailto:scott@scottzirkel.com)
-* 🚀  I'm currently working on [Webstrips](http://webstrips.app)
-* 🤝  I'm open to collaborating on Webstrips SaaS app
+* 🌍 I'm based in The Texas Hill Country
+* 🖥️ See my portfolio at [My Earthlink Site](http://scottzirkel.com)
+* ✉️ You can contact me at [scott@scottzirkel.com](mailto:scott@scottzirkel.com)
+* 🚀 I'm currently working on [Webstrips](http://webstrips.app)
+* 🤝 I'm open to collaborating on Webstrips SaaS app
 
 <a href="https://www.github.com/scottzirkel" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/scottzirkel?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a><a href="https://www.twitter.com/scottzirkel" target="_blank" rel="noreferrer"><img
