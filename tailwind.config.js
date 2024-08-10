@@ -1,7 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{js,ts,jsx,tsx}'],
+	content: [
+		"./resources/views/**/*.blade.php",
+	],
 	theme: {
 		extend: {
 			backgroundImage: {
@@ -35,12 +37,12 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			weird: ['var(--font-press-start-2p)', ...defaultTheme.fontFamily.mono],
-			sans: ['var(--font-pt-sans)', 'PT Sans', ...defaultTheme.fontFamily.sans],
+			weird: ['"Press Start 2P"', 'display', ...defaultTheme.fontFamily.mono],
+			sans: ['"PT Sans"', ...defaultTheme.fontFamily.sans],
 			title: ['var(--font-free-lunch)', ...defaultTheme.fontFamily.sans],
 			subtitle: ['var(--font-wilco-loft-sans)', ...defaultTheme.fontFamily.sans],
-			small: ['var(--font-pt-sans-caption)', 'PT Sans Caption', ...defaultTheme.fontFamily.sans],
-			mono: ['var(--font-pt-mono)', ...defaultTheme.fontFamily.mono],
+			small: ['"PT Sans Caption"', ...defaultTheme.fontFamily.sans],
+			mono: ['"PT Mono"', ...defaultTheme.fontFamily.mono],
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],
