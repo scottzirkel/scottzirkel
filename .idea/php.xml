@@ -146,6 +146,10 @@
       <path value="$PROJECT_DIR$/vendor/codeat3/blade-line-awesome-icons" />
       <path value="$PROJECT_DIR$/vendor/codeat3/blade-forkawesome" />
       <path value="$PROJECT_DIR$/vendor/codeat3/blade-simple-icons" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-crt-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
