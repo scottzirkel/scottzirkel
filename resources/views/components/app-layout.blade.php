@@ -6,7 +6,18 @@
     <title>{{ config('app.name') }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+        media="print"
+        onload="this.onload=null;this.removeAttribute('media');"
+    >
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        >
+    </noscript>
     {{--    <link rel="preconnect" href="https://fonts.bunny.net">--}}
     {{--    <link href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700" rel="stylesheet" />--}}
     <meta name="description" content="Artist, author, developer, designer. Making stuff up since 1977">
