@@ -36,6 +36,12 @@ return [
             'throw' => false,
         ],
 
+        'pages' => [
+            'driver' => 'local',
+            'root' => resource_path('views/pages'),
+            'throw' => false,
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
@@ -69,6 +75,7 @@ return [
             'use_path_style_endpoint' => env('DO_USE_PATH_STYLE_ENDPOINT', false),
             'visibility' => 'public',
         ],
+
     ],
 
     /*
