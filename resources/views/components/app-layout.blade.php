@@ -21,8 +21,9 @@
     {{--    <link rel="preconnect" href="https://fonts.bunny.net">--}}
     {{--    <link href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700" rel="stylesheet" />--}}
     <meta name="description" content="Artist, author, developer, designer. Making stuff up since 1977">
+    <meta name="canonical" content="{{ request()->fullUrl() }}" />
     <link rel="icon" href="/favicon.ico" />
-    <meta property="og:url" content="https://scottzirkel.com" />
+    <meta property="og:url" content="{{ request()->fullUrl() }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Scott Zirkel" />
     <meta property="og:description" content="Artist, author, developer, designer. Making stuff up since 1977" />
@@ -32,7 +33,7 @@
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="scottzirkel.com" />
-    <meta property="twitter:url" content="https://scottzirkel.com" />
+    <meta property="twitter:url" content="{{ request()->fullUrl() }}" />
     <meta name="twitter:title" content="Scott Zirkel" />
     <meta name="twitter:description" content="Artist, author, developer, designer. Making stuff up since 1977" />
     <meta
