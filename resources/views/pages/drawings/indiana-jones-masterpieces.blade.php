@@ -2,7 +2,7 @@
 <x-app-layout>
     <header>
         <h2 class="font-title text-4xl">Indiana Jones Masterpieces</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2008</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Topps 2008</h3>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <img alt="Indiana Jones Masterpieces sketchcard" loading="lazy" width="400" height="561" decoding="async" data-nimg="1" class="col-span-1 max-w-full" src="{{ $storage::url('drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-01.webp') }}" style="color: transparent;">

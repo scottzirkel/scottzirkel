@@ -45,11 +45,11 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="flex min-h-screen flex-col items-stretch justify-center border-t-8 border-red-500 bg-gray-900 font-sans leading-normal text-gray-900">
+<body class="flex min-h-screen flex-col items-stretch justify-center border-t-8 border-red-500 bg-tone-900 font-sans leading-normal text-tone-900">
 <x-header />
-<main class="h-full flex-1 bg-gray-50">
+<main class="h-full flex-1 bg-tone-50">
     <div class="mx-auto lg:max-w-5xl">
-        <article class="sp:px-6 space-y-8 px-4 py-10 text-xl text-gray-800 sm:py-12 lg:px-8 lg:py-16">
+        <article class="sp:px-6 space-y-8 px-4 py-10 text-xl text-tone-800 sm:py-12 lg:px-8 lg:py-16">
             {{ $slot }}
         </article>
         <div class="absolute inset-0 hidden size-48 opacity-100 md:block">

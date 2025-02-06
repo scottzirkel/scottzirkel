@@ -5,9 +5,9 @@
             <a href="https://scottzirkel.substack.com" class="font-semibold text-red-600 underline decoration-red-500 decoration-4" target="_blank" rel="nofollow">substack</a> and hope you'll follow along.
         </p>
         <p>I am currently working on an untitled sci-fi/adventure series and hope to have more info late summer 2024.</p>
-        <iframe src="https://scottzirkel.substack.com/embed" width="480" height="150" class="mx-auto bg-gray-50"></iframe>
+        <iframe src="https://scottzirkel.substack.com/embed" width="480" height="150" class="mx-auto bg-tone-50"></iframe>
     </header>
-    <section><h3 class="mb-4 font-subtitle text-2xl text-gray-800">Self-Published Comics</h3>
+    <section><h3 class="mb-4 font-subtitle text-2xl text-tone-800">Self-Published Comics</h3>
         <div class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Guys of the Universe"
@@ -32,7 +32,7 @@
         </div>
     </section>
     <section>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Published Comics</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Published Comics</h3>
         <div class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Wonderdog, Inc"
@@ -57,7 +57,7 @@
         </div>
     </section>
     <section>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Anthology Comics</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Anthology Comics</h3>
         <div class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Josh Howard Presents Sasquatch"

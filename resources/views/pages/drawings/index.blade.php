@@ -5,7 +5,7 @@
         <p>I have an eye condition that prevents me from drawing as much as I used to, but I still tinker with the iPad. Zooming in helps.</p>
     </header>
     <section>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Sketchbook Collections</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Sketchbook Collections</h3>
         <div class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Fairer"
@@ -29,7 +29,7 @@
             </x-book>
         </div>
     </section>
-    <section><h3 class="mb-4 font-subtitle text-2xl text-gray-800">Sketchcard Projects</h3>
+    <section><h3 class="mb-4 font-subtitle text-2xl text-tone-800">Sketchcard Projects</h3>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <a href="/drawings/totally-radical-80s" class="col-span-1 block">
                 <x-figure title="Totally Radical 80's" publisher="Artists Unite" />
@@ -79,20 +79,20 @@
         </div>
     </section>
     <section>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Pinups</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Pinups</h3>
         <p>I have been fortunate enough over the years to be asked by my friends to provide pin-up art for their books.</p>
         <dl class="mt-4 space-y-2">
             <div>
                 <dt class="font-semibold">Dead@17</dt>
-                <dd class="text-lg text-gray-700">Image Comics</dd>
+                <dd class="text-lg text-tone-700">Image Comics</dd>
             </div>
             <div>
                 <dt class="font-semibold">L'il Red Stitch</dt>
-                <dd class="text-lg text-gray-700">Penny Farthing Press</dd>
+                <dd class="text-lg text-tone-700">Penny Farthing Press</dd>
             </div>
             <div>
                 <dt class="font-semibold">Decoy</dt>
-                <dd class="text-lg text-gray-700">Penny Farthing Press</dd>
+                <dd class="text-lg text-tone-700">Penny Farthing Press</dd>
             </div>
         </dl>
     </section>

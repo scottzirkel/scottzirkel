@@ -4,14 +4,14 @@
     </header>
     <p>
         I studied design in college and started working as a designer after graduation. I worked on a multitude of projects for clients of all sizes. After
-        <mark class="inline-block rotate-1 bg-red-500 px-1 text-gray-50">
+        <mark class="inline-block rotate-1 bg-red-500 px-1 text-tone-50">
             <span class="inline-block -rotate-1">more than 20 years,</span>
         </mark>
         I realized I didn't enjoy it as much as I used to. I accomplished a lot, including being able to do package design for a Star Wars licensed product.
     </p>
     <p>
         Fortunately while in college, one of my professors introduced me to HTML, enforcing the importance of learning to hand code, and not rely on tools to build for you – which at the time was
-        <mark class="inline-block -rotate-3 bg-red-500 px-1 text-gray-50">
+        <mark class="inline-block -rotate-3 bg-red-500 px-1 text-tone-50">
             <span class="inline-block rotate-3">FrontPage.</span>
         </mark>
     </p>
@@ -20,10 +20,10 @@
     </p>
     <p>
         I still enjoy designing for myself, but for the most part,
-        <mark class="inline bg-red-500 px-1 text-gray-50">I'm no longer taking on client design work.</mark>
+        <mark class="inline bg-red-500 px-1 text-tone-50">I'm no longer taking on client design work.</mark>
     </p>
     <section class="space-y-2">
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Dribbble</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Dribbble</h3>
         I do try to keep my dribbble account active with personal projects, so follow me there, if you want the latest and greatest.
         <div class="grid sm:grid-cols-3 gap-4">
             <a class="block" href="https://dribbble.com/shots/6626854-The-mostly-True-Adventures-of-the-Walsh-Twins?utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=The%20(mostly)%20True%20Adventures%20of%20the%20Walsh%20Twins&amp;utm_medium=Social_Share&amp;utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=The%20(mostly)%20True%20Adventures%20of%20the%20Walsh%20Twins&amp;utm_medium=Social_Share">
@@ -47,10 +47,10 @@
         </div>
     </section>
     <section class="space-y-2">
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Professional Design</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Professional Design</h3>
         For 10 years I worked as designer, then Creative Director of Alara Creative, a bespoke marketing firm. I was able to work with a variety of clients on a myriad of projects.
         Here are a few of my favorite from over the years:
-        <p class="border-l-4 border-l-red-500 bg-gray-200 pl-4 font-mono text-lg">
+        <p class="border-l-4 border-l-red-500 bg-tone-200 pl-4 font-mono text-lg">
             TODO: Drop in logos, package design, web design, etc, BEFORE launch. Otherwise people will see this and think you're a poser.
         </p>
     </section>

@@ -1,6 +1,86 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+    --font-*: initial;
+    --font-weird: var(--font-press-start-2p), ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --font-sans: var(--font-pt-sans), ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-title: var(--font-free-lunch), ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-subtitle: var(--font-wilco-loft-sans), ui-sans-serif, system-ui,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    --font-small: var(--font-pt-sans-caption), ui-sans-serif, system-ui,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    --font-mono: var(--font-pt-mono), ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+    --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+    --background-image-gradient-ellipse: radial-gradient(
+        ellipse,
+        var(--tw-gradient-stops)
+    );
+    --background-image-gradient-conic: conic-gradient(
+        from 54deg,
+        var(--tw-gradient-stops)
+    );
+
+    --color-tone-50: oklch(98.78% 0.0013 106.42);
+    --color-tone-100: oklch(97.85% 0.0013 106.42);
+    --color-tone-200: oklch(96.98% 0.0054 106.42);
+    --color-tone-300: oklch(95.12% 0.008 106.42);
+    --color-tone-400: oklch(91.66% 0.0148 106.42);
+    --color-tone-500: oklch(87.94% 0.0217 106.42);
+    --color-tone-600: oklch(81.18% 0.0194 106.42);
+    --color-tone-700: oklch(60.45% 0.0148 106.42);
+    --color-tone-800: oklch(49.13% 0.011 106.42);
+    --color-tone-900: oklch(37.36% 0.0083 106.42);
+    --color-tone-950: oklch(32% 0.0083 106.42);
+
+    --color-primary-100: #f8ecec;
+    --color-primary-200: #edd0d0;
+    --color-primary-300: #e2b3b4;
+    --color-primary-400: #cc7b7b;
+    --color-primary-500: #B64243 oklch(54.04% 0.1508 23.15);
+    --color-primary-600: #a43b3c;
+    --color-primary-700: #6d2828;
+    --color-primary-800: #521e1e;
+    --color-primary-900: #371414;
+
+    --color-red-50: oklch(97.78% 0.0108 23.15);
+    --color-red-100: oklch(93.56% 0.0321 23.15);
+    --color-red-200: oklch(88.11% 0.0609 23.15);
+    --color-red-300: oklch(82.67% 0.0908 23.15);
+    --color-red-400: oklch(74.22% 0.1398 23.15);
+    --color-red-500: oklch(64.78% 0.1472 23.15);
+    --color-red-600: oklch(57.33% 0.1299 23.15);
+    --color-red-700: oklch(46.89% 0.1067 23.15);
+    --color-red-800: oklch(39.44% 0.0898 23.15);
+    --color-red-900: oklch(32% 0.0726 23.15);
+    --color-red-950: oklch(23.78% 0.054 23.15);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
 
 @font-face {
     font-family: 'free-lunch';
@@ -8,7 +88,7 @@
     url('../fonts/Free-Lunch/FreeLunch-Regular.woff') format("woff");
     font-display: swap;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 
 @font-face {
@@ -17,7 +97,7 @@
     url('../fonts/Wilco-Loft-Sans/WilcoLoftSans-Treble.woff') format("woff");
     font-display: swap;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 
 @font-face {
@@ -26,7 +106,7 @@
     url('../fonts/PT-Sans/PTSans-Regular.ttf') format("truetype");
     font-display: swap;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 
 @font-face {
@@ -35,7 +115,7 @@
     url('../fonts/PT-Sans/PTSans-Bold.ttf') format("truetype");
     font-display: swap;
     font-weight: 700;
-    font-style: normal
+    font-style: normal;
 }
 
 @font-face {
@@ -44,7 +124,7 @@
     url('../fonts/PT-Sans-Caption/PTSansCaption-Regular.ttf') format("truetype");
     font-display: swap;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 
 @font-face {
@@ -53,7 +133,7 @@
     url('../fonts/PT-Mono/PTMono-Regular.ttf') format("truetype");
     font-display: swap;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 
 
@@ -64,7 +144,7 @@
     url('../fonts/Press-Start-2P/PressStart2P-Regular.ttf') format("truetype");
     font-display: swap;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 
 :root {

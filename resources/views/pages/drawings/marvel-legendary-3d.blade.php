@@ -2,7 +2,7 @@
 <x-app-layout>
     <header>
         <h2 class="font-title text-4xl">Marvel Legendary/3D</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2014/2015</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Upper Deck 2014/2015</h3>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <img alt="Marvel Legendary/3D sketchcard" loading="lazy" width="721" height="1000" decoding="async" data-nimg="1" class="col-span-1 max-w-full" src="{{ $storage::url('drawings/sketchcards/marvel-legendary-3d/marvel-legendary-01-scott-zirkel.webp') }}" style="color: transparent;">

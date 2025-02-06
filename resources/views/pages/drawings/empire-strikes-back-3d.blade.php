@@ -2,7 +2,7 @@
 <x-app-layout>
     <header>
         <h2 class="font-title text-4xl">Empire Strikes Back 3D</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2010</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-tone-800">Topps 2010</h3>
     </header>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <img alt="Empire Strikes Back 3D sketchcard" loading="lazy" width="465" height="1000" decoding="async" data-nimg="1" class="col-span-1 max-w-full" src="{{ $storage::url('drawings/sketchcards/empire-strikes-back-3d/empire-strikes-back-01-scott-zirkel.webp') }}" style="color: transparent;">
