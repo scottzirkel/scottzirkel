@@ -82,6 +82,10 @@
 				<p><strong>Ray</strong></p>
 				<p>Ray is another debugging tool. It gives you the ability to output exceptions, dumps, and more. I usually leave it on the laptop monitor, off to the side, as it listens passively for anything it needs to tell me.</p>
 			</li>
+            <li>
+                <p><strong>Ploi</strong></p>
+                <p>Ploi is a server management I use to provision my servers and deploy my sites.</p>
+            </li>
         </ul>
     </section>
     <section>
