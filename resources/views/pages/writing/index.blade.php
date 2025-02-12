@@ -11,8 +11,8 @@
             <div class="flex items-center gap-4">
                 <dt class="shrink-0 sm:text-base font-semibold">Part 1</dt>
                 <div class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
-                    <div class="bg-sky-500 w-[71.76%] border-2 border-sky-600 h-full rounded-full">
-                        <dd class="sr-only">71.76%</dd>
+                    <div class="bg-sky-500 w-[75.79%] border-2 border-sky-600 h-full rounded-full">
+                        <dd class="sr-only">75.79%</dd>
                     </div>
                 </div>
             </div>
