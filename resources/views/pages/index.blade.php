@@ -14,6 +14,10 @@
         </mark>
         and across various social media platforms. I do hope you find something you enjoy.
     </p>
+    <div>
+        <h3 class="mb-2 font-title">Current book progress:</h3>
+        <x-writing-status :parts="[1, 0, 0, 0, 0]" />
+    </div>
     <p>
         Your pal,
         <br />

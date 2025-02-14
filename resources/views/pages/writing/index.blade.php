@@ -7,44 +7,7 @@
         <p>I am currently working on an untitled sci-fi/adventure series.</p>
         <p>I'll keep some progress updated here as much as possible.</p>
         <p>I am currently on the first draft of book one, which I've broken into five parts.</p>
-        <dl class="sm:w-2/3 space-y-2">
-            <div class="flex items-center gap-4">
-                <dt class="shrink-0 sm:text-base font-semibold">Part 1</dt>
-                <div class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
-                    <div class="bg-sky-500 w-[81.98%] border-2 border-sky-600 h-full rounded-full">
-                        <dd class="sr-only">81.98%</dd>
-                    </div>
-                </div>
-            </div>
-            <div class="flex items-center gap-4">
-                <dt class="shrink-0 font-semibold sm:text-base">Part 2</dt>
-                <div class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
-                    {{--                    <div class="bg-sky-500 w-[0] border-2 border-sky-600 h-full rounded-full">--}}
-                    {{--                    </div>--}}
-                </div>
-            </div>
-            <div class="flex items-center gap-4">
-                <dt class="shrink-0 font-semibold sm:text-base">Part 3</dt>
-                <div class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
-                    {{--                    <div class="bg-sky-500 w-[0] border-2 border-sky-600 h-full rounded-full">--}}
-                    {{--                    </div>--}}
-                </div>
-            </div>
-            <div class="flex items-center gap-4">
-                <dt class="shrink-0 font-semibold sm:text-base">Part 4</dt>
-                <div class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
-                    {{--                    <div class="bg-sky-500 w-[0] border-2 border-sky-600 h-full rounded-full">--}}
-                    {{--                    </div>--}}
-                </div>
-            </div>
-            <div class="flex items-center gap-4">
-                <dt class="shrink-0 font-semibold sm:text-base">Part 5</dt>
-                <div class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
-                    {{--                    <div class="bg-sky-500 w-[0%] border-2 border-sky-600 h-full rounded-full">--}}
-                    {{--                    </div>--}}
-                </div>
-            </div>
-        </dl>
+        <x-writing-status :parts="[1, 0, 0, 0, 0]" />
         <div class="pt-2">
             <p class="text-center -mb-1">To stay up to date, please subscribe to my newsletter.</p>
             <iframe

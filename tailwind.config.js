@@ -35,6 +35,9 @@ module.exports = {
                     900: '#371414',
                 },
             },
+            width: {
+                current: '81.98%',
+            }
         },
         fontFamily: {
             weird: ['var(--font-press-start-2p)', ...defaultTheme.fontFamily.mono],
