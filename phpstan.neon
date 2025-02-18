@@ -16,3 +16,5 @@ parameters:
     checkModelProperties: true
     noEnvCallsOutsideOfConfig: true
     treatPhpDocTypesAsCertain: false
+
+   	tmpDir: tmp
