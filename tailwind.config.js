@@ -36,7 +36,7 @@ module.exports = {
                 },
             },
             width: {
-                current: '87.94%',
+                current: '95.15%',
             }
         },
         fontFamily: {
