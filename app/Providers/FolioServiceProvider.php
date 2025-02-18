@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use Laravel\Folio\Folio;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Folio\Folio;
 
 class FolioServiceProvider extends ServiceProvider
 {
@@ -22,7 +22,7 @@ class FolioServiceProvider extends ServiceProvider
     {
         Folio::path(resource_path('views/pages'))->middleware([
             '*' => [
-                'cache.headers:public;max_age=2628000;etag'
+                'cache.headers:public;max_age=2628000;etag',
             ],
         ]);
     }
