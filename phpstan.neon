@@ -17,4 +17,4 @@ parameters:
     noEnvCallsOutsideOfConfig: true
     treatPhpDocTypesAsCertain: false
 
-   	tmpDir: tmp
+    tmpDir: tmp

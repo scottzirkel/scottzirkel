@@ -21,3 +21,4 @@ yarn-error.log
 /.vscode
 /public/drawings
 public/hot
+/tmp
