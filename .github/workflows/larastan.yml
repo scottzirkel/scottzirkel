@@ -16,11 +16,9 @@ jobs:
           coverage: none
       - name: Install Composer
         run: composer install --prefer-dist --no-interaction
-        working-directory: ./src
 
       - name: Install Larastan
         run: composer require nunomaduro/Larastan --dev
 
       - name: Run Larastan
         run: vendor/bin/larastan
-        working-directory: ./src
