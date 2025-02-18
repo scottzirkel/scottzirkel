@@ -2,6 +2,7 @@
 
 namespace App\Support;
 
+use Spatie\Csp\Nonce\RandomString;
 use Illuminate\Support\Facades\Vite;
 use Spatie\Csp\Nonce\NonceGenerator;
 
@@ -9,6 +10,12 @@ class ViteNonceGenerator implements NonceGenerator
 {
     public function generate(): string
     {
-        return Vite::cspNonce();
+        $nonce = Vite::cspNonce();
+
+        if ( ! $nonce) {
+            $nonce = (new RandomString)->generate();
+        }
+
+        return $nonce;
     }
 }
