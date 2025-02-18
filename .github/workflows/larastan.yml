@@ -21,4 +21,4 @@ jobs:
         run: composer require nunomaduro/Larastan --dev
 
       - name: Run Larastan
-        run: vendor/bin/larastan
+        run: vendor/bin/phpstan analyze -c ./phpstan.neon
