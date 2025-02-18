@@ -18,16 +18,16 @@ class VitePublishCommand extends Command
 
         $buildFiles = File::allFiles(public_path('/build'));
 
-        $existingFiles = Storage::disk('do')->allFiles('build/scottzirkel');
+        $existingFiles = Storage::disk('do')->allFiles('scottzirkel/build');
 
         foreach ($buildFiles as $asset) {
-            if (in_array('build/scottzirkel/'.$asset->getRelativePathname(), $existingFiles)) {
+            if (in_array('scottzirkel/build/'.$asset->getRelativePathname(), $existingFiles)) {
                 continue;
             }
 
             $this->info('Uploading asset to: build/'.$asset->getRelativePathname());
 
-            Storage::disk('do')->put('/build/scottzirkel/'.$asset->getRelativePathname(), $asset->getContents());
+            Storage::disk('do')->put('/scottzirkel/build/'.$asset->getRelativePathname(), $asset->getContents());
         }
 
         $this->info('Vite assets published successfully');

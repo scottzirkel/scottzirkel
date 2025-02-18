@@ -40,6 +40,7 @@
         name="twitter:image"
         content="https://imagedelivery.net/ss7-gAVfWWJP_LdCZpUXVQ/2c84e5f7-9561-4a3e-84a0-f5b2140c5f00/og"
     />
+    {{--    @dd(Vite::asset('resources/css/app.css'))--}}
     <link href="{{ Vite::asset('resources/fonts/Free-Lunch/FreeLunch-Regular.woff2') }}" rel="font" />
     <link href="{{ Vite::asset('resources/fonts/Wilco-Loft-Sans/WilcoLoftSans-Treble.woff2') }}" rel="font" />
     @vite('resources/css/app.css')
