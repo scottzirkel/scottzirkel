@@ -1,0 +1,26 @@
+name: Larastan
+on:
+  push:
+jobs:
+  phpstan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          tools: composer, cs2pr
+          coverage: none
+      - name: Install Composer
+        run: composer install --prefer-dist --no-interaction
+        working-directory: ./src
+
+      - name: Install Larastan
+        run: composer require nunomaduro/Larastan --dev
+
+      - name: Run Larastan
+        run: vendor/bin/larastan
+        working-directory: ./src
