@@ -2,17 +2,17 @@
     @foreach($parts as $part)
         <div class="flex items-center gap-4">
             <dt class="shrink-0 sm:text-base font-semibold">Part {{ $loop->iteration }}</dt>
-            <div class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
+            <dd class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
                 @if ($part)
-                    <dd class="bg-sky-500 w-current border-2 border-sky-600 h-full rounded-full">
+                    <div class="bg-sky-500 w-current border-2 border-sky-600 h-full rounded-full">
                         <span class="sr-only">{{ $part }}%</span>
-                    </dd>
+                    </div>
                 @else
-                    <dd>
+                    <div>
                         <span class="sr-only">0%</span>
-                    </dd>
+                    </div>
                 @endif
-            </div>
+            </dd>
         </div>
     @endforeach
 </dl>
