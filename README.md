@@ -19,7 +19,9 @@ Scott
 
 ### Fancy Badges
 
-[![Larastan](https://github.com/scottzirkel/scottzirkel/actions/workflows/larastan.yml/badge.svg)](https://github.com/scottzirkel/scottzirkel/actions/workflows/larastan.yml)
+[![Larastan](https://github.com/scottzirkel/scottzirkel/actions/workflows/larastan.yml/badge.svg?style=flat&labelColor=ff0000)](https://github.com/scottzirkel/scottzirkel/actions/workflows/larastan.yml)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fscottzirkel.com%2Fup)
+![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/scottzirkel.com)
 
 ### Skills
 
