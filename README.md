@@ -11,12 +11,11 @@ Scott
 * 🌍 I'm based in The Texas Hill Country
 * 🖥️ See my portfolio at [My Earthlink Site](http://scottzirkel.com)
 * ✉️ You can contact me at [scott@scottzirkel.com](mailto:scott@scottzirkel.com)
-* 🚀 I'm currently working on [Webstrips](http://webstrips.app)
-* 🤝 I'm open to collaborating on Webstrips SaaS app
+* 🤝 I'm open to collaborating on [Webstrips SaaS app](http://webstrips.app)
 
-<a href="https://www.github.com/scottzirkel" target="_blank" rel="noreferrer"><img
-src="https://img.shields.io/github/followers/scottzirkel?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a><a href="https://www.twitter.com/scottzirkel" target="_blank" rel="noreferrer"><img
-src="https://img.shields.io/twitter/follow/scottzirkel?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"/></a>
+<a href="https://www.github.com/scottzirkel" target="_blank" rel="noreferrer">
+<img src="https://img.shields.io/github/followers/scottzirkel?logo=github&style=for-the-badge&color=B64243&labelColor=41413C"/>
+</a>
 
 ### Fancy Badges
 
