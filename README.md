@@ -13,15 +13,13 @@ Scott
 * ✉️ You can contact me at [scott@scottzirkel.com](mailto:scott@scottzirkel.com)
 * 🤝 I'm open to collaborating on [Webstrips SaaS app](http://webstrips.app)
 
-<a href="https://www.github.com/scottzirkel" target="_blank" rel="noreferrer">
-<img src="https://img.shields.io/github/followers/scottzirkel?logo=github&style=for-the-badge&color=B64243&labelColor=41413C"/>
-</a>
-
 ### Fancy Badges
 
-[![Larastan](https://github.com/scottzirkel/scottzirkel/actions/workflows/larastan.yml/badge.svg?style=flat&labelColor=ff0000)](https://github.com/scottzirkel/scottzirkel/actions/workflows/larastan.yml)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fscottzirkel.com%2Fup)
-![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/scottzirkel.com)
+![GitHub followers](https://img.shields.io/github/followers/scottzirkel?style=for-the-badge&logo=github&color=7ccf00)
+![Laravel Version](https://img.shields.io/badge/Laravel-v11-brightgreen?style=for-the-badge&color=7ccf00&logo=laravel&logoColor=white)
+![Larastan](https://img.shields.io/github/actions/workflow/status/scottzirkel/scottzirkel/larastan.yml?label=larastan%20%E2%80%94%20lvl%2010&style=for-the-badge&color=7ccf00)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fscottzirkel.com%2Fup&style=for-the-badge&color=7ccf00)
+![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/scottzirkel.com?style=for-the-badge&color=7ccf00)
 
 ### Skills
 
