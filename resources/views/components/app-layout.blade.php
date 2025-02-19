@@ -19,11 +19,10 @@
     {{--            rel="stylesheet"--}}
     {{--        >--}}
     {{--    </noscript>--}}
-    <link rel="dns-prefetch" href="https://fonts.bunny.net" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
     <link
         rel="preload"
         href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700"
-        as="style"
     />
     <link
         href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i"
