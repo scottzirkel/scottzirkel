@@ -13,12 +13,12 @@ class CustomPolicy extends Basic
     public function configure(): void
     {
         parent::configure();
-        $this->addDirective(Directive::SCRIPT, [Keyword::UNSAFE_INLINE, 'sha256-hash', '*.scottzirkel.com']);
-        $this->addDirective(Directive::SCRIPT_ELEM, '*.scottzirkel.com');
-        $this->addDirective(Directive::CONNECT, '*.scottzirkel.com');
-        $this->addDirective(Directive::PREFETCH, '*.scottzirkel.com');
-        $this->addDirective(Directive::STYLE, '*.scottzirkel.com');
-        $this->addDirective(Directive::FONT, '*.scottzirkel.com');
+        $this->addDirective(Directive::SCRIPT, [Keyword::UNSAFE_INLINE, 'cdn.scottzirkel.com']);
+        $this->addDirective(Directive::SCRIPT_ELEM, [Keyword::UNSAFE_INLINE,'cdn.scottzirkel.com']);
+        $this->addDirective(Directive::CONNECT, 'cdn.scottzirkel.com');
+        $this->addDirective(Directive::PREFETCH, 'cdn.scottzirkel.com');
+        $this->addDirective(Directive::STYLE, 'cdn.scottzirkel.com');
+        $this->addDirective(Directive::FONT, 'cdn.scottzirkel.com');
 
 //        dd($this->directives);
 //
