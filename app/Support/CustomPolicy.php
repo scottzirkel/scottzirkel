@@ -20,7 +20,7 @@ class CustomPolicy extends Basic
         $this->addDirective(Directive::STYLE, '*.scottzirkel.com');
         $this->addDirective(Directive::FONT, '*.scottzirkel.com');
 
-        dd($this->directives);
+//        dd($this->directives);
 //
 //        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
 //        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
