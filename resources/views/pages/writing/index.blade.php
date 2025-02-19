@@ -3,7 +3,7 @@
         <h2 class="font-title text-4xl">Writing</h2>
         <p>Over the last few decades I've been privileged enough to have written several comic books.</p>
         <p>Recently I've been branching out into writing novels/novellas. I'm just getting started, but if you'd like to follow me on that journey, I have setup a newsletter on
-            <a href="https://scottzirkel.substack.com" class="font-semibold text-red-600 underline decoration-red-500 decoration-4" target="_blank" rel="nofollow">substack</a> and hope you'll follow along.
+            <a href="https://scottzirkel.substack.com" class="font-semibold text-red-600 underline decoration-red-500 decoration-4" data-link="substack" target="_blank" rel="nofollow">substack</a> and hope you'll follow along.
         </p>
         <p>I am currently working on an untitled sci-fi/adventure series.</p>
         <p>I'll keep some progress updated here as much as possible.</p>

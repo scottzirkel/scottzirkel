@@ -14,10 +14,13 @@ class CustomPolicy extends Basic
     {
         parent::configure();
         $this->addDirective(Directive::SCRIPT, [Keyword::UNSAFE_INLINE, 'sha256-hash', '*.scottzirkel.com']);
+        $this->addDirective(Directive::SCRIPT_ELEM, '*.scottzirkel.com');
         $this->addDirective(Directive::CONNECT, '*.scottzirkel.com');
         $this->addDirective(Directive::PREFETCH, '*.scottzirkel.com');
         $this->addDirective(Directive::STYLE, '*.scottzirkel.com');
         $this->addDirective(Directive::FONT, '*.scottzirkel.com');
+
+        dd($this->directives);
 //
 //        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
 //        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
