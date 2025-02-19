@@ -76,7 +76,7 @@ return [
             'visibility' => 'public',
             'options' => [
                 'CacheControl' => 'public, max-age=31536000, immutable',
-                'ContentEncoding' => 'zstd, br, gzip',
+                'ContentEncoding' => 'br',
             ],
         ],
 
