@@ -12,6 +12,10 @@ class CustomPolicy extends Basic
     public function configure(): void
     {
         parent::configure();
+        if (app()->environment('staging')) {
+            $this->addDirective(Directive::SCRIPT, 'staging.scottzirkel.com');
+        }
+
         $this->addDirective(Directive::PREFETCH, 'cdn.scottzirkel.com');
         $this->addDirective(Directive::STYLE, 'cdn.scottzirkel.com');
         $this->addDirective(Directive::SCRIPT, 'cdn.scottzirkel.com');
