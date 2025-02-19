@@ -9,10 +9,7 @@
     <dl class="sm:w-2/x3 space-y-2">
         @foreach($parts as $part)
             <div class="flex items-center gap-4">
-                <dt @class([
-                $part['progress'] ?: 'opacity-75',
-                'shrink-0 sm:text-base'
-               ])>
+                <dt class="shrink-0 sm:text-base">
                     <p class="font-title">Part {{ $loop->iteration }}</p>
                     <p class="font-sans text-sm">{{ $part['status'] }}</p>
                 </dt>
