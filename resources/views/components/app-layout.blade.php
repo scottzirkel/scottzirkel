@@ -28,8 +28,6 @@
     <link
         href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700"
         rel="stylesheet"
-        media="print"
-        onload="this.onload=null;this.media='all';"
         crossorigin
     />
     <meta name="description" content="Artist, author, developer, designer. Making stuff up since 1977">
@@ -52,7 +50,6 @@
         name="twitter:image"
         content="https://imagedelivery.net/ss7-gAVfWWJP_LdCZpUXVQ/2c84e5f7-9561-4a3e-84a0-f5b2140c5f00/og"
     />
-    {{--    @dd(Vite::asset('resources/css/app.css'))--}}
     <link href="{{ Vite::asset('resources/fonts/Free-Lunch/FreeLunch-Regular.woff2') }}" rel="prefetch" as="font" type="font/woff2" />
     <link href="{{ Vite::asset('resources/fonts/Wilco-Loft-Sans/WilcoLoftSans-Treble.woff2') }}" rel="prefetch" as="font" type="font/woff2" />
     @vite('resources/css/app.css')
