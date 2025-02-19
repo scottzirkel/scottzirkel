@@ -17,6 +17,7 @@ class CustomPolicy extends Basic
         $this->addDirective(Directive::STYLE, '*.scottzirkel.com');
         $this->addDirective(Directive::SCRIPT, '*.scottzirkel.com');
         $this->addDirective(Directive::FONT, '*.scottzirkel.com');
+        $this->addDirective(Directive::SCRIPT, 'sha256-hash');
 //
 //        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
 //        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
