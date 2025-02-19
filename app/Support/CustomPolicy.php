@@ -2,7 +2,6 @@
 
 namespace App\Support;
 
-use Spatie\Csp\Keyword;
 use Spatie\Csp\Directive;
 use Illuminate\Http\Request;
 use Spatie\Csp\Policies\Basic;
@@ -13,8 +12,8 @@ class CustomPolicy extends Basic
     public function configure(): void
     {
         parent::configure();
-        $this->addDirective(Directive::SCRIPT, [Keyword::UNSAFE_INLINE, 'cdn.scottzirkel.com']);
-        $this->addDirective(Directive::SCRIPT_ELEM, [Keyword::UNSAFE_INLINE,'cdn.scottzirkel.com']);
+        $this->addDirective(Directive::SCRIPT, 'cdn.scottzirkel.com');
+        $this->addDirective(Directive::SCRIPT_ELEM, 'cdn.scottzirkel.com');
         $this->addDirective(Directive::CONNECT, 'cdn.scottzirkel.com');
         $this->addDirective(Directive::PREFETCH, 'cdn.scottzirkel.com');
         $this->addDirective(Directive::STYLE, 'cdn.scottzirkel.com');
