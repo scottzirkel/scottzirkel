@@ -1,8 +1,11 @@
 @inject('storage', 'Illuminate\Support\Facades\Storage')
+@php
+    $lazy ??= true;
+@endphp
 <div class="col-span-1 rounded-lg bg-white p-4 shadow">
     @isset($image)
         <div class="mx-auto py-6 text-center sm:w-1/2">
-            <img alt="{{ $title }}" src="{{ $storage::url($image) }}" loading="lazy" width="503" height="110" decoding="async" style="color: transparent;">
+            <img alt="{{ $title }}" src="{{ $storage::url($image) }}" loading="{{ $lazy ? 'lazy' : 'eager' }}" width="503" height="110" decoding="async" style="color: transparent;">
         </div>
     @endisset
     <p class="space-x-1 text-sm text-gray-800">

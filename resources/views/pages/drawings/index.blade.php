@@ -14,6 +14,7 @@
                 link="https://gumroad.com/l/fairer"
                 image="books/fairer-cover.webp"
                 :is-free="false"
+                :lazy="false"
             >
                 <p>22 pages of sketches of the fairer sex.</p>
             </x-book>
