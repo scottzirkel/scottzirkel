@@ -13,7 +13,7 @@ class CustomPolicy extends Basic
     public function configure(): void
     {
         parent::configure();
-        $this->addDirective(Directive::SCRIPT, 'cdn.scottzirkel.com');
+        $this->addDirective(Directive::SCRIPT, ['cdn.scottzirkel.com', Keyword::UNSAFE_INLINE]);
         $this->addDirective(Directive::SCRIPT_ELEM, Keyword::SELF);
         $this->addNonceForDirective(Directive::SCRIPT_ELEM);
         $this->addDirective(Directive::SCRIPT_ATTR, Keyword::SELF);
