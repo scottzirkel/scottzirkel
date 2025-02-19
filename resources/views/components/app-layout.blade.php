@@ -18,11 +18,11 @@
     {{--            rel="stylesheet"--}}
     {{--        >--}}
     {{--    </noscript>--}}
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+    <link href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" />
     <meta name="description" content="Artist, author, developer, designer. Making stuff up since 1977">
     <meta name="canonical" content="{{ request()->fullUrl() }}" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="{{ asset('favicon.ico') }}" />
     <meta property="og:url" content="{{ request()->fullUrl() }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Scott Zirkel" />
