@@ -27,8 +27,11 @@ class VitePublishCommand extends Command
 
             $this->info('Uploading asset to: build/'.$asset->getRelativePathname());
 
-            Storage::disk('do')->put('/scottzirkel/build/'.$asset->getRelativePathname(), $asset->getContents());
+            Storage::disk('do')
+                ->put('/scottzirkel/build/'.$asset->getRelativePathname(), $asset->getContents(), 'public');
         }
+
+        // do cleanup
 
         $this->info('Vite assets published successfully');
     }
