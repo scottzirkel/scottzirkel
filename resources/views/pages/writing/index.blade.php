@@ -1,5 +1,6 @@
 <x-app-layout>
-    <header class="space-y-4"><h2 class="font-title text-4xl">Writing</h2>
+    <header class="space-y-4">
+        <h2 class="font-title text-4xl">Writing</h2>
         <p>Over the last few decades I've been privileged enough to have written several comic books.</p>
         <p>Recently I've been branching out into writing novels/novellas. I'm just getting started, but if you'd like to follow me on that journey, I have setup a newsletter on
             <a href="https://scottzirkel.substack.com" class="font-semibold text-red-600 underline decoration-red-500 decoration-4" target="_blank" rel="nofollow">substack</a> and hope you'll follow along.
@@ -7,10 +8,12 @@
         <p>I am currently working on an untitled sci-fi/adventure series.</p>
         <p>I'll keep some progress updated here as much as possible.</p>
         <p>I am currently on the first draft of book one, which I've broken into five parts.</p>
-        <x-writing-status :parts="[1, 0, 0, 0, 0]" />
+        @php($brace = app('brace'))
+        <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
         <div class="pt-2">
             <p class="text-center -mb-1">To stay up to date, please subscribe to my newsletter.</p>
             <iframe
+                nonce="{{ csp_nonce() }}"
                 src="https://scottzirkel.substack.com/embed"
                 width="480"
                 height="150"

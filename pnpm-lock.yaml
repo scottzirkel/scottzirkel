@@ -7,7 +7,14 @@ settings:
 importers:
 
   .:
+    dependencies:
+      alpinejs:
+        specifier: ^3.14.8
+        version: 3.14.8
     devDependencies:
+      '@alpinejs/csp':
+        specifier: ^3.14.8
+        version: 3.14.8
       '@aws-sdk/client-s3':
         specifier: ^3.750.0
         version: 3.750.0
@@ -38,6 +45,9 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@alpinejs/csp@3.14.8':
+    resolution: {integrity: sha512-tYFQQ14/M+oDHe6wGKweqULKLgv8YmP7khDLoghRj0KkA0TSQztIT8I9piV+1En6gKsbWxU5PHY6UZl+Z4FXzg==}
 
   '@aws-crypto/crc32@5.2.0':
     resolution: {integrity: sha512-nLbCWqQNgUiwwtFsen1AdzAtvuLRsQS8rYgMuxCrdKf9kOssamGLuPwyTY9wyYblNr9+1XM8v6zoDTPPSIeANg==}
@@ -681,6 +691,15 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
+  '@vue/reactivity@3.1.5':
+    resolution: {integrity: sha512-1tdfLmNjWG6t/CsPldh+foumYFo3cpyCHgBYQ34ylaMsJ+SNHQ1kApMIa8jN+i593zQuaw3AdWH0nJTARzCFhg==}
+
+  '@vue/shared@3.1.5':
+    resolution: {integrity: sha512-oJ4F3TnvpXaQwZJNF3ZK+kLPHKarDmJjJ6jyzVNDKH9md1dptjC7lWR//jrGuLdek/U6iltWxqAnYOu8gCiOvA==}
+
+  alpinejs@3.14.8:
+    resolution: {integrity: sha512-wT2fuP2DXpGk/jKaglwy7S/IJpm1FD+b7U6zUrhwErjoq5h27S4dxkJEXVvhbdwyPv9U+3OkUuNLkZT4h2Kfrg==}
+
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -1186,6 +1205,10 @@ packages:
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
+
+  '@alpinejs/csp@3.14.8':
+    dependencies:
+      '@vue/reactivity': 3.1.5
 
   '@aws-crypto/crc32@5.2.0':
     dependencies:
@@ -2152,6 +2175,16 @@ snapshots:
       tailwindcss: 3.4.17
 
   '@types/estree@1.0.6': {}
+
+  '@vue/reactivity@3.1.5':
+    dependencies:
+      '@vue/shared': 3.1.5
+
+  '@vue/shared@3.1.5': {}
+
+  alpinejs@3.14.8:
+    dependencies:
+      '@vue/reactivity': 3.1.5
 
   ansi-regex@5.0.1: {}
 
