@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'free-lunch';
-    src: url('../fonts/Free-Lunch/FreeLunch-Regular.woff2') format("woff2"),
-    url('../fonts/Free-Lunch/FreeLunch-Regular.woff') format("woff");
-    font-display: swap;
-    font-weight: 400;
-    font-style: normal
-}
+/*@font-face {*/
+/*    font-family: 'free-lunch';*/
+/*    src: url('https://cdn.scottzirkel.com/scottzirkel/build/assets/FreeLunch-Regular.woff2') format("woff2"),*/
+/*    url('../fonts/Free-Lunch/FreeLunch-Regular.woff2') format("woff2"),*/
+/*    url('../fonts/Free-Lunch/FreeLunch-Regular.woff') format("woff");*/
+/*    font-display: swap;*/
+/*    font-weight: 400;*/
+/*    font-style: normal*/
+/*}*/
 
 @font-face {
     font-family: 'wilco-loft-sans';
