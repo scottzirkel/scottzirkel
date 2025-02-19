@@ -62,7 +62,7 @@
     </script>
 </head>
 
-<body class="flex min-h-screen flex-col items-stretch justify-center border-t-8 border-red-500 bg-gray-900 font-sans leading-normal text-gray-900">
+<body class="flex min-h-screen flex-col items-stretch justify-center bg-gray-900 font-sans leading-normal text-gray-900">
 <x-header />
 <main class="h-full flex-1 bg-gray-50">
     <div class="mx-auto lg:max-w-5xl">
