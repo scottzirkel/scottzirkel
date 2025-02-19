@@ -40,11 +40,10 @@ module.exports = {
             }
         },
         fontFamily: {
-            weird: ['Press Start 2P', ...defaultTheme.fontFamily.mono],
-            sans: ['PT Sans', ...defaultTheme.fontFamily.sans],
+            sans: ['var(--font-pt-sans)', ...defaultTheme.fontFamily.sans],
             title: ['var(--font-free-lunch)', ...defaultTheme.fontFamily.sans],
             subtitle: ['var(--font-wilco-loft-sans)', ...defaultTheme.fontFamily.sans],
-            mono: ['PT Mono', ...defaultTheme.fontFamily.mono],
+            mono: ['var(--font-pt-mono)', ...defaultTheme.fontFamily.mono],
         },
     },
     plugins: [require('@tailwindcss/typography')],
