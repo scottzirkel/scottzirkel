@@ -10,16 +10,6 @@
         <p>I am currently on the first draft of book one, which I've broken into five parts.</p>
         @php($brace = app('brace'))
         <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
-        <div class="pt-2">
-            <p class="text-center -mb-1">To stay up to date, please subscribe to my newsletter.</p>
-            <iframe
-                nonce="{{ csp_nonce() }}"
-                src="https://scottzirkel.substack.com/embed"
-                width="480"
-                height="150"
-                class="mx-auto bg-gray-50 w-fit sm:w-full">
-            </iframe>
-        </div>
     </header>
     <section><h3 class="mb-4 font-subtitle text-2xl text-gray-800">Self-Published Comics</h3>
         <div class="grid sm:grid-cols-2 gap-4">
