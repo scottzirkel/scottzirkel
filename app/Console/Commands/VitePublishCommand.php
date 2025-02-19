@@ -39,6 +39,11 @@ class VitePublishCommand extends Command
                 Log::info('File not string? '. json_encode($file));
                 continue;
             }
+
+            if (str_ends_with($file, 'manifest.json')) {
+                continue;
+            }
+
             $localFile = str($file)->afterLast('/')->toString();
             $localFile = public_path('/build/assets/'.$localFile);
             if (File::exists($localFile)) {
