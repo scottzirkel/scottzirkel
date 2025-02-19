@@ -2,6 +2,7 @@
 
 namespace App\Support;
 
+use Spatie\Csp\Keyword;
 use Spatie\Csp\Directive;
 use Illuminate\Http\Request;
 use Spatie\Csp\Policies\Basic;
@@ -12,12 +13,11 @@ class CustomPolicy extends Basic
     public function configure(): void
     {
         parent::configure();
-
+        $this->addDirective(Directive::SCRIPT, [Keyword::UNSAFE_INLINE, 'sha256-hash', '*.scottzirkel.com']);
+        $this->addDirective(Directive::CONNECT, '*.scottzirkel.com');
         $this->addDirective(Directive::PREFETCH, '*.scottzirkel.com');
         $this->addDirective(Directive::STYLE, '*.scottzirkel.com');
-        $this->addDirective(Directive::SCRIPT, '*.scottzirkel.com');
         $this->addDirective(Directive::FONT, '*.scottzirkel.com');
-        $this->addDirective(Directive::SCRIPT, 'sha256-hash');
 //
 //        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
 //        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
