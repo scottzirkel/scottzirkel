@@ -40,10 +40,10 @@ module.exports = {
             }
         },
         fontFamily: {
-            sans: ['var(--font-pt-sans)', ...defaultTheme.fontFamily.sans],
+            sans: ['PT Sans', ...defaultTheme.fontFamily.sans],
             title: ['var(--font-free-lunch)', ...defaultTheme.fontFamily.sans],
             subtitle: ['var(--font-wilco-loft-sans)', ...defaultTheme.fontFamily.sans],
-            mono: ['var(--font-pt-mono)', ...defaultTheme.fontFamily.mono],
+            mono: ['PT Mono', ...defaultTheme.fontFamily.mono],
         },
     },
     plugins: [require('@tailwindcss/typography')],

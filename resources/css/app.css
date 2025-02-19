@@ -51,8 +51,8 @@
 :root {
     --font-free-lunch: 'free-lunch';
     --font-wilco-loft-sans: 'wilco-loft-sans';
-    --font-pt-sans: '"PT Sans"';
-    --font-pt-mono: 'PT Mono';
+    /*--font-pt-sans: '"PT Sans"';*/
+    /*--font-pt-mono: '"PT Mono"';*/
 }
 
 a {
