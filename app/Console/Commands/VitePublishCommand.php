@@ -31,6 +31,18 @@ class VitePublishCommand extends Command
                 ->put('/scottzirkel/build/'.$asset->getRelativePathname(), $asset->getContents(), 'public');
         }
 
+        $existingFiles = Storage::disk('do')->allFiles('scottzirkel/build');
+
+        foreach ($existingFiles as $file) {
+            $localFile = str($file)->afterLast('/')->toString();
+            $localFile = public_path('/build/assets/'.$localFile);
+            if (File::exists($localFile)) {
+                continue;
+            }
+
+            Storage::disk('do')->delete($file);
+        }
+
         // do cleanup
 
         $this->info('Vite assets published successfully');
