@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name') }}</title>
     <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin />
+    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
     {{--    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>--}}
     {{--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>--}}
     {{--    <link--}}
@@ -19,14 +20,14 @@
     {{--            rel="stylesheet"--}}
     {{--        >--}}
     {{--    </noscript>--}}
-    <link rel="preconnect" href="https://fonts.bunny.net" />
-    <link
-        href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"
-        rel="stylesheet"
-        media="print"
-        data-swap-media="true"
-        crossorigin
-    />
+    {{--    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />--}}
+    {{--    <link--}}
+    {{--        href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"--}}
+    {{--        rel="stylesheet"--}}
+    {{--        media="print"--}}
+    {{--        data-swap-media="true"--}}
+    {{--        crossorigin--}}
+    {{--    />--}}
 
     <meta name="description" content="Artist, author, developer, designer. Making stuff up since 1977">
     <meta name="canonical" content="{{ request()->fullUrl() }}" />
@@ -53,9 +54,11 @@
     {{--    <link href="{{ Vite::asset('resources/fonts/Wilco-Loft-Sans/WilcoLoftSans-Treble.woff2') }}" rel="prefetch" as="font" type="font/woff2" />--}}
     @vite('resources/css/app.css')
     <script nonce="{{ csp_nonce() }}">
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('link[data-swap-media="true"]').media = 'all'
-        })
+        // zaraz.debug('cur570rtr6ds73ct692g')
+        // zaraz.track('pageview', {url: window.location.href});
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     document.querySelector('link[data-swap-media="true"]').media = 'all'
+        // })
     </script>
 </head>
 
