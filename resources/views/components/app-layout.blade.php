@@ -53,7 +53,7 @@
         content="https://imagedelivery.net/ss7-gAVfWWJP_LdCZpUXVQ/2c84e5f7-9561-4a3e-84a0-f5b2140c5f00/og"
     />
 
-    <link href="{{ asset('fonts/Free-Lunch/FreeLunch-Regular.woff2') }}" rel="prefetch" as="font" type="font/woff2" />
+    <link href="{{ Vite::asset('resources/fonts/Free-Lunch/FreeLunch-Regular.woff2') }}" rel="prefetch" as="font" type="font/woff2" />
     {{--    <link href="{{ Vite::asset('resources/fonts/Wilco-Loft-Sans/WilcoLoftSans-Treble.woff2') }}" rel="prefetch" as="font" type="font/woff2" />--}}
     @vite('resources/css/app.css')
     {{--    <script nonce="{{ csp_nonce() }}">--}}
