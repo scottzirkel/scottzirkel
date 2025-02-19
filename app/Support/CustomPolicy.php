@@ -12,19 +12,16 @@ class CustomPolicy extends Basic
     public function configure(): void
     {
         parent::configure();
-        if (app()->environment('staging')) {
-            $this->addDirective(Directive::SCRIPT, 'staging.scottzirkel.com');
-        }
 
-        $this->addDirective(Directive::PREFETCH, 'cdn.scottzirkel.com');
-        $this->addDirective(Directive::STYLE, 'cdn.scottzirkel.com');
-        $this->addDirective(Directive::SCRIPT, 'cdn.scottzirkel.com');
-        $this->addDirective(Directive::FONT, 'cdn.scottzirkel.com');
-
-        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
-        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
-        $this->addDirective(Directive::SCRIPT, 'fonts.bunny.net');
-        $this->addDirective(Directive::FONT, 'fonts.bunny.net');
+        $this->addDirective(Directive::PREFETCH, '*.scottzirkel.com');
+        $this->addDirective(Directive::STYLE, '*.scottzirkel.com');
+        $this->addDirective(Directive::SCRIPT, '*.scottzirkel.com');
+        $this->addDirective(Directive::FONT, '*.scottzirkel.com');
+//
+//        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
+//        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
+//        $this->addDirective(Directive::SCRIPT, 'fonts.bunny.net');
+//        $this->addDirective(Directive::FONT, 'fonts.bunny.net');
     }
 
     public function shouldBeApplied(Request $request, Response $response): bool
