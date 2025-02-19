@@ -19,11 +19,11 @@
     {{--            rel="stylesheet"--}}
     {{--        >--}}
     {{--    </noscript>--}}
-    <link rel="preconnect" href="https://fonts.bunny.net" />
-    <link
-        rel="preload"
-        href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700"
-    />
+    {{--    <link rel="preconnect" href="https://fonts.bunny.net" />--}}
+    {{--    <link--}}
+    {{--        rel="preload"--}}
+    {{--        href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700"--}}
+    {{--    />--}}
     <link
         href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i"
         rel="stylesheet"
