@@ -2,15 +2,15 @@
     <div>
         <h2 class="font-title text-2xl">Current Project</h2>
         <div class="flex gap-4">
-            <p class="text-base"><span class="font-title">Title:</span> <span class="italic">{{ $title }}</span></p>
-            <p class="text-base"><span class="font-title">Status:</span> <span class="italic">{{ $status }}</span></p>
+            <p class="text-base"><span class="font-subtitle">Title:</span> <span class="italic">{{ $title }}</span></p>
+            <p class="text-base"><span class="font-subtitle">Status:</span> <span class="italic">{{ $status }}</span></p>
         </div>
     </div>
     <dl class="sm:w-2/x3 space-y-2">
         @foreach($parts as $part)
             <div class="flex items-center gap-4">
                 <dt class="shrink-0 sm:text-base">
-                    <p class="font-title">Part {{ $loop->iteration }}</p>
+                    <p class="font-subtitle">Part {{ $loop->iteration }}</p>
                     <p class="font-sans text-sm">{{ $part['status'] }}</p>
                 </dt>
                 <dd title="{{ $part['status'] }}" class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">

@@ -17,7 +17,7 @@
     <p>
         Your pal,
         <br />
-        <strong class="text-2xl">Scott</strong>
+        <span class="text-2xl font-title" style="font-variant-ligatures: discretionary-ligatures">Scott</span>
     </p>
     @php($brace = app('brace'))
     <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />

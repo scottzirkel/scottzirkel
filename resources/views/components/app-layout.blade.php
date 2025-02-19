@@ -26,7 +26,7 @@
         as="style"
     />
     <link
-        href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i|pt-sans-caption:400,700"
+        href="https://fonts.bunny.net/css?family=family=press-start-2p:400|pt-mono:400|pt-sans:400,400i,700,700i"
         rel="stylesheet"
         media="print"
         data-swap-media="true"

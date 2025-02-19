@@ -39,10 +39,10 @@
                         </a>
                     </div>
                 </div>
-                <p class="font-small text-sm text-gray-800">
+                <p class="font-sans text-sm text-gray-800">
                     Feel free to contact me through your favorite social media network.
                 </p>
-                <p class="font-small text-sm text-gray-800">Copyright © 1977–{{ now()->format('Y') }} Scott Zirkel. All Rights Reserved.</p>
+                <p class="font-sans text-sm text-gray-800">Copyright © 1977–{{ now()->format('Y') }} Scott Zirkel. All Rights Reserved.</p>
             </nav>
         </div>
     </section>

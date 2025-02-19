@@ -40,12 +40,11 @@ module.exports = {
             }
         },
         fontFamily: {
-            weird: ['var(--font-press-start-2p)', ...defaultTheme.fontFamily.mono],
-            sans: ['var(--font-pt-sans)', ...defaultTheme.fontFamily.sans],
+            weird: ['Press Start 2P', ...defaultTheme.fontFamily.mono],
+            sans: ['PT Sans', ...defaultTheme.fontFamily.sans],
             title: ['var(--font-free-lunch)', ...defaultTheme.fontFamily.sans],
             subtitle: ['var(--font-wilco-loft-sans)', ...defaultTheme.fontFamily.sans],
-            small: ['var(--font-pt-sans-caption)', ...defaultTheme.fontFamily.sans],
-            mono: ['var(--font-pt-mono)', ...defaultTheme.fontFamily.mono],
+            mono: ['PT Mono', ...defaultTheme.fontFamily.mono],
         },
     },
     plugins: [require('@tailwindcss/typography')],
