@@ -21,11 +21,7 @@
     {{--    </noscript>--}}
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link
-        rel="preload"
-        href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i"
-    />
-    <link
-        href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i"
+        href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"
         rel="stylesheet"
         media="print"
         data-swap-media="true"
@@ -56,11 +52,11 @@
     {{--    <link href="{{ Vite::asset('resources/fonts/Free-Lunch/FreeLunch-Regular.woff2') }}" rel="prefetch" as="font" type="font/woff2" />--}}
     {{--    <link href="{{ Vite::asset('resources/fonts/Wilco-Loft-Sans/WilcoLoftSans-Treble.woff2') }}" rel="prefetch" as="font" type="font/woff2" />--}}
     @vite('resources/css/app.css')
-    {{--    <script nonce="{{ csp_nonce() }}">--}}
-    {{--        document.addEventListener('DOMContentLoaded', () => {--}}
-    {{--            document.querySelector('link[data-swap-media="true"]').media = 'all'--}}
-    {{--        })--}}
-    {{--    </script>--}}
+    <script nonce="{{ csp_nonce() }}">
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('link[data-swap-media="true"]').media = 'all'
+        })
+    </script>
 </head>
 
 <body class="flex min-h-screen flex-col items-stretch justify-center bg-gray-900 font-sans leading-normal text-gray-900">
