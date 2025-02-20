@@ -4,13 +4,20 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Vite;
 
 class AddContentSecurityPolicyHeaders
 {
-    public function handle(Request $request, Closure $next)
+    public function handle(Request $request, Closure $next): mixed
     {
         $nonce = Vite::useCspNonce();
+
+        $response = $next($request);
+
+        if ( ! $response instanceof Response) {
+            return $next($request);
+        }
 
         $csp = collect([
             'base-uri' => "'self'",
@@ -26,7 +33,6 @@ class AddContentSecurityPolicyHeaders
             'font-src' => 'cdn.scottzirkel.com',
         ])
             ->map(function ($value, $key) {
-//                dump($key, $value);
                 if (!app()->environment('local')) {
                     return $value;
                 }
@@ -35,7 +41,7 @@ class AddContentSecurityPolicyHeaders
             })
             ->implode(fn ($value, $key) => "{$key} {$value};");
 
-        return $next($request)->withHeaders([
+        return $response->withHeaders([
             'Content-Security-Policy' => $csp,
         ]);
     }
