@@ -29,7 +29,6 @@ class AddContentSecurityPolicyHeaders
             'object-src' => "none",
             'style-src' => "'self' cdn.scottzirkel.com fonts.bunny.net 'unsafe-hashes' 'nonce-".$nonce."'",
             'script-src' => "'self' cdn.scottzirkel.com 'unsafe-hashes' 'nonce-".$nonce."'",
-//            'prefetch-src' => 'cdn.scottzirkel.com',
             'font-src' => 'cdn.scottzirkel.com fonts.bunny.net',
         ])
             ->map(function ($value, $key) {
