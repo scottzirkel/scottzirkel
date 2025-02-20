@@ -24,7 +24,7 @@ class AddContentSecurityPolicyHeaders
             'connect-src' => "'self' cdn.scottzirkel.com",
             'default-src' => "'self' 'unsafe-inline' cdn.scottzirkel.com",
             'form-action' => "'self'",
-            'img-src' => "'self' cdn.scottzirkel.com",
+            'img-src' => "'self' cdn.scottzirkel.com cdn.dribbble.com",
             'media-src' => "'self'",
             'object-src' => "none",
             'style-src' => "'self' cdn.scottzirkel.com fonts.bunny.net 'unsafe-hashes' 'nonce-".$nonce."'",
