@@ -16,8 +16,8 @@ $description ??= 'Artist, author, developer, designer. Making stuff up since 197
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title }}</title>
     <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin />
-    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin="use-credentials" />
-    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin="use-credentials" />
+    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
     <link
         href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"
         rel="stylesheet"
