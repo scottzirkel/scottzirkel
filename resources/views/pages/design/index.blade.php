@@ -29,22 +29,22 @@
         I do try to keep my dribbble account active with personal projects, so follow me there, if you want the latest and greatest.
         <div class="grid sm:grid-cols-3 gap-4">
             <a class="block" href="https://dribbble.com/shots/6626854-The-mostly-True-Adventures-of-the-Walsh-Twins?utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=The%20(mostly)%20True%20Adventures%20of%20the%20Walsh%20Twins&amp;utm_medium=Social_Share&amp;utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=The%20(mostly)%20True%20Adventures%20of%20the%20Walsh%20Twins&amp;utm_medium=Social_Share">
-                <x-figure caption="A comic idea Courtney Huddleston and I pitched." alt="The Mostly True Adventures of the Walsh Twins" image="https://cdn.dribbble.com/users/244519/screenshots/6626854/walsh-twins.png?resize=800x600&amp;vertical=center" />
+                <x-figure caption="A comic idea Courtney Huddleston and I pitched." alt="The Mostly True Adventures of the Walsh Twins" image="https://cdn.dribbble.com/users/244519/screenshots/6626854/walsh-twins.png?resize=800x600&amp;vertical=center" :cover="false" />
             </a>
             <a class="block" href="https://dribbble.com/shots/4508653-Dice-Not-Mice-Updated?utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Dice%20Not%20Mice%20Updated&amp;utm_medium=Social_Share&amp;utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Dice%20Not%20Mice%20Updated&amp;utm_medium=Social_Share">
-                <x-figure caption="Dice not Mice" alt="Dice not mice" image="https://cdn.dribbble.com/users/244519/screenshots/4508653/media/7359b4c76bff845491b21e80fe1d785e.png?resize=800x600&amp;vertical=center" />
+                <x-figure caption="Dice not Mice" alt="Dice not mice" image="https://cdn.dribbble.com/users/244519/screenshots/4508653/media/7359b4c76bff845491b21e80fe1d785e.png?resize=800x600&amp;vertical=center" :cover="false" />
             </a>
             <a class="block" href="https://dribbble.com/shots/2653765-Jeep-Sticker?utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Jeep%20Sticker&amp;utm_medium=Social_Share&amp;utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Jeep%20Sticker&amp;utm_medium=Social_Share">
-                <x-figure caption="Sticker design for my Jeep" alt="Jeep sticker design" image="https://cdn.dribbble.com/users/244519/screenshots/2653765/dribble-2.jpg?resize=800x600&amp;vertical=center" />
+                <x-figure caption="Sticker design for my Jeep" alt="Jeep sticker design" image="https://cdn.dribbble.com/users/244519/screenshots/2653765/dribble-2.jpg?resize=800x600&amp;vertical=center" :cover="false" />
             </a>
             <a class="block" href="https://dribbble.com/shots/2731930-Zirkel-Sons-Garage?utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Zirkel%20%26%20Sons%20Garage&amp;utm_medium=Social_Share&amp;utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Zirkel%20%26%20Sons%20Garage&amp;utm_medium=Social_Share">
-                <x-figure caption="Personal shirt design for my family" alt="Zirkel & Sons Garage - Accumulating spare parts since 1993" image="https://cdn.dribbble.com/users/244519/screenshots/2731930/media/bd06525d2a6ba33457402ab931a27f35.png?resize=800x600&amp;vertical=center" />
+                <x-figure caption="Personal shirt design for my family" alt="Zirkel & Sons Garage - Accumulating spare parts since 1993" image="https://cdn.dribbble.com/users/244519/screenshots/2731930/media/bd06525d2a6ba33457402ab931a27f35.png?resize=800x600&amp;vertical=center" :cover="false" />
             </a>
             <a class="block" href="https://dribbble.com/shots/2731930-Zirkel-Sons-Garage?utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Zirkel%20%26%20Sons%20Garage&amp;utm_medium=Social_Share&amp;utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Zirkel%20%26%20Sons%20Garage&amp;utm_medium=Social_Share">
-                <x-figure caption="T-shirt design - with help from my daughter" alt="Let's go exploring" image="https://cdn.dribbble.com/users/244519/screenshots/2739784/exploring-dribbble.png?resize=800x600&amp;vertical=center" />
+                <x-figure caption="T-shirt design - with help from my daughter" alt="Let's go exploring" image="https://cdn.dribbble.com/users/244519/screenshots/2739784/exploring-dribbble.png?resize=800x600&amp;vertical=center" :cover="false" />
             </a>
             <a class="block" href="https://dribbble.com/shots/2784895-Explore-The-World-Take-2?utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Explore%20The%20World%20-%20Take%202&amp;utm_medium=Social_Share&amp;utm_source=Clipboard_Shot&amp;utm_campaign=scottzirkel&amp;utm_content=Explore%20The%20World%20-%20Take%202&amp;utm_medium=Social_Share">
-                <x-figure caption="T-shirt design" alt="Explore The World, maps optional" image="https://cdn.dribbble.com/users/244519/screenshots/2784895/media/ed5dd5207c5d43c2011ae413e30398c0.png?resize=800x600&amp;vertical=center" />
+                <x-figure caption="T-shirt design" alt="Explore The World, maps optional" image="https://cdn.dribbble.com/users/244519/screenshots/2784895/media/ed5dd5207c5d43c2011ae413e30398c0.png?resize=800x600&amp;vertical=center" :cover="false" />
             </a>
         </div>
     </section>
