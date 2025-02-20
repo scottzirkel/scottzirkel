@@ -22,7 +22,7 @@ class AddContentSecurityPolicyHeaders
         $csp = collect([
             'base-uri' => "'self'",
             'connect-src' => "'self' cdn.scottzirkel.com",
-            'default-src' => "'self'",
+            'default-src' => "'self' 'unsafe-inline' cdn.scottzirkel.com",
             'form-action' => "'self'",
             'img-src' => "'self' cdn.scottzirkel.com",
             'media-src' => "'self'",
