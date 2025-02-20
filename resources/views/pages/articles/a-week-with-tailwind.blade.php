@@ -2,7 +2,7 @@
     <x-slot:title>A Week With Tailwind</x-slot:title>
     <x-slot:description>Since Tailwind came out last week, I’ve been using it to build a site for a client. I know it’s still very early (it’s currently at 0.1.4 as of this writing), but what better way to learn something…</x-slot:description>
     <x-slot:structured>
-        <script type="application/ld+json" nonce="{{ csp_nonce() }}">
+        <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": "BlogPosting",
@@ -26,7 +26,7 @@
                   "url": "https://cdn-images-1.medium.com/max/392/1*LC0hwOq4FY2CG5F9W7R34Q@2x.png"
                 }
               },
-              "datePublished": "2017-11-07"
+              "datePublished": "2017-11-07T12:00:00-06:00"
             }
         </script>
     </x-slot:structured>

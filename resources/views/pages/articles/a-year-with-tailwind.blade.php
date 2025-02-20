@@ -26,7 +26,7 @@
                   "url": "https://alaracreative.com/assets/branding/alara-creative-header-logo.png"
                 }
               },
-              "datePublished": "2018-11-06"
+              "datePublished": "2018-11-06T12:00:00-06:00"
             }
         </script>
     </x-slot:structured>
