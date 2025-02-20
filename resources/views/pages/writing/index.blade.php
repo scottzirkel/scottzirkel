@@ -15,16 +15,16 @@
                     "name": "Guys of the Universe",
                     "author": {
                         "@type": "Person",
-                        "name": "Scott Zirkel",
+                        "name": "Scott Zirkel"
                     },
                     "illustrator": {
                         "@type": "Person",
-                        "name": "Scott Zirkel",
+                        "name": "Scott Zirkel"
                     },
                     "contributor": {
                         "@type": "Person",
-                        "name": "Tracy Bailey",
-                    },
+                        "name": "Tracy Bailey"
+                    }
                 },
                 {
                     "@context": "https://schema.org",
@@ -32,14 +32,18 @@
                     "@id": "https://abithaywire.com",
                     "url": "https://abithaywire.com",
                     "name": "A Bit Haywire",
-                    "isFamilyFriendly": true,
+                    "isFamilyFriendly": "true",
                     "author": {
                         "@type": "Person",
-                        "name": "Scott Zirkel",
+                        "name": "Scott Zirkel"
                     },
                     "illustrator": {
                         "@type": "Person",
-                        "name": "Courtney Huddleston",
+                        "name": "Courtney Huddleston"
+                    },
+                     "publisher": {
+                        "@type": "Organization",
+                        "name": "Viper Comics"
                     },
                     "workExample": [
                     {
@@ -50,7 +54,7 @@
                         "bookFormat": "https://schema.org/GraphicNovel",
                         "inLanguage": "en",
                         "numberOfPages": "112"
-                    }
+                    },
                     {
                         "@type": "Book",
                         "@id": "https://www.amazon.com/Bit-Haywire-Scott-Zirkel/dp/1435216059/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.uxrCWGbUkqG0QtmGWBnz7ErKey3RvQ8WyQbowQUwfAIR9PnBW5c4m4Ek9iR1hH_elfx5d_4YfH_kNzIcOsgD6W19F-eVbHVize3Uix4iGOQdMIxE_3RripnZFx8FmBetA30IYeB4FS5Y7vzTjKoHUg.mmINSkMi6DBVAVMJzpwCNsAIJSTdT6niOWpwtbUQ3SE&qid=1740088078&sr=8-1",
@@ -68,18 +72,22 @@
                     "@id": "https://wonderdoginc.com",
                     "url": "https://wonderdoginc.com",
                     "name": "Wonderdog, Inc",
-                    "isFamilyFriendly": true,
+                    "isFamilyFriendly": "true",
                     "author": {
                         "@type": "Person",
-                        "name": "Scott Zirkel",
+                        "name": "Scott Zirkel"
                     },
                     "illustrator": {
                         "@type": "Person",
-                        "name": "Matt Hebb",
+                        "name": "Matt Hebb"
                     },
                     "contributor": {
                         "@type": "Person",
-                        "name": "Tracy Bailey",
+                        "name": "Tracy Bailey"
+                    },
+                     "publisher": {
+                        "@type": "Organization",
+                        "name": "Arcana Comics"
                     },
                     "workExample": [
                     {
@@ -90,9 +98,8 @@
                         "bookFormat": "https://schema.org/GraphicNovel",
                         "inLanguage": "en",
                         "pageCount": "124",
-                        "publisher": "Arcana Comics",
                         "datePublished": "2010-11-16"
-                    }
+                    },
                     {
                         "@type": "Book",
                         "@id": "https://www.amazon.com/Wonderdog-Inc-Scott-Zirkel-ebook/dp/B0897ZG2VM/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.v8bDwMMM75DzMUWWGZMBbLjPjdwc_DM7ONrz17MUkjj1ld_HZIKXtLgxM56WK8dwYkUc6v3cRyntHXAsisqb054ikNIa0py7NEvijMa2kEdrsihI0RcmJ-_T5DRqcxAKPOH1Guty3dI08VJcQg7VOmdmc3ZSIy6dmV5unxRjCS4uBeSf16Qh9gVorb0Zmd2ZurYQ2KLya9SVg-6Y-Brx2rUSnvW6O_w8OaJKURHfd4I.cCyQ0WQxCQxE5oMAPb_m2a7bEJS-in1cOQotCz88fLI&qid=1740088618&sr=8-1",
@@ -100,12 +107,12 @@
                         "bookFormat": "https://schema.org/Ebook",
                         "inLanguage": "en",
                         "pageCount": "124",
-                        "publisher": "Arcana Comics",
                         "datePublished": "2010-11-10"
                     }
                   ]
                 }
-              ]
+              ],
+              "dateModified": "2025-02-20"
             }
         </script>
     </x-slot:structured>
