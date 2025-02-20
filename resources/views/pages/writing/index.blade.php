@@ -2,7 +2,7 @@
     <x-slot:title>Written by</x-slot:title>
     <x-slot:description>All of my writing endeavours, from current projects to bibliography of published works.</x-slot:description>
     <x-slot:structured>
-        <script type="application/ld+json" nonce="{{ csp_nonce() }}">
+        <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": "DataFeed",
