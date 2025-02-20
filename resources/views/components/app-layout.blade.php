@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name') }}</title>
     <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin />
-    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
+    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin="use-credentials" />
     {{--    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>--}}
     {{--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>--}}
     {{--    <link--}}
