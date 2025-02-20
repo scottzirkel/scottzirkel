@@ -1,6 +1,27 @@
 <x-app-layout :divider="true">
     <x-slot:title>Life with Tailwind</x-slot:title>
     <x-slot:description>If you’ve been following along, you know I’m a huge fan of Tailwind CSS. And a pretty early adopter. I’ve documented my first week (v0.1.4) and my first year (v0.6) with it.</x-slot:description>
+    <x-slot:structured>
+        <script type="application/ld+json" nonce="{{ csp_nonce() }}">
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://scottzirkel.com/articles/life-with-tailwind"
+              },
+              "headline": "Life With Tailwind",
+              "description": "My experience with TailwindCSS after using it exclusively for many years.",
+              "image": "https://cdn.scottzirkel.com/scottzirkel/articles/computer.webp",
+              "author": {
+                "@type": "Person",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com"
+              },
+              "datePublished": "2020-11-17"
+            }
+        </script>
+    </x-slot:structured>
     <header>
         <h2 class="font-title text-4xl">Life with Tailwind</h2>
         <p class="text-lg italic">

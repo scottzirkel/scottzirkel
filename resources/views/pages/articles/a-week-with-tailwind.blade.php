@@ -1,6 +1,35 @@
 <x-app-layout :divider="true">
     <x-slot:title>A Week With Tailwind</x-slot:title>
     <x-slot:description>Since Tailwind came out last week, I’ve been using it to build a site for a client. I know it’s still very early (it’s currently at 0.1.4 as of this writing), but what better way to learn something…</x-slot:description>
+    <x-slot:structured>
+        <script type="application/ld+json" nonce="{{ csp_nonce() }}">
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://scottzirkel.com/articles/a-week-with-tailwind"
+              },
+              "headline": "A Week With Tailwind",
+              "description": "My experience with TailwindCSS after using it for a week.",
+              "image": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*xAFAiAxqZVrOVLBTo9tf6w.jpeg",
+              "author": {
+                "@type": "Person",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "codeburst",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://cdn-images-1.medium.com/max/392/1*LC0hwOq4FY2CG5F9W7R34Q@2x.png"
+                }
+              },
+              "datePublished": "2017-11-07"
+            }
+        </script>
+    </x-slot:structured>
     <header>
         <h2 class="font-title text-4xl">A Week with Tailwind</h2>
         <p class="text-lg italic">Originally posted on 2017-11-07 at <a href="https://codeburst.io/a-week-with-tailwind-b5a5970b4093" target="_blank" rel="noreferrer" class="text-red-500 hover:text-red-700">Codeburst on Medium</a></p>

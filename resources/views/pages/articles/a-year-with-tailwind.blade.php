@@ -1,6 +1,35 @@
 <x-app-layout :divider="true">
     <x-slot:title>A Year with Tailwind</x-slot:title>
     <x-slot:description>A year-ish ago I started using TailwindCSS from Adam Wathan. If you haven’t heard of it, you might want to check out my previous post, A Week With Tailwind in which I cover my first week with…</x-slot:description>
+    <x-slot:structured>
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://scottzirkel.com/articles/a-year-with-tailwind"
+              },
+              "headline": "A Year With Tailwind",
+              "description": "My experience with TailwindCSS after my first year of using it.",
+              "image": "https://scottzirkel.test/articles/tailwind-css.webp",
+              "author": {
+                "@type": "Person",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Alara Strategic + Creative",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://alaracreative.com/assets/branding/alara-creative-header-logo.png"
+                }
+              },
+              "datePublished": "2018-11-06"
+            }
+        </script>
+    </x-slot:structured>
     <header>
         <h2 class="font-title text-4xl">A Year with Tailwind</h2>
         <p class="text-lg italic">Originally posted on 2018-11-06 at <a href="https://medium.com/alara-creative/a-year-with-tailwind-92f420b2f8b9" target="_blank" rel="noreferrer" class="text-red-500 hover:text-red-700">Medium</a></p>
