@@ -1,4 +1,6 @@
-<x-app-layout>
+<x-app-layout :divider="true">
+    <x-slot:title>Things I Use</x-slot:title>
+    <x-slot:description>A list of the tools I use for my development, art, and writing.</x-slot:description>
     <header class="space-y-4">
         <h2 class="font-title text-4xl">Uses</h2>
         <p>Here's a few of the tools I use. In case you care about such things.</p>

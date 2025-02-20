@@ -1,5 +1,6 @@
-@inject('storage', 'Illuminate\Support\Facades\Storage')
-<x-app-layout>
+<x-app-layout :divider="true">
+    <x-slot:title>A Year with Tailwind</x-slot:title>
+    <x-slot:description>A year-ish ago I started using TailwindCSS from Adam Wathan. If you haven’t heard of it, you might want to check out my previous post, A Week With Tailwind in which I cover my first week with…</x-slot:description>
     <header>
         <h2 class="font-title text-4xl">A Year with Tailwind</h2>
         <p class="text-lg italic">Originally posted on 2018-11-06 at <a href="https://medium.com/alara-creative/a-year-with-tailwind-92f420b2f8b9" target="_blank" rel="noreferrer" class="text-red-500 hover:text-red-700">Medium</a></p>
@@ -7,7 +8,7 @@
     <div class="article">
         <h3>A Year With Tailwind</h3>
         <p>
-            <img src="{{ $storage::url('articles/tailwind-css.webp') }}" alt="Tailwind CSS - A utility-first CSS framework for rapid UI development">
+            <img src="{{ asset('articles/tailwind-css.webp') }}" alt="Tailwind CSS - A utility-first CSS framework for rapid UI development">
         </p>
         <p><strong>UPDATE:</strong> I’ve been using Tailwind for years. <a href="/articles/life-with-tailwind">I have updated thoughts!</a></p>
         <p>A year-ish ago I started using <a href="https://tailwindcss.com">TailwindCSS</a> from <a href="https://twitter.com/adamwathan/">Adam Wathan</a>. If you haven’t heard of it, you might want to check out my previous post, <a href="https://codeburst.io/a-week-with-tailwind-b5a5970b4093">A Week With Tailwind</a> in which I cover my first week with Tailwind. I’m not good at naming things.</p>
@@ -26,7 +27,7 @@
         <p>So one of my initial points was that Bootstrap made all the sites look the same. Isn’t that the same with Tailwind? Don’t all the sites look the same? Well, yes and no. When I’m building a backend, I usually just use a default Tailwind config file. Very few changes, and those are usually adding in custom padding or margins to fit what I need. So yeah, all the UI I do for backend admin panels look similar. I <em>might</em> change the primary color to match the brand. Depends on the client.</p>
         <p>Front end design? Not similar at all. Here’s <a href="https://downtownkerrville.com">a site we did for our hometown</a>, Kerrville, Texas. Now here’s one we did for <a href="https://billsbbq.net/">a local BBQ joint.</a> Not too similar. For better examples, hit up <a href="http://builtwithtailwind.com/">Built with Tailwind</a>.</p>
         <figure class="my-4">
-            <img class="w-full" src="{{ $storage::url('articles/downtown-kerrville.webp') }}" alt="Screenshot of downtownkerrville.com" />
+            <img class="w-full" src="{{ asset('articles/downtown-kerrville.webp') }}" alt="Screenshot of downtownkerrville.com" />
             <figcaption class="text-base text-center pt-2">*I can see my office from here!</figcaption>
         </figure>
         <p>Again, you’ll get what you put into it. Spend time using the tools and crafting a design, you’ll get an easy to update codebase that looks unique. Just using the default Tailwind config? That’s cool, you’ll have a really clean looking site that is again, easy to update in the future.</p>

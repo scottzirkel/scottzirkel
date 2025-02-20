@@ -1,5 +1,6 @@
-@inject('storage', 'Illuminate\Support\Facades\Storage')
-<x-app-layout>
+<x-app-layout :divider="true">
+    <x-slot:title>Life with Tailwind</x-slot:title>
+    <x-slot:description>If you’ve been following along, you know I’m a huge fan of Tailwind CSS. And a pretty early adopter. I’ve documented my first week (v0.1.4) and my first year (v0.6) with it.</x-slot:description>
     <header>
         <h2 class="font-title text-4xl">Life with Tailwind</h2>
         <p class="text-lg italic">
@@ -8,7 +9,7 @@
     </header>
     <div class="article">
         <p>
-            <img src="{{ $storage::url('articles/computer.webp') }}" alt="Photo by Safar Safarov on Unsplash">
+            <img src="{{ asset('articles/computer.webp') }}" alt="Photo by Safar Safarov on Unsplash">
             <em>Photo by <a href="https://unsplash.com/@codestorm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Safar Safarov</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
         <p>If you’ve been following along, you know I’m a huge fan of <a href="https://tailwindcss.com/">Tailwind CSS</a>. And a pretty early adopter. I’ve documented <a href="https://codeburst.io/a-week-with-tailwind-b5a5970b4093">my first week</a> (v0.1.4) and <a href="https://medium.com/alara-creative/a-year-with-tailwind-92f420b2f8b9">my first year</a> (v0.6) with it.</p>
         <p>This week Tailwind 2.0 comes out and I just thought I’d give an update on where I stand with it.</p>

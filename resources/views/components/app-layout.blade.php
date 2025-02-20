@@ -1,9 +1,20 @@
-<!doctype html>
+@php
+    $title ??= null;
+    if ($title && isset($divider)) {
+        $title .= ' — ';
+    }
+    if ($title && !isset($divider)) {
+        $title .= ' ';
+    }
+    $title .= config('app.name');
+$description ??= 'Artist, author, developer, designer. Making stuff up since 1977';
+@endphp
+    <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name') }}</title>
+    <title>{{ $title }}</title>
     <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin />
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin="use-credentials" />
     {{--    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>--}}
@@ -29,13 +40,13 @@
     {{--        crossorigin--}}
     {{--    />--}}
 
-    <meta name="description" content="Artist, author, developer, designer. Making stuff up since 1977">
+    <meta name="description" content="{{ $description }}">
     <meta name="canonical" content="{{ request()->fullUrl() }}" />
     <link rel="icon" href="{{ asset('favicon.ico') }}" />
     <meta property="og:url" content="{{ request()->fullUrl() }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Scott Zirkel" />
-    <meta property="og:description" content="Artist, author, developer, designer. Making stuff up since 1977" />
+    <meta property="og:title" content="{{ $title }}" />
+    <meta property="og:description" content="{{ $description }}" />
     <meta
         property="og:image"
         content="https://imagedelivery.net/ss7-gAVfWWJP_LdCZpUXVQ/2c84e5f7-9561-4a3e-84a0-f5b2140c5f00/og"
@@ -43,8 +54,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="scottzirkel.com" />
     <meta property="twitter:url" content="{{ request()->fullUrl() }}" />
-    <meta name="twitter:title" content="Scott Zirkel" />
-    <meta name="twitter:description" content="Artist, author, developer, designer. Making stuff up since 1977" />
+    <meta name="twitter:title" content="{{ $title }}" />
+    <meta name="twitter:description" content="{{ $description }}" />
     <meta
         name="twitter:image"
         content="https://imagedelivery.net/ss7-gAVfWWJP_LdCZpUXVQ/2c84e5f7-9561-4a3e-84a0-f5b2140c5f00/og"

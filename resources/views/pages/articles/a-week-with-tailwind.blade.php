@@ -1,5 +1,6 @@
-@inject('storage', 'Illuminate\Support\Facades\Storage')
-<x-app-layout>
+<x-app-layout :divider="true">
+    <x-slot:title>A Week With Tailwind</x-slot:title>
+    <x-slot:description>Since Tailwind came out last week, I’ve been using it to build a site for a client. I know it’s still very early (it’s currently at 0.1.4 as of this writing), but what better way to learn something…</x-slot:description>
     <header>
         <h2 class="font-title text-4xl">A Week with Tailwind</h2>
         <p class="text-lg italic">Originally posted on 2017-11-07 at <a href="https://codeburst.io/a-week-with-tailwind-b5a5970b4093" target="_blank" rel="noreferrer" class="text-red-500 hover:text-red-700">Codeburst on Medium</a></p>

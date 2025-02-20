@@ -1,4 +1,6 @@
 <x-app-layout>
+    <x-slot:title>Written by</x-slot:title>
+    <x-slot:description>All of my writing endeavours, from current projects to bibliography of published works.</x-slot:description>
     <header class="space-y-4">
         <h2 class="font-title text-4xl">Writing</h2>
         <p>Over the last few decades I've been privileged enough to have written several comic books.</p>

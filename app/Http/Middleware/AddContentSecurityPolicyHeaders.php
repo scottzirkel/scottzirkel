@@ -36,7 +36,7 @@ class AddContentSecurityPolicyHeaders
                 if (!app()->environment('local')) {
                     return $value;
                 }
-                $value .= ' wss: scottzirkel.test:5173';
+                $value .= ' ws: wss: scottzirkel.test:7173';
                 return $value;
             })
             ->implode(fn ($value, $key) => "{$key} {$value};");

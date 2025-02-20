@@ -1,4 +1,5 @@
 <x-app-layout>
+    <x-slot:title>Totally Radical 80's Sketchcards by</x-slot:title>
     <header>
         <h2 class="font-title text-4xl">Totally Radical 80's</h2>
         <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Artists Unite </h3>

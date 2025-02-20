@@ -1,4 +1,6 @@
 <x-app-layout>
+    <x-slot:title>Design by</x-slot:title>
+    <x-slot:descripion>Although I have unofficially retired from the design world, I wanted to have a place to showcase some of my favorite pieces from the past.</x-slot:descripion>
     <header class="space-y-4">
         <h2 class="font-title text-4xl">Design</h2>
     </header>

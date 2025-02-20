@@ -1,4 +1,6 @@
 <x-app-layout>
+    <x-slot:title>Art by</x-slot:title>
+    <x-slot:description>Drawing projects including sketchbook collections, sketchcards, and pin-ups.</x-slot:description>
     <header class="space-y-4">
         <h2 class="font-title text-4xl">Drawings</h2>
         <p>Here are some of my past drawing projects.</p>
