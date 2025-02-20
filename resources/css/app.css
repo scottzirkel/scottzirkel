@@ -163,5 +163,5 @@ a {
     color: #a8ff60;
     font-size: 1rem;
     border-radius: 4px;
-    filter: blur(0.5px);
+    /*filter: blur(0.5px);*/
 }

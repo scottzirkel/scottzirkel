@@ -17,10 +17,10 @@
         <p>I’ve been using it for each project I’ve done since it’s release in 2017. I haven’t touched another framework or written my own CSS (outside of a few custom bits here and there within Tailwind) and it’s been great. I’ve worked on small projects alone and very large projects with a team.</p>
         <hr>
         <h3>Old Code Smell</h3>
-        <p>I guess I should start with the older projects. It’s been a few years now, and I’ve had to go back and make updates, do maintenance… all the fun things that come with development. If I open a pre-Tailwind site, I never know what to expect. Was I using BEM? Was I using one CSS or a whole bunch that the pre-processor put together. Was it PostCSS, SCSS, LESS? And then I had to figure out the naming scheme we were using at the time. Not always easy to remember the difference between <code>primary_nav</code> and <code>main_nav</code> a few years later.</p>
+        <p>I guess I should start with the older projects. It’s been a few years now, and I’ve had to go back and make updates, do maintenance… all the fun things that come with development. If I open a pre-Tailwind site, I never know what to expect. Was I using BEM? Was I using one CSS or a whole bunch that the pre-processor put together. Was it PostCSS, SCSS, LESS? And then I had to figure out the naming scheme we were using at the time. Not always easy to remember the difference between <code>primary_nav</code> and <code class="blur-0">main_nav</code> a few years later.</p>
         <p>Opening an older Tailwind site and I know what everything is without having to think. Also, I can scan the classes and get a pretty good picture of what it will look like without diving into ancient dusty CSS files.</p>
         <p>
-            <img src="https://miro.medium.com/max/1400/1*kLtmxyw8BBaUw_c0qCeAxQ.webp" alt="Photo by NOAA on Unsplash">
+            <img src="{{ asset('articles/logger.webp') }}" alt="Photo by NOAA on Unsplash">
             <em>This image has nothing to do with the article. I just thought it was cool. Photo by <a href="https://unsplash.com/@noaa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">NOAA</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
         <hr>
         <h3>Team Player</h3>
