@@ -17,28 +17,14 @@ $description ??= 'Artist, author, developer, designer. Making stuff up since 197
     <title>{{ $title }}</title>
     <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin />
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin="use-credentials" />
-    {{--    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>--}}
-    {{--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>--}}
-    {{--    <link--}}
-    {{--        href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap"--}}
-    {{--        rel="stylesheet"--}}
-    {{--        media="print"--}}
-    {{--        onload="this.onload=null;this.removeAttribute('media');"--}}
-    {{--    />--}}
-    {{--    <noscript>--}}
-    {{--        <link--}}
-    {{--            href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap"--}}
-    {{--            rel="stylesheet"--}}
-    {{--        >--}}
-    {{--    </noscript>--}}
-    {{--    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />--}}
-    {{--    <link--}}
-    {{--        href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"--}}
-    {{--        rel="stylesheet"--}}
-    {{--        media="print"--}}
-    {{--        data-swap-media="true"--}}
-    {{--        crossorigin--}}
-    {{--    />--}}
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin="use-credentials" />
+    <link
+        href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"
+        rel="stylesheet"
+        media="print"
+        data-swap-media="true"
+        crossorigin
+    />
 
     <meta name="description" content="{{ $description }}">
     <meta name="canonical" content="{{ request()->fullUrl() }}" />
