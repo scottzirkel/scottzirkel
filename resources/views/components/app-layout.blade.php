@@ -21,7 +21,7 @@ $description ??= 'Artist, author, developer, designer. Making stuff up since 197
     <link
         href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"
         rel="stylesheet"
-        media="print"
+        media="all"
         data-swap-media="true"
         crossorigin
     />
