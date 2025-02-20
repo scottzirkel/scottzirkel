@@ -1,6 +1,114 @@
 <x-app-layout>
     <x-slot:title>Written by</x-slot:title>
     <x-slot:description>All of my writing endeavours, from current projects to bibliography of published works.</x-slot:description>
+    <x-slot:structured>
+        <script type="application/ld+json" nonce="{{ csp_nonce() }}">
+            {
+              "@context": "https://schema.org",
+              "@type": "DataFeed",
+              "dataFeedElement": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Book",
+                    "@id": "https://guysoftheuniverse.com",
+                    "url": "https://guysoftheuniverse.com",
+                    "name": "Guys of the Universe",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Scott Zirkel",
+                    },
+                    "illustrator": {
+                        "@type": "Person",
+                        "name": "Scott Zirkel",
+                    },
+                    "contributor": {
+                        "@type": "Person",
+                        "name": "Tracy Bailey",
+                    },
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Book",
+                    "@id": "https://abithaywire.com",
+                    "url": "https://abithaywire.com",
+                    "name": "A Bit Haywire",
+                    "isFamilyFriendly": true,
+                    "author": {
+                        "@type": "Person",
+                        "name": "Scott Zirkel",
+                    },
+                    "illustrator": {
+                        "@type": "Person",
+                        "name": "Courtney Huddleston",
+                    },
+                    "workExample": [
+                    {
+                        "@type": "Book",
+                        "@id": "https://www.amazon.com/Bit-Haywire-Scott-Zirkel/dp/0977788350/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.uxrCWGbUkqG0QtmGWBnz7ErKey3RvQ8WyQbowQUwfAIR9PnBW5c4m4Ek9iR1hH_elfx5d_4YfH_kNzIcOsgD6W19F-eVbHVize3Uix4iGOQdMIxE_3RripnZFx8FmBetA30IYeB4FS5Y7vzTjKoHUg.mmINSkMi6DBVAVMJzpwCNsAIJSTdT6niOWpwtbUQ3SE&qid=1740088078&sr=8-1",
+                        "isbn": "9780977788354",
+                        "bookEdition": "Graphic Novel",
+                        "bookFormat": "https://schema.org/GraphicNovel",
+                        "inLanguage": "en",
+                        "numberOfPages": "112"
+                    }
+                    {
+                        "@type": "Book",
+                        "@id": "https://www.amazon.com/Bit-Haywire-Scott-Zirkel/dp/1435216059/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.uxrCWGbUkqG0QtmGWBnz7ErKey3RvQ8WyQbowQUwfAIR9PnBW5c4m4Ek9iR1hH_elfx5d_4YfH_kNzIcOsgD6W19F-eVbHVize3Uix4iGOQdMIxE_3RripnZFx8FmBetA30IYeB4FS5Y7vzTjKoHUg.mmINSkMi6DBVAVMJzpwCNsAIJSTdT6niOWpwtbUQ3SE&qid=1740088078&sr=8-1",
+                        "isbn": "9781435216051",
+                        "bookEdition": "Library Binding",
+                        "bookFormat": "https://schema.org/Hardcover",
+                        "inLanguage": "en",
+                        "numberOfPages": "112"
+                    }
+                  ]
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Book",
+                    "@id": "https://wonderdoginc.com",
+                    "url": "https://wonderdoginc.com",
+                    "name": "Wonderdog, Inc",
+                    "isFamilyFriendly": true,
+                    "author": {
+                        "@type": "Person",
+                        "name": "Scott Zirkel",
+                    },
+                    "illustrator": {
+                        "@type": "Person",
+                        "name": "Matt Hebb",
+                    },
+                    "contributor": {
+                        "@type": "Person",
+                        "name": "Tracy Bailey",
+                    },
+                    "workExample": [
+                    {
+                        "@type": "Book",
+                        "@id": "https://www.amazon.com/Wonderdog-Inc-Scott-Zirkel/dp/1897548877/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.v8bDwMMM75DzMUWWGZMBbLjPjdwc_DM7ONrz17MUkjj1ld_HZIKXtLgxM56WK8dwYkUc6v3cRyntHXAsisqb054ikNIa0py7NEvijMa2kEdrsihI0RcmJ-_T5DRqcxAKPOH1Guty3dI08VJcQg7VOmdmc3ZSIy6dmV5unxRjCS4uBeSf16Qh9gVorb0Zmd2ZurYQ2KLya9SVg-6Y-Brx2rUSnvW6O_w8OaJKURHfd4I.cCyQ0WQxCQxE5oMAPb_m2a7bEJS-in1cOQotCz88fLI&qid=1740088618&sr=8-1",
+                        "isbn": "9781897548875",
+                        "bookEdition": "Graphic Novel",
+                        "bookFormat": "https://schema.org/GraphicNovel",
+                        "inLanguage": "en",
+                        "pageCount": "124",
+                        "publisher": "Arcana Comics",
+                        "datePublished": "2010-11-16"
+                    }
+                    {
+                        "@type": "Book",
+                        "@id": "https://www.amazon.com/Wonderdog-Inc-Scott-Zirkel-ebook/dp/B0897ZG2VM/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.v8bDwMMM75DzMUWWGZMBbLjPjdwc_DM7ONrz17MUkjj1ld_HZIKXtLgxM56WK8dwYkUc6v3cRyntHXAsisqb054ikNIa0py7NEvijMa2kEdrsihI0RcmJ-_T5DRqcxAKPOH1Guty3dI08VJcQg7VOmdmc3ZSIy6dmV5unxRjCS4uBeSf16Qh9gVorb0Zmd2ZurYQ2KLya9SVg-6Y-Brx2rUSnvW6O_w8OaJKURHfd4I.cCyQ0WQxCQxE5oMAPb_m2a7bEJS-in1cOQotCz88fLI&qid=1740088618&sr=8-1",
+                        "bookEdition": "Kindle Edition",
+                        "bookFormat": "https://schema.org/Ebook",
+                        "inLanguage": "en",
+                        "pageCount": "124",
+                        "publisher": "Arcana Comics",
+                        "datePublished": "2010-11-10"
+                    }
+                  ]
+                }
+              ]
+            }
+        </script>
+    </x-slot:structured>
     <header class="space-y-4">
         <h2 class="font-title text-4xl">Writing</h2>
         <p>Over the last few decades I've been privileged enough to have written several comic books.</p>
