@@ -35,8 +35,9 @@ class VitePublishCommand extends Command
         $existingFiles = Storage::disk('do')->allFiles('scottzirkel/build');
 
         foreach ($existingFiles as $file) {
-            if (!is_string($file)) {
-                Log::info('File not string? '. json_encode($file));
+            if ( ! is_string($file)) {
+                Log::info('File not string? '.json_encode($file));
+
                 continue;
             }
 

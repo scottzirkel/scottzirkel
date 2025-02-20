@@ -1,10 +1,9 @@
 <?php
 
-use Spatie\Csp\AddCspHeaders;
 use Illuminate\Foundation\Application;
-use App\Http\Middleware\AddViteNonceMiddleware;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use App\Http\Middleware\AddContentSecurityPolicyHeaders;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -13,8 +12,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        $middleware->append(AddViteNonceMiddleware::class);
-        $middleware->append(AddCspHeaders::class);
+        //        $middleware->append(AddViteNonceMiddleware::class);
+        //        $middleware->append(AddCspHeaders::class);
+        $middleware->append(AddContentSecurityPolicyHeaders::class);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

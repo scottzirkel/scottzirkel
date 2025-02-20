@@ -13,8 +13,14 @@ class CustomPolicy extends Basic
     public function configure(): void
     {
         parent::configure();
-        $this->addDirective(Directive::SCRIPT, ['cdn.scottzirkel.com', Keyword::UNSAFE_INLINE,'sha256-hash', Keyword::UNSAFE_EVAL]);
-        $this->addDirective(Directive::SCRIPT_ELEM, [Keyword::SELF, 'cdn.scottzirkel.com', Keyword::UNSAFE_INLINE,'sha256-hash', Keyword::UNSAFE_EVAL]);
+
+        //        if (app()->environment('local')) {
+        //            $this->addDirective(Directive::BASE, 'scottzirkel.test:*');
+        //            $this->addDirective(Directive::CONNECT, Scheme::WSS);
+        //        }
+
+        $this->addDirective(Directive::SCRIPT, ['cdn.scottzirkel.com', Keyword::UNSAFE_INLINE, 'sha256-hash', Keyword::UNSAFE_EVAL]);
+        $this->addDirective(Directive::SCRIPT_ELEM, [Keyword::SELF, 'cdn.scottzirkel.com', Keyword::UNSAFE_INLINE, 'sha256-hash', Keyword::UNSAFE_EVAL]);
         $this->addNonceForDirective(Directive::SCRIPT_ELEM);
         $this->addDirective(Directive::SCRIPT_ATTR, Keyword::SELF);
         $this->addNonceForDirective(Directive::SCRIPT_ATTR);
@@ -22,11 +28,11 @@ class CustomPolicy extends Basic
         $this->addDirective(Directive::PREFETCH, 'cdn.scottzirkel.com');
         $this->addDirective(Directive::STYLE, 'cdn.scottzirkel.com');
         $this->addDirective(Directive::FONT, 'cdn.scottzirkel.com');
-//
-//        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
-//        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
-//        $this->addDirective(Directive::SCRIPT, 'fonts.bunny.net');
-//        $this->addDirective(Directive::FONT, 'fonts.bunny.net');
+        //
+        //        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
+        //        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
+        //        $this->addDirective(Directive::SCRIPT, 'fonts.bunny.net');
+        //        $this->addDirective(Directive::FONT, 'fonts.bunny.net');
     }
 
     public function shouldBeApplied(Request $request, Response $response): bool

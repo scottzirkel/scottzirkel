@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
+
+.ligatures {
+    font-variant-ligatures: discretionary-ligatures;
+}
+
 @tailwind utilities;
 
 @font-face {

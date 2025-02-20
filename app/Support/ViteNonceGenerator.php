@@ -13,7 +13,7 @@ class ViteNonceGenerator implements NonceGenerator
         $nonce = Vite::cspNonce();
 
         if ( ! $nonce) {
-            $nonce = (new RandomString)->generate();
+            $nonce = Vite::useCspNonce((new RandomString)->generate());
         }
 
         return $nonce;

@@ -2,7 +2,7 @@
     class="space-y-8 px-4 py-12 text-center font-title text-gray-100 antialiased sm:space-y-2"
     title="WebRings! Admit it, you miss them too..."
 >
-    <h3 class="text-3xl" style="font-variant-ligatures: discretionary-ligatures">WEIRD WIDE WEB!</h3>
+    <h3 class="text-3xl">WEIRD WIDE WEB!</h3>
     <div class="flex flex-col items-center justify-center gap-4 text-lg sm:flex-row">
         <a href="https://weirdwidewebring.net/prev.html" class="block hover:text-red-500">
             Previous Weirdo

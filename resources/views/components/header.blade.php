@@ -1,8 +1,7 @@
 <header class="space-y-4 bg-gray-50 pt-8 md:pt-16 border-t-8 border-red-500">
     <div class="mx-auto text-center leading-none">
         <h1
-            class="font-title text-5xl uppercase text-red-500 lg:text-6xl"
-            style="font-variant-ligatures: discretionary-ligatures"
+            class="font-title text-5xl uppercase text-red-500 lg:text-6xl ligatures"
         >
             <a href="/">Scott Zirkel</a>
         </h1>
