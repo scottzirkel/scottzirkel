@@ -11,6 +11,7 @@ foreach ($images as $image) {
         '@type' => 'ImageObject',
         'contentUrl' => $image,
         'creditText' => 'Art by Scott Zirkel. Dead@17 created by Josh Howard.',
+        'license' => 'https://creativecommons.org/licenses/by-nc/4.0/',
         'creator' => [
             '@type' => 'Person',
             'name' => 'Scott Zirkel',
