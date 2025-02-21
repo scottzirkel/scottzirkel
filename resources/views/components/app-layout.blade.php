@@ -33,6 +33,7 @@ $description ??= 'Artist, author, developer, designer. Making stuff up since 197
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ $title }}" />
     <meta property="og:description" content="{{ $description }}" />
+    <meta property="og:logo" content="https://cdn.scottzirkel.com/scottzirkel/misc/avatar-logo.png" />
     <meta
         property="og:image"
         content="https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp"
