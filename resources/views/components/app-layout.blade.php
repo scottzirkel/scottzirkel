@@ -48,8 +48,7 @@ $ogImage ??= 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp';
         name="twitter:image"
         content="{{ $ogImage }}"
     />
-    {{--    <link href="{{ Vite::asset('resources/fonts/Free-Lunch/FreeLunch-Regular.woff2') }}" rel="prefetch" as="font" type="font/woff2" />--}}
-    {{--    <link href="{{ Vite::asset('resources/fonts/Wilco-Loft-Sans/WilcoLoftSans-Treble.woff2') }}" rel="prefetch" as="font" type="font/woff2" />--}}
+    {{ $structured ?? null }}
     @vite('resources/css/app.css')
 </head>
 
@@ -67,6 +66,5 @@ $ogImage ??= 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp';
 </main>
 <x-footer />
 @stack('scripts')
-{{ $structured ?? null }}
 </body>
 </html>

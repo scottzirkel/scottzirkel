@@ -98,7 +98,7 @@
                         "bookEdition": "Graphic Novel",
                         "bookFormat": "https://schema.org/GraphicNovel",
                         "inLanguage": "en",
-                        "pageCount": "124",
+                        "numberOfPages": "124",
                         "datePublished": "2010-11-16"
                     },
                     {
@@ -107,7 +107,7 @@
                         "bookEdition": "Kindle Edition",
                         "bookFormat": "https://schema.org/Ebook",
                         "inLanguage": "en",
-                        "pageCount": "124",
+                        "numberOfPages": "124",
                         "datePublished": "2010-11-10"
                     }
                   ]

@@ -26,17 +26,17 @@ class AddContentSecurityPolicyHeaders
             'form-action' => "'self'",
             'img-src' => "'self' cdn.scottzirkel.com cdn.dribbble.com",
             'media-src' => "'self'",
-            'object-src' => "none",
+            'object-src' => 'none',
             'style-src' => "'self' cdn.scottzirkel.com fonts.bunny.net 'unsafe-hashes' 'nonce-".$nonce."'",
             'script-src' => "'self' cdn.scottzirkel.com 'unsafe-hashes' 'nonce-".$nonce."'",
             'font-src' => 'cdn.scottzirkel.com fonts.bunny.net',
         ])
             ->map(function ($value, $key) {
-                if (!app()->environment('local')) {
+                if ( ! app()->environment('local')) {
                     return $value;
                 }
                 $value .= ' wss://scottzirkel.test:5173';
-                
+
                 return $value;
             })
             ->implode(fn ($value, $key) => "{$key} {$value};");
