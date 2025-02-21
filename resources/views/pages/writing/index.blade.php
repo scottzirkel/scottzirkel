@@ -1,6 +1,7 @@
 <x-app-layout>
     <x-slot:title>Written by</x-slot:title>
     <x-slot:description>All of my writing endeavours, from current projects to bibliography of published works.</x-slot:description>
+    <x-slot:ogImage>https://cdn.scottzirkel.com/scottzirkel/misc/written-by-sz-og.webp</x-slot:ogImage>
     <x-slot:structured>
         <script type="application/ld+json">
             {

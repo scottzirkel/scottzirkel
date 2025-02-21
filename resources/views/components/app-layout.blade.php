@@ -8,6 +8,7 @@
     }
     $title .= config('app.name');
 $description ??= 'Artist, author, developer, designer. Making stuff up since 1977';
+$ogImage ??= 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp';
 @endphp
     <!doctype html>
 <html lang="en">
@@ -36,7 +37,7 @@ $description ??= 'Artist, author, developer, designer. Making stuff up since 197
     <meta property="og:logo" content="https://cdn.scottzirkel.com/scottzirkel/misc/avatar-logo.png" />
     <meta
         property="og:image"
-        content="https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp"
+        content="{{ $ogImage }}"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="scottzirkel.com" />
@@ -45,7 +46,7 @@ $description ??= 'Artist, author, developer, designer. Making stuff up since 197
     <meta name="twitter:description" content="{{ $description }}" />
     <meta
         name="twitter:image"
-        content="https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp"
+        content="{{ $ogImage }}"
     />
     {{ $structured ?? null }}
     {{--    <link href="{{ Vite::asset('resources/fonts/Free-Lunch/FreeLunch-Regular.woff2') }}" rel="prefetch" as="font" type="font/woff2" />--}}
