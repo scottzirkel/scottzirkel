@@ -3,31 +3,27 @@
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
-              "@type": "ProfilePage",
-              "dateCreated": "2025-02-20T12:11:00-06:00",
-              "dateModified": "2025-02-20T12:11:00-06:00",
-              "mainEntity": {
-                "@type": "Person",
-                "name": "Scott Zirkel",
-                "alternateName": "scottzirkel",
-                "identifier": "scottzirkel",
-                "url": "https://scottzirkel.com",
-                "description": "Scott Zirkel",
-                "image": "https://cdn.scottzirkel.com/scottzirkel/misc/avatar.jpg",
-                "sameAs": [
-                    "https://t.me/scottzirkel",
-                    "https://www.facebook.com/writerandartistscottzirkel",
-                  "https://twitter.com/scottzirkel",
-                  "https://instagram.com/scottzirkel",
-                  "https://dribbble.com/scottzirkel",
-                  "https://github.com/scottzirkel",
-                  "https://scottzirkel.substack.com",
-                  "https://medium.com/@scottzirkel",
-                  "https://behance.net/scottzirkel",
-                  "https://scottzirkel.deviantart.com",
-                  "https://www.linkedin.com/in/scottzirkel"
-                ]
-              },
+              "@type": "Person",
+              "@id": "https://scottzirkel.com",
+              "name": "Scott Zirkel",
+              "alternateName": "scottzirkel",
+              "identifier": "scottzirkel",
+              "gender": "male",
+              "image": "https://cdn.scottzirkel.com/scottzirkel/misc/avatar.jpg",
+              "url": "https://scottzirkel.com",
+              "sameAs": [
+                "https://t.me/scottzirkel",
+                "https://www.facebook.com/writerandartistscottzirkel",
+                "https://twitter.com/scottzirkel",
+                "https://instagram.com/scottzirkel",
+                "https://dribbble.com/scottzirkel",
+                "https://github.com/scottzirkel",
+                "https://scottzirkel.substack.com",
+                "https://medium.com/@scottzirkel",
+                "https://behance.net/scottzirkel",
+                "https://scottzirkel.deviantart.com",
+                "https://www.linkedin.com/in/scottzirkel"
+              ]
             }
         </script>
     </x-slot:structured>
