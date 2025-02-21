@@ -35,7 +35,7 @@ class AddContentSecurityPolicyHeaders
                 if ( ! app()->environment('local')) {
                     return $value;
                 }
-                $value .= ' wss://scottzirkel.test:5173';
+                $value .= ' wss: scottzirkel.test scottzirkel.test:5173';
 
                 return $value;
             })

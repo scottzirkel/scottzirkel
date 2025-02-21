@@ -15,7 +15,7 @@
                 </dt>
                 <dd title="{{ $part['status'] }}" class="bg-gradient-to-b from-gray-200 via-gray-100 to-gray-200 h-6 w-full rounded-full border-2 border-gray-400 inner-shadow">
                     @if ($part['progress'])
-                        <div x-ref="progress" class="bg-sky-500 w-current border-2 border-sky-600 h-full rounded-full">
+                        <div x-ref="progress" class="bg-sky-500 w-full border-2 border-sky-600 h-full rounded-full">
                             <span class="sr-only">{{ $part['progress'] }}%</span>
                         </div>
                     @else
