@@ -35,7 +35,7 @@ $description ??= 'Artist, author, developer, designer. Making stuff up since 197
     <meta property="og:description" content="{{ $description }}" />
     <meta
         property="og:image"
-        content="https://imagedelivery.net/ss7-gAVfWWJP_LdCZpUXVQ/2c84e5f7-9561-4a3e-84a0-f5b2140c5f00/og"
+        content="https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="scottzirkel.com" />
@@ -44,7 +44,7 @@ $description ??= 'Artist, author, developer, designer. Making stuff up since 197
     <meta name="twitter:description" content="{{ $description }}" />
     <meta
         name="twitter:image"
-        content="https://imagedelivery.net/ss7-gAVfWWJP_LdCZpUXVQ/2c84e5f7-9561-4a3e-84a0-f5b2140c5f00/og"
+        content="https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp"
     />
     {{ $structured ?? null }}
     {{--    <link href="{{ Vite::asset('resources/fonts/Free-Lunch/FreeLunch-Regular.woff2') }}" rel="prefetch" as="font" type="font/woff2" />--}}
