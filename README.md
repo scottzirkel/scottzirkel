@@ -8,7 +8,7 @@ Thanks for your interest,
 Scott  
 2 Kings 2:23-24
 
-* 🌍 I'm based in The Texas Hill Country
+* 🌍 I'm based in the Texas Hill Country
 * 🖥️ See my portfolio at [My Earthlink Site](http://scottzirkel.com)
 * ✉️ You can contact me at [scott@scottzirkel.com](mailto:scott@scottzirkel.com)
 * 🤝 I'm open to collaborating on [Webstrips SaaS app](http://webstrips.app)
