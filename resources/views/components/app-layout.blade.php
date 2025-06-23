@@ -9,6 +9,7 @@
     $title .= config('app.name');
 $description ??= 'Artist, author, developer, designer. Making stuff up since 1977';
 $ogImage ??= 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp';
+$alternate ??= null;
 @endphp
     <!doctype html>
 <html lang="en">
@@ -16,6 +17,7 @@ $ogImage ??= 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title }}</title>
+    {{ $alternate }}
     <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin />
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
     <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />

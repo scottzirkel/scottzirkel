@@ -4,7 +4,7 @@
 <section class="col-span-1 rounded-lg bg-white p-4 shadow" aria-label="{{ $title }}">
     @isset($image)
         <div class="mx-auto py-6 text-center sm:w-1/2">
-            <img alt="{{ $title }}" src="{{ asset($image) }}" loading="{{ $lazy ? 'lazy' : 'eager' }}" width="503" height="110" decoding="async" />
+            <img alt="Cover of {{ $title }}" src="{{ asset($image) }}" loading="{{ $lazy ? 'lazy' : 'eager' }}" width="503" height="110" decoding="async" />
         </div>
     @endisset
     <p class="space-x-1 text-sm text-gray-800">

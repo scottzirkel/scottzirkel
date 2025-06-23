@@ -2,6 +2,9 @@
     <x-slot:title>Written by</x-slot:title>
     <x-slot:description>All of my writing endeavours, from current projects to bibliography of published works.</x-slot:description>
     <x-slot:ogImage>https://cdn.scottzirkel.com/scottzirkel/misc/written-by-sz-og.webp</x-slot:ogImage>
+    <x-slot:alternate>
+        <link rel="alternate" type="application/json" href="https://scottzirkel.com/writing.json" title="Scott Zirkel's Writing Feed">
+    </x-slot:alternate>
     <x-slot:structured>
         <script type="application/ld+json">
             {
@@ -118,7 +121,7 @@
         </script>
     </x-slot:structured>
     <header class="space-y-4">
-        <h2 class="font-title text-4xl">Writing</h2>
+        <h2 class="font-title text-4xl" aria-label="Writing">Writing</h2>
         <p>Over the last few decades I've been privileged enough to have written several comic books.</p>
         <p>Recently I've been branching out into writing novels/novellas. I'm just getting started, but if you'd like to follow me on that journey, I have setup a newsletter on
             <a href="https://scottzirkel.substack.com" class="font-semibold text-red-600 underline decoration-red-500 decoration-4" data-link="substack" target="_blank" rel="nofollow">substack</a> and hope you'll follow along.
@@ -129,8 +132,9 @@
         @php($brace = app('brace'))
         <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
     </header>
-    <section><h3 class="mb-4 font-subtitle text-2xl text-gray-800" aria-label="Self-Published Comics">Self-Published Comics</h3>
-        <div class="grid sm:grid-cols-2 gap-4">
+    <section>
+        <h3 class="mb-4 font-subtitle text-2xl text-gray-800" aria-label="Self-Published Comics">Self-Published Comics</h3>
+        <dl class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Guys of the Universe"
                 published="2010"
@@ -151,7 +155,7 @@
             >
                 <p>Lore Investigations follows the paranormal investigative team of Nathan and TJ. Their first case is The Creepy Barn, in which they go up against what is possibly a possessed teenage girl. Of course, it's hard to tell a regular teenage girl from one possessed by a ghost.</p>
             </x-book>
-        </div>
+        </dl>
     </section>
     <section>
         <h3 class="mb-4 font-subtitle text-2xl text-gray-800" aria-label="Published Comics">Published Comics</h3>
@@ -180,7 +184,7 @@
     </section>
     <section>
         <h3 class="mb-4 font-subtitle text-2xl text-gray-800" aria-label="Anthology Comics">Anthology Comics</h3>
-        <div class="grid sm:grid-cols-2 gap-4">
+        <dl class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Josh Howard Presents Sasquatch"
                 published="2007"
@@ -199,6 +203,6 @@
             >
                 <p>Contributed a short story "Big Top Decoy"</p>
             </x-book>
-        </div>
+        </dl>
     </section>
 </x-app-layout>
