@@ -29,6 +29,7 @@ $ogImage ??= 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp';
 
     <meta name="description" content="{{ $description }}">
     <meta name="canonical" content="{{ request()->fullUrl() }}" />
+    <link rel="sitemap" type="application/xml" href="https://scottzirkel.com/sitemap.xml">
     <link rel="icon" href="{{ asset('favicon.ico') }}" />
     <meta property="og:url" content="{{ request()->fullUrl() }}" />
     <meta property="og:type" content="website" />

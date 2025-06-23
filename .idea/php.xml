@@ -165,6 +165,9 @@
       <path value="$PROJECT_DIR$/vendor/pestphp/pest-plugin-mutate" />
       <path value="$PROJECT_DIR$/vendor/pestphp/pest-plugin-stressless" />
       <path value="$PROJECT_DIR$/vendor/_laravel_idea" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/thecodingmachine/safe" />
+      <path value="$PROJECT_DIR$/vendor/laravel/nightwatch" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />

@@ -129,7 +129,7 @@
         @php($brace = app('brace'))
         <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
     </header>
-    <section><h3 class="mb-4 font-subtitle text-2xl text-gray-800">Self-Published Comics</h3>
+    <section><h3 class="mb-4 font-subtitle text-2xl text-gray-800" aria-label="Self-Published Comics">Self-Published Comics</h3>
         <div class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Guys of the Universe"
@@ -154,8 +154,8 @@
         </div>
     </section>
     <section>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Published Comics</h3>
-        <div class="grid sm:grid-cols-2 gap-4">
+        <h3 class="mb-4 font-subtitle text-2xl text-gray-800" aria-label="Published Comics">Published Comics</h3>
+        <dl class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Wonderdog, Inc"
                 published="2010"
@@ -176,10 +176,10 @@
             >
                 <p>Owen Bryce is a normal good-natured 10 year-old boy who likes robots and thinks all girls have cooties. One day, however, Owen will soon find out just how abnormal he really is. He'll find out when everything goes a bit haywire.</p>
             </x-book>
-        </div>
+        </dl>
     </section>
     <section>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Anthology Comics</h3>
+        <h3 class="mb-4 font-subtitle text-2xl text-gray-800" aria-label="Anthology Comics">Anthology Comics</h3>
         <div class="grid sm:grid-cols-2 gap-4">
             <x-book
                 title="Josh Howard Presents Sasquatch"
