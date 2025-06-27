@@ -30,7 +30,7 @@ $alternate ??= null;
     >
 
     <meta name="description" content="{{ $description }}">
-    <link rel="canonical" content="{{ request()->fullUrl() }}">
+    <link rel="canonical" href="{{ request()->fullUrl() }}">
     <link rel="sitemap" type="application/xml" href="https://scottzirkel.com/sitemap.xml">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
     <meta property="og:url" content="{{ request()->fullUrl() }}">
