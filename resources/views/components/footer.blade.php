@@ -1,7 +1,7 @@
 <footer class="text-center font-sans">
     <section class="bg-gray-100 pb-8">
+        <h3 class="sr-only">Social Media Links</h3>
         <div class="mx-auto max-w-2xl space-y-6">
-            <h3 class="sr-only">Social Media Links</h3>
             <nav class="mb-4 space-y-4 text-gray-800">
                 <ul class="flex items-center justify-center gap-4">
                     <li><a href="https://t.me/scottzirkel" class="block size-6" target="_blank" rel="me">
