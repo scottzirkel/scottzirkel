@@ -18,39 +18,39 @@ $alternate ??= null;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title }}</title>
     {{ $alternate }}
-    <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin />
-    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+    <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin>
+    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
     <link
         href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"
         rel="stylesheet"
         media="all"
         data-swap-media="true"
         crossorigin
-    />
+    >
 
     <meta name="description" content="{{ $description }}">
-    <meta name="canonical" content="{{ request()->fullUrl() }}" />
+    <link rel="canonical" content="{{ request()->fullUrl() }}">
     <link rel="sitemap" type="application/xml" href="https://scottzirkel.com/sitemap.xml">
-    <link rel="icon" href="{{ asset('favicon.ico') }}" />
-    <meta property="og:url" content="{{ request()->fullUrl() }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ $title }}" />
-    <meta property="og:description" content="{{ $description }}" />
-    <meta property="og:logo" content="https://cdn.scottzirkel.com/scottzirkel/misc/avatar-logo.png" />
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+    <meta property="og:url" content="{{ request()->fullUrl() }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:logo" content="https://cdn.scottzirkel.com/scottzirkel/misc/avatar-logo.png">
     <meta
         property="og:image"
         content="{{ $ogImage }}"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="scottzirkel.com" />
-    <meta property="twitter:url" content="{{ request()->fullUrl() }}" />
-    <meta name="twitter:title" content="{{ $title }}" />
-    <meta name="twitter:description" content="{{ $description }}" />
+    >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="scottzirkel.com">
+    <meta property="twitter:url" content="{{ request()->fullUrl() }}">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
     <meta
         name="twitter:image"
         content="{{ $ogImage }}"
-    />
+    >
     {{ $structured ?? null }}
     @vite('resources/css/app.css')
 </head>
