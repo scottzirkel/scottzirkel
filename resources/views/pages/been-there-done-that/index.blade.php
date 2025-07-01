@@ -2,14 +2,14 @@
     <x-slot:title>Places I've Been and Things I've Done</x-slot:title>
     <x-slot:description>Many people have bucket lists. Things they want to do before they die. Most die before doing any of them. Instead, I take every opportunity to explore I can. Here's a list of places I've been and things I've done.</x-slot:description>
     <header class="space-y-4">
-        <h2 class="font-title text-4xl">Been There Done That</h2>
+        <h1 class="text-4xl font-title">Been There Done That</h1>
         <p>Many people have bucket lists. Things they want to do before they die. Most die before doing any of them. Instead, I take every opportunity to explore I can. Here's a list of places I've been and things I've done. </p>
     </header>
 
     <section class="grid grid-cols-1 gap-8 sm:grid-cols-3">
         <div class="col-span-1">
-            <h3 class="mb-4 font-subtitle text-2xl text-gray-800">States</h3>
-            <ol class="list-inside list-decimal">
+            <h2 class="mb-4 text-2xl text-gray-800 font-subtitle">States</h2>
+            <ol class="list-decimal list-inside">
 				<li class="space-x-1">
 					<span>Texas</span>
 					<span class="cursor-help" title="Camped">⛺️</span>
@@ -180,8 +180,8 @@
             </ol>
         </div>
         <div class="col-span-1 space-y-4">
-            <h3 class="mb-4 font-subtitle text-2xl text-gray-800">National Parks</h3>
-            <ol class="list-inside list-decimal">
+            <h2 class="mb-4 text-2xl text-gray-800 font-subtitle">National Parks</h2>
+            <ol class="list-decimal list-inside">
                 <li>White Sands</li>
                 <li>Big Bend</li>
                 <li>Grand Canyon</li>
@@ -194,8 +194,8 @@
                 <li>Wind Cave</li>
                 <li>Congaree</li>
             </ol>
-            <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Countries</h3>
-            <ol class="list-inside list-decimal">
+            <h2 class="mb-4 text-2xl text-gray-800 font-subtitle">Countries</h2>
+            <ol class="list-decimal list-inside">
                 <li>USA 🇺🇸</li>
                 <li>Mexico 🇲🇽</li>
                 <li>Rwanda 🇷🇼</li>
@@ -205,25 +205,25 @@
 					<span class="cursor-help" title="Camped">⛺️</span>
 				</li>
             </ol>
-            <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Layover Countries</h3>
-            <ol class="list-inside list-decimal">
+            <h2 class="mb-4 text-2xl text-gray-800 font-subtitle">Layover Countries</h2>
+            <ol class="list-decimal list-inside">
                 <li>Belgium 🇧🇪</li>
                 <li>Germany 🇩🇪</li>
                 <li>Ethiopia 🇪🇹</li>
             </ol>
         </div>
         <div class="col-span-1 space-y-4">
-            <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Other Cool Things</h3>
-            <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Worlds Largest Lakes I've Been In</h3>
-            <ol class="list-inside list-decimal">
+            <h2 class="mb-4 text-2xl text-gray-800 font-subtitle">Other Cool Things</h2>
+            <h3 class="mb-4 text-2xl text-gray-800 font-subtitle">Worlds Largest Lakes I've Been In</h3>
+            <ol class="list-decimal list-inside">
                 <li>Lake Superior</li>
                 <li>Lake Victoria</li>
                 <li>Lake Michigan</li>
                 <li>Lake Erie</li>
                 <li>Lake Ontario</li>
             </ol>
-            <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Comic Cons</h3>
-            <ol class="list-inside list-decimal">
+            <h3 class="mb-4 text-2xl text-gray-800 font-subtitle">Comic Cons</h3>
+            <ol class="list-decimal list-inside">
                 <li>San Diego Comic-Con</li>
                 <li>Wizard World Arlington</li>
                 <li>Wizard World Austin</li>

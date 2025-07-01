@@ -1,0 +1,24 @@
+{
+	"name": "scott/book",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Scott\\Book\\": "src/",
+			"Scott\\Book\\Tests\\": "tests/",
+			"Scott\\Book\\Database\\Factories\\": "database/factories/",
+			"Scott\\Book\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Scott\\Book\\Providers\\BookServiceProvider"
+			]
+		}
+	}
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "ulid": "01jyfh1715mwnrwxtdq8sr1ps1",
+        "title": "He-Guy and the Guys of the Universe",
+        "type": "web comic",
+        "date_published": "2010",
+        "image_url": "books/he-guy.webp",
+        "url": "https://guysoftheuniverse.com",
+        "description": "Join He-Guy and his friends Guy-At-Arms, She-La &amp; the rest of the Guys of the Universe as they defend Castle Guyskull from the evil forces of Skull-Guy!",
+        "publisher": "Self-Published"
+    },
+    {
+        "ulid": "01jyfh2ps4tv6qxw32vfxbfsns",
+        "title": "Lore Investigations",
+        "type": "web comic",
+        "date_published": "2009",
+        "image_url": "books/lore-investigations.webp",
+        "url": "https://loreinvestigations.com",
+        "description": "Lore Investigations follows the paranormal investigative team of Nathan and TJ. Their first case is The Creepy Barn, in which they go up against what is possibly a possessed teenage girl. Of course, it's hard to tell a regular teenage girl from one possessed by a ghost.",
+        "publisher": "Self-Published"
+    },
+    {
+        "ulid": "01jyfh3jp3kd5c7ck9b9sh43tw",
+        "title": "A Bit Haywire",
+        "type": "graphic novel",
+        "date_published": "2006",
+        "image_url": "books/a-bit-haywire.webp",
+        "url": "https://abithaywire.com",
+        "description": "Owen Bryce is a normal good-natured 10 year-old boy who likes robots and thinks all girls have cooties. One day, however, Owen will soon find out just how abnormal he really is. He'll find out when everything goes a bit haywire.",
+        "publisher": "Viper Comics"
+    },
+    {
+        "ulid": "01jyfh4gefhzaywcm7khgshx3c",
+        "title": "Wonderdog, Inc",
+        "type": "graphic novel",
+        "date_published": "2010",
+        "image_url": "books/wonderdog-inc.webp",
+        "url": "https://wonderdoginc.com",
+        "description": "Ryan Robertson's summer plans are put on hold when he discovers he'll be staying at his grandfather's farm while his parents travel to Europe. Just as he grows accustomed to life without Internet, he and his grandfather are traveling to Brazil in search of the Fountain of Youth. On the way he learns the truth about his family, friends and the secrets of Wonderdog, Inc.",
+        "publisher": "Arcana Comics"
+    },
+    {
+        "ulid": "01jyfh53gg5hqp1ryjh7qkb6wc",
+        "title": "Josh Howard Presents Sasquatch",
+        "type": "short comic",
+        "date_published": "2007",
+        "image_url": null,
+        "url": "https://www.amazon.com/Josh-Howard-Presents-Sasquatch/dp/0977788385",
+        "description": "Contributed a short story \"The Sitter\"",
+        "publisher": "Viper Comics"
+    },
+    {
+        "ulid": "01jyfh6g7zxm09hh6wdtjsktdr",
+        "title": "Decoy:Menagerie Vol 1",
+        "type": "short comic",
+        "date_published": "2005",
+        "image_url": null,
+        "url": "https://www.amazon.com/Decoy-Menagerie-Part-Courtney-Huddleston/dp/0971901236/ref=sr_1_1?crid=B4TL3M66YSQE&amp;keywords=decoy+menagerie&amp;qid=1674536863&amp;s=books&amp;sprefix=decoy+menageri%2Cstripbooks%2C237&amp;sr=1-1",
+        "description": "Contributed a short story \"Big Top Decoy\"",
+        "publisher": "Penny Farthing Press"
+    }
+]
