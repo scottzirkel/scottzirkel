@@ -1,0 +1,24 @@
+{
+	"name": "scott/design",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Scott\\Design\\": "src/",
+			"Scott\\Design\\Tests\\": "tests/",
+			"Scott\\Design\\Database\\Factories\\": "database/factories/",
+			"Scott\\Design\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Scott\\Design\\Providers\\DesignServiceProvider"
+			]
+		}
+	}
+}

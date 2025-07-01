@@ -9,9 +9,9 @@ class BookServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        Relation::morphMap([
-            'book' => Book::class,
-        ]);
+        // Relation::morphMap([
+        //     'book' => Book::class,
+        // ]);
     }
 
     public function boot(): void {}

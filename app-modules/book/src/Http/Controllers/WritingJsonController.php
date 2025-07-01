@@ -3,21 +3,20 @@
 namespace Scott\Book\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 
 class WritingJsonController
 {
-    /**
-     * Handle the incoming request.
-     */
-    public function __invoke(Request $request)
+    public function __invoke(Request $request): JsonResponse
     {
         $books = json_decode(file_get_contents(base_path('app-modules/book/resources/data/books.json')), true);
+        $lastUpdated = '2025-06-23T17:02:00Z';
 
-        $response = [
+        return response()->json([
             'version' => '1.0',
-            'lastUpdated' => '2025-06-23T17:02:00Z',
+            'lastUpdated' => $lastUpdated,
             'author' => 'Scott Zirkel',
-            'works' => array_map(function ($book) {
+            'works' => array_map(function ($book) use ($lastUpdated) {
                 return [
                     'title' => $book['title'],
                     'type' => ucfirst($book['type']),
@@ -37,11 +36,9 @@ class WritingJsonController
 
                         return null;
                     }, $book['credits']))),
-                    'lastModified' => now()->toIso8601String(),
+                    'lastModified' => $lastUpdated,
                 ];
             }, $books),
-        ];
-
-        return response()->json($response);
+        ]);
     }
 }

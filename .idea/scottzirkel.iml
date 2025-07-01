@@ -6,6 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
       <sourceFolder url="file://$MODULE_DIR$/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/app-modules/book/database/factories" isTestSource="false" packagePrefix="Scott\Book\Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/app-modules/book/database/seeders" isTestSource="false" packagePrefix="Scott\Book\Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/app-modules/book/src" isTestSource="false" packagePrefix="Scott\Book\" />
+      <sourceFolder url="file://$MODULE_DIR$/app-modules/book/tests" isTestSource="false" packagePrefix="Scott\Book\Tests\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/blade-ui-kit/blade-heroicons" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/blade-ui-kit/blade-icons" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brianium/paratest" />
@@ -152,6 +156,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/pestphp/pest-plugin-stressless" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/staabm/side-effects-detector" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/nightwatch" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/scott/design" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

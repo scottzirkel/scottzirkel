@@ -168,6 +168,35 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/thecodingmachine/safe" />
       <path value="$PROJECT_DIR$/vendor/laravel/nightwatch" />
+      <path value="$PROJECT_DIR$/vendor/spatie/php-structure-discoverer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-data" />
+      <path value="$PROJECT_DIR$/vendor/internachi/modular" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/marc-mabe/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection" />
+      <path value="$PROJECT_DIR$/vendor/kelunik/certificate" />
+      <path value="$PROJECT_DIR$/vendor/revolt/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/amphp/serialization" />
+      <path value="$PROJECT_DIR$/vendor/amphp/cache" />
+      <path value="$PROJECT_DIR$/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/vendor/amphp/parser" />
+      <path value="$PROJECT_DIR$/vendor/amphp/parallel" />
+      <path value="$PROJECT_DIR$/vendor/amphp/pipeline" />
+      <path value="$PROJECT_DIR$/vendor/daverandom/libdns" />
+      <path value="$PROJECT_DIR$/vendor/amphp/process" />
+      <path value="$PROJECT_DIR$/vendor/amphp/sync" />
+      <path value="$PROJECT_DIR$/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/vendor/amphp/socket" />
+      <path value="$PROJECT_DIR$/vendor/amphp/dns" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/seld/signal-handler" />
+      <path value="$PROJECT_DIR$/vendor/scott/book" />
+      <path value="$PROJECT_DIR$/vendor/scott/design" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
