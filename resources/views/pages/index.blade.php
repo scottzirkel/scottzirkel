@@ -50,5 +50,5 @@
         <span class="text-2xl font-title ligatures">Scott</span>
     </p>
     @php($brace = app('brace'))
-    {{-- <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
+    <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
 </x-app-layout>
