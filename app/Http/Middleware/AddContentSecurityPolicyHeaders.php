@@ -20,7 +20,7 @@ class AddContentSecurityPolicyHeaders
         }
 
         $csp = collect([
-            'base-uri' => "'self'",
+            'base-uri' => "'self' *.scottzirkel.*",
             'connect-src' => "'self' cdn.scottzirkel.com",
             'default-src' => "'self' 'unsafe-inline' cdn.scottzirkel.com",
             'form-action' => "'self'",
@@ -31,7 +31,7 @@ class AddContentSecurityPolicyHeaders
             'script-src' => "'self' cdn.scottzirkel.com 'unsafe-hashes' 'nonce-".$nonce."'",
             'font-src' => 'cdn.scottzirkel.com fonts.bunny.net',
         ])
-            ->map(function ($value, $key) {
+            ->map(function ($value) {
                 if ( ! app()->environment('local')) {
                     return $value;
                 }

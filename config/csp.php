@@ -13,7 +13,7 @@ return [
      */
     'presets' => [
         Spatie\Csp\Presets\Basic::class,
-        //     CustomPolicy::class,
+        CustomPolicy::class,
     ],
 
     /**
