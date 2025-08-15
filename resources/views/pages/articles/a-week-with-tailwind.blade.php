@@ -2,6 +2,7 @@
     <x-slot:title>A Week With Tailwind</x-slot:title>
     <x-slot:description>Since Tailwind came out last week, I’ve been using it to build a site for a client. I know it’s still very early (it’s currently at 0.1.4 as of this writing), but what better way to learn something…</x-slot:description>
     <x-slot:structured>
+        @verbatim
         <script type="application/ld+json" @cspNonce>
             {
               "@context": "https://schema.org",
@@ -29,6 +30,7 @@
               "datePublished": "2017-11-07T12:00:00-06:00"
             }
         </script>
+        @endverbatim
     </x-slot:structured>
     <header>
         <h2 class="font-title text-4xl">A Week with Tailwind</h2>

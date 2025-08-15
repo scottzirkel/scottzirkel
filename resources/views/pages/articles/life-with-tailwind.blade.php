@@ -2,6 +2,7 @@
     <x-slot:title>Life with Tailwind</x-slot:title>
     <x-slot:description>If you’ve been following along, you know I’m a huge fan of Tailwind CSS. And a pretty early adopter. I’ve documented my first week (v0.1.4) and my first year (v0.6) with it.</x-slot:description>
     <x-slot:structured>
+        @verbatim
         <script type="application/ld+json" @cspNonce>
             {
               "@context": "https://schema.org",
@@ -21,6 +22,7 @@
               "datePublished": "2020-11-17T12:00:00-06:00"
             }
         </script>
+        @endverbatim
     </x-slot:structured>
     <header>
         <h2 class="font-title text-4xl">Life with Tailwind</h2>
