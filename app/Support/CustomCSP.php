@@ -12,11 +12,13 @@ class CustomCSP implements Preset
     {
         $policy
             ->add(Directive::CONNECT, 'cdn.scottzirkel.com')
-            ->add(Directive::PREFETCH, 'cdn.scottzirkel.com')
             ->add(Directive::STYLE, 'cdn.scottzirkel.com')
             ->add(Directive::SCRIPT, 'cdn.scottzirkel.com')
             ->add(Directive::IMG, 'cdn.scottzirkel.com')
             ->add(Directive::FONT, 'cdn.scottzirkel.com');
+
+        $policy
+            ->add(Directive::IMG, 'cdn.dribbble.com');
 
         $policy
             ->add(Directive::SCRIPT, "'self'")
