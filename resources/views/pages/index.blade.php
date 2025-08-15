@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot:structured>
-        <script type="application/ld+json" nonce="{{ $cspNonce }}">
+        <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": "Person",
@@ -48,5 +48,5 @@
         <span class="text-2xl font-title ligatures">Scott</span>
     </p>
     @php($brace = app('brace'))
-    <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
+    {{-- <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
 </x-app-layout>

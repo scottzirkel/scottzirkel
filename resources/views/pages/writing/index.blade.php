@@ -126,7 +126,7 @@
         <link rel="alternate" type="application/json" href="https://scottzirkel.com/writing.json" title="Scott Zirkel's Writing Feed">
     </x-slot:alternate>
     <x-slot:structured>
-        <script type="application/ld+json" nonce="{{ $cspNonce }}">
+        <script type="application/ld+json">
             {!! json_encode($jsonLd, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
         </script>
     </x-slot:structured>

@@ -3,8 +3,6 @@
 // use Spatie\Csp\Directive;
 // use Spatie\Csp\Keyword;
 
-use App\Support\CustomPolicy;
-
 return [
 
     /*
@@ -13,7 +11,6 @@ return [
      */
     'presets' => [
         Spatie\Csp\Presets\Basic::class,
-        CustomPolicy::class,
     ],
 
     /**
