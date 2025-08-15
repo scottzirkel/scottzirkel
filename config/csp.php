@@ -3,6 +3,8 @@
 // use Spatie\Csp\Directive;
 // use Spatie\Csp\Keyword;
 
+use App\Support\CustomCSP;
+
 return [
 
     /*
@@ -11,6 +13,7 @@ return [
      */
     'presets' => [
         Spatie\Csp\Presets\Basic::class,
+        CustomCSP::class,
     ],
 
     /**
