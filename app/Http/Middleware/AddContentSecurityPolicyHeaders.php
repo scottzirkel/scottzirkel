@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Vite;
 
 class AddContentSecurityPolicyHeaders
@@ -12,6 +13,9 @@ class AddContentSecurityPolicyHeaders
     public function handle(Request $request, Closure $next): mixed
     {
         $nonce = Vite::useCspNonce();
+
+        // Share nonce with Blade views
+        View::share('cspNonce', $nonce);
 
         $response = $next($request);
 
@@ -27,8 +31,8 @@ class AddContentSecurityPolicyHeaders
             'img-src' => "'self' cdn.scottzirkel.com cdn.dribbble.com",
             'media-src' => "'self'",
             'object-src' => "'none'",
-            'style-src' => "'self' cdn.scottzirkel.com fonts.bunny.net 'unsafe-hashes' 'nonce-".$nonce."'",
-            'script-src' => "'self' cdn.scottzirkel.com 'unsafe-hashes' 'nonce-".$nonce."'",
+            'style-src' => "'self' cdn.scottzirkel.com fonts.bunny.net 'nonce-".$nonce."'",
+            'script-src' => "'self' cdn.scottzirkel.com 'nonce-".$nonce."'",
             'font-src' => 'cdn.scottzirkel.com fonts.bunny.net',
         ])
             ->map(function ($value) {
