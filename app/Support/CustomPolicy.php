@@ -2,45 +2,29 @@
 
 namespace App\Support;
 
+use Spatie\Csp\Policy;
+use Spatie\Csp\Preset;
+use Spatie\Csp\Scheme;
 use Spatie\Csp\Keyword;
 use Spatie\Csp\Directive;
-use Illuminate\Http\Request;
-use Spatie\Csp\Policies\Basic;
-use Symfony\Component\HttpFoundation\Response;
 
-class CustomPolicy extends Basic
+class CustomPolicy implements Preset
 {
-    public function configure(): void
+    public function configure(Policy $policy): void
     {
-        parent::configure();
-
-        //        if (app()->environment('local')) {
-        //            $this->addDirective(Directive::BASE, 'scottzirkel.test:*');
-        //            $this->addDirective(Directive::CONNECT, Scheme::WSS);
-        //        }
-
-        $this->addDirective(Directive::SCRIPT, ['cdn.scottzirkel.com', Keyword::UNSAFE_INLINE, 'sha256-hash', Keyword::UNSAFE_EVAL]);
-        $this->addDirective(Directive::SCRIPT_ELEM, [Keyword::SELF, 'cdn.scottzirkel.com', Keyword::UNSAFE_INLINE, 'sha256-hash', Keyword::UNSAFE_EVAL]);
-        $this->addNonceForDirective(Directive::SCRIPT_ELEM);
-        $this->addDirective(Directive::SCRIPT_ATTR, Keyword::SELF);
-        $this->addNonceForDirective(Directive::SCRIPT_ATTR);
-        $this->addDirective(Directive::CONNECT, 'cdn.scottzirkel.com');
-        $this->addDirective(Directive::PREFETCH, 'cdn.scottzirkel.com');
-        $this->addDirective(Directive::STYLE, 'cdn.scottzirkel.com');
-        $this->addDirective(Directive::FONT, 'cdn.scottzirkel.com');
-        //
-        //        $this->addDirective(Directive::PREFETCH, 'fonts.bunny.net');
-        //        $this->addDirective(Directive::STYLE, 'fonts.bunny.net');
-        //        $this->addDirective(Directive::SCRIPT, 'fonts.bunny.net');
-        //        $this->addDirective(Directive::FONT, 'fonts.bunny.net');
-    }
-
-    public function shouldBeApplied(Request $request, Response $response): bool
-    {
-        if (config('app.debug') && ($response->isClientError() || $response->isServerError())) {
-            return false;
+        if (app()->environment('local')) {
+            $policy->add(Directive::BASE, 'scottzirkel.test:*');
+            $policy->add(Directive::CONNECT, Scheme::WSS);
         }
 
-        return parent::shouldBeApplied($request, $response);
+        $policy->add(Directive::SCRIPT, ['cdn.scottzirkel.com', Keyword::UNSAFE_INLINE, 'sha256-hash', Keyword::UNSAFE_EVAL]);
+        $policy->add(Directive::SCRIPT_ELEM, [Keyword::SELF, 'cdn.scottzirkel.com', Keyword::UNSAFE_INLINE, 'sha256-hash', Keyword::UNSAFE_EVAL]);
+        $policy->addNonce(Directive::SCRIPT_ELEM);
+        $policy->add(Directive::SCRIPT_ATTR, Keyword::SELF);
+        $policy->addNonce(Directive::SCRIPT_ATTR);
+        $policy->add(Directive::CONNECT, 'cdn.scottzirkel.com');
+        $policy->add(Directive::PREFETCH, 'cdn.scottzirkel.com');
+        $policy->add(Directive::STYLE, 'cdn.scottzirkel.com');
+        $policy->add(Directive::FONT, 'cdn.scottzirkel.com');
     }
 }

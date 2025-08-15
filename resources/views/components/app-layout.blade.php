@@ -52,7 +52,7 @@ $alternate ??= null;
         content="{{ $ogImage }}"
     >
     {{ $structured ?? null }}
-    @vite(['resources/css/app.css', 'resources/js/app.js'], nonce: csp_nonce())
+    @vite(['resources/css/app.css'])
 </head>
 
 <body class="flex min-h-screen flex-col items-stretch justify-center bg-gray-900 font-sans leading-normal text-gray-900">
