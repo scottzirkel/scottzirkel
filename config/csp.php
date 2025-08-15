@@ -5,6 +5,7 @@
 
 use App\Support\CustomCSP;
 use Spatie\Csp\Presets\BunnyFonts;
+use Spatie\Csp\Presets\CloudflareWebAnalytics;
 
 return [
 
@@ -15,6 +16,7 @@ return [
     'presets' => [
         Spatie\Csp\Presets\Basic::class,
         BunnyFonts::class,
+        CloudflareWebAnalytics::class,
         CustomCSP::class,
     ],
 
