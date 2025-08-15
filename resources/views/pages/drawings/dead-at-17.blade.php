@@ -25,7 +25,7 @@ foreach ($images as $image) {
 <x-app-layout>
     <x-slot:title>Dead@17 Sketchcards by</x-slot:title>
     <x-slot:structured>
-        <script type="application/ld+json">
+        <script type="application/ld+json" @cspNonce>
             @json($structuredData->toArray())
         </script>
     </x-slot:structured>

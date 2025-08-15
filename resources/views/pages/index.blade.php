@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot:structured>
-        <script type="application/ld+json">
+        <script type="application/ld+json" @cspNonce>
             {
               "@context": "https://schema.org",
               "@type": "Person",

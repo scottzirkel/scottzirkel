@@ -2,7 +2,7 @@
     <x-slot:title>Life with Tailwind</x-slot:title>
     <x-slot:description>If you’ve been following along, you know I’m a huge fan of Tailwind CSS. And a pretty early adopter. I’ve documented my first week (v0.1.4) and my first year (v0.6) with it.</x-slot:description>
     <x-slot:structured>
-        <script type="application/ld+json">
+        <script type="application/ld+json" @cspNonce>
             {
               "@context": "https://schema.org",
               "@type": "BlogPosting",

@@ -2,7 +2,7 @@
     <x-slot:title>A Year with Tailwind</x-slot:title>
     <x-slot:description>A year-ish ago I started using TailwindCSS from Adam Wathan. If you haven’t heard of it, you might want to check out my previous post, A Week With Tailwind in which I cover my first week with…</x-slot:description>
     <x-slot:structured>
-                <script type="application/ld+json">
+        <script type="application/ld+json" @cspNonce>
             {
               "@context": "https://schema.org",
               "@type": "BlogPosting",
