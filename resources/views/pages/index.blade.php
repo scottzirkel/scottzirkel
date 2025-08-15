@@ -1,5 +1,6 @@
 <x-app-layout>
     <x-slot:structured>
+        @verbatim
         <script type="application/ld+json" @cspNonce>
             {
               "@context": "https://schema.org",
@@ -26,6 +27,7 @@
               ]
             }
         </script>
+        @endverbatim
     </x-slot:structured>
     <p>
         Hey gang,
