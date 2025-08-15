@@ -4,6 +4,7 @@
 // use Spatie\Csp\Keyword;
 
 use App\Support\CustomCSP;
+use Spatie\Csp\Presets\BunnyFonts;
 
 return [
 
@@ -13,6 +14,7 @@ return [
      */
     'presets' => [
         Spatie\Csp\Presets\Basic::class,
+        BunnyFonts::class,
         CustomCSP::class,
     ],
 
