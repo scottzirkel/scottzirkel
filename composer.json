@@ -21,8 +21,7 @@
         "league/flysystem-aws-s3-v3": "^3.0",
         "owenvoke/blade-fontawesome": "^2.6",
         "scott/design": "*",
-        "scott/book": "*",
-        "spatie/laravel-csp": "^3.13"
+        "scott/book": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
