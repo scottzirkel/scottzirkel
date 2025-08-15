@@ -26,7 +26,7 @@ class AddContentSecurityPolicyHeaders
             'form-action' => "'self'",
             'img-src' => "'self' cdn.scottzirkel.com cdn.dribbble.com",
             'media-src' => "'self'",
-            'object-src' => 'none',
+            'object-src' => "'none'",
             'style-src' => "'self' cdn.scottzirkel.com fonts.bunny.net 'unsafe-hashes' 'nonce-".$nonce."'",
             'script-src' => "'self' cdn.scottzirkel.com 'unsafe-hashes' 'nonce-".$nonce."'",
             'font-src' => 'cdn.scottzirkel.com fonts.bunny.net',
