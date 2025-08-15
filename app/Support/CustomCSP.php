@@ -19,8 +19,8 @@ class CustomCSP implements Preset
             ->add(Directive::FONT, 'cdn.scottzirkel.com');
 
         $policy
-            ->add(Directive::SCRIPT, 'self')
-            ->add(Directive::STYLE, 'self')
+            ->add(Directive::SCRIPT, "'self'")
+            ->add(Directive::STYLE, "'self'")
             ->addNonce(Directive::SCRIPT)
             ->addNonce(Directive::STYLE);
     }
