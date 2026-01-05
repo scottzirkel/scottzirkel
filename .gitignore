@@ -22,3 +22,4 @@ yarn-error.log
 /public/drawings
 public/hot
 /tmp
+*.pem
