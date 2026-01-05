@@ -29,7 +29,7 @@ class VitePublishCommand extends Command
             $this->info('Uploading asset to: build/'.$asset->getRelativePathname());
 
             Storage::disk('do')
-                ->put('/scottzirkel/build/'.$asset->getRelativePathname(), $asset->getContents(), 'public');
+                ->put('/scottzirkel/build/'.$asset->getRelativePathname(), $asset->getContents(), ['visibility' => 'public']);
         }
 
         $existingFiles = Storage::disk('do')->allFiles('scottzirkel/build');
