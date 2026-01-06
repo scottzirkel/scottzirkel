@@ -139,10 +139,6 @@
         <p>I am currently working on an untitled sci-fi/adventure series.</p>
         <p>I'll keep some progress updated here as much as possible.</p>
         <p>I am currently on the first draft of book one, which I've broken into five parts.</p>
-        @php
-        $brace = app('brace');
-        @endphp
-        <x-writing-status :title="$brace['title']" :status="$brace['status']" :parts="$brace['parts']" />
     </header>
 
     @php
