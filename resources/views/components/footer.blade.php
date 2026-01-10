@@ -4,25 +4,25 @@
         <div class="mx-auto max-w-2xl space-y-6">
             <nav class="mb-4 space-y-4 text-gray-800">
                 <ul class="flex items-center justify-center gap-4">
-                    <li><a href="https://t.me/scottzirkel" class="block size-6" target="_blank" rel="me">
+                    <li><a href="https://t.me/scottzirkel" class="block size-6" target="_blank" rel="noopener me">
                         <x-si-telegram title="Contact me" class="hover:text-red-500" />
                     </a></li>
-                    <li><a href="https://www.facebook.com/writerandartistscottzirkel" class="block size-6" target="_blank" rel="me">
+                    <li><a href="https://www.facebook.com/writerandartistscottzirkel" class="block size-6" target="_blank" rel="noopener me">
                         <x-si-facebook title="Facebook" class="hover:text-red-500" />
                     </a></li>
-                    <li><a href="https://twitter.com/scottzirkel" class="block size-6" target="_blank" rel="me">
+                    <li><a href="https://twitter.com/scottzirkel" class="block size-6" target="_blank" rel="noopener me">
                         <x-si-x title="Twitter Forever" class="hover:text-red-500" />
                     </a></li>
-                    <li><a href="https://www.instagram.com/scottzirkel/" class="block size-6" target="_blank" rel="me">
+                    <li><a href="https://www.instagram.com/scottzirkel/" class="block size-6" target="_blank" rel="noopener me">
                         <x-si-instagram title="Instagram" class="hover:text-red-500" />
                     </a></li>
-                    <li><a href="https://dribbble.com/scottzirkel" class="block size-6" target="_blank" rel="me">
+                    <li><a href="https://dribbble.com/scottzirkel" class="block size-6" target="_blank" rel="noopener me">
                         <x-si-dribbble title="Dribbble" class="hover:text-red-500" />
                     </a></li>
-                    <li><a href="https://github.com/scottzirkel/" class="block size-6" target="_blank" rel="me">
+                    <li><a href="https://github.com/scottzirkel/" class="block size-6" target="_blank" rel="noopener me">
                         <x-si-github title="Github" class="hover:text-red-500" />
                     </a></li>
-                    <li><a href="https://scottzirkel.substack.com" class="block size-6" target="_blank" rel="me">
+                    <li><a href="https://scottzirkel.substack.com" class="block size-6" target="_blank" rel="noopener me">
                         <x-si-substack title="Substack Newsletter" class="hover:text-red-500" />
                     </a></li>
                 </ul>
@@ -30,17 +30,17 @@
                     <h4>Archived but not forgotten</h4>
                     <ul class="flex items-center justify-center gap-4 opacity-50">
                         <li>
-                            <a href="https://medium.com/@scottzirkel/" class="block size-6" target="_blank" rel="me">
+                            <a href="https://medium.com/@scottzirkel/" class="block size-6" target="_blank" rel="noopener me">
                                 <x-si-medium title="Medium" class="hover:text-red-500" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://behance.net/scottzirkel" class="block size-6" target="_blank" rel="me">
+                            <a href="https://behance.net/scottzirkel" class="block size-6" target="_blank" rel="noopener me">
                                 <x-si-behance title="Behance Portfolio" class="hover:text-red-500" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://scottzirkel.deviantart.com/" class="block size-6" target="_blank" rel="me">
+                            <a href="https://scottzirkel.deviantart.com/" class="block size-6" target="_blank" rel="noopener me">
                                 <x-si-deviantart title="DeviantArt Portfolio" class="hover:text-red-500" />
                             </a>
                         </li>

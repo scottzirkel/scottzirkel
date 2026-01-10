@@ -15,6 +15,6 @@
         "mime-types": "^3.0.1",
         "postcss": "^8.5.6",
         "tailwindcss": "^3.4.17",
-        "vite": "^7.1.2"
+        "vite": "^7.3.1"
     }
 }

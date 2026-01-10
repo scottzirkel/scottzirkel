@@ -6,4 +6,4 @@ use Scott\Design\Http\Controllers\DesignJsonController;
 
 Route::get('writing.json', WritingJsonController::class)->name('writing.json');
 Route::get('design.json', DesignJsonController::class)->name('design.json');
-Route::redirect('sitemap.xml', 'sitemap');
+Route::redirect('sitemap.xml', 'sitemap', 301);

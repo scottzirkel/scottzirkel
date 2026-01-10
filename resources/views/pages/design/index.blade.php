@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot:title>Design by</x-slot:title>
-    <x-slot:descripion>Although I have unofficially retired from the design world, I wanted to have a place to showcase some of my favorite pieces from the past.</x-slot:descripion>
+    <x-slot:description>Although I have unofficially retired from the design world, I wanted to have a place to showcase some of my favorite pieces from the past.</x-slot:description>
     <x-slot:alternate>
         <link rel="alternate" type="application/json" href="https://scottzirkel.com/design.json" title="Scott Zirkel's Design Feed">
     </x-slot:alternate>

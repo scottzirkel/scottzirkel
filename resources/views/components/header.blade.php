@@ -1,12 +1,10 @@
 <header class="pt-8 space-y-4 bg-gray-50 border-t-8 border-red-500 md:pt-16">
-    <hgroup class="mx-auto leading-none text-center">
-        <h2
-            class="text-5xl text-red-500 uppercase font-title lg:text-6xl ligatures"
-        >
+    <div class="mx-auto leading-none text-center">
+        <p class="text-5xl text-red-500 uppercase font-title lg:text-6xl ligatures">
             <a href="/">Scott Zirkel</a>
-        </h2>
-        <h3 class="text-2xl text-gray-900 uppercase font-subtitle lg:text-3xl">Making stuff up since 1977</h3>
-    </hgroup>
+        </p>
+        <p class="text-2xl text-gray-900 uppercase font-subtitle lg:text-3xl">Making stuff up since 1977</p>
+    </div>
     <nav class="m-4 space-y-2 leading-tight text-center lg:mt-0">
         <div class="flex justify-center items-center space-x-4">
             <a class="{{ request()->segment(1) === 'drawings' ? 'text-red-500' : 'text-gray-900 hover:text-red-500' }} hover:rotate-[-3deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl" href="/drawings">
