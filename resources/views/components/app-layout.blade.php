@@ -7,9 +7,10 @@
         $title .= ' ';
     }
     $title .= config('app.name');
-$description ??= 'Artist, author, developer, designer. Making stuff up since 1977';
-$ogImage ??= 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp';
-$alternate ??= null;
+    $description ??= 'Artist, author, developer, designer. Making stuff up since 1977';
+    $ogImage ??= 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp';
+    $alternate ??= null;
+    $canonical ??= url()->current();
 @endphp
     <!doctype html>
 <html lang="en">
@@ -30,10 +31,10 @@ $alternate ??= null;
     >
 
     <meta name="description" content="{{ $description }}">
-    <link rel="canonical" href="{{ request()->fullUrl() }}">
+    <link rel="canonical" href="{{ $canonical }}">
     <link rel="sitemap" type="application/xml" href="https://scottzirkel.com/sitemap.xml">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
-    <meta property="og:url" content="{{ request()->fullUrl() }}">
+    <meta property="og:url" content="{{ $canonical }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ $title }}">
     <meta property="og:description" content="{{ $description }}">
@@ -44,7 +45,7 @@ $alternate ??= null;
     >
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="scottzirkel.com">
-    <meta property="twitter:url" content="{{ request()->fullUrl() }}">
+    <meta property="twitter:url" content="{{ $canonical }}">
     <meta name="twitter:title" content="{{ $title }}">
     <meta name="twitter:description" content="{{ $description }}">
     <meta
