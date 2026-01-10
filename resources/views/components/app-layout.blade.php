@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin>
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
     <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.scottzirkel.com">
+    <link rel="dns-prefetch" href="https://fonts.bunny.net">
     <link
         href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"
         rel="stylesheet"
@@ -39,10 +41,9 @@
     <meta property="og:title" content="{{ $title }}">
     <meta property="og:description" content="{{ $description }}">
     <meta property="og:logo" content="https://cdn.scottzirkel.com/scottzirkel/misc/avatar-logo.png">
-    <meta
-        property="og:image"
-        content="{{ $ogImage }}"
-    >
+    <meta property="og:image" content="{{ $ogImage }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="scottzirkel.com">
     <meta property="twitter:url" content="{{ $canonical }}">
