@@ -1,0 +1,169 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Book from '../../components/Book.astro';
+import books from '../../data/books.json';
+
+const siteUrl = 'https://scottzirkel.com';
+const pageUrl = `${siteUrl}/writing`;
+const cdnBase = 'https://cdn.scottzirkel.com/scottzirkel/';
+
+const person = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": siteUrl,
+    "name": "Scott Zirkel",
+    "alternateName": "scottzirkel",
+    "identifier": "scottzirkel",
+    "gender": "male",
+    "image": "https://cdn.scottzirkel.com/scottzirkel/misc/avatar.jpg",
+    "url": "https://scottzirkel.com",
+    "sameAs": [
+        "https://t.me/scottzirkel",
+        "https://www.facebook.com/writerandartistscottzirkel",
+        "https://twitter.com/scottzirkel",
+        "https://instagram.com/scottzirkel",
+        "https://dribbble.com/scottzirkel",
+        "https://github.com/scottzirkel",
+        "https://scottzirkel.substack.com",
+        "https://medium.com/@scottzirkel",
+        "https://behance.net/scottzirkel",
+        "https://scottzirkel.deviantart.com",
+        "https://www.linkedin.com/in/scottzirkel"
+    ]
+};
+
+const website = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    'name': "Scott Zirkel's Writing",
+    'url': `${siteUrl}/`
+};
+
+const webpage = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    'name': 'Written by Scott Zirkel',
+    'url': pageUrl,
+    'mainEntity': {
+        '@type': 'Person',
+        'name': 'Scott Zirkel',
+        'url': `${siteUrl}/`
+    }
+};
+
+function mapCreditsForBook(credits: any[], siteUrl: string) {
+    const roles: Record<string, any> = {};
+    for (const credit of credits ?? []) {
+        const role = credit.role.toLowerCase();
+        const p: Record<string, string> = {
+            '@type': 'Person',
+            'name': credit.name
+        };
+        if (role === 'author') {
+            p['url'] = `${siteUrl}/`;
+        }
+        roles[role] = p;
+    }
+    return roles;
+}
+
+const jsonLdBooks = books.map((book: any) => {
+    const roles = mapCreditsForBook(book.credits ?? [], siteUrl);
+    const jsonLdBook: Record<string, any> = {
+        '@context': 'https://schema.org',
+        '@type': 'Book',
+        '@id': book.url,
+        'url': book.url,
+        'name': book.title,
+        'description': book.description,
+        'datePublished': book.published_at,
+        'publisher': {
+            '@type': 'Organization',
+            'name': book.publisher
+        },
+        'bookFormat': book.type === 'graphic novel'
+            ? 'https://schema.org/GraphicNovel'
+            : 'https://schema.org/ComicStory',
+        'isFamilyFriendly': 'true',
+        'image': book.image_url ? `${cdnBase}${book.image_url}` : null,
+        'isPartOf': {
+            '@type': 'CreativeWorkSeries',
+            'name': book.title.replace(/:.*/, '')
+        }
+    };
+
+    for (const role of ['author', 'illustrator', 'inker', 'colorist']) {
+        if (roles[role]) {
+            jsonLdBook[role] = roles[role];
+        }
+    }
+
+    if (book.work_examples?.length) {
+        jsonLdBook['workExample'] = book.work_examples;
+    }
+
+    // Remove nulls
+    for (const key of Object.keys(jsonLdBook)) {
+        if (jsonLdBook[key] === null) {
+            delete jsonLdBook[key];
+        }
+    }
+
+    return jsonLdBook;
+});
+
+const today = new Date().toISOString().split('T')[0];
+const dataFeed = {
+    '@context': 'https://schema.org',
+    '@type': 'DataFeed',
+    'dataFeedElement': jsonLdBooks,
+    'dateModified': today
+};
+
+const jsonLd = [person, website, webpage, dataFeed];
+
+const sections = [
+    { title: 'Self-Published Comics', books: books.filter((b: any) => b.group === 'self-published') },
+    { title: 'Published Comics', books: books.filter((b: any) => b.group === 'published') },
+    { title: 'Anthology Comics', books: books.filter((b: any) => b.group === 'anthology') },
+];
+---
+
+<Layout title="Written by" description="All of my writing endeavours, from current projects to bibliography of published works." ogImage="https://cdn.scottzirkel.com/scottzirkel/misc/written-by-sz-og.webp">
+    <Fragment slot="alternate">
+        <link rel="alternate" type="application/json" href="https://scottzirkel.com/writing.json" title="Scott Zirkel's Writing Feed">
+    </Fragment>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    </Fragment>
+    <header class="space-y-4">
+        <h1 class="text-4xl font-title" aria-label="Writing">Writing</h1>
+        <p>Over the last few decades I've been privileged enough to have written several comic books.</p>
+        <p>Recently I've been branching out into writing novels/novellas. I'm just getting started, but if you'd like to follow me on that journey, I have setup a newsletter on
+            <a href="https://scottzirkel.substack.com" class="font-semibold text-red-600 underline decoration-red-500 decoration-4" data-link="substack" target="_blank" rel="nofollow">substack</a> and hope you'll follow along.
+        </p>
+        <p>I am currently working on an untitled sci-fi/adventure series.</p>
+        <p>I'll keep some progress updated here as much as possible.</p>
+        <p>I am currently on the first draft of book one, which I've broken into five parts.</p>
+    </header>
+
+    {sections.map((section) => section.books.length > 0 && (
+        <section>
+            <h2 class="mb-4 text-2xl text-gray-800 font-subtitle" aria-label={section.title}>{section.title}</h2>
+            <dl class="grid gap-4 sm:grid-cols-2">
+                {section.books.map((book: any) => (
+                    <Book
+                        title={book.title}
+                        published={book.published_at}
+                        publisher={book.publisher}
+                        link={book.url}
+                        image={book.image_url ?? null}
+                        isFree={book.is_free === '1'}
+                    >
+                        <p>{book.description}</p>
+                    </Book>
+                ))}
+            </dl>
+        </section>
+    ))}
+</Layout>

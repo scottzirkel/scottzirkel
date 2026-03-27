@@ -1,0 +1,34 @@
+---
+interface Props {
+  title?: string;
+  caption?: string;
+  alt?: string;
+  image?: string;
+  publisher?: string;
+  cover?: boolean;
+}
+const { title, caption, alt, image, publisher, cover = true } = Astro.props;
+const cdnBase = 'https://cdn.scottzirkel.com/scottzirkel/';
+const imgSrc = image ? (image.startsWith('http') ? image : `${cdnBase}${image}`) : null;
+---
+
+<figure class="col-span-1 flex cursor-pointer flex-col items-center justify-between overflow-hidden rounded-lg bg-white shadow hover:shadow-md">
+    {imgSrc ? (
+        <img
+            src={imgSrc}
+            alt={alt ?? title ?? ''}
+            class:list={[cover ? 'aspect-[8/11]' : null, 'object-cover']}
+            decoding="async"
+            loading="lazy"
+            width={cover ? 895 : 392}
+            height={cover ? 250 : 232}
+        />
+    ) : (
+        <div class="flex aspect-[8/11] w-full flex-col items-center justify-center bg-gray-600 text-6xl font-bold">?</div>
+    )}
+    <figcaption class="p-2 text-center">
+        {caption && <p class="text-sm">{caption}</p>}
+        {title && <p class="text-lg font-bold">{title}</p>}
+        {publisher && <p class="text-base">{publisher}</p>}
+    </figcaption>
+</figure>

@@ -1,0 +1,87 @@
+---
+interface Props {
+  title?: string;
+  divider?: boolean;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+  alternate?: string;
+}
+
+const {
+  title: rawTitle,
+  divider = false,
+  description = 'Artist, author, developer, designer. Making stuff up since 1977',
+  ogImage = 'https://cdn.scottzirkel.com/scottzirkel/misc/sz-og.webp',
+  canonical = Astro.url.href,
+} = Astro.props;
+
+let title = rawTitle ?? '';
+if (title && divider) {
+  title += ' — ';
+} else if (title) {
+  title += ' ';
+}
+title += 'Scott Zirkel';
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Logo from '../components/Logo.astro';
+import '../styles/app.css';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <slot name="alternate" />
+    <link rel="preconnect" href="https://cdn.scottzirkel.com" crossorigin>
+    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.scottzirkel.com">
+    <link rel="dns-prefetch" href="https://fonts.bunny.net">
+    <link
+        href="https://fonts.bunny.net/css?family=family=pt-mono:400|pt-sans:400,400i,700,700i&display=swap"
+        rel="stylesheet"
+        media="all"
+        data-swap-media="true"
+        crossorigin
+    >
+    <meta name="description" content={description}>
+    <link rel="canonical" href={canonical}>
+    <link rel="sitemap" type="application/xml" href="https://scottzirkel.com/sitemap.xml">
+    <link rel="icon" href="/favicon.ico">
+    <meta property="og:url" content={canonical}>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:logo" content="https://cdn.scottzirkel.com/scottzirkel/misc/avatar-logo.png">
+    <meta property="og:image" content={ogImage}>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="scottzirkel.com">
+    <meta property="twitter:url" content={canonical}>
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={ogImage}>
+    <slot name="structured" />
+</head>
+
+<body class="flex min-h-screen flex-col items-stretch justify-center bg-gray-900 font-sans leading-normal text-gray-900">
+<Header currentPath={Astro.url.pathname} />
+<main class="h-full flex-1 bg-gray-50">
+    <div class="mx-auto lg:max-w-5xl">
+        <article class="sp:px-6 space-y-8 px-4 py-10 text-xl text-gray-800 sm:py-12 lg:px-8 lg:py-16">
+            <slot />
+        </article>
+        <div class="absolute inset-0 hidden size-48 opacity-100 md:block">
+            <Logo />
+        </div>
+    </div>
+</main>
+<Footer />
+</body>
+</html>

@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const cdnBase = 'https://cdn.scottzirkel.com/scottzirkel/';
+const images = [
+    ...Array.from({ length: 12 }, (_, i) => ({
+        src: `drawings/sketchcards/marvel-legendary-3d/marvel-legendary-${String(i + 1).padStart(2, '0')}-scott-zirkel.webp`,
+        w: 721, h: 1000
+    })),
+    { src: 'drawings/sketchcards/marvel-legendary-3d/marvel-legendary-13-scott-zirkel.webp', w: 1200, h: 842 },
+];
+---
+
+<Layout title="Marvel Legendary/3D Sketchcards by">
+    <header>
+        <h2 class="font-title text-4xl">Marvel Legendary/3D</h2>
+        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2014/2015</h3>
+    </header>
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {images.map((img) => (
+            <img alt="Marvel Legendary/3D sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+        ))}
+    </section>
+</Layout>

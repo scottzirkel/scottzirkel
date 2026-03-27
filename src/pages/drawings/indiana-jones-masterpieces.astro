@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const cdnBase = 'https://cdn.scottzirkel.com/scottzirkel/';
+const images = [
+    ...Array.from({ length: 23 }, (_, i) => ({
+        src: `drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-${String(i + 1).padStart(2, '0')}.webp`,
+        w: 400, h: 561
+    })),
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-24.webp', w: 600, h: 740 },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-25.webp', w: 600, h: 740 },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-28.webp', w: 600, h: 740 },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-29.webp', w: 359, h: 754 },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-30.webp', w: 359, h: 754 },
+];
+---
+
+<Layout title="Indiana Jones Masterpieces Sketchcards by">
+    <header>
+        <h2 class="font-title text-4xl">Indiana Jones Masterpieces</h2>
+        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2008</h3>
+    </header>
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {images.map((img) => (
+            <img alt="Indiana Jones Masterpieces sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+        ))}
+    </section>
+</Layout>

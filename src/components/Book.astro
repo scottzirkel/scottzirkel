@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  published: string;
+  publisher: string;
+  link: string;
+  image?: string | null;
+  isFree?: boolean;
+  lazy?: boolean;
+}
+const { title, published, publisher, link, image, isFree = false, lazy = true } = Astro.props;
+const cdnBase = 'https://cdn.scottzirkel.com/scottzirkel/';
+const imgSrc = image ? `${cdnBase}${image}` : null;
+---
+
+<section class="col-span-1 rounded-lg bg-white p-4 shadow" aria-label={title}>
+    {imgSrc && (
+        <div class="mx-auto py-6 text-center sm:w-1/2">
+            <img alt={`Cover of ${title}`} src={imgSrc} loading={lazy ? 'lazy' : 'eager'} width="503" height="110" decoding="async" />
+        </div>
+    )}
+    <p class="space-x-1 text-sm text-gray-800">
+        <time datetime={published}>{published}</time>
+        <span>{publisher}</span>
+    </p>
+    <dt class="text-lg font-bold text-gray-900">{title}</dt>
+    <dd class="text-left"><slot /></dd>
+    <p>
+        <a href={link} target="_blank" rel="noreferrer" class="text-base font-bold text-red-500 hover:underline">
+            {isFree ? 'Read for Free' : 'Buy Online'}
+        </a>
+    </p>
+</section>
