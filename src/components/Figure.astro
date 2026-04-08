@@ -8,7 +8,7 @@ interface Props {
   cover?: boolean;
 }
 const { title, caption, alt, image, publisher, cover = true } = Astro.props;
-const cdnBase = 'https://cdn.scottzirkel.com/scottzirkel/';
+const cdnBase = 'https://cdn.scottzirkel.com/';
 const imgSrc = image ? (image.startsWith('http') ? image : `${cdnBase}${image}`) : null;
 ---
 

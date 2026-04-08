@@ -9,7 +9,7 @@ interface Props {
   lazy?: boolean;
 }
 const { title, published, publisher, link, image, isFree = false, lazy = true } = Astro.props;
-const cdnBase = 'https://cdn.scottzirkel.com/scottzirkel/';
+const cdnBase = 'https://cdn.scottzirkel.com/';
 const imgSrc = image ? `${cdnBase}${image}` : null;
 ---
 

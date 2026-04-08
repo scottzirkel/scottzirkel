@@ -5,7 +5,7 @@ import books from '../../data/books.json';
 
 const siteUrl = 'https://scottzirkel.com';
 const pageUrl = `${siteUrl}/writing`;
-const cdnBase = 'https://cdn.scottzirkel.com/scottzirkel/';
+const cdnBase = 'https://cdn.scottzirkel.com/';
 
 const person = {
     "@context": "https://schema.org",
@@ -15,7 +15,7 @@ const person = {
     "alternateName": "scottzirkel",
     "identifier": "scottzirkel",
     "gender": "male",
-    "image": "https://cdn.scottzirkel.com/scottzirkel/misc/avatar.jpg",
+    "image": "https://cdn.scottzirkel.com/misc/avatar.jpg",
     "url": "https://scottzirkel.com",
     "sameAs": [
         "https://t.me/scottzirkel",
@@ -129,7 +129,7 @@ const sections = [
 ];
 ---
 
-<Layout title="Written by" description="All of my writing endeavours, from current projects to bibliography of published works." ogImage="https://cdn.scottzirkel.com/scottzirkel/misc/written-by-sz-og.webp">
+<Layout title="Written by" description="All of my writing endeavours, from current projects to bibliography of published works." ogImage="https://cdn.scottzirkel.com/misc/written-by-sz-og.webp">
     <Fragment slot="alternate">
         <link rel="alternate" type="application/json" href="https://scottzirkel.com/writing.json" title="Scott Zirkel's Writing Feed">
     </Fragment>
