@@ -7,9 +7,9 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.1",
-    "tailwindcss": "^3.4.19"
+    "tailwindcss": "^4.2.2"
   }
 }

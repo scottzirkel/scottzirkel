@@ -1,11 +1,48 @@
-@tailwind base;
-@tailwind components;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --color-gray-100: #FBFBFA;
+    --color-gray-200: #F6F5F1;
+    --color-gray-300: #F0EFE9;
+    --color-gray-400: #E5E4D9;
+    --color-gray-500: #DAD8C8;
+    --color-gray-600: #C4C2B4;
+    --color-gray-700: #838278;
+    --color-gray-800: #62615A;
+    --color-gray-900: #41413C;
+
+    --color-red-100: #F8ECEC;
+    --color-red-200: #EDD0D0;
+    --color-red-300: #E2B3B4;
+    --color-red-400: #CC7B7B;
+    --color-red-500: #B64243;
+    --color-red-600: #A43B3C;
+    --color-red-700: #6D2828;
+    --color-red-800: #521E1E;
+    --color-red-900: #371414;
+
+    --font-sans: 'PT Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-title: var(--font-free-lunch), ui-sans-serif, system-ui, sans-serif;
+    --font-subtitle: var(--font-wilco-loft-sans), ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'PT Mono', ui-monospace, monospace;
+}
+
+@utility bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+@utility bg-gradient-ellipse {
+    background-image: radial-gradient(ellipse, var(--tw-gradient-stops));
+}
+
+@utility bg-gradient-conic {
+    background-image: conic-gradient(from 54deg, var(--tw-gradient-stops));
+}
 
 .ligatures {
     font-variant-ligatures: discretionary-ligatures;
 }
-
-@tailwind utilities;
 
 @font-face {
     font-family: 'free-lunch';
