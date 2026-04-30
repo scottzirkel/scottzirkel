@@ -1,8 +1,54 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const pageUrl = 'https://scottzirkel.com/code';
 ---
 
-<Layout title="Code by" description="I'm a full time web developer specializing mostly in Laravel with the TALL stack. I also have a small collection of articles on web development. If you're here looking for a discount code, I have terrible news.">
+<Layout title="Code by" description="I'm a full time web developer specializing mostly in Laravel with the TALL stack. I also have a small collection of articles on web development. If you're here looking for a discount code, I have terrible news." canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": pageUrl,
+            "url": pageUrl,
+            "name": "Code by Scott Zirkel",
+            "description": "Web development work and articles by Scott Zirkel, a full-time developer working primarily in Laravel and the TALL stack.",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "about": {
+                "@type": "Person",
+                "@id": "https://scottzirkel.com",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "hasPart": [
+                {
+                    "@type": "BlogPosting",
+                    "headline": "Life with Tailwind",
+                    "url": "https://scottzirkel.com/articles/life-with-tailwind",
+                    "datePublished": "2020-11-17",
+                    "author": { "@type": "Person", "name": "Scott Zirkel", "url": "https://scottzirkel.com/" }
+                },
+                {
+                    "@type": "BlogPosting",
+                    "headline": "A Year with Tailwind",
+                    "url": "https://scottzirkel.com/articles/a-year-with-tailwind",
+                    "datePublished": "2018-11-06",
+                    "author": { "@type": "Person", "name": "Scott Zirkel", "url": "https://scottzirkel.com/" }
+                },
+                {
+                    "@type": "BlogPosting",
+                    "headline": "A Week with Tailwind",
+                    "url": "https://scottzirkel.com/articles/a-week-with-tailwind",
+                    "datePublished": "2017-11-07",
+                    "author": { "@type": "Person", "name": "Scott Zirkel", "url": "https://scottzirkel.com/" }
+                }
+            ]
+        })} />
+    </Fragment>
     <div class="monitor relative mx-auto aspect-[4/3] w-full rounded-xl border-8 border-black bg-gradient-conic from-stone-600 to-stone-900 p-4 shadow-2xl blur-[0.25px]">
         <div class="absolute bottom-0 right-0 z-50 size-2 rounded-full border-2 border-[#b52300]">
             <div class="absolute size-2 rounded-full bg-[#ff0000] blur-[0.5px]"></div>
@@ -12,7 +58,7 @@ import Layout from '../../layouts/Layout.astro';
         <div class="pointer-events-none absolute inset-x-0 top-0 h-1/6 w-full bg-gradient-to-b from-black"></div>
         <div class="scanlines pointer-events-none absolute inset-0 z-[100] size-full mix-blend-overlay blur-[0.25px]"></div>
         <div class="relative size-full space-y-6 overflow-x-hidden overflow-y-scroll overscroll-contain rounded-3xl border-2 border-black bg-gradient-ellipse from-green-800 to-black p-4 pb-[50%] font-mono text-base text-green-300 mix-blend-multiply shadow-inner blur-[0.5px] selection:bg-green-300 selection:text-green-900 screenScrollbars">
-            <h2 class="mt-2 font-mono text-4xl font-bold text-green-300">Code</h2>
+            <h1 class="mt-2 font-mono text-4xl font-bold text-green-300">Code <span class="sr-only">by Scott Zirkel</span></h1>
             <p>I primarily use Laravel, a PHP framework. I'm currently enhancing that with the following hotness:</p>
             <ul>
                 <li>

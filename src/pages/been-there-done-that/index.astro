@@ -1,8 +1,37 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const pageUrl = 'https://scottzirkel.com/been-there-done-that';
 ---
 
-<Layout title="Places I've Been and Things I've Done" divider={true} description="Many people have bucket lists. Things they want to do before they die. Most die before doing any of them. Instead, I take every opportunity to explore I can. Here's a list of places I've been and things I've done.">
+<Layout title="Places I've Been and Things I've Done" divider={true} description="Many people have bucket lists. Things they want to do before they die. Most die before doing any of them. Instead, I take every opportunity to explore I can. Here's a list of places I've been and things I've done." canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "@id": pageUrl,
+            "url": pageUrl,
+            "name": "Places I've Been and Things I've Done",
+            "description": "A running list of states, national parks, countries, and other places Scott Zirkel has visited and experiences he's collected.",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "about": {
+                "@type": "Person",
+                "@id": "https://scottzirkel.com",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "mainEntity": {
+                "@type": "Person",
+                "@id": "https://scottzirkel.com",
+                "name": "Scott Zirkel",
+                "knowsAbout": ["overlanding", "travel", "highpointing", "national parks", "camping"]
+            }
+        })} />
+    </Fragment>
     <header class="space-y-4">
         <h1 class="text-4xl font-title">Been There Done That</h1>
         <p>Many people have bucket lists. Things they want to do before they die. Most die before doing any of them. Instead, I take every opportunity to explore I can. Here's a list of places I've been and things I've done. </p>

@@ -2,11 +2,39 @@
 import Layout from '../../layouts/Layout.astro';
 import Book from '../../components/Book.astro';
 import Figure from '../../components/Figure.astro';
+
+const pageUrl = 'https://scottzirkel.com/drawings';
 ---
 
-<Layout title="Art by" description="Drawing projects including sketchbook collections, sketchcards, and pin-ups.">
+<Layout title="Art by" description="Drawing projects including sketchbook collections, sketchcards, and pin-ups." canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": pageUrl,
+            "url": pageUrl,
+            "name": "Drawings by Scott Zirkel",
+            "description": "Drawing projects including sketchbook collections, sketchcards, and pin-ups.",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "about": {
+                "@type": "Person",
+                "@id": "https://scottzirkel.com",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "creator": {
+                "@type": "Person",
+                "@id": "https://scottzirkel.com",
+                "name": "Scott Zirkel"
+            }
+        })} />
+    </Fragment>
     <header class="space-y-4">
-        <h2 class="font-title text-4xl">Drawings</h2>
+        <h1 class="font-title text-4xl">Drawings <span class="sr-only">by Scott Zirkel</span></h1>
         <p>Here are some of my past drawing projects.</p>
         <p>I have an eye condition that prevents me from drawing as much as I used to, but I still tinker with the iPad. Zooming in helps.</p>
     </header>

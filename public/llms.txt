@@ -1,0 +1,33 @@
+# Scott Zirkel
+
+> Scott Zirkel is an American artist, fiction writer, web developer, and graphic designer. He has been creating work across illustration, writing, code, and design since 1977. His personal site at scottzirkel.com publishes drawings, writing, and design and development work.
+
+Scott uses the handle `scottzirkel` across most platforms. He is based in the United States. He works professionally as a full-time web developer specializing in Laravel and the TALL stack (Tailwind CSS, Alpine.js, Laravel, Livewire). He previously worked for over 10 years as a designer and Creative Director at Alara Creative before pivoting to development. He is also an overlander and Jeeper.
+
+## Sections
+
+- [Drawings](https://scottzirkel.com/drawings): Drawing projects including sketchbook collections, sketchcards, and pin-ups. Includes work for Upper Deck (Marvel, Star Wars, Firefly, Indiana Jones), Topps, 5finity, and self-published sketchbooks.
+- [Writing](https://scottzirkel.com/writing): Fiction, essays, and other writing by Scott Zirkel. Also published on Substack and Medium.
+- [Design](https://scottzirkel.com/design): Retrospective of graphic design work, including Dribbble shots, package design (including a Star Wars licensed product), and professional design.
+- [Code](https://scottzirkel.com/code): Web development work and articles. Stack notes and a small archive of articles on Tailwind CSS.
+- [Uses](https://scottzirkel.com/uses): The hardware, software, and tools Scott uses for development, design, and writing.
+- [Been There Done That](https://scottzirkel.com/been-there-done-that): Running log of states, national parks, countries, and notable experiences.
+
+## Articles
+
+- [Life with Tailwind](https://scottzirkel.com/articles/life-with-tailwind) (2020-11-17): Reflections on Tailwind CSS after years of use.
+- [A Year with Tailwind](https://scottzirkel.com/articles/a-year-with-tailwind) (2018-11-06): One-year follow-up on adopting Tailwind CSS.
+- [A Week with Tailwind](https://scottzirkel.com/articles/a-week-with-tailwind) (2017-11-07): First impressions of Tailwind CSS, originally posted on Codeburst.
+
+## Profiles
+
+- GitHub: https://github.com/scottzirkel
+- Substack: https://scottzirkel.substack.com
+- Medium: https://medium.com/@scottzirkel
+- Dribbble: https://dribbble.com/scottzirkel
+- Behance: https://behance.net/scottzirkel
+- LinkedIn: https://www.linkedin.com/in/scottzirkel
+- Instagram: https://instagram.com/scottzirkel
+- Twitter: https://twitter.com/scottzirkel
+- Facebook: https://www.facebook.com/writerandartistscottzirkel
+- Telegram: https://t.me/scottzirkel

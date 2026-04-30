@@ -1,10 +1,33 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const pageUrl = 'https://scottzirkel.com/uses';
 ---
 
-<Layout title="Things I Use" divider={true} description="A list of the tools I use for my development, art, and writing.">
+<Layout title="Things I Use" divider={true} description="A list of the tools I use for my development, art, and writing." canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "@id": pageUrl,
+            "url": pageUrl,
+            "name": "Things I Use",
+            "description": "Hardware, software, and tools Scott Zirkel uses for development, design, and writing.",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "about": {
+                "@type": "Person",
+                "@id": "https://scottzirkel.com",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            }
+        })} />
+    </Fragment>
     <header class="space-y-4">
-        <h2 class="font-title text-4xl">Uses</h2>
+        <h1 class="font-title text-4xl">Things I Use</h1>
         <p>Here's a few of the tools I use. In case you care about such things.</p>
     </header>
     <section>

@@ -1,11 +1,39 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Figure from '../../components/Figure.astro';
+
+const pageUrl = 'https://scottzirkel.com/design';
 ---
 
-<Layout title="Design by" description="Although I have unofficially retired from the design world, I wanted to have a place to showcase some of my favorite pieces from the past.">
+<Layout title="Design by" description="Although I have unofficially retired from the design world, I wanted to have a place to showcase some of my favorite pieces from the past." canonical={pageUrl}>
     <Fragment slot="alternate">
         <link rel="alternate" type="application/json" href="https://scottzirkel.com/design.json" title="Scott Zirkel's Design Feed">
+    </Fragment>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": pageUrl,
+            "url": pageUrl,
+            "name": "Design by Scott Zirkel",
+            "description": "A retrospective of graphic design work by Scott Zirkel, including Dribbble shots, package design, and professional design from his time at Alara Creative.",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "about": {
+                "@type": "Person",
+                "@id": "https://scottzirkel.com",
+                "name": "Scott Zirkel",
+                "url": "https://scottzirkel.com/"
+            },
+            "creator": {
+                "@type": "Person",
+                "@id": "https://scottzirkel.com",
+                "name": "Scott Zirkel"
+            }
+        })} />
     </Fragment>
 
     <header class="space-y-4">
