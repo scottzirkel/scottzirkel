@@ -1,7 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'indiana-jones-masterpieces';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for Indiana Jones Masterpieces, published by Topps in 2008.";
+
 const images = [
     ...Array.from({ length: 23 }, (_, i) => ({
         src: `drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-${String(i + 1).padStart(2, '0')}.webp`,
@@ -13,12 +18,24 @@ const images = [
     { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-29.webp', w: 359, h: 754 },
     { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-30.webp', w: 359, h: 754 },
 ];
+
+const schema = getDrawingSchema({
+    slug,
+    name: 'Indiana Jones Masterpieces',
+    description,
+    publisher: 'Topps',
+    dateCreated: '2008',
+    images,
+});
 ---
 
-<Layout title="Indiana Jones Masterpieces Sketchcards by">
+<Layout title="Indiana Jones Masterpieces Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Indiana Jones Masterpieces</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2008</h3>
+        <h1 class="font-title text-4xl">Indiana Jones Masterpieces <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2008</h2>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

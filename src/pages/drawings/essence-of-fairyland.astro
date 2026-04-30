@@ -1,7 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'essence-of-fairyland';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for The Essence of Fairyland, published by sadlittles.";
+
 const images = [
     { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-01-scott-zirkel.webp', w: 460, h: 429 },
     { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-02-scott-zirkel.webp', w: 460, h: 429 },
@@ -10,12 +15,23 @@ const images = [
     { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-05-scott-zirkel.webp', w: 460, h: 429 },
     { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-06-scott-zirkel.webp', w: 460, h: 429 },
 ];
+
+const schema = getDrawingSchema({
+    slug,
+    name: 'The Essence of Fairyland',
+    description,
+    publisher: 'sadlittles',
+    images,
+});
 ---
 
-<Layout title="The Essence of Fairyland Sketchcards by">
+<Layout title="The Essence of Fairyland Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">The Essence of Fairyland</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">sadlittles</h3>
+        <h1 class="font-title text-4xl">The Essence of Fairyland <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">sadlittles</h2>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

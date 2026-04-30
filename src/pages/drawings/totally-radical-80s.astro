@@ -1,11 +1,26 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
+
+const slug = 'totally-radical-80s';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard project by Scott Zirkel for Totally Radical 80's, published by Artists Unite. Cards in progress or scans lost.";
+
+const schema = getDrawingSchema({
+    slug,
+    name: "Totally Radical 80's",
+    description,
+    publisher: 'Artists Unite',
+});
 ---
 
-<Layout title="Totally Radical 80's Sketchcards by">
+<Layout title="Totally Radical 80's Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Totally Radical 80's</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Artists Unite </h3>
+        <h1 class="font-title text-4xl">Totally Radical 80's <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Artists Unite</h2>
     </header>
     <section>
         <p>Sorry, these cards are either currently in progress or I lost the scans.</p>

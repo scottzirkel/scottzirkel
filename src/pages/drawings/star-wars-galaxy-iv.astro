@@ -1,7 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'star-wars-galaxy-iv';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for Star Wars Galaxy IV, published by Topps in 2008.";
+
 const images = [
     ...Array.from({ length: 7 }, (_, i) => ({
         src: `drawings/sketchcards/star-wars-galaxy-iv/star-wars-galaxy-vi-scott-zirkel-${String(i + 2).padStart(2, '0')}.webp`,
@@ -9,12 +14,24 @@ const images = [
     })),
     { src: 'drawings/sketchcards/star-wars-galaxy-iv/star-wars-galaxy-vi-scott-zirkel-09.webp', w: 529, h: 504 },
 ];
+
+const schema = getDrawingSchema({
+    slug,
+    name: 'Star Wars Galaxy IV',
+    description,
+    publisher: 'Topps',
+    dateCreated: '2008',
+    images,
+});
 ---
 
-<Layout title="Star Wars Galaxy IV Sketchcards by">
+<Layout title="Star Wars Galaxy IV Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Star Wars Galaxy IV</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2008</h3>
+        <h1 class="font-title text-4xl">Star Wars Galaxy IV <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2008</h2>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

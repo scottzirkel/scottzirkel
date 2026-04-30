@@ -1,7 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'marvel-ant-man';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for Marvel Ant-Man, published by Upper Deck in 2015.";
+
 const images = [
     { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-01-scott-zirkel.webp', w: 724, h: 1000 },
     { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-02-scott-zirkel.webp', w: 724, h: 1000 },
@@ -10,12 +15,24 @@ const images = [
     { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-05-scott-zirkel.webp', w: 1318, h: 1000 },
     { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-06-scott-zirkel.webp', w: 990, h: 715 },
 ];
+
+const schema = getDrawingSchema({
+    slug,
+    name: 'Marvel Ant-Man',
+    description,
+    publisher: 'Upper Deck',
+    dateCreated: '2015',
+    images,
+});
 ---
 
-<Layout title="Marvel Ant-Man Sketchcards by">
+<Layout title="Marvel Ant-Man Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Marvel Ant-Man</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2015</h3>
+        <h1 class="font-title text-4xl">Marvel Ant-Man <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2015</h2>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

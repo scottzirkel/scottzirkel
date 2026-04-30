@@ -1,7 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'firefly-the-verse';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for Firefly: The Verse, published by Upper Deck in 2015.";
+
 const images = [
     { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-01-scott-zirkel.webp', w: 400, h: 556 },
     { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-08-scott-zirkel.webp', w: 400, h: 556 },
@@ -13,12 +18,24 @@ const images = [
     { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-06-scott-zirkel.webp', w: 400, h: 556 },
     { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-09-scott-zirkel.webp', w: 384, h: 560 },
 ];
+
+const schema = getDrawingSchema({
+    slug,
+    name: 'Firefly: The Verse',
+    description,
+    publisher: 'Upper Deck',
+    dateCreated: '2015',
+    images,
+});
 ---
 
-<Layout title="Firefly: The Verse Sketchcards by">
+<Layout title="Firefly: The Verse Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Firefly: The Verse</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2015</h3>
+        <h1 class="font-title text-4xl">Firefly: The Verse <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2015</h2>
     </header>
     <section class="grid sm:grid-cols-2 gap-4">
         {images.map((img) => (

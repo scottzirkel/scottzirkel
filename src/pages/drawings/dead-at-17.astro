@@ -1,38 +1,39 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'dead-at-17';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for Dead@17 (created by Josh Howard), published by 5finity.";
+
 const images = [
-    'drawings/sketchcards/dead-at-17/dead-at-17-01-scott-zirkel.webp',
-    'drawings/sketchcards/dead-at-17/dead-at-17-02-scott-zirkel.webp',
+    { src: 'drawings/sketchcards/dead-at-17/dead-at-17-01-scott-zirkel.webp', w: 693, h: 240 },
+    { src: 'drawings/sketchcards/dead-at-17/dead-at-17-02-scott-zirkel.webp', w: 693, h: 240 },
 ];
 
-const structuredData = images.map((img) => ({
-    '@context': 'https://schema.org/',
-    '@type': 'ImageObject',
-    'contentUrl': `${cdnBase}${img}`,
-    'creditText': 'Art by Scott Zirkel. Dead@17 created by Josh Howard.',
-    'license': 'https://creativecommons.org/licenses/by-nc/4.0/',
-    'creator': {
-        '@type': 'Person',
-        'name': 'Scott Zirkel',
-        'sameAs': 'https://scottzirkel.com/'
-    },
-    'copyrightNotice': 'Scott Zirkel'
-}));
+const schema = getDrawingSchema({
+    slug,
+    name: 'Dead@17',
+    description,
+    publisher: '5finity',
+    images,
+    creditText: 'Art by Scott Zirkel. Dead@17 created by Josh Howard.',
+    license: 'https://creativecommons.org/licenses/by-nc/4.0/',
+});
 ---
 
-<Layout title="Dead@17 Sketchcards by">
+<Layout title="Dead@17 Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
-        <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Dead@17</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">5finity</h3>
+        <h1 class="font-title text-4xl">Dead@17 <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity</h2>
     </header>
     <section class="grid grid-cols-1 gap-4">
         {images.map((img, i) => (
-            <img alt={`Dead@17 sketchcard ${i + 1}`} loading="lazy" width="693" height="240" decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img}`} />
+            <img alt={`Dead@17 sketchcard ${i + 1}`} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

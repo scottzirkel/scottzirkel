@@ -1,7 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'marvel-legendary-3d';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for Marvel Legendary/3D, published by Upper Deck in 2014/2015.";
+
 const images = [
     ...Array.from({ length: 12 }, (_, i) => ({
         src: `drawings/sketchcards/marvel-legendary-3d/marvel-legendary-${String(i + 1).padStart(2, '0')}-scott-zirkel.webp`,
@@ -9,12 +14,24 @@ const images = [
     })),
     { src: 'drawings/sketchcards/marvel-legendary-3d/marvel-legendary-13-scott-zirkel.webp', w: 1200, h: 842 },
 ];
+
+const schema = getDrawingSchema({
+    slug,
+    name: 'Marvel Legendary/3D',
+    description,
+    publisher: 'Upper Deck',
+    dateCreated: '2014/2015',
+    images,
+});
 ---
 
-<Layout title="Marvel Legendary/3D Sketchcards by">
+<Layout title="Marvel Legendary/3D Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Marvel Legendary/3D</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2014/2015</h3>
+        <h1 class="font-title text-4xl">Marvel Legendary/3D <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2014/2015</h2>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

@@ -1,15 +1,38 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
+
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'hack-slash';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for Hack/Slash, published by 5finity in 2012.";
+
+const images = [
+    { src: 'drawings/sketchcards/hack-slash/hack-slash-01-scott-zirkel.webp', w: 897, h: 250 },
+    { src: 'drawings/sketchcards/hack-slash/hack-slash-02-scott-zirkel.webp', w: 897, h: 250 },
+];
+
+const schema = getDrawingSchema({
+    slug,
+    name: 'Hack/Slash',
+    description,
+    publisher: '5finity',
+    dateCreated: '2012',
+    images,
+});
 ---
 
-<Layout title="Hack/Slash Sketchcards by">
+<Layout title="Hack/Slash Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Hack/Slash</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">5finity 2012</h3>
+        <h1 class="font-title text-4xl">Hack/Slash <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity 2012</h2>
     </header>
     <div class="grid grid-cols-1 gap-4">
-        <img alt="Hack/Slash sketchcard" loading="lazy" width="897" height="250" decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}drawings/sketchcards/hack-slash/hack-slash-01-scott-zirkel.webp`} />
-        <img alt="Hack/Slash sketchcard" loading="lazy" width="897" height="250" decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}drawings/sketchcards/hack-slash/hack-slash-02-scott-zirkel.webp`} />
+        {images.map((img) => (
+            <img alt="Hack/Slash sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+        ))}
     </div>
 </Layout>

@@ -1,21 +1,42 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'empire-strikes-back-3d';
+const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
+const description = "Sketchcard art by Scott Zirkel for Empire Strikes Back 3D, published by Topps in 2010.";
+
 const images = Array.from({ length: 27 }, (_, i) => {
     const num = String(i + 1).padStart(2, '0');
-    return `drawings/sketchcards/empire-strikes-back-3d/empire-strikes-back-${num}-scott-zirkel.webp`;
+    return {
+        src: `drawings/sketchcards/empire-strikes-back-3d/empire-strikes-back-${num}-scott-zirkel.webp`,
+        w: 465,
+        h: i === 26 ? 496 : 1000,
+    };
+});
+
+const schema = getDrawingSchema({
+    slug,
+    name: 'Empire Strikes Back 3D',
+    description,
+    publisher: 'Topps',
+    dateCreated: '2010',
+    images,
 });
 ---
 
-<Layout title="Empire Strikes Back 3D Sketchcards by">
+<Layout title="Empire Strikes Back 3D Sketchcards by" description={description} canonical={pageUrl}>
+    <Fragment slot="structured">
+        <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </Fragment>
     <header>
-        <h2 class="font-title text-4xl">Empire Strikes Back 3D</h2>
-        <h3 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2010</h3>
+        <h1 class="font-title text-4xl">Empire Strikes Back 3D <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2010</h2>
     </header>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {images.map((img, i) => (
-            <img alt="Empire Strikes Back 3D sketchcard" loading="lazy" width="465" height={i === 26 ? 496 : 1000} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img}`} />
+        {images.map((img) => (
+            <img alt="Empire Strikes Back 3D sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </div>
 </Layout>
