@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const description = "WHAT'D YOU DO?! The page you're looking for isn't here.";
+---
+
+<Layout
+    title="Page Not Found"
+    divider={true}
+    description={description}
+    canonical="https://scottzirkel.com/404"
+>
+    <style is:global>
+        body { transform: rotate(180deg); transform-origin: center center; }
+    </style>
+    <div class="rotate-180 space-y-6">
+        <h1 class="font-title text-5xl">Page Not Found</h1>
+        <p>
+            <mark class="inline-block px-1 bg-red-500 -rotate-1 text-gray-50">
+                <span class="inline-block rotate-1">WHAT'D YOU DO?!</span>
+            </mark>
+        </p>
+        <p>Please, for the love of Pete, put it back!</p>
+        <p>
+            …or head back to
+            <a href="/" class="text-red-500 underline hover:text-red-700">home base</a>
+            and we'll pretend none of this happened.
+        </p>
+    </div>
+</Layout>

@@ -8,3 +8,6 @@ npm-debug.log
 /.idea
 /.vscode
 /.fleet
+
+# Search Console / analytics exports — personal data, not for the repo
+scottzirkel.com-*
