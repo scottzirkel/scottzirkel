@@ -45,6 +45,46 @@
 }
 
 @font-face {
+    font-family: 'PT Sans';
+    src: url('/fonts/PT-Sans/PTSans-Regular.woff2') format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('/fonts/PT-Sans/PTSans-Italic.woff2') format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('/fonts/PT-Sans/PTSans-Bold.woff2') format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('/fonts/PT-Sans/PTSans-BoldItalic.woff2') format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'PT Mono';
+    src: url('/fonts/PT-Mono/PTMono-Regular.woff2') format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
     font-family: 'free-lunch';
     src: url('/fonts/Free-Lunch/FreeLunch-Regular.woff2') format("woff2");
     font-display: swap;
