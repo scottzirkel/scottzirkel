@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'dead-at-17';
@@ -8,8 +8,8 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Dead@17 (created by Josh Howard), published by 5finity.";
 
 const images = [
-    { src: 'drawings/sketchcards/dead-at-17/dead-at-17-01-scott-zirkel.webp', w: 693, h: 240 },
-    { src: 'drawings/sketchcards/dead-at-17/dead-at-17-02-scott-zirkel.webp', w: 693, h: 240 },
+    { src: 'drawings/sketchcards/dead-at-17/dead-at-17-01-scott-zirkel.webp', w: 693, h: 240, alt: "Dead@17 sketchcards — 4-card landscape strip featuring Nara Kilday with a pixie companion, Nara as a green-skinned ghost, Nara in a red-scarf coat with banner, and a warrior woman with a staff." },
+    { src: 'drawings/sketchcards/dead-at-17/dead-at-17-02-scott-zirkel.webp', w: 693, h: 240, alt: "Dead@17 sketchcards — 4-card landscape strip featuring Nara portrait, a fanged demon mask, a stone golem creature, and Nara held captive with arms raised." },
 ];
 
 const schema = getDrawingSchema({
@@ -21,19 +21,25 @@ const schema = getDrawingSchema({
     creditText: 'Art by Scott Zirkel. Dead@17 created by Josh Howard.',
     license: 'https://creativecommons.org/licenses/by-nc/4.0/',
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Dead@17', url: pageUrl },
+]);
 ---
 
 <Layout title="Dead@17 Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Dead@17 <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity</h2>
     </header>
     <section class="grid grid-cols-1 gap-4">
-        {images.map((img, i) => (
-            <img alt={`Dead@17 sketchcard ${i + 1}`} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+        {images.map((img) => (
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

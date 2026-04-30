@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'firefly-the-verse';
@@ -8,15 +8,15 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Firefly: The Verse, published by Upper Deck in 2015.";
 
 const images = [
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-01-scott-zirkel.webp', w: 400, h: 556 },
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-08-scott-zirkel.webp', w: 400, h: 556 },
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-02-scott-zirkel.webp', w: 400, h: 300 },
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-03-scott-zirkel.webp', w: 400, h: 300 },
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-04-scott-zirkel.webp', w: 400, h: 300 },
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-07-scott-zirkel.webp', w: 400, h: 300 },
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-05-scott-zirkel.webp', w: 400, h: 556 },
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-06-scott-zirkel.webp', w: 400, h: 556 },
-    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-09-scott-zirkel.webp', w: 384, h: 560 },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-01-scott-zirkel.webp', w: 400, h: 556, alt: "Firefly: The Verse sketchcards — 9-card grid of the Serenity crew: Mal, Inara, Zoe, Jayne, Wash, Kaylee, Book, Simon, and River." },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-08-scott-zirkel.webp', w: 400, h: 556, alt: "Firefly: The Verse sketchcards — 9-card grid featuring Mal, Zoe, Wash, River with weapons, and Saffron." },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-02-scott-zirkel.webp', w: 400, h: 300, alt: "Firefly: The Verse sketchcards — 9-card grid of episode and location vignettes including Out of Gas, Serenity Valley, Ariel, and War Stories." },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-03-scott-zirkel.webp', w: 400, h: 300, alt: "Firefly: The Verse sketchcards — 9-card grid of locations and ships: Alliance Cruiser, Heart of Gold, Jubal Early's ship, Objects in Space, and Serenity." },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-04-scott-zirkel.webp', w: 400, h: 300, alt: "Firefly: The Verse sketchcards — 9-card grid of episode moments including Mal and Saffron, the Serenity shuttle, and the Reaver ship." },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-07-scott-zirkel.webp', w: 400, h: 300, alt: "Firefly: The Verse sketchcards — 9-card grid of crew interactions: Inara and Mal, Kaylee, Wash, and bar-fight scenes." },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-05-scott-zirkel.webp', w: 400, h: 556, alt: "Firefly: The Verse sketchcards — 9-card grid featuring Mal, Kaylee and Inara, Shepherd Book, and Jayne portraits." },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-06-scott-zirkel.webp', w: 400, h: 556, alt: "Firefly: The Verse sketchcards — 9-card grid featuring Kaylee, River, Inara and Saffron, Book, Jayne, and bounty hunter Jubal Early." },
+    { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-09-scott-zirkel.webp', w: 384, h: 560, alt: "Firefly: The Verse sketchcards — 8 mixed-format cards including River with a knife, Mal portraits, Mal and Inara, and Book's funeral scene." },
 ];
 
 const schema = getDrawingSchema({
@@ -27,11 +27,17 @@ const schema = getDrawingSchema({
     dateCreated: '2015',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Firefly: The Verse', url: pageUrl },
+]);
 ---
 
 <Layout title="Firefly: The Verse Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Firefly: The Verse <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -39,7 +45,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid sm:grid-cols-2 gap-4">
         {images.map((img) => (
-            <img alt="Firefly: The Verse sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

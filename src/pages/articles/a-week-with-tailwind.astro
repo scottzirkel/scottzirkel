@@ -1,35 +1,44 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getArticleSchema, getBreadcrumbSchema } from '../../lib/schema';
+
+const slug = 'a-week-with-tailwind';
+const pageUrl = `https://scottzirkel.com/articles/${slug}`;
+const description = "My experience with TailwindCSS after using it for a week.";
+const datePublished = '2017-11-07T12:00:00-06:00';
+const keywords = ['Tailwind CSS', 'utility-first CSS', 'frontend', 'web development'];
+
+const articleSchema = getArticleSchema({
+    slug,
+    headline: 'A Week With Tailwind',
+    description,
+    image: 'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*xAFAiAxqZVrOVLBTo9tf6w.jpeg',
+    datePublished,
+    wordCount: 773,
+    keywords,
+    articleSection: 'Code',
+});
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Code', url: 'https://scottzirkel.com/code' },
+    { name: 'A Week With Tailwind', url: pageUrl },
+]);
 ---
 
-<Layout title="A Week With Tailwind" divider={true} description="Since Tailwind came out last week, I've been using it to build a site for a client. I know it's still very early (it's currently at 0.1.4 as of this writing), but what better way to learn something...">
+<Layout
+    title="A Week With Tailwind"
+    divider={true}
+    description="Since Tailwind came out last week, I've been using it to build a site for a client. I know it's still very early (it's currently at 0.1.4 as of this writing), but what better way to learn something..."
+    canonical={pageUrl}
+    ogType="article"
+    publishedTime={datePublished}
+    modifiedTime={datePublished}
+    articleSection="Code"
+    articleTags={keywords}
+>
     <Fragment slot="structured">
-        <script type="application/ld+json" set:html={JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://scottzirkel.com/articles/a-week-with-tailwind"
-            },
-            "headline": "A Week With Tailwind",
-            "description": "My experience with TailwindCSS after using it for a week.",
-            "image": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*xAFAiAxqZVrOVLBTo9tf6w.jpeg",
-            "author": {
-                "@type": "Person",
-                "name": "Scott Zirkel",
-                "url": "https://scottzirkel.com"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "codeburst",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://cdn-images-1.medium.com/max/392/1*LC0hwOq4FY2CG5F9W7R34Q@2x.png"
-                }
-            },
-            "datePublished": "2017-11-07T12:00:00-06:00",
-            "dateModified": "2017-11-07T12:00:00-06:00"
-        })} />
+        <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">A Week with Tailwind</h1>

@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'hack-slash';
@@ -8,8 +8,8 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Hack/Slash, published by 5finity in 2012.";
 
 const images = [
-    { src: 'drawings/sketchcards/hack-slash/hack-slash-01-scott-zirkel.webp', w: 897, h: 250 },
-    { src: 'drawings/sketchcards/hack-slash/hack-slash-02-scott-zirkel.webp', w: 897, h: 250 },
+    { src: 'drawings/sketchcards/hack-slash/hack-slash-01-scott-zirkel.webp', w: 897, h: 250, alt: "Hack/Slash sketchcards — 5-card landscape strip featuring Cassie Hack swinging an axe, Cassie tied up with a slasher behind her, Cassie in a tank top, a gas-mask slasher, and a bloody Cassie portrait." },
+    { src: 'drawings/sketchcards/hack-slash/hack-slash-02-scott-zirkel.webp', w: 897, h: 250, alt: "Hack/Slash sketchcards — 5-card landscape strip featuring slasher mask close-ups, an angry scarred Cassie, a pointed-mask slasher, and Cassie Hack with a bloody knife." },
 ];
 
 const schema = getDrawingSchema({
@@ -20,11 +20,17 @@ const schema = getDrawingSchema({
     dateCreated: '2012',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Hack/Slash', url: pageUrl },
+]);
 ---
 
 <Layout title="Hack/Slash Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Hack/Slash <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -32,7 +38,7 @@ const schema = getDrawingSchema({
     </header>
     <div class="grid grid-cols-1 gap-4">
         {images.map((img) => (
-            <img alt="Hack/Slash sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </div>
 </Layout>

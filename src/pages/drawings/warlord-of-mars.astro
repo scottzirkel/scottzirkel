@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'warlord-of-mars';
@@ -8,10 +8,10 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Warlord of Mars, published by Bregent/Dynamite in 2012.";
 
 const images = [
-    { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-01-scott-zirkel.webp', w: 996, h: 700 },
-    { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-02-scott-zirkel.webp', w: 996, h: 933 },
-    { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-03-scott-zirkel.webp', w: 996, h: 700 },
-    { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-04-scott-zirkel.webp', w: 996, h: 346 },
+    { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-01-scott-zirkel.webp', w: 996, h: 700, alt: "Warlord of Mars sketchcards — 8-card grid featuring John Carter, a White Ape, a Green Martian Tharks warrior, Dejah Thoris, and other Barsoomian characters." },
+    { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-02-scott-zirkel.webp', w: 996, h: 933, alt: "Warlord of Mars sketchcards — 5-card grid featuring Dejah Thoris portraits, John Carter, and a Green Martian." },
+    { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-03-scott-zirkel.webp', w: 996, h: 700, alt: "Warlord of Mars sketchcards — 8-card grid featuring Dejah Thoris in various poses, a Green Martian Thark, and John Carter." },
+    { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-04-scott-zirkel.webp', w: 996, h: 346, alt: "Warlord of Mars sketchcards — 4-card landscape strip featuring Dejah Thoris, John Carter standing alongside her with a sword, Dejah enthroned, and Dejah surprised at a window." },
 ];
 
 const schema = getDrawingSchema({
@@ -22,11 +22,17 @@ const schema = getDrawingSchema({
     dateCreated: '2012',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Warlord of Mars', url: pageUrl },
+]);
 ---
 
 <Layout title="Warlord of Mars Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Warlord of Mars <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -34,7 +40,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid grid-cols-1 gap-4">
         {images.map((img) => (
-            <img alt="Warlord of Mars sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

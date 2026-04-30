@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'essence-of-fairyland';
@@ -8,12 +8,12 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for The Essence of Fairyland, published by sadlittles.";
 
 const images = [
-    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-01-scott-zirkel.webp', w: 460, h: 429 },
-    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-02-scott-zirkel.webp', w: 460, h: 429 },
-    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-03-scott-zirkel.webp', w: 766, h: 429 },
-    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-04-scott-zirkel.webp', w: 460, h: 429 },
-    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-05-scott-zirkel.webp', w: 460, h: 429 },
-    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-06-scott-zirkel.webp', w: 460, h: 429 },
+    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-01-scott-zirkel.webp', w: 460, h: 429, alt: "The Essence of Fairyland sketchcards — 6-card grid featuring fairies with daisies, a fairy in green skirt, an orange-haired fairy with leaves, a redhead in vines, an archer fairy, and a red mask figure." },
+    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-02-scott-zirkel.webp', w: 460, h: 429, alt: "The Essence of Fairyland sketchcards — 6-card grid featuring a pink-haired fairy, a Peter Pan-like fairy in red, a cool-toned forest fairy, a chubby pink fairy, a red dancing fairy, and a brunette woodland nymph." },
+    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-03-scott-zirkel.webp', w: 766, h: 429, alt: "The Essence of Fairyland sketchcards — 10-card grid of pencil sketches: fairy faces, a side-profile fairy, a high-ponytail fairy, fluttering tiny fairies, a warrior fairy with spear, a sad fairy in flowers, a wisteria fairy, a flying fairy, and a snail-shell fairy." },
+    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-04-scott-zirkel.webp', w: 460, h: 429, alt: "The Essence of Fairyland sketchcards — 6-card grid featuring a horned bug-fairy in red, an emo fairy with wings making peace signs, a pixie with maple leaf, a redhead in mushroom-cap dress, a brunette in autumn leaves, and an icy blue snowflake fairy." },
+    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-05-scott-zirkel.webp', w: 460, h: 429, alt: "The Essence of Fairyland sketchcards — 6-card grid featuring a tulip-fairy peeking out, an injured striped-leg fairy, a bat-winged grinning gremlin, a brown-haired fairy in green, a fairy emerging from water, and a redhead pixie portrait." },
+    { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-06-scott-zirkel.webp', w: 460, h: 429, alt: "The Essence of Fairyland sketchcards — 6-card grid featuring a blue-skinned warrior elf with spear, a brown-haired warrior fairy with spear, an injured fairy carried by a bird, a winged fairy in animal print, a redheaded portrait, and a fairy peeking from a watermelon." },
 ];
 
 const schema = getDrawingSchema({
@@ -23,11 +23,17 @@ const schema = getDrawingSchema({
     publisher: 'sadlittles',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'The Essence of Fairyland', url: pageUrl },
+]);
 ---
 
 <Layout title="The Essence of Fairyland Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">The Essence of Fairyland <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -35,7 +41,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (
-            <img alt="The Essence of Fairyland sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

@@ -4,8 +4,15 @@ interface Props {
   divider?: boolean;
   description?: string;
   ogImage?: string;
+  ogImageAlt?: string;
+  ogType?: 'website' | 'article';
   canonical?: string;
   alternate?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  articleAuthor?: string;
+  articleSection?: string;
+  articleTags?: string[];
 }
 
 const {
@@ -13,7 +20,14 @@ const {
   divider = false,
   description = 'Artist, author, developer, designer. Making stuff up since 1977',
   ogImage = 'https://cdn.scottzirkel.com/misc/sz-og.webp',
+  ogImageAlt = 'Scott Zirkel — artist, writer, developer, designer.',
+  ogType = 'website',
   canonical = Astro.url.href,
+  publishedTime,
+  modifiedTime,
+  articleAuthor = 'Scott Zirkel',
+  articleSection,
+  articleTags,
 } = Astro.props;
 
 let title = rawTitle ?? '';
@@ -42,23 +56,47 @@ import '../styles/app.css';
     <link rel="dns-prefetch" href="https://cdn.scottzirkel.com">
     <meta name="theme-color" content="#f9fafb">
     <meta name="description" content={description}>
+    <meta name="author" content="Scott Zirkel">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href={canonical}>
     <link rel="sitemap" type="application/xml" href="https://scottzirkel.com/sitemap.xml">
     <link rel="icon" href="/favicon.ico">
+    <link rel="me" href="https://github.com/scottzirkel">
+    <meta property="og:site_name" content="Scott Zirkel">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content={canonical}>
-    <meta property="og:type" content="website">
+    <meta property="og:type" content={ogType}>
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>
     <meta property="og:logo" content="https://cdn.scottzirkel.com/misc/avatar-logo.png">
     <meta property="og:image" content={ogImage}>
+    <meta property="og:image:alt" content={ogImageAlt}>
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    {ogType === 'article' && publishedTime && (
+        <meta property="article:published_time" content={publishedTime} />
+    )}
+    {ogType === 'article' && modifiedTime && (
+        <meta property="article:modified_time" content={modifiedTime} />
+    )}
+    {ogType === 'article' && (
+        <meta property="article:author" content={articleAuthor} />
+    )}
+    {ogType === 'article' && articleSection && (
+        <meta property="article:section" content={articleSection} />
+    )}
+    {ogType === 'article' && articleTags && articleTags.map((tag) => (
+        <meta property="article:tag" content={tag} />
+    ))}
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@scottzirkel">
+    <meta name="twitter:creator" content="@scottzirkel">
     <meta property="twitter:domain" content="scottzirkel.com">
     <meta property="twitter:url" content={canonical}>
     <meta name="twitter:title" content={title}>
     <meta name="twitter:description" content={description}>
     <meta name="twitter:image" content={ogImage}>
+    <meta name="twitter:image:alt" content={ogImageAlt}>
     <slot name="structured" />
 </head>
 

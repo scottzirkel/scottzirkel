@@ -1,22 +1,49 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'indiana-jones-masterpieces';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Indiana Jones Masterpieces, published by Topps in 2008.";
 
+const gridAlts = [
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring three Indy hat portraits, Sallah, Donovan, a skull figure, Mola Ram, Short Round, and Mutt Williams.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Marcus Brody, scenes from Raiders, Mola Ram, an ancient map fragment, and Henry Jones Sr.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Willie Scott, Henry Sr., the Holy Grail, Indy's car, and Donovan.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Mutt Williams, voodoo priest, Sallah, Mola Ram raising a heart, and a swordsman shadow.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring silhouettes on a rope bridge, Willie screaming, Indy with idol, and a young Mutt.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring a volcano, melted faces, Indy in a mine cart, and Irina Spalko.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Indy, a young scout, Marion Ravenwood, Mutt Williams, and assorted villains.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Indy, Mac, Russian soldiers, voodoo priest, and Major Toht.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Indy with the Sankara stones, Nazi officers, a Wilhelm scream, and a German soldier.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring a Lao Che club sign, Short Round, Indy, a melted-face villain, and Sallah.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Indy among snakes, Indy in the jungle, Indy with a lit torch, Donovan, and a Time magazine cover.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Brody, Henry Sr., Willie Scott, a tattooed strongman, and a hat-shadow figure.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring three Indy hat portraits, Indy bloodied, Willie in a cage, Mola Ram, and Mutt.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring melted Toht face, blonde Elsa, hand with chain, melting Belloq, Brody, and Indy in silhouette.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Marion, a monkey, Indy in a tent, a Nazi flag, a mushroom cloud, a crystal skull, and the Ark of the Covenant.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring the Holy Grail, a mummy, Henry Sr., a death/reaper figure, Indy with whip, and Indy in a gas mask.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Short Round smiling, Indy shadow, Willie screaming, a torch-bearing woman, and scouts with a bugle.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Indy hat profile, Nazi flag, Short Round, the Cross of Coronado, Mola Ram, an alien skull, and Indy in shadow.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Indy, a snake on a Nazi map, melted Belloq, Marion, a treasure map, hieroglyphics, and Mola Ram silhouette.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring a torn parchment, Indy, Marion, Donovan with vials, and three Indy hat-profile portraits.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Henry Sr., a snake with map, Mola Ram skull, Indy in jungle, Marion with cobra, Brody, and Willie in headdress.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring Indy with the golden idol, Indy on a cliff, Indy with a shrunken-head idol, a hot-air balloon dropping a bomb, and a Hovitos warrior.",
+    "Indiana Jones Masterpieces sketchcards — 9-card grid featuring multiple Indy portraits in suit and tuxedo, young Indy in glasses (Dr. Henry Jones Jr.), and Indy hat profile.",
+];
+
 const images = [
     ...Array.from({ length: 23 }, (_, i) => ({
         src: `drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-${String(i + 1).padStart(2, '0')}.webp`,
-        w: 400, h: 561
+        w: 400, h: 561,
+        alt: gridAlts[i],
     })),
-    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-24.webp', w: 600, h: 740 },
-    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-25.webp', w: 600, h: 740 },
-    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-28.webp', w: 600, h: 740 },
-    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-29.webp', w: 359, h: 754 },
-    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-30.webp', w: 359, h: 754 },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-24.webp', w: 600, h: 740, alt: "Indiana Jones Masterpieces sketchcards — 5 mixed standard and panoramic cards including a sunset biplane, two figures in profile, a hand holding a bullwhip, Indy on the Wages of Sin chair, and Indy crouching by an altar." },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-25.webp', w: 600, h: 740, alt: "Indiana Jones Masterpieces panoramic sketchcards — Indy and Marion in the truck chase, Indy and Henry Sr. tied to chairs, the Sahara desert, a map of Portugal and Spain with the chase route, and Indy reuniting with his father." },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-28.webp', w: 600, h: 740, alt: "Indiana Jones Masterpieces sketchcards — Henry Sr. holding the lit Grail before the Ark, a screaming monkey effigy on a sceptre, Indy and Marion behind the side-gunner of the flying wing, two German pilots, and a panoramic flaming biplane silhouette." },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-29.webp', w: 359, h: 754, alt: "Indiana Jones Masterpieces panoramic sketchcards — three vertical scenes: Indy crawling under a tank past a patterned rug, raiders silhouetted at sunset, and Indy face-to-face with a torch-bearing native." },
+    { src: 'drawings/sketchcards/indiana-jones-masterpieces/indiana-jones-masterpieces-scott-zirkel-30.webp', w: 359, h: 754, alt: "Indiana Jones Masterpieces panoramic sketchcards — three vertical scenes: a freighter at sea with Indy reaching from the water, two figures carrying the Ark of the Covenant, and Marion shielding her eyes during the Ark's opening." },
 ];
 
 const schema = getDrawingSchema({
@@ -27,11 +54,17 @@ const schema = getDrawingSchema({
     dateCreated: '2008',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Indiana Jones Masterpieces', url: pageUrl },
+]);
 ---
 
 <Layout title="Indiana Jones Masterpieces Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Indiana Jones Masterpieces <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -39,7 +72,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (
-            <img alt="Indiana Jones Masterpieces sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

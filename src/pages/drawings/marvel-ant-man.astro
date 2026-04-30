@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'marvel-ant-man';
@@ -8,12 +8,12 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Marvel Ant-Man, published by Upper Deck in 2015.";
 
 const images = [
-    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-01-scott-zirkel.webp', w: 724, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-02-scott-zirkel.webp', w: 724, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-03-scott-zirkel.webp', w: 724, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-04-scott-zirkel.webp', w: 724, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-05-scott-zirkel.webp', w: 1318, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-06-scott-zirkel.webp', w: 990, h: 715 },
+    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-01-scott-zirkel.webp', w: 724, h: 1000, alt: "Marvel Ant-Man sketchcards — 9-card portrait grid featuring Black Knight, Bishop, Domino, Wasp, original Ant-Man armor, Yellowjacket, Beast, Spider-Man, and Ant-Man." },
+    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-02-scott-zirkel.webp', w: 724, h: 1000, alt: "Marvel Ant-Man sketchcards — 9-card portrait grid featuring Tinkerbell-style Wasp, Ant-Man on an ant, Wasp, Captain Marvel, Mary Jane, and Ant-Man kneeling." },
+    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-03-scott-zirkel.webp', w: 724, h: 1000, alt: "Marvel Ant-Man sketchcards — 9-card portrait grid featuring Stature/Cassie Lang, Wasp variants, classic Ant-Man helmet, Ant-Man in a jar, Pink Wasp, and Yellowjacket." },
+    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-04-scott-zirkel.webp', w: 724, h: 1000, alt: "Marvel Ant-Man sketchcards — 9-card portrait grid featuring shrinking Ant-Man poses, Wasp, miniaturized Spider-Man, Janet Van Dyne, and Yellowjacket." },
+    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-05-scott-zirkel.webp', w: 1318, h: 1000, alt: "Marvel Ant-Man sketchcards — 9-card landscape grid featuring Wasp on a wasp, Deadpool with Ant-Man, Ant-Man riding a cockroach, Loki, Tinkerbell-Wasp, and Hellcat." },
+    { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-06-scott-zirkel.webp', w: 990, h: 715, alt: "Marvel Ant-Man sketchcards — 4-card landscape grid: Stature with energy fists, Giant-Man, Ant-Man bursting forward, and Ant-Man crouching." },
 ];
 
 const schema = getDrawingSchema({
@@ -24,11 +24,17 @@ const schema = getDrawingSchema({
     dateCreated: '2015',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Marvel Ant-Man', url: pageUrl },
+]);
 ---
 
 <Layout title="Marvel Ant-Man Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Marvel Ant-Man <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -36,7 +42,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (
-            <img alt="Marvel Ant-Man sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

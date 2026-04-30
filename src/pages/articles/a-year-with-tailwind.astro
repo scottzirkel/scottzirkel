@@ -1,36 +1,45 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getArticleSchema, getBreadcrumbSchema } from '../../lib/schema';
+
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'a-year-with-tailwind';
+const pageUrl = `https://scottzirkel.com/articles/${slug}`;
+const description = "My experience with TailwindCSS after my first year of using it.";
+const datePublished = '2018-11-06T12:00:00-06:00';
+const keywords = ['Tailwind CSS', 'utility-first CSS', 'frontend', 'web development', 'design systems'];
+
+const articleSchema = getArticleSchema({
+    slug,
+    headline: 'A Year With Tailwind',
+    description,
+    image: `${cdnBase}articles/tailwind-css.webp`,
+    datePublished,
+    wordCount: 829,
+    keywords,
+    articleSection: 'Code',
+});
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Code', url: 'https://scottzirkel.com/code' },
+    { name: 'A Year With Tailwind', url: pageUrl },
+]);
 ---
 
-<Layout title="A Year with Tailwind" divider={true} description="A year-ish ago I started using TailwindCSS from Adam Wathan. If you haven't heard of it, you might want to check out my previous post, A Week With Tailwind in which I cover my first week with...">
+<Layout
+    title="A Year with Tailwind"
+    divider={true}
+    description="A year-ish ago I started using TailwindCSS from Adam Wathan. If you haven't heard of it, you might want to check out my previous post, A Week With Tailwind in which I cover my first week with..."
+    canonical={pageUrl}
+    ogType="article"
+    publishedTime={datePublished}
+    modifiedTime={datePublished}
+    articleSection="Code"
+    articleTags={keywords}
+>
     <Fragment slot="structured">
-        <script type="application/ld+json" set:html={JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://scottzirkel.com/articles/a-year-with-tailwind"
-            },
-            "headline": "A Year With Tailwind",
-            "description": "My experience with TailwindCSS after my first year of using it.",
-            "image": `${cdnBase}articles/tailwind-css.webp`,
-            "author": {
-                "@type": "Person",
-                "name": "Scott Zirkel",
-                "url": "https://scottzirkel.com"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "Alara Strategic + Creative",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://alaracreative.com/assets/branding/alara-creative-header-logo.png"
-                }
-            },
-            "datePublished": "2018-11-06T12:00:00-06:00",
-            "dateModified": "2018-11-06T12:00:00-06:00"
-        })} />
+        <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">A Year with Tailwind</h1>

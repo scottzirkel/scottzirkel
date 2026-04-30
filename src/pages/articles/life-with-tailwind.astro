@@ -1,28 +1,45 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getArticleSchema, getBreadcrumbSchema } from '../../lib/schema';
+
 const cdnBase = 'https://cdn.scottzirkel.com/';
+const slug = 'life-with-tailwind';
+const pageUrl = `https://scottzirkel.com/articles/${slug}`;
+const description = "My experience with TailwindCSS after using it exclusively for many years.";
+const datePublished = '2020-11-17T12:00:00-06:00';
+const keywords = ['Tailwind CSS', 'utility-first CSS', 'frontend', 'web development', 'TALL stack'];
+
+const articleSchema = getArticleSchema({
+    slug,
+    headline: 'Life With Tailwind',
+    description,
+    image: `${cdnBase}articles/computer.webp`,
+    datePublished,
+    wordCount: 545,
+    keywords,
+    articleSection: 'Code',
+});
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Code', url: 'https://scottzirkel.com/code' },
+    { name: 'Life With Tailwind', url: pageUrl },
+]);
 ---
 
-<Layout title="Life with Tailwind" divider={true} description="If you've been following along, you know I'm a huge fan of Tailwind CSS. And a pretty early adopter. I've documented my first week (v0.1.4) and my first year (v0.6) with it.">
+<Layout
+    title="Life with Tailwind"
+    divider={true}
+    description="If you've been following along, you know I'm a huge fan of Tailwind CSS. And a pretty early adopter. I've documented my first week (v0.1.4) and my first year (v0.6) with it."
+    canonical={pageUrl}
+    ogType="article"
+    publishedTime={datePublished}
+    modifiedTime={datePublished}
+    articleSection="Code"
+    articleTags={keywords}
+>
     <Fragment slot="structured">
-        <script type="application/ld+json" set:html={JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://scottzirkel.com/articles/life-with-tailwind"
-            },
-            "headline": "Life With Tailwind",
-            "description": "My experience with TailwindCSS after using it exclusively for many years.",
-            "image": `${cdnBase}articles/computer.webp`,
-            "author": {
-                "@type": "Person",
-                "name": "Scott Zirkel",
-                "url": "https://scottzirkel.com"
-            },
-            "datePublished": "2020-11-17T12:00:00-06:00",
-            "dateModified": "2020-11-17T12:00:00-06:00"
-        })} />
+        <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Life with Tailwind</h1>

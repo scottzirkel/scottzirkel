@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'dean-yeagles-mandy';
@@ -8,7 +8,7 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Dean Yeagle's Mandy, published by 5finity in 2009.";
 
 const images = [
-    { src: 'drawings/sketchcards/dean-yeagles-mandy/mandy-scott-zirkel.webp', w: 500, h: 347 },
+    { src: 'drawings/sketchcards/dean-yeagles-mandy/mandy-scott-zirkel.webp', w: 500, h: 347, alt: "Dean Yeagle's Mandy sketchcards — 8-card grid of pinups: Mandy in red bikini, in pigtails with lipstick, in white tank, in jean shorts, drying with a towel, in the bath with a bottle, kneeling at the edge of a tub, and posed by a pool." },
 ];
 
 const schema = getDrawingSchema({
@@ -19,11 +19,17 @@ const schema = getDrawingSchema({
     dateCreated: '2009',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: "Dean Yeagle's Mandy", url: pageUrl },
+]);
 ---
 
 <Layout title="Dean Yeagle's Mandy Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Dean Yeagle's Mandy <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -31,7 +37,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid grid-cols-1 gap-4">
         {images.map((img) => (
-            <img alt="Dean Yeagle's Mandy sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

@@ -1,11 +1,41 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'empire-strikes-back-3d';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Empire Strikes Back 3D, published by Topps in 2010.";
+
+const sceneAlts = [
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Luke on Bespin's antenna platform, Leia on a tauntaun, Han Solo in carbonite framing, and IG-88, Vader, and Boba Fett in the bounty hunter line-up.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: a hidden ground crew on Hoth, Luke and Leia with C-3PO and 2-1B, Han and Luke at the medbay, and Han hugging Leia.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Han and Leia close, Luke deflecting bolts from R2 with R2 sparking, Yoda inspecting the lightsaber, and a chibi Vader confronting young Luke.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Chewie waving on Hoth with a probe droid, Yoda hoisting Luke upside-down by the foot, Luke training in the Dagobah swamp, and Luke unconscious as a wampa attacks.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Dagobah swamp with Luke and R2-D2, Chewie, Han and Leia in the cockpit, Han frozen in carbonite, and Lando in Cloud City with Lobot.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: rebel pilots in Hoth briefing, Han Solo frozen in carbonite full-card, Vader fighting Yoda with a red lightsaber, and a chibi Luke escaping the wampa cave.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: C-3PO in the Cloud City cell, Luke and Leia at Bespin window, Han, Leia, R2 and C-3PO watching Falcon depart, and Luke in tauntaun sleeping bag.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: a Hoth turret being struck, an unconscious Han slumping in snow, hooded Vader portrait, and rainy Bespin with R2-D2.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: chibi Yoda showing his cane to a chibi Luke in the swamp, Yoda riding piggyback on Luke through the swamp, Falcon flying past the Exogorth's space-slug teeth, and silhouette of the space slug.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: chibi Luke gripping the underside of Cloud City, distant Star Destroyers and Falcon, Chewie hanging upside-down with broken restraints, and Lando handing the carbonite slab to Boba Fett.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Luke and Vader at the Cloud City carbon-freezing chamber, Chewie and Leia with Han, Chewie wrestling C-3PO's broken pieces, and Leia riding a tauntaun.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Han telling Leia he loves her, an open-mouthed wampa, a chibi Luke and chibi wampa in the cave, and an old Luke finding Han's frozen tauntaun.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: the bounty hunter line-up of Boba Fett, Bossk, Dengar, IG-88 and Zuckuss, a Tusken-Raider-style bounty hunter portrait, Boba Fett full body, and Han Solo shackled.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Bossk reptilian portrait, Han with a stormtrooper helmet, Boba Fett rocketing aerially, and Vader fighting Luke in shadow.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Bossk close-up, a wampa on Hoth, Han on a tauntaun riding through snow, and a young Luke pilot portrait.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: angry Yoda close-up, Obi-Wan ghost beside Yoda, a hooded Force-vision figure with goblin-Yoda, and Luke's X-wing arriving at Dagobah's swamp at night.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: a downed AT-AT with rebel running past, Han in pain bleeding from face, hooded Han and Leia talking, and Princess Leia speaking to camera.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Princess Leia angry with monitor reflections, chibi Chewie/Leia/Han huddled in fear, the wampa dragging Luke through snow, and Leia in a flowing dress.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: hooded Han Solo speaking, Chewie defending C-3PO from Ugnaughts, hooded Vader passing manacled Han to Boba Fett, and Han caught in the carbonite trap.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: an inverted Luke training mid-handstand, a hooded Yoda close-up at night, a hooded Luke at night, and rebel personnel watching the Falcon escape.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: a cloaked Vader stormtrooper portrait, a wampa-arm severed and bloody on the snow, Luke severing the wampa's arm in the cave, and C-3PO and Chewie dripping carbonite.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Han Solo with blaster on Cloud City, bald Bespin Wing Guard portrait, Luke aiming a blaster at his X-wing, and an Imperial probe droid full body.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Luke shocked at his severed hand, Vader's reflection in the carbon-freezing chamber, Vader and Luke close in shadow, and Boba Fett unconscious in the carbonite jet.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Bespin's Cloud City exterior, Princess Leia in rebel uniform, Yoda mid-Force-lift of Luke's X-wing, and Lando and Vader silhouetted on Cloud City.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: Princess Leia firing a blaster, Han frozen in carbonite slumped, Vader's TIE Advanced cockpit interior, and C-3PO with Lando.",
+    "Empire Strikes Back 3D panoramic sketchcards — 4 stacked landscape cards: two stormtroopers, a tiny Vader and Boba Fett with the carbonite slab on Cloud City, an empty Hoth landscape with a probe droid, and R2-D2 stuck in Dagobah swamp.",
+    "Empire Strikes Back 3D panoramic sketchcards — 2 stacked landscape cards: an upside-down dead tauntaun in Vader's TIE cockpit, and a TIE fighter cockpit POV.",
+];
 
 const images = Array.from({ length: 27 }, (_, i) => {
     const num = String(i + 1).padStart(2, '0');
@@ -13,6 +43,7 @@ const images = Array.from({ length: 27 }, (_, i) => {
         src: `drawings/sketchcards/empire-strikes-back-3d/empire-strikes-back-${num}-scott-zirkel.webp`,
         w: 465,
         h: i === 26 ? 496 : 1000,
+        alt: sceneAlts[i],
     };
 });
 
@@ -24,11 +55,17 @@ const schema = getDrawingSchema({
     dateCreated: '2010',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Empire Strikes Back 3D', url: pageUrl },
+]);
 ---
 
 <Layout title="Empire Strikes Back 3D Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Empire Strikes Back 3D <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -36,7 +73,7 @@ const schema = getDrawingSchema({
     </header>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (
-            <img alt="Empire Strikes Back 3D sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </div>
 </Layout>

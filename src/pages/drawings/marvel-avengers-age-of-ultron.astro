@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'marvel-avengers-age-of-ultron';
@@ -8,15 +8,15 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Marvel Avengers: Age of Ultron, published by Upper Deck in 2015.";
 
 const images = [
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-01-scott-zirkel.webp', w: 719, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-02-scott-zirkel.webp', w: 719, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-03-scott-zirkel.webp', w: 719, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-04-scott-zirkel.webp', w: 719, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-05-scott-zirkel.webp', w: 719, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-06-scott-zirkel.webp', w: 719, h: 1000 },
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-07-scott-zirkel.webp', w: 1000, h: 715 },
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-08-scott-zirkel.webp', w: 1000, h: 715 },
-    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-09-scott-zirkel.webp', w: 1000, h: 715 },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-01-scott-zirkel.webp', w: 719, h: 1000, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card portrait grid featuring Captain America, Hawkeye, Spider-Woman, Wonder Man, Ms. Marvel, Scarlet Witch, Wasp, and Thanos." },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-02-scott-zirkel.webp', w: 719, h: 1000, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card portrait grid featuring Thanos, Mystique, Cyclops, Black Widow, She-Hulk, Spider-Woman, Colossus, and Phoenix." },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-03-scott-zirkel.webp', w: 719, h: 1000, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card portrait grid featuring Hawkeye, Phoenix, Daredevil, Captain America, Spider-Man, Deadpool, and Nightcrawler." },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-04-scott-zirkel.webp', w: 719, h: 1000, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card portrait grid featuring Captain Marvel, Iron Man, Captain America, Phoenix, Hawkeye, Thor, and Ant-Man." },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-05-scott-zirkel.webp', w: 719, h: 1000, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card portrait grid featuring Ant-Man, Spider-Man, Scarlet Witch, Doctor Strange, Rogue, and Jubilee." },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-06-scott-zirkel.webp', w: 719, h: 1000, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card portrait grid featuring Groot, Spider-Man and Mary Jane, Cable, Luke Cage, Iceman, and Wolverine." },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-07-scott-zirkel.webp', w: 1000, h: 715, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card landscape grid featuring J. Jonah Jameson and Spider-Man, Carol Danvers, She-Hulk, Hawkeye, Invisible Woman, and Iron Man." },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-08-scott-zirkel.webp', w: 1000, h: 715, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card landscape grid featuring Mockingbird, Black Cat, Hulk, Spider-Woman, Hawkeye, Luke Cage, and Deadpool." },
+    { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-09-scott-zirkel.webp', w: 1000, h: 715, alt: "Marvel Avengers: Age of Ultron sketchcards — 8 landscape cards featuring Nightcrawler, Hawkeye and Mysterio, Ghost Rider, Cosmo the Spacedog, Deadpool, a bulldog, Spider-Man and Venom, and a hawk-rider." },
 ];
 
 const schema = getDrawingSchema({
@@ -27,11 +27,17 @@ const schema = getDrawingSchema({
     dateCreated: '2015',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Marvel Avengers: Age of Ultron', url: pageUrl },
+]);
 ---
 
 <Layout title="Marvel Avengers: Age of Ultron Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Marvel Avengers: Age of Ultron <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -39,7 +45,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (
-            <img alt="Marvel Avengers: Age of Ultron sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

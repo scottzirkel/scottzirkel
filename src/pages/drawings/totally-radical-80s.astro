@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const slug = 'totally-radical-80s';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
@@ -12,11 +12,17 @@ const schema = getDrawingSchema({
     description,
     publisher: 'Artists Unite',
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: "Totally Radical 80's", url: pageUrl },
+]);
 ---
 
 <Layout title="Totally Radical 80's Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Totally Radical 80's <span class="sr-only">sketchcards by Scott Zirkel</span></h1>

@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'zombies-vs-cheerleaders';
@@ -8,11 +8,11 @@ const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Zombies vs Cheerleaders, published by 5finity.";
 
 const images = [
-    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-01-scott-zirkel.webp', w: 500, h: 1051 },
-    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-02-scott-zirkel.webp', w: 500, h: 1039 },
-    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-03-scott-zirkel.webp', w: 500, h: 1036 },
-    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-04-scott-zirkel.webp', w: 500, h: 359 },
-    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-05-scott-zirkel.webp', w: 900, h: 414 },
+    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-01-scott-zirkel.webp', w: 500, h: 1051, alt: "Zombies vs Cheerleaders sketchcards — 6-panel comic strip telling a story across two-card spreads: a zombie reaches into a tomb where a cheerleader hides, the cheerleader runs from the zombie, then kicks his head clean off." },
+    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-02-scott-zirkel.webp', w: 500, h: 1039, alt: "Zombies vs Cheerleaders sketchcards — 6-panel comic strip across two-card spreads: a zombie holds a femur bone, a blonde cheerleader gags, the zombie says \"BRAINS...\" while the cheerleader vomits, then both stand, the cheerleader now zombified." },
+    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-03-scott-zirkel.webp', w: 500, h: 1036, alt: "Zombies vs Cheerleaders sketchcards — 6-panel comic strip across two-card spreads: a redheaded cheerleader stares down a horde of zombies as her pom-pom flies away, the zombies devour her pom-pom, then she emerges as a zombie among them." },
+    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-04-scott-zirkel.webp', w: 500, h: 359, alt: "Zombies vs Cheerleaders sketchcards — 2-card spread of a zombie and cheerleader playing chess under a scoreboard reading \"Zombies 25, Cheerleaders 1\"." },
+    { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-05-scott-zirkel.webp', w: 900, h: 414, alt: "Zombies vs Cheerleaders sketchcards — 3-card landscape strip featuring a screaming blonde cheerleader, a tall blood-stained zombie, and a pair of zombies crowded together." },
 ];
 
 const schema = getDrawingSchema({
@@ -22,11 +22,17 @@ const schema = getDrawingSchema({
     publisher: '5finity',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Zombies vs Cheerleaders', url: pageUrl },
+]);
 ---
 
 <Layout title="Zombies vs Cheerleaders Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Zombies vs Cheerleaders <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -34,7 +40,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (
-            <img alt="Zombies vs Cheerleaders sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>

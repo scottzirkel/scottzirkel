@@ -1,18 +1,29 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getDrawingSchema } from '../../lib/schema';
+import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'star-wars-galaxy-iv';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
 const description = "Sketchcard art by Scott Zirkel for Star Wars Galaxy IV, published by Topps in 2008.";
 
+const gridAlts = [
+    "Star Wars Galaxy IV sketchcards — 9-card grid featuring a hooded figure, a panda-faced alien, a tribal Jedi, a chibi Mandalorian, a Bothan-style alien, a vine-wrapped figure, a blue Sith with red eyes, an alien with elongated head, and a blue alien chief.",
+    "Star Wars Galaxy IV sketchcards — 9-card grid featuring an Ewok in scout gear, Princess Leia, Anakin Skywalker, two human couples, Obi-Wan Kenobi bearded portrait, Qui-Gon Jinn, Yoda, and a Sith mask logo.",
+    "Star Wars Galaxy IV sketchcards — 9-card grid featuring twi'lek warrior, horned alien, X-wing pilot portrait, a vintage car with two passengers, a smiling girl in red, a tuxedoed alien with flaming hand, and Indiana Jones, Han Solo, and a blonde human portrait.",
+    "Star Wars Galaxy IV sketchcards — 9-card grid featuring four pale-skinned alien portraits, a Tusken-style figure walking past a fire, a Gamorrean pig-guard, an albino twi'lek, a hooded Sith with glowing eyes, and a vampiric figure with red robe.",
+    "Star Wars Galaxy IV sketchcards — 9-card grid featuring a creature on a tentacle, an enraged Wookiee, a horned blue Jedi, an alien with melted face, Queen Amidala in tiara, a young human boy, Princess Leia, an Imperial probe droid, and Darth Zannah.",
+    "Star Wars Galaxy IV sketchcards — 9-card grid featuring Chancellor Valorum, a goateed senator, a horned dark side Sith, Red Two pilot portrait, Darth Caedus, a young Princess Leia, Leia in braids, Aayla Secura, and a Tusken Raider's silhouette.",
+    "Star Wars Galaxy IV sketchcards — 9-card grid featuring a Jedi padawan with a head-tail companion, a face-painted woman with red lightsaber, Lowbacca the Wookiee, the Mistress Anja Gallandro, a blond Anakin, a Skywalker boy portrait, a stormtrooper, a Twi'lek slave, and a hooded human portrait.",
+];
+
 const images = [
     ...Array.from({ length: 7 }, (_, i) => ({
         src: `drawings/sketchcards/star-wars-galaxy-iv/star-wars-galaxy-vi-scott-zirkel-${String(i + 2).padStart(2, '0')}.webp`,
-        w: 534, h: 755
+        w: 534, h: 755,
+        alt: gridAlts[i],
     })),
-    { src: 'drawings/sketchcards/star-wars-galaxy-iv/star-wars-galaxy-vi-scott-zirkel-09.webp', w: 529, h: 504 },
+    { src: 'drawings/sketchcards/star-wars-galaxy-iv/star-wars-galaxy-vi-scott-zirkel-09.webp', w: 529, h: 504, alt: "Star Wars Galaxy IV puzzle-card sketchcards — 4-card cross arrangement: a Mandalorian-style bounty hunter card on top, Han Solo in stormtrooper armor on the left, Princess Leia on the right, and Luke Skywalker on the bottom — all set in a Hoth ice landscape." },
 ];
 
 const schema = getDrawingSchema({
@@ -23,11 +34,17 @@ const schema = getDrawingSchema({
     dateCreated: '2008',
     images,
 });
+const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://scottzirkel.com/' },
+    { name: 'Drawings', url: 'https://scottzirkel.com/drawings' },
+    { name: 'Star Wars Galaxy IV', url: pageUrl },
+]);
 ---
 
 <Layout title="Star Wars Galaxy IV Sketchcards by" description={description} canonical={pageUrl}>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+        <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Star Wars Galaxy IV <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
@@ -35,7 +52,7 @@ const schema = getDrawingSchema({
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (
-            <img alt="Star Wars Galaxy IV sketchcard" loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
+            <img alt={img.alt} loading="lazy" width={img.w} height={img.h} decoding="async" class="col-span-1 max-w-full" src={`${cdnBase}${img.src}`} />
         ))}
     </section>
 </Layout>
