@@ -104,8 +104,9 @@ import '../styles/app.css';
 </head>
 
 <body class="flex min-h-screen flex-col items-stretch justify-center bg-gray-900 font-sans leading-normal text-gray-900">
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-gray-900 focus:px-4 focus:py-2 focus:text-gray-100">Skip to content</a>
 <Header currentPath={Astro.url.pathname} />
-<main class="h-full flex-1 bg-gray-50">
+<main id="main" class="h-full flex-1 bg-gray-50">
     <div class="mx-auto lg:max-w-5xl">
         <article class="sp:px-6 space-y-8 px-4 py-10 text-xl text-gray-800 sm:py-12 lg:px-8 lg:py-16">
             <slot />

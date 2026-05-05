@@ -3,7 +3,7 @@ interface Props {
   currentPath: string;
 }
 const { currentPath } = Astro.props;
-const segment = currentPath.split('/').filter(Boolean)[0] ?? '';
+const segment = currentPath.replace(/\.html$/, '').split('/').filter(Boolean)[0] ?? '';
 ---
 
 <header class="pt-8 space-y-4 bg-gray-50 border-t-8 border-red-500 md:pt-16">
@@ -15,19 +15,19 @@ const segment = currentPath.split('/').filter(Boolean)[0] ?? '';
     </div>
     <nav class="m-4 space-y-2 leading-tight text-center lg:mt-0">
         <div class="flex justify-center items-center space-x-4">
-            <a class:list={[segment === 'drawings' ? 'text-red-500' : 'text-gray-900 hover:text-red-500', 'hover:rotate-[-3deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl']} href="/drawings">
+            <a aria-current={segment === 'drawings' ? 'page' : undefined} class:list={[segment === 'drawings' ? 'text-red-500' : 'text-gray-900 hover:text-red-500', 'hover:rotate-[-3deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl']} href="/drawings">
                 Drawings
             </a>
-            <a class:list={[segment === 'writing' ? 'text-red-500' : 'text-gray-900 hover:text-red-500', 'hover:rotate-[2deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl']} href="/writing">Writing</a>
-            <a class:list={[segment === 'design' ? 'text-red-500' : 'text-gray-900 hover:text-red-500', 'hover:rotate-[-4deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl']} href="/design">Design</a>
-            <a class:list={[segment === 'code' ? 'text-red-500' : 'text-gray-900 hover:text-red-500', 'hover:rotate-[180deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl']} href="/code">Code</a>
+            <a aria-current={segment === 'writing' ? 'page' : undefined} class:list={[segment === 'writing' ? 'text-red-500' : 'text-gray-900 hover:text-red-500', 'hover:rotate-[2deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl']} href="/writing">Writing</a>
+            <a aria-current={segment === 'design' ? 'page' : undefined} class:list={[segment === 'design' ? 'text-red-500' : 'text-gray-900 hover:text-red-500', 'hover:rotate-[-4deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl']} href="/design">Design</a>
+            <a aria-current={segment === 'code' ? 'page' : undefined} class:list={[segment === 'code' ? 'text-red-500' : 'text-gray-900 hover:text-red-500', 'hover:rotate-[180deg] font-subtitle text-2xl uppercase md:text-3xl lg:text-4xl']} href="/code">Code</a>
         </div>
         <div class="flex justify-center items-center space-x-4">
-            <a class="block relative text-2xl text-red-500 group font-subtitle" href="/uses">
+            <a aria-current={segment === 'uses' ? 'page' : undefined} class="block relative text-2xl text-red-500 group font-subtitle" href="/uses">
                 <span class="relative z-10">Uses</span>
                 <span class:list={['-mx-1 absolute inset-0 z-0 my-4 h-4 w-full rounded', segment === 'uses' ? 'bg-gray-600/25' : 'group-hover:bg-gray-600/25']}></span>
             </a>
-            <a class="block relative text-2xl text-red-500 group font-subtitle" href="/been-there-done-that">
+            <a aria-current={segment === 'been-there-done-that' ? 'page' : undefined} class="block relative text-2xl text-red-500 group font-subtitle" href="/been-there-done-that">
                 <span class="relative z-10">Been There Done That</span>
                 <span class:list={['mx-1 absolute inset-0 z-0 my-4 h-4 w-full rounded', segment === 'been-there-done-that' ? 'bg-gray-600/25' : 'group-hover:bg-gray-600/25']}></span>
             </a>
