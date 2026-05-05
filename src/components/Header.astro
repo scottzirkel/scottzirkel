@@ -3,7 +3,8 @@ interface Props {
   currentPath: string;
 }
 const { currentPath } = Astro.props;
-const segment = currentPath.replace(/\.html$/, '').split('/').filter(Boolean)[0] ?? '';
+const rawSegment = currentPath.replace(/\.html$/, '').split('/').filter(Boolean)[0] ?? '';
+const segment = rawSegment === 'articles' ? 'code' : rawSegment;
 ---
 
 <header class="pt-8 space-y-4 bg-gray-50 border-t-8 border-red-500 md:pt-16">
