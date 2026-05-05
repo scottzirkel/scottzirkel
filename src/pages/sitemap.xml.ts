@@ -1,12 +1,9 @@
 import type { APIRoute } from 'astro';
-import { execSync } from 'node:child_process';
-import { statSync } from 'node:fs';
-import { join } from 'node:path';
+import lastmodData from '../data/page-lastmod.json';
 
 const SITE_URL = 'https://scottzirkel.com';
-const PAGES_DIR = join(process.cwd(), 'src', 'pages');
-
 const pageModules = import.meta.glob('./**/*.astro', { eager: false });
+const lastmodMap = lastmodData as Record<string, string>;
 
 function pageToPath(key: string): string {
     let route = key.replace(/^\.\//, '').replace(/\.astro$/, '');
@@ -15,31 +12,13 @@ function pageToPath(key: string): string {
     return '/' + route;
 }
 
-function lastModified(relPath: string): string {
-    const file = join(PAGES_DIR, relPath);
-    try {
-        const out = execSync(`git log -1 --format=%cI -- "${file}"`, {
-            encoding: 'utf8',
-            stdio: ['ignore', 'pipe', 'ignore'],
-        }).trim();
-        if (out) return out;
-    } catch {
-        // git unavailable or file untracked — fall through
-    }
-    try {
-        return statSync(file).mtime.toISOString();
-    } catch {
-        return new Date().toISOString();
-    }
-}
-
 export const GET: APIRoute = () => {
     const urls = Object.keys(pageModules)
         .map((key) => {
-            const rel = key.replace(/^\.\//, '');
+            const path = pageToPath(key);
             return {
-                loc: SITE_URL + pageToPath(key),
-                lastmod: lastModified(rel),
+                loc: SITE_URL + path,
+                lastmod: lastmodMap[path] ?? new Date().toISOString(),
             };
         })
         .sort((a, b) => a.loc.localeCompare(b.loc));

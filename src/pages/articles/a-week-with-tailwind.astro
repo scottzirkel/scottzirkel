@@ -6,6 +6,7 @@ const slug = 'a-week-with-tailwind';
 const pageUrl = `https://scottzirkel.com/articles/${slug}`;
 const description = "My experience with TailwindCSS after using it for a week.";
 const datePublished = '2017-11-07T12:00:00-06:00';
+const dateModified = datePublished;
 const keywords = ['Tailwind CSS', 'utility-first CSS', 'frontend', 'web development'];
 
 const articleSchema = getArticleSchema({
@@ -14,6 +15,7 @@ const articleSchema = getArticleSchema({
     description,
     image: 'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*xAFAiAxqZVrOVLBTo9tf6w.jpeg',
     datePublished,
+    dateModified,
     wordCount: 773,
     keywords,
     articleSection: 'Code',
@@ -32,7 +34,7 @@ const breadcrumbs = getBreadcrumbSchema([
     canonical={pageUrl}
     ogType="article"
     publishedTime={datePublished}
-    modifiedTime={datePublished}
+    modifiedTime={dateModified}
     articleSection="Code"
     articleTags={keywords}
 >

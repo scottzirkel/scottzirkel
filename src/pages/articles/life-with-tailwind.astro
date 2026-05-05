@@ -7,6 +7,7 @@ const slug = 'life-with-tailwind';
 const pageUrl = `https://scottzirkel.com/articles/${slug}`;
 const description = "My experience with TailwindCSS after using it exclusively for many years.";
 const datePublished = '2020-11-17T12:00:00-06:00';
+const dateModified = datePublished;
 const keywords = ['Tailwind CSS', 'utility-first CSS', 'frontend', 'web development', 'TALL stack'];
 
 const articleSchema = getArticleSchema({
@@ -15,6 +16,7 @@ const articleSchema = getArticleSchema({
     description,
     image: `${cdnBase}articles/computer.webp`,
     datePublished,
+    dateModified,
     wordCount: 545,
     keywords,
     articleSection: 'Code',
@@ -33,7 +35,7 @@ const breadcrumbs = getBreadcrumbSchema([
     canonical={pageUrl}
     ogType="article"
     publishedTime={datePublished}
-    modifiedTime={datePublished}
+    modifiedTime={dateModified}
     articleSection="Code"
     articleTags={keywords}
 >
