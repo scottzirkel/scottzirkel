@@ -2,7 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout canonical="https://scottzirkel.com/">
+<Layout
+    canonical="https://scottzirkel.com/"
+    description="Scott Zirkel — American artist, fiction writer, web developer, and graphic designer. Drawings, writing, design, and code, since 1977."
+>
     <Fragment slot="structured">
         <script type="application/ld+json" set:html={JSON.stringify({
             "@context": "https://schema.org",
