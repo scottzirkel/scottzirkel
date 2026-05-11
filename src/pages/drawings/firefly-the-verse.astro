@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'firefly-the-verse';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Firefly: The Verse, published by Upper Deck in 2015.";
+const description = "80 sketch cards by Scott Zirkel for Upper Deck's 2015 Firefly: The Verse — an all-art tribute set covering the show's characters, ships, and episodes.";
 
 const images = [
     { src: 'drawings/sketchcards/firefly-the-verse/firefly-the-verse-01-scott-zirkel.webp', w: 400, h: 556, alt: "Firefly: The Verse sketchcards — 9-card grid of the Serenity crew: Mal, Inara, Zoe, Jayne, Wash, Kaylee, Book, Simon, and River." },
@@ -42,6 +42,7 @@ const breadcrumbs = getBreadcrumbSchema([
     <header>
         <h1 class="font-title text-4xl">Firefly: The Verse <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2015</h2>
+        <p class="mb-6">I drew 80 sketch cards for Upper Deck's 2015 Firefly: The Verse — an all-art tribute set covering the show's characters, ships, and episodes.</p>
     </header>
     <section class="grid sm:grid-cols-2 gap-4">
         {images.map((img) => (

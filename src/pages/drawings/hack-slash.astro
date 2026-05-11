@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'hack-slash';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Hack/Slash, published by 5finity in 2012.";
+const description = "10 sketch cards by Scott Zirkel for Tim Seeley's Hack/Slash horror series, published by 5finity in 2010 (1,750 packs).";
 
 const images = [
     { src: 'drawings/sketchcards/hack-slash/hack-slash-01-scott-zirkel.webp', w: 897, h: 250, alt: "Hack/Slash sketchcards — 5-card landscape strip featuring Cassie Hack swinging an axe, Cassie tied up with a slasher behind her, Cassie in a tank top, a gas-mask slasher, and a bloody Cassie portrait." },
@@ -17,7 +17,7 @@ const schema = getDrawingSchema({
     name: 'Hack/Slash',
     description,
     publisher: '5finity',
-    dateCreated: '2012',
+    dateCreated: '2010',
     images,
 });
 const breadcrumbs = getBreadcrumbSchema([
@@ -34,7 +34,8 @@ const breadcrumbs = getBreadcrumbSchema([
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Hack/Slash <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
-        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity 2012</h2>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity 2010</h2>
+        <p class="mb-6">I drew 10 sketch cards for Tim Seeley's Hack/Slash horror series, published by 5finity in October 2010 with 1,750 packs.</p>
     </header>
     <div class="grid grid-cols-1 gap-4">
         {images.map((img) => (

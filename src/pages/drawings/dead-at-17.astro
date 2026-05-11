@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'dead-at-17';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Dead@17 (created by Josh Howard), published by 5finity.";
+const description = "8 sketch cards by Scott Zirkel for Josh Howard's Dead@17, released by 5finity in March 2010 (600 packs worldwide).";
 
 const images = [
     { src: 'drawings/sketchcards/dead-at-17/dead-at-17-01-scott-zirkel.webp', w: 693, h: 240, alt: "Dead@17 sketchcards — 4-card landscape strip featuring Nara Kilday with a pixie companion, Nara as a green-skinned ghost, Nara in a red-scarf coat with banner, and a warrior woman with a staff." },
@@ -17,6 +17,7 @@ const schema = getDrawingSchema({
     name: 'Dead@17',
     description,
     publisher: '5finity',
+    dateCreated: '2010',
     images,
     creditText: 'Art by Scott Zirkel. Dead@17 created by Josh Howard.',
     license: 'https://creativecommons.org/licenses/by-nc/4.0/',
@@ -35,7 +36,8 @@ const breadcrumbs = getBreadcrumbSchema([
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Dead@17 <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
-        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity</h2>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity 2010</h2>
+        <p class="mb-6">I drew 8 sketch cards for Josh Howard's Dead@17 supernatural horror series, released by 5finity in March 2010. The set was limited to 600 packs.</p>
     </header>
     <section class="grid grid-cols-1 gap-4">
         {images.map((img) => (

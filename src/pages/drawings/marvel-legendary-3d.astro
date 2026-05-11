@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'marvel-legendary-3d';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Marvel Legendary/3D, published by Upper Deck in 2014/2015.";
+const description = "116 Playable Legendary Sketch cards by Scott Zirkel for Upper Deck's Marvel 3D set — original art usable in the Legendary deck-building game.";
 
 const gridAlts = [
     "Marvel Legendary/3D sketchcards — 9-card grid in Legendary card-game frames featuring The Lizard, Mystique, Power Man, Mystique vampire variant, Spider-Man, Storm, Mystique civilian, a green-suited villain, and a soldier henchman.",
@@ -54,6 +54,7 @@ const breadcrumbs = getBreadcrumbSchema([
     <header>
         <h1 class="font-title text-4xl">Marvel Legendary/3D <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2014/2015</h2>
+        <p class="mb-6">I drew 116 Playable Legendary Sketch cards for Upper Deck's Marvel 3D set — original art that doubled as actual cards you could play in the Legendary deck-building game.</p>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

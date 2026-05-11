@@ -4,7 +4,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const slug = 'totally-radical-80s';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard project by Scott Zirkel for Totally Radical 80's, published by Artists Unite. Cards in progress or scans lost.";
+const description = "Sketch card originals by Scott Zirkel on Artists Unite's Totally Radical 80's blank canvas. Scans lost.";
 
 const schema = getDrawingSchema({
     slug,
@@ -29,6 +29,7 @@ const breadcrumbs = getBreadcrumbSchema([
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Artists Unite</h2>
     </header>
     <section>
-        <p>Sorry, these cards are either currently in progress or I lost the scans.</p>
+        <p class="mb-4">I drew originals on Artists Unite's Totally Radical 80's blank canvas — an 80s-themed sketch card line where artists do custom work on the printed cards.</p>
+        <p>Sorry — I'm missing the scans on this one.</p>
     </section>
 </Layout>

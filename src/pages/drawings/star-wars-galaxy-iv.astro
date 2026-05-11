@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'star-wars-galaxy-iv';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Star Wars Galaxy IV, published by Topps in 2008.";
+const description = "67 sketch cards by Scott Zirkel for Topps' Star Wars Galaxy Series 4 (2008) — the first Galaxy series to feature sketch cards.";
 
 const gridAlts = [
     "Star Wars Galaxy IV sketchcards — 9-card grid featuring a hooded figure, a panda-faced alien, a tribal Jedi, a chibi Mandalorian, a Bothan-style alien, a vine-wrapped figure, a blue Sith with red eyes, an alien with elongated head, and a blue alien chief.",
@@ -49,6 +49,7 @@ const breadcrumbs = getBreadcrumbSchema([
     <header>
         <h1 class="font-title text-4xl">Star Wars Galaxy IV <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2008</h2>
+        <p class="mb-6">I drew 67 sketch cards for Topps' Star Wars Galaxy Series 4 (2008) — the first Galaxy series to feature sketch cards, with hobby, retail, and helmet-shaped die-cut variants.</p>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

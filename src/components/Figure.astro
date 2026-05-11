@@ -12,7 +12,7 @@ const cdnBase = 'https://cdn.scottzirkel.com/';
 const imgSrc = image ? (image.startsWith('http') ? image : `${cdnBase}${image}`) : null;
 ---
 
-<figure class="col-span-1 flex cursor-pointer flex-col items-center justify-between overflow-hidden rounded-lg bg-white shadow hover:shadow-md">
+<figure class="col-span-1 flex cursor-pointer flex-col items-center justify-between overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-md">
     {imgSrc ? (
         <img
             src={imgSrc}

@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'warlord-of-mars';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Warlord of Mars, published by Bregent/Dynamite in 2012.";
+const description = "25 sketch cards by Scott Zirkel for Breygent and Dynamite's 2012 Warlord of Mars set, based on Edgar Rice Burroughs' John Carter novels.";
 
 const images = [
     { src: 'drawings/sketchcards/warlord-of-mars/warlord-of-mars-01-scott-zirkel.webp', w: 996, h: 700, alt: "Warlord of Mars sketchcards — 8-card grid featuring John Carter, a White Ape, a Green Martian Tharks warrior, Dejah Thoris, and other Barsoomian characters." },
@@ -18,7 +18,7 @@ const schema = getDrawingSchema({
     slug,
     name: 'Warlord of Mars',
     description,
-    publisher: 'Bregent/Dynamite',
+    publisher: 'Breygent/Dynamite',
     dateCreated: '2012',
     images,
 });
@@ -36,7 +36,8 @@ const breadcrumbs = getBreadcrumbSchema([
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Warlord of Mars <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
-        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Bregent/Dynamite 2012</h2>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Breygent/Dynamite 2012</h2>
+        <p class="mb-6">I drew 25 sketch cards for Breygent and Dynamite's 2012 Warlord of Mars set, based on Edgar Rice Burroughs' John Carter novels.</p>
     </header>
     <section class="grid grid-cols-1 gap-4">
         {images.map((img) => (

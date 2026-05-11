@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'marvel-ant-man';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Marvel Ant-Man, published by Upper Deck in 2015.";
+const description = "49 sketch cards by Scott Zirkel for Upper Deck's 2015 Marvel Ant-Man set.";
 
 const images = [
     { src: 'drawings/sketchcards/marvel-ant-man/marvel-ant-man-01-scott-zirkel.webp', w: 724, h: 1000, alt: "Marvel Ant-Man sketchcards — 9-card portrait grid featuring Black Knight, Bishop, Domino, Wasp, original Ant-Man armor, Yellowjacket, Beast, Spider-Man, and Ant-Man." },
@@ -39,6 +39,7 @@ const breadcrumbs = getBreadcrumbSchema([
     <header>
         <h1 class="font-title text-4xl">Marvel Ant-Man <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2015</h2>
+        <p class="mb-6">I drew 49 sketch cards for Upper Deck's 2015 Ant-Man set. The sketch roster drew on the wider Ant-Man comic history rather than the film, so there was room to play with characters who never made it onto the screen.</p>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

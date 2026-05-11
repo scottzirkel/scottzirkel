@@ -13,7 +13,7 @@ const cdnBase = 'https://cdn.scottzirkel.com/';
 const imgSrc = image ? `${cdnBase}${image}` : null;
 ---
 
-<section class="col-span-1 rounded-lg bg-white p-4 shadow" aria-label={title}>
+<section class="col-span-1 rounded-lg bg-white p-4 shadow-sm" aria-label={title}>
     {imgSrc && (
         <div class="mx-auto py-6 text-center sm:w-1/2">
             <img alt={`Cover of ${title}`} src={imgSrc} loading={lazy ? 'lazy' : 'eager'} width="503" height="110" decoding="async" />

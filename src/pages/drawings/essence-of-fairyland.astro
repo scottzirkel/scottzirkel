@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'essence-of-fairyland';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for The Essence of Fairyland, published by sadlittles.";
+const description = "40 sketch cards by Scott Zirkel for sadlittles' 2010 Essence of Fairyland set.";
 
 const images = [
     { src: 'drawings/sketchcards/essence-of-fairyland/essence-of-fairyland-01-scott-zirkel.webp', w: 460, h: 429, alt: "The Essence of Fairyland sketchcards — 6-card grid featuring fairies with daisies, a fairy in green skirt, an orange-haired fairy with leaves, a redhead in vines, an archer fairy, and a red mask figure." },
@@ -21,6 +21,7 @@ const schema = getDrawingSchema({
     name: 'The Essence of Fairyland',
     description,
     publisher: 'sadlittles',
+    dateCreated: '2010',
     images,
 });
 const breadcrumbs = getBreadcrumbSchema([
@@ -37,7 +38,8 @@ const breadcrumbs = getBreadcrumbSchema([
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">The Essence of Fairyland <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
-        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">sadlittles</h2>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">sadlittles 2010</h2>
+        <p class="mb-6">I drew 40 sketch cards for sadlittles' 2010 Essence of Fairyland — a fantasy set of 45 base cards plus a 5-card movie subset themed around the indie animated film.</p>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

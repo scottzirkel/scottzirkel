@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'zombies-vs-cheerleaders';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Zombies vs Cheerleaders, published by 5finity.";
+const description = "23 sketch cards by Scott Zirkel for 5finity's 2009 Zombies vs. Cheerleaders premium launch set, limited to 849 packs worldwide.";
 
 const images = [
     { src: 'drawings/sketchcards/zombies-vs-cheerleaders/zombies-vs-cheerleaders-01-scott-zirkel.webp', w: 500, h: 1051, alt: "Zombies vs Cheerleaders sketchcards — 6-panel comic strip telling a story across two-card spreads: a zombie reaches into a tomb where a cheerleader hides, the cheerleader runs from the zombie, then kicks his head clean off." },
@@ -20,6 +20,7 @@ const schema = getDrawingSchema({
     name: 'Zombies vs Cheerleaders',
     description,
     publisher: '5finity',
+    dateCreated: '2009',
     images,
 });
 const breadcrumbs = getBreadcrumbSchema([
@@ -36,7 +37,8 @@ const breadcrumbs = getBreadcrumbSchema([
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">Zombies vs Cheerleaders <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
-        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity</h2>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity 2009</h2>
+        <p class="mb-6">I drew 23 sketch cards for 5finity's 2009 Zombies vs. Cheerleaders premium launch — the original ZvC series, limited to 849 packs worldwide and known for its multi-card puzzle spreads.</p>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

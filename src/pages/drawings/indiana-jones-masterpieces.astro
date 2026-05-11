@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'indiana-jones-masterpieces';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Indiana Jones Masterpieces, published by Topps in 2008.";
+const description = "228 sketch cards by Scott Zirkel for Topps' 2008 Indiana Jones Masterpieces — the set that introduced the Panoramic sketch card.";
 
 const gridAlts = [
     "Indiana Jones Masterpieces sketchcards — 9-card grid featuring three Indy hat portraits, Sallah, Donovan, a skull figure, Mola Ram, Short Round, and Mutt Williams.",
@@ -69,6 +69,7 @@ const breadcrumbs = getBreadcrumbSchema([
     <header>
         <h1 class="font-title text-4xl">Indiana Jones Masterpieces <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Topps 2008</h2>
+        <p class="mb-6">I drew 228 sketch cards for Topps' 2008 Indiana Jones Masterpieces set — the set that introduced the now-iconic Panoramic sketch card, a double-sized canvas spanning two cards.</p>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

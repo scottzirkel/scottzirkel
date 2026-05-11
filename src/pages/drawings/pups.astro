@@ -4,13 +4,14 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 
 const slug = 'pups';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard project by Scott Zirkel for P'Ups, published by 5finity. Cards in progress or scans lost.";
+const description = "Sketch cards by Scott Zirkel for 5finity's 2010 P'Ups: Pin-ups & Puppies set (1,500 packs). Scans lost.";
 
 const schema = getDrawingSchema({
     slug,
     name: "P'Ups",
     description,
     publisher: '5finity',
+    dateCreated: '2010',
 });
 const breadcrumbs = getBreadcrumbSchema([
     { name: 'Home', url: 'https://scottzirkel.com/' },
@@ -26,9 +27,10 @@ const breadcrumbs = getBreadcrumbSchema([
     </Fragment>
     <header>
         <h1 class="font-title text-4xl">P'Ups <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
-        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5Finity</h2>
+        <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity 2010</h2>
     </header>
     <section>
-        <p>Sorry, these cards are either currently in progress or I lost the scans.</p>
+        <p class="mb-4">I drew sketch cards for 5finity's 2010 P'Ups: Pin-ups & Puppies set, limited to 1,500 packs.</p>
+        <p>Sorry — I'm missing the scans on this one.</p>
     </section>
 </Layout>

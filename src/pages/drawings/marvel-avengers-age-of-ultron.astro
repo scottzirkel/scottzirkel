@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'marvel-avengers-age-of-ultron';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Marvel Avengers: Age of Ultron, published by Upper Deck in 2015.";
+const description = "80 sketch cards by Scott Zirkel for Upper Deck's 2015 Marvel Avengers: Age of Ultron set.";
 
 const images = [
     { src: 'drawings/sketchcards/marvel-avengers-age-of-ultron/marvel-age-of-ultron-01-scott-zirkel.webp', w: 719, h: 1000, alt: "Marvel Avengers: Age of Ultron sketchcards — 9-card portrait grid featuring Captain America, Hawkeye, Spider-Woman, Wonder Man, Ms. Marvel, Scarlet Witch, Wasp, and Thanos." },
@@ -42,6 +42,7 @@ const breadcrumbs = getBreadcrumbSchema([
     <header>
         <h1 class="font-title text-4xl">Marvel Avengers: Age of Ultron <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">Upper Deck 2015</h2>
+        <p class="mb-6">I drew 80 sketch cards for Upper Deck's 2015 Avengers: Age of Ultron. Like most Marvel film tie-ins, the sketch roster pulled from the broader Avengers comic universe rather than just the movie.</p>
     </header>
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((img) => (

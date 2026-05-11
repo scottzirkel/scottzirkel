@@ -26,11 +26,11 @@ const segment = rawSegment === 'articles' ? 'code' : rawSegment;
         <div class="flex justify-center items-center space-x-4">
             <a aria-current={segment === 'uses' ? 'page' : undefined} class="block relative text-2xl text-red-500 group font-subtitle" href="/uses">
                 <span class="relative z-10">Uses</span>
-                <span class:list={['-mx-1 absolute inset-0 z-0 my-4 h-4 w-full rounded', segment === 'uses' ? 'bg-gray-600/25' : 'group-hover:bg-gray-600/25']}></span>
+                <span class:list={['-mx-1 absolute inset-0 z-0 my-4 h-4 w-full rounded-sm', segment === 'uses' ? 'bg-gray-600/25' : 'group-hover:bg-gray-600/25']}></span>
             </a>
             <a aria-current={segment === 'been-there-done-that' ? 'page' : undefined} class="block relative text-2xl text-red-500 group font-subtitle" href="/been-there-done-that">
                 <span class="relative z-10">Been There Done That</span>
-                <span class:list={['mx-1 absolute inset-0 z-0 my-4 h-4 w-full rounded', segment === 'been-there-done-that' ? 'bg-gray-600/25' : 'group-hover:bg-gray-600/25']}></span>
+                <span class:list={['mx-1 absolute inset-0 z-0 my-4 h-4 w-full rounded-sm', segment === 'been-there-done-that' ? 'bg-gray-600/25' : 'group-hover:bg-gray-600/25']}></span>
             </a>
         </div>
     </nav>

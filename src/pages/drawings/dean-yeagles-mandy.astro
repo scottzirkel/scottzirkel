@@ -5,7 +5,7 @@ import { getBreadcrumbSchema, getDrawingSchema } from '../../lib/schema';
 const cdnBase = 'https://cdn.scottzirkel.com/';
 const slug = 'dean-yeagles-mandy';
 const pageUrl = `https://scottzirkel.com/drawings/${slug}`;
-const description = "Sketchcard art by Scott Zirkel for Dean Yeagle's Mandy, published by 5finity in 2009.";
+const description = "8 Mandy pin-up sketch cards by Scott Zirkel for Dean Yeagle's character, published by 5finity in 2009 (1,000 packs worldwide).";
 
 const images = [
     { src: 'drawings/sketchcards/dean-yeagles-mandy/mandy-scott-zirkel.webp', w: 500, h: 347, alt: "Dean Yeagle's Mandy sketchcards — 8-card grid of pinups: Mandy in red bikini, in pigtails with lipstick, in white tank, in jean shorts, drying with a towel, in the bath with a bottle, kneeling at the edge of a tub, and posed by a pool." },
@@ -34,6 +34,7 @@ const breadcrumbs = getBreadcrumbSchema([
     <header>
         <h1 class="font-title text-4xl">Dean Yeagle's Mandy <span class="sr-only">sketchcards by Scott Zirkel</span></h1>
         <h2 class="mb-4 font-subtitle text-2xl text-gray-800">5finity 2009</h2>
+        <p class="mb-6">I drew 8 pin-up sketch cards for 5finity's 2009 Mandy series, based on Dean Yeagle's iconic character. The set was limited to 1,000 packs worldwide — Dean himself only sketched ten cards, so the artist roster felt like real company.</p>
     </header>
     <section class="grid grid-cols-1 gap-4">
         {images.map((img) => (
