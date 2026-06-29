@@ -1,0 +1,5 @@
+{
+    "actions": [
+            { "label": "Rebuild Assets", "command": "npm run build", "route": "notify" }
+    ]
+}
